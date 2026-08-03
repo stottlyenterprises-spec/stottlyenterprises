@@ -1,0 +1,1429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio | Stottly Enterprises</title>
+<meta name="description" content="Proof over promises: the Stottly Enterprises portfolio of consulting work and ventures, led by the BK Operations App case study.">
+<link rel="canonical" href="https://www.stottlyenterprises.com/portfolio">
+<meta property="og:title" content="Portfolio | Stottly Enterprises">
+<meta property="og:description" content="Proof over promises: the Stottly Enterprises portfolio of consulting work and ventures, led by the BK Operations App case study.">
+<meta property="og:url" content="https://www.stottlyenterprises.com/portfolio">
+<meta property="og:type" content="website">
+<style>
+
+:root{
+  --ink:#2E3B4E;
+  --slate:#5B7A9D;
+  --muted:#7C8CA3;
+  --sky1:#F7FAFD;
+  --sky2:#E7F0F8;
+  --sky3:#D3E4F2;
+  --silver:#AEC4DA;
+  --accent:#6E93BE;
+  --accent-deep:#4B6E96;
+  --line:rgba(46,59,78,0.1);
+  --white:#FFFFFF;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  background:var(--sky1);
+  color:var(--ink);
+  line-height:1.65;
+  font-weight:300;
+}
+a{text-decoration:none;color:inherit;}
+img{max-width:100%;display:block;}
+.wrap{max-width:1140px;margin:0 auto;padding:0 32px;}
+.tracked{letter-spacing:3px;}
+
+/* NAV (shared across interior pages, non-hero version) */
+.site-header{background:var(--white);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50;}
+.site-header nav{display:flex;align-items:center;justify-content:space-between;padding:22px 32px;max-width:1140px;margin:0 auto;}
+.brand{display:flex;align-items:center;gap:12px;}
+.brand svg{width:28px;height:28px;}
+.brand .name{font-size:13px;letter-spacing:3px;color:var(--ink);font-weight:400;}
+.nav-links{display:flex;gap:34px;font-size:12.5px;letter-spacing:1.5px;color:var(--slate);text-transform:uppercase;}
+.nav-links a{transition:color .2s;}
+.nav-links a:hover,.nav-links a.active{color:var(--ink);}
+.nav-cta{border:1px solid var(--accent-deep);color:var(--accent-deep);padding:10px 22px;border-radius:30px;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;font-weight:400;}
+@media (max-width:860px){.nav-links{display:none;}}
+
+/* PAGE HERO (smaller, for interior pages) */
+.page-hero{position:relative;overflow:hidden;padding:80px 0 70px;}
+.page-hero-bg{position:absolute;inset:0;z-index:0;
+  background:radial-gradient(ellipse 600px 400px at 90% 0%, rgba(255,252,244,0.8), transparent 60%),
+  linear-gradient(155deg, #F7FAFD 0%, #EAF1F8 50%, #D9E7F3 100%);
+}
+.page-hero-content{position:relative;z-index:2;max-width:720px;}
+.breadcrumb{font-size:11.5px;letter-spacing:2px;text-transform:uppercase;color:var(--accent-deep);font-weight:500;margin-bottom:18px;}
+.page-hero h1{font-size:42px;font-weight:200;color:var(--ink);line-height:1.25;margin-bottom:16px;letter-spacing:-0.5px;}
+.page-hero p{font-size:16.5px;color:var(--muted);max-width:560px;}
+
+/* HERO with wave art (homepage only) */
+.hero{position:relative;overflow:hidden;min-height:760px;display:flex;flex-direction:column;}
+.hero-bg{position:absolute;inset:0;z-index:0;
+  background:
+    radial-gradient(ellipse 700px 500px at 12% 8%, rgba(255,252,244,0.95), transparent 60%),
+    linear-gradient(155deg, #F7FAFD 0%, #EAF1F8 35%, #D9E7F3 65%, #C3D9EC 100%);
+}
+.hero-bg svg{position:absolute;bottom:0;left:0;width:100%;height:78%;}
+.hero header{position:relative;z-index:5;}
+.hero-content{position:relative;z-index:5;flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:60px 32px 100px;}
+.eyebrow{font-size:11.5px;letter-spacing:4px;text-transform:uppercase;color:var(--accent-deep);font-weight:500;margin-bottom:18px;}
+.hero-divider{width:36px;height:1px;background:var(--accent-deep);opacity:0.5;margin-bottom:26px;}
+.hero h1{font-size:50px;font-weight:200;max-width:780px;line-height:1.25;margin-bottom:24px;color:var(--ink);letter-spacing:-0.5px;}
+.hero p{font-size:17px;color:var(--muted);max-width:480px;margin-bottom:40px;font-weight:300;}
+.btn-row{display:flex;gap:16px;flex-wrap:wrap;}
+.btn-primary{background:var(--ink);color:#fff;padding:15px 30px;border-radius:30px;font-weight:400;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;display:inline-block;}
+.btn-secondary{border:1px solid var(--line);color:var(--ink);padding:15px 30px;border-radius:30px;font-weight:400;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;display:inline-block;}
+
+/* DNA STRIP */
+.dna{background:var(--white);padding:64px 0;border-bottom:1px solid var(--line);}
+.dna-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:48px;text-align:center;}
+.dna-grid .num{font-size:11px;letter-spacing:3px;color:var(--accent-deep);font-weight:500;margin-bottom:14px;text-transform:uppercase;}
+.dna-grid h3{font-size:21px;color:var(--ink);margin-bottom:10px;font-weight:300;}
+.dna-grid p{font-size:14px;color:var(--muted);}
+
+.section{padding:96px 0;}
+.section-alt{background:var(--white);}
+.section-head{max-width:640px;margin:0 auto 56px;text-align:center;}
+.section-head.left{margin:0 0 48px;text-align:left;}
+.section-label{font-size:11.5px;text-transform:uppercase;letter-spacing:3px;color:var(--accent-deep);font-weight:500;margin-bottom:16px;}
+.section-head h2{font-size:32px;font-weight:200;color:var(--ink);line-height:1.3;}
+.section-head p{color:var(--muted);font-size:15px;margin-top:12px;}
+
+.services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
+.service-card{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:32px 26px;box-shadow:0 12px 30px -20px rgba(46,59,78,0.25);}
+.service-card .chip{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--sky3),var(--silver));margin-bottom:20px;}
+.service-card h3{font-size:16.5px;color:var(--ink);margin-bottom:10px;font-weight:500;}
+.service-card p{font-size:13.5px;color:var(--muted);}
+
+/* VENTURE SPOTLIGHT */
+.venture{background:linear-gradient(180deg,var(--sky1),var(--sky2));border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+.venture-inner{display:grid;grid-template-columns:1.1fr 0.9fr;gap:56px;align-items:center;padding:90px 0;}
+.venture-tag{display:inline-block;font-size:11px;letter-spacing:2px;text-transform:uppercase;background:rgba(124,92,255,0.1);color:#6C5CE7;padding:7px 16px;border-radius:20px;margin-bottom:22px;font-weight:600;}
+.venture h2{font-size:34px;font-weight:200;margin-bottom:18px;color:var(--ink);}
+.venture h2 b{background:linear-gradient(90deg,#4C6FFF,#8B5CF6);-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:600;}
+.venture p{font-size:15px;color:var(--muted);margin-bottom:28px;line-height:1.8;}
+.venture-link{font-weight:600;color:#5B4BDB;font-size:13.5px;letter-spacing:0.3px;}
+.venture-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:34px;box-shadow:0 20px 44px -24px rgba(46,59,78,0.3);}
+.venture-card .vc-title{font-weight:600;font-size:12px;letter-spacing:2px;text-transform:uppercase;margin-bottom:18px;color:var(--ink);}
+.venture-card ul{list-style:none;font-size:14px;color:var(--slate);}
+.venture-card li{padding:11px 0;border-bottom:1px solid var(--line);display:flex;gap:10px;align-items:center;}
+.venture-card li:last-child{border-bottom:none;}
+.venture-card li::before{content:"";width:6px;height:6px;border-radius:50%;background:linear-gradient(135deg,#4C6FFF,#8B5CF6);flex-shrink:0;}
+
+.portfolio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.p-card{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:30px 26px;box-shadow:0 12px 30px -20px rgba(46,59,78,0.2);}
+.p-card .tag{font-size:10.5px;text-transform:uppercase;letter-spacing:2px;color:var(--accent-deep);font-weight:600;margin-bottom:12px;}
+.p-card h3{font-size:18px;color:var(--ink);font-weight:400;margin-bottom:10px;}
+.p-card p{font-size:13.5px;color:var(--muted);}
+.p-card img{border-radius:10px;margin-bottom:18px;aspect-ratio:16/10;object-fit:cover;}
+
+.testimonial{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:96px 0;text-align:center;}
+.testimonial blockquote{font-size:26px;font-weight:200;color:var(--ink);max-width:760px;margin:0 auto 22px;line-height:1.55;font-style:italic;}
+.testimonial cite{font-size:12px;color:var(--muted);letter-spacing:2px;text-transform:uppercase;font-style:normal;}
+
+.cta-band{background:linear-gradient(135deg,var(--sky2),var(--sky3));padding:70px 0;text-align:center;}
+.cta-band h2{font-size:28px;color:var(--ink);font-weight:200;margin-bottom:26px;}
+
+footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top:1px solid var(--line);}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:32px;margin-bottom:44px;}
+.footer-grid h4{color:var(--ink);font-size:12px;letter-spacing:2px;text-transform:uppercase;margin-bottom:18px;font-weight:500;}
+.footer-grid ul{list-style:none;font-size:13.5px;}
+.footer-grid li{margin-bottom:11px;}
+.footer-grid a:hover{color:var(--ink);}
+.footer-bottom{border-top:1px solid var(--line);padding-top:26px;font-size:12px;display:flex;justify-content:space-between;letter-spacing:0.5px;}
+
+/* --- Interior page components --- */
+
+/* Two-column content + image */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;}
+.split img{border-radius:16px;box-shadow:0 24px 50px -30px rgba(46,59,78,0.35);aspect-ratio:4/5;object-fit:cover;}
+.split.reverse{direction:rtl;}
+.split.reverse > *{direction:ltr;}
+.split h2{font-size:30px;font-weight:200;margin-bottom:18px;color:var(--ink);}
+.split p{font-size:15px;color:var(--muted);margin-bottom:16px;line-height:1.85;}
+
+/* Values / DNA large */
+.value-list{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:20px;}
+.value-list .v{border-top:1px solid var(--line);padding-top:20px;}
+.value-list .num{font-size:11px;letter-spacing:2px;color:var(--accent-deep);font-weight:600;margin-bottom:10px;}
+.value-list h3{font-size:18px;font-weight:400;margin-bottom:8px;color:var(--ink);}
+.value-list p{font-size:13.5px;color:var(--muted);}
+
+/* Team grid */
+.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;}
+.team-card img{border-radius:16px;aspect-ratio:1/1;object-fit:cover;margin-bottom:16px;}
+.team-card h3{font-size:16px;font-weight:600;color:var(--ink);margin-bottom:4px;}
+.team-card span{font-size:12.5px;color:var(--muted);letter-spacing:0.5px;}
+
+/* Service detail blocks (image + list) */
+.service-block{display:grid;grid-template-columns:0.9fr 1.1fr;gap:56px;align-items:center;padding:70px 0;border-bottom:1px solid var(--line);}
+.service-block.reverse{grid-template-columns:1.1fr 0.9fr;}
+.service-block img{border-radius:16px;aspect-ratio:4/3;object-fit:cover;box-shadow:0 20px 44px -28px rgba(46,59,78,0.3);}
+.service-block.reverse img{order:2;}
+.service-block .num-tag{font-size:11px;letter-spacing:2px;color:var(--accent-deep);font-weight:600;margin-bottom:14px;text-transform:uppercase;}
+.service-block h3{font-size:26px;font-weight:200;margin-bottom:16px;color:var(--ink);}
+.service-block p{font-size:15px;color:var(--muted);margin-bottom:20px;line-height:1.8;}
+.service-block ul{list-style:none;}
+.service-block li{font-size:14px;color:var(--slate);padding:9px 0;border-top:1px solid var(--line);display:flex;gap:10px;align-items:center;}
+.service-block li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--accent-deep);flex-shrink:0;}
+
+/* Case study detail card */
+.case-detail{background:var(--white);border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:0 20px 50px -30px rgba(46,59,78,0.3);margin-bottom:32px;}
+.case-detail img{aspect-ratio:16/9;object-fit:cover;}
+.case-detail .body{padding:36px 40px;}
+.case-detail .tag{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--accent-deep);font-weight:600;margin-bottom:14px;}
+.case-detail h3{font-size:24px;font-weight:200;margin-bottom:14px;color:var(--ink);}
+.case-detail p{font-size:14.5px;color:var(--muted);margin-bottom:14px;line-height:1.8;}
+.case-detail .thumbs{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:20px;}
+.case-detail .thumbs img{border-radius:8px;aspect-ratio:3/4;object-fit:cover;}
+
+/* Blog */
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+.blog-card{background:var(--white);border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 12px 30px -20px rgba(46,59,78,0.2);}
+.blog-card img{aspect-ratio:16/10;object-fit:cover;}
+.blog-card .body{padding:22px 22px 26px;}
+.blog-card .tag{font-size:10.5px;text-transform:uppercase;letter-spacing:2px;color:var(--accent-deep);font-weight:600;margin-bottom:10px;}
+.blog-card h3{font-size:17px;font-weight:500;color:var(--ink);margin-bottom:10px;line-height:1.4;}
+.blog-card p{font-size:13px;color:var(--muted);}
+.blog-card .meta{font-size:11.5px;color:var(--muted);margin-top:14px;letter-spacing:0.5px;}
+.blog-featured{display:grid;grid-template-columns:1.1fr 0.9fr;gap:0;background:var(--white);border:1px solid var(--line);border-radius:20px;overflow:hidden;margin-bottom:48px;box-shadow:0 20px 50px -30px rgba(46,59,78,0.3);}
+.blog-featured img{height:100%;object-fit:cover;}
+.blog-featured .body{padding:44px 44px;display:flex;flex-direction:column;justify-content:center;}
+.blog-featured h3{font-size:26px;font-weight:200;color:var(--ink);margin-bottom:14px;}
+
+/* Contact */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;}
+.contact-info h2{font-size:28px;font-weight:200;margin-bottom:18px;color:var(--ink);}
+.contact-info p{font-size:15px;color:var(--muted);margin-bottom:28px;line-height:1.8;}
+.contact-detail{margin-bottom:20px;}
+.contact-detail .label{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--accent-deep);font-weight:600;margin-bottom:6px;}
+.contact-detail .value{font-size:15px;color:var(--ink);}
+.contact-form{background:var(--white);border:1px solid var(--line);border-radius:20px;padding:40px;box-shadow:0 20px 50px -30px rgba(46,59,78,0.3);}
+.form-row{margin-bottom:20px;}
+.form-row label{display:block;font-size:11.5px;letter-spacing:1.5px;text-transform:uppercase;color:var(--slate);margin-bottom:8px;font-weight:500;}
+.form-row input, .form-row textarea{width:100%;border:1px solid var(--line);border-radius:10px;padding:13px 16px;font-family:inherit;font-size:14px;color:var(--ink);background:var(--sky1);}
+.form-row textarea{min-height:110px;resize:vertical;}
+.form-submit{background:var(--ink);color:#fff;border:none;padding:15px 34px;border-radius:30px;font-weight:400;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;width:100%;}
+
+@media (max-width:900px){
+  .split{grid-template-columns:1fr;}
+  .split.reverse{direction:ltr;}
+  .service-block, .service-block.reverse{grid-template-columns:1fr;}
+  .service-block.reverse img{order:0;}
+  .blog-featured{grid-template-columns:1fr;}
+  .contact-grid{grid-template-columns:1fr;}
+  .case-detail .thumbs{grid-template-columns:repeat(2,1fr);}
+}
+@media (max-width:860px){
+  .hero h1{font-size:34px;}
+  .services-grid{grid-template-columns:1fr 1fr;}
+  .venture-inner{grid-template-columns:1fr;}
+  .portfolio-grid{grid-template-columns:1fr;}
+  .footer-grid{grid-template-columns:1fr 1fr;}
+  .dna-grid{grid-template-columns:1fr;gap:32px;}
+  .value-list{grid-template-columns:1fr;}
+  .team-grid{grid-template-columns:1fr;}
+  .blog-grid{grid-template-columns:1fr;}
+  .page-hero h1{font-size:30px;}
+}
+
+
+
+</style>
+</head>
+<body>
+<div class="stottly-nav-scope">
+<style>
+.stottly-nav-scope{position:relative;z-index:50;}
+.stottly-nav-scope .fancy-nav{position:sticky;top:0;z-index:60;background:rgba(255,255,255,0.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line);transition:box-shadow .35s ease,background .35s ease;}
+.stottly-nav-scope .fancy-nav.is-scrolled{box-shadow:0 12px 30px -22px rgba(46,59,78,0.45);background:rgba(255,255,255,0.97);}
+.stottly-nav-scope .fn-wrap{max-width:1140px;margin:0 auto;padding:0 32px;display:flex;align-items:center;justify-content:center;height:62px;}
+.stottly-nav-scope .fn-list{display:flex;align-items:center;gap:4px;list-style:none;margin:0;padding:0;}
+.stottly-nav-scope .fn-item{position:relative;}
+.stottly-nav-scope .fn-link{display:inline-flex;align-items:center;gap:5px;padding:10px 17px;font-size:12px;letter-spacing:1.8px;text-transform:uppercase;font-weight:600;color:var(--ink);text-decoration:none;position:relative;white-space:nowrap;}
+.stottly-nav-scope .fn-link::after{content:"";position:absolute;left:17px;right:17px;bottom:5px;height:1.5px;background:var(--accent-deep);transform:scaleX(0);transform-origin:left;transition:transform .4s cubic-bezier(.4,0,.2,1);}
+.stottly-nav-scope .fn-item:hover .fn-link::after,
+.stottly-nav-scope .fn-link.is-active::after{transform:scaleX(1);}
+.stottly-nav-scope .fn-link.is-active{color:var(--accent-deep);}
+.stottly-nav-scope .fn-caret{width:8px;height:8px;transition:transform .3s ease;opacity:.5;}
+.stottly-nav-scope .fn-item:hover .fn-caret{transform:rotate(180deg);}
+.stottly-nav-scope .fn-panel{position:absolute;top:100%;left:50%;transform:translate(-50%,10px);min-width:270px;background:var(--white);border:1px solid var(--line);border-radius:14px;box-shadow:0 24px 50px -25px rgba(46,59,78,0.35);padding:14px;opacity:0;visibility:hidden;transition:opacity .3s ease,transform .3s ease,visibility .3s;}
+.stottly-nav-scope .fn-item:hover .fn-panel{opacity:1;visibility:visible;transform:translate(-50%,0);}
+.stottly-nav-scope .fn-panel-group{margin-bottom:8px;}
+.stottly-nav-scope .fn-panel-group:last-child{margin-bottom:0;}
+.stottly-nav-scope .fn-panel a{display:block;padding:7px 12px;border-radius:8px;font-size:13.5px;color:var(--ink);text-decoration:none;letter-spacing:0.1px;transition:background .2s ease,color .2s ease,padding-left .2s ease;}
+.stottly-nav-scope .fn-panel a:hover{background:var(--sky1);padding-left:16px;color:var(--accent-deep);}
+.stottly-nav-scope .fn-panel .fn-sub{padding-left:12px;margin-top:2px;}
+.stottly-nav-scope .fn-panel .fn-sub a{font-size:12.5px;color:var(--muted);}
+.stottly-nav-scope .fn-divider{height:1px;background:var(--line);margin:8px 4px;}
+.stottly-nav-scope .fn-burger{display:none;width:24px;height:18px;position:relative;cursor:pointer;border:none;background:none;padding:0;}
+.stottly-nav-scope .fn-burger span{position:absolute;left:0;right:0;height:2.5px;background:linear-gradient(90deg,var(--accent-deep),#8B5CF6);border-radius:2px;transition:transform .4s cubic-bezier(.4,0,.2,1),opacity .25s ease .1s,width .3s ease,background .3s ease;}
+.stottly-nav-scope .fn-burger span:nth-child(1){top:0;}
+.stottly-nav-scope .fn-burger span:nth-child(2){top:8px;width:70%;}
+.stottly-nav-scope .fn-burger span:nth-child(3){top:16px;}
+.stottly-nav-scope .fn-burger:hover span:nth-child(2){width:100%;}
+.stottly-nav-scope .fn-burger.is-open span:nth-child(1){top:8px;transform:rotate(45deg);}
+.stottly-nav-scope .fn-burger.is-open span:nth-child(2){opacity:0;transform:scaleX(0);transition:opacity .15s ease,transform .15s ease;}
+.stottly-nav-scope .fn-burger.is-open span:nth-child(3){top:8px;width:100%;transform:rotate(-45deg);}
+@media (max-width:900px){
+  .stottly-nav-scope .fn-list{display:none;position:absolute;top:62px;left:0;right:0;background:var(--white);flex-direction:column;align-items:stretch;border-bottom:1px solid var(--line);box-shadow:0 24px 40px -30px rgba(46,59,78,0.4);padding:10px 20px 20px;gap:0;}
+  .stottly-nav-scope .fn-list.is-open{display:flex;}
+  .stottly-nav-scope .fn-item{width:100%;}
+  .stottly-nav-scope .fn-link{width:100%;padding:14px 6px;justify-content:space-between;}
+  .stottly-nav-scope .fn-link::after{display:none;}
+  .stottly-nav-scope .fn-panel{position:static;opacity:1;visibility:visible;transform:none;box-shadow:none;border:none;display:none;padding:0 0 6px 14px;}
+  .stottly-nav-scope .fn-item.is-open .fn-panel{display:block;}
+  .stottly-nav-scope .fn-burger{display:block;}
+  .stottly-nav-scope .fn-wrap{justify-content:space-between;}
+}
+</style>
+<nav class="fancy-nav" id="stottlyFancyNav">
+  <div class="fn-wrap">
+    <ul class="fn-list" id="stottlyFnList">
+      <li class="fn-item"><a class="fn-link" href="/">Home</a></li>
+      <li class="fn-item"><a class="fn-link" href="/who-we-are">Who We Are</a></li>
+      <li class="fn-item"><a class="fn-link" href="/services">Services</a></li>
+      <li class="fn-item">
+        <a class="fn-link" href="/ventures">Ventures <svg class="fn-caret" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <div class="fn-panel">
+          <div class="fn-panel-group">
+            <a href="/ventures/stottifai" style="font-weight:600;">StottifAI</a>
+            <div class="fn-sub">
+              <a href="https://stottifai.com/what-we-do.html">What We Do</a>
+              <a href="https://stottifai.com/case-studies.html">Case Studies</a>
+              <a href="https://stottifai.com/about.html">About</a>
+              <a href="https://stottifai.com/contact.html">Contact</a>
+            </div>
+          </div>
+          <div class="fn-divider"></div>
+          <div class="fn-panel-group">
+            <a href="/ventures/gurilla-studios">Gurilla Studios</a>
+            <a href="https://cartcurios.com" target="_blank" rel="noopener">CartCurios ↗</a>
+          </div>
+        </div>
+      </li>
+      <li class="fn-item"><a class="fn-link" href="/portfolio">Portfolio</a></li>
+      <li class="fn-item"><a class="fn-link" href="/blog">Blog</a></li>
+      <li class="fn-item"><a class="fn-link" href="/contact">Contact</a></li>
+    </ul>
+    <button class="fn-burger" id="stottlyFnBurger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<script>
+(function(){
+  var nav = document.getElementById('stottlyFancyNav');
+  var burger = document.getElementById('stottlyFnBurger');
+  var list = document.getElementById('stottlyFnList');
+  if(!nav) return;
+
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 8){ nav.classList.add('is-scrolled'); }
+    else{ nav.classList.remove('is-scrolled'); }
+  }, {passive:true});
+
+  if(burger && list){
+    burger.addEventListener('click', function(){
+      list.classList.toggle('is-open');
+      burger.classList.toggle('is-open');
+    });
+    Array.prototype.forEach.call(list.querySelectorAll('.fn-item'), function(item){
+      var link = item.querySelector('.fn-link');
+      var panel = item.querySelector('.fn-panel');
+      if(panel && link){
+        link.addEventListener('click', function(e){
+          if(window.innerWidth <= 900){
+            e.preventDefault();
+            item.classList.toggle('is-open');
+          }
+        });
+      }
+    });
+  }
+
+  var path = window.location.pathname.replace(/\/$/, '') || '/';
+  Array.prototype.forEach.call(list.querySelectorAll('.fn-link'), function(link){
+    var href = link.getAttribute('href');
+    if(!href || href.indexOf('http') === 0) return;
+    var linkPath = href.replace(/\/$/, '') || '/';
+    if(linkPath === path || (path !== '/' && linkPath !== '/' && path.indexOf(linkPath) === 0)){
+      link.classList.add('is-active');
+    }
+  });
+})();
+</script>
+</div>
+
+<div class="stottly-scope">
+<style>
+.stottly-scope .bka-embed-frame{padding:28px 24px;background:linear-gradient(160deg,#241209,#160b05);}
+@media (max-width:640px){.stottly-scope .bka-embed-frame{padding:16px 10px;}}
+.stottly-scope .case-detail-split{display:grid;grid-template-columns:1fr 420px;align-items:stretch;}
+.stottly-scope .case-detail-split .body{padding:36px 8px 36px 40px;}
+.stottly-scope .case-detail-split .bka-embed-frame{padding:28px 24px;display:flex;align-items:center;}
+@media (max-width:900px){.stottly-scope .case-detail-split{grid-template-columns:1fr;}.stottly-scope .case-detail-split .body{padding:36px 40px 8px;}}
+.stottly-scope .pf-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;padding:44px 0;border-bottom:1px solid var(--line);}
+.stottly-scope .pf-stats .fstat{text-align:center;}
+.stottly-scope .pf-stats .fstat b{display:block;font-size:32px;font-weight:200;color:var(--ink);margin-bottom:6px;}
+.stottly-scope .pf-stats .fstat span{font-size:12.5px;color:var(--muted);letter-spacing:0.3px;}
+.stottly-scope .pf-compact-grid{grid-template-columns:repeat(2,1fr);}
+.stottly-scope .pf-banner{grid-template-columns:auto 1fr auto;}
+@media (max-width:860px){
+  .stottly-scope .pf-stats{grid-template-columns:repeat(2,1fr);gap:24px 16px;}
+}
+@media (max-width:520px){
+  .stottly-scope .pf-stats{grid-template-columns:1fr;}
+}
+@media (max-width:760px){
+  .stottly-scope .pf-compact-grid{grid-template-columns:1fr;}
+  .stottly-scope .pf-banner{grid-template-columns:1fr;text-align:center;justify-items:center;}
+}
+.stottly-scope .bkdemo-wrap{display:flex;flex-direction:column;align-items:center;gap:12px;padding:32px 20px;background:linear-gradient(160deg,#2a1810,#1a0f08);}
+.stottly-scope .bkdemo-phone{position:relative;width:240px;height:460px;border-radius:34px;background:#0c0805;border:6px solid #0c0805;box-shadow:0 30px 60px -25px rgba(0,0,0,0.6),0 0 0 2px rgba(255,255,255,0.04);overflow:hidden;cursor:grab;user-select:none;-webkit-user-select:none;touch-action:none;}
+.stottly-scope .bkdemo-phone:active{cursor:grabbing;}
+.stottly-scope .bkdemo-notch{position:absolute;top:0;left:50%;transform:translateX(-50%);width:80px;height:18px;background:#0c0805;border-radius:0 0 12px 12px;z-index:20;}
+.stottly-scope .bkdemo-screen{position:relative;width:100%;height:100%;border-radius:28px;overflow:hidden;background:#2b160e;}
+.stottly-scope .bkdemo-splash{position:absolute;inset:0;z-index:10;transition:transform .35s cubic-bezier(.4,0,.2,1),opacity .35s ease;}
+.stottly-scope .bkdemo-splash-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;aspect-ratio:auto;}
+.stottly-scope .bkdemo-splash-shade{position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,0.55) 0%,rgba(0,0,0,0) 30%);}
+.stottly-scope .bkdemo-cue{position:absolute;left:0;right:0;bottom:22px;display:flex;flex-direction:column;align-items:center;gap:4px;color:#fff;font-size:12.5px;letter-spacing:0.3px;font-weight:600;cursor:pointer;}
+.stottly-scope .bkdemo-chevron{font-size:15px;animation:bkdemoBounce 1.4s ease-in-out infinite;}
+@keyframes bkdemoBounce{0%,100%{transform:translateY(0);opacity:0.6;}50%{transform:translateY(-6px);opacity:1;}}
+.stottly-scope .bkdemo-dashboard{position:absolute;inset:0;background:#2b160e;display:flex;flex-direction:column;}
+.stottly-scope .bkdemo-dash-header{background:#512f21;padding:14px 16px 10px;border-bottom:2px solid #d62300;display:flex;align-items:center;justify-content:space-between;}
+.stottly-scope .bkdemo-dash-header b{color:#f3e9df;font-size:13.5px;font-weight:700;display:block;}
+.stottly-scope .bkdemo-dash-header span{color:#c99a72;font-size:9.5px;}
+.stottly-scope .bkdemo-dash-reset{background:none;border:none;color:#c99a72;font-size:15px;cursor:pointer;padding:4px;line-height:1;}
+.stottly-scope .bkdemo-tiles{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:10px 12px;}
+.stottly-scope .bkdemo-tile{border-radius:10px;padding:12px 6px;text-align:center;color:#fff;font-size:10.5px;font-weight:700;}
+.stottly-scope .bkdemo-tile .bkico{font-size:16px;display:block;margin-bottom:4px;}
+.stottly-scope .bkdemo-tile.red{background:#d62300;}
+.stottly-scope .bkdemo-tile.dark{background:#512f2a;color:#f0e4de;}
+.stottly-scope .bkdemo-tile.tan{background:#d4a574;color:#512f2a;}
+.stottly-scope .bkdemo-tasks{margin:4px 12px 12px;background:#512f2a;border:1px solid #d62300;border-radius:10px;padding:10px 12px;flex:1;overflow:hidden;}
+.stottly-scope .bkdemo-tasks .ttl{color:#f3e9df;font-size:10.5px;font-weight:700;margin-bottom:8px;}
+.stottly-scope .bkdemo-task-row{background:#f3e9df;border-radius:6px;padding:6px 8px;font-size:9.5px;color:#512f2a;margin-bottom:6px;display:flex;align-items:center;gap:6px;}
+.stottly-scope .bkdemo-task-row .dot{width:9px;height:9px;border-radius:50%;border:2px solid #d62300;flex-shrink:0;}
+.stottly-scope .bkdemo-caption{font-size:12px;color:#c99a72;text-align:center;max-width:260px;}
+</style>
+
+<section class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="wrap page-hero-content">
+    <div class="breadcrumb">Portfolio</div>
+    <h1>The friction we fixed, and the proof it worked.</h1>
+    <p>A selection of our most impactful client work, plus the ventures that same discipline has since built. Most case studies are anonymized due to their proprietary nature and represent aggregated patterns of work rather than individual client disclosures.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-bottom:0;">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-label">Ventures We've Built</div>
+      <h2>Same discipline. Now our own products.</h2>
+      <p>Agentic Forge, CryptoifAI, and Gurilla Studios are proof of the same pattern behind every engagement below: spot the friction, build the system, make it stick.</p>
+    </div>
+  </div>
+</section>
+
+<section style="padding:0;margin-top:32px;">
+  <div style="background:linear-gradient(155deg,#0D1017,#161A22);padding:56px 24px;border-bottom:1px solid var(--line);">
+    <div class="wrap pf-banner" style="max-width:960px;display:grid;gap:32px;align-items:center;">
+      <svg viewBox="0 0 200 200" style="width:72px;height:72px;flex:0 0 auto;" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="pfCfaiGrad" gradientUnits="userSpaceOnUse" x1="68" y1="132" x2="144" y2="56">
+            <stop offset="0%" stop-color="#5C7CFA"/>
+            <stop offset="100%" stop-color="#8C7CFF"/>
+          </linearGradient>
+        </defs>
+        <circle cx="100" cy="100" r="66" fill="none" stroke="#5C7CFA" stroke-width="9"/>
+        <line x1="68" y1="132" x2="122" y2="78" stroke="url(#pfCfaiGrad)" stroke-width="9" stroke-linecap="round"/>
+        <circle cx="68" cy="132" r="8" fill="#5C7CFA"/>
+        <polygon points="143.6,56.4 134.4,84 116,65.6" fill="#8C7CFF"/>
+      </svg>
+      <div>
+        <div style="display:inline-block;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#5DCAA5;font-weight:600;margin-bottom:10px;">A StottifAI Build &middot; v2 Live &amp; Free</div>
+        <h3 style="font-size:23px;font-weight:700;color:#E7E9EC;margin-bottom:8px;">CryptoifAI v2: an autonomous crypto trading system, built the same way we build everything.</h3>
+        <p style="color:#8A90A0;font-size:14.5px;max-width:560px;">Pattern-trained models, a disciplined risk layer, and 8 independent safeguards on every trade. Now with live per-coin status and phone push alerts. Live and trading real funds since February 2026, and free for anyone to use.</p>
+      </div>
+      <a href="/ventures/cryptoifai" style="display:inline-block;background:#8C7CFF;color:#0D1017;font-weight:700;text-decoration:none;border-radius:10px;padding:13px 26px;font-size:14.5px;white-space:nowrap;">Get CryptoifAI →</a>
+    </div>
+  </div>
+</section>
+
+<section style="padding:0;">
+  <div style="background:linear-gradient(155deg,var(--sky1),var(--white));padding:56px 24px;">
+    <div class="wrap pf-banner" style="max-width:960px;display:grid;gap:32px;align-items:center;">
+      <svg viewBox="0 0 100 120" style="width:52px;height:62px;color:var(--accent-deep);flex:0 0 auto;" xmlns="http://www.w3.org/2000/svg">
+        <path fill="currentColor" d="M8 112 42 31V13L48 3v109H36V61l-14 51H8Z"/>
+        <path fill="currentColor" d="m52 3 6 10v18l34 81H78L64 61v51H52V3Z"/>
+        <path fill="currentColor" d="M52 48h25v10H52zM52 68h19v9H52z"/>
+      </svg>
+      <div>
+        <div style="display:inline-block;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--accent-deep);font-weight:600;margin-bottom:10px;">Coming Soon</div>
+        <h3 style="font-size:23px;font-weight:700;color:var(--ink);margin-bottom:8px;">Agentic Forge: a business operating system, built to replace the stack.</h3>
+        <p style="color:var(--muted);font-size:14.5px;max-width:560px;">One coordinated workspace instead of a patchwork of separate tools. Interested in early access? Reach out directly.</p>
+      </div>
+      <a href="mailto:info@stottlyenterprises.com" style="display:inline-block;background:var(--accent-deep);color:var(--white);font-weight:700;text-decoration:none;border-radius:10px;padding:13px 26px;font-size:14.5px;white-space:nowrap;">Get in touch →</a>
+    </div>
+  </div>
+</section>
+
+<section style="padding:0;">
+  <div style="background:linear-gradient(155deg,#0D1F1A,#132821);padding:56px 24px;border-bottom:1px solid var(--line);">
+    <div class="wrap pf-banner" style="max-width:960px;display:grid;gap:32px;align-items:center;">
+      <svg viewBox="0 0 100 100" style="width:60px;height:60px;flex:0 0 auto;" xmlns="http://www.w3.org/2000/svg">
+        <rect x="8" y="20" width="70" height="60" rx="10" fill="none" stroke="#34D399" stroke-width="6"/>
+        <path d="M78 38 L94 26 V74 L78 62 Z" fill="none" stroke="#34D399" stroke-width="6" stroke-linejoin="round"/>
+        <polygon points="34,36 34,64 58,50" fill="#34D399"/>
+      </svg>
+      <div>
+        <div style="display:inline-block;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#34D399;font-weight:600;margin-bottom:10px;">A Stottly Build &middot; Live</div>
+        <h3 style="font-size:23px;font-weight:700;color:#E7E9EC;margin-bottom:8px;">Gurilla Studios: full-service media production, run the same way we run everything.</h3>
+        <p style="color:#8A90A0;font-size:14.5px;max-width:560px;">Brand, content, video production and editing, and motion graphics, one studio instead of five vendors, built on the same operational discipline behind every engagement above.</p>
+      </div>
+      <a href="/ventures/gurilla-studios" style="display:inline-block;background:#34D399;color:#0D1F1A;font-weight:700;text-decoration:none;border-radius:10px;padding:13px 26px;font-size:14.5px;white-space:nowrap;">Visit Gurilla Studios →</a>
+    </div>
+  </div>
+</section>
+
+<section style="padding:0;">
+  <div style="background:linear-gradient(155deg,var(--sky1),var(--white));padding:56px 24px;">
+    <div class="wrap pf-banner" style="max-width:960px;display:grid;gap:32px;align-items:center;">
+      <img src="data:image/jpeg;base64,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" alt="D.E.E.D.S. app icon" style="width:72px;height:72px;flex:0 0 auto;border-radius:18px;">
+      <div>
+        <div style="display:inline-block;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--accent-deep);font-weight:600;margin-bottom:10px;">First App Store Release &middot; Launching August 2026</div>
+        <h3 style="font-size:23px;font-weight:700;color:var(--ink);margin-bottom:8px;">D.E.E.D.S.: a personal operating system, built with the same discipline.</h3>
+        <p style="color:var(--muted);font-size:14.5px;max-width:560px;">Tasks, goals, health, relationships, business, calendar, and reflection in one private command center. Currently in alpha ahead of a public launch this August.</p>
+      </div>
+      <a href="mailto:info@stottlyenterprises.com" style="display:inline-block;background:var(--accent-deep);color:var(--white);font-weight:700;text-decoration:none;border-radius:10px;padding:13px 26px;font-size:14.5px;white-space:nowrap;">Get in touch →</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" style="padding-top:64px;">
+  <div class="wrap">
+
+    <div class="section-head">
+      <div class="section-label">Client Work</div>
+      <h2>Where the friction actually got fixed.</h2>
+    </div>
+
+    <div class="case-detail case-detail-split">
+      <div class="body">
+        <div class="tag">Flagship Case Study</div>
+        <h3>Restaurant Operations: From Paper Checklists to a System Managers Actually Use</h3>
+        <p><b>Context:</b> An international Burger King franchise operator was running shift management the way most of the industry still does: paper checklists, verbal handoffs, and spreadsheets that lived in someone's inbox.</p>
+        <p><b>Friction:</b> Shift readiness, food safety, and labor tracking all depended on individual manager habits. Nothing was standardized, nothing was visible past a single shift, and problems surfaced only after they'd already cost time or money.</p>
+        <p><b>Intervention:</b> We designed and built a manager-first digital operations hub: daily checklists tied to real standards, real-time issue tracking, shift handoff notes, and labor awareness tools, built around how managers actually move through a shift, not how a corporate system assumes they do.</p>
+        <p><b>Adoption:</b> Built for speed and clarity so it would survive contact with a fast-paced kitchen instead of getting abandoned after week one. Multi-lingual support and a visual, low-friction interface removed the usual reasons frontline teams reject new systems.</p>
+        <p><b>Result:</b> Delivered to the client and in active use across their franchise operations. The architecture extends cleanly to multi-unit oversight and broader QSR brands. Deployment specifics are withheld under client confidentiality.</p>
+        <a class="venture-link" href="https://stottifai.com/case-studies.html">See the full case study on StottifAI →</a>
+      </div>
+      <div class="bka-embed-frame">
+        <div class="bkapp-scope">
+<style>
+.bkapp-scope{--bk-red:#d62300;--bk-dark:#512f2a;--bk-darker:#2b160e;--bk-tan:#d4a574;--bk-cream:#f3e9df;--bk-muted:#c99a72;position:relative;width:100%;max-width:400px;margin:0 auto;height:min(720px,78vh);min-height:520px;border-radius:26px;overflow:hidden;box-shadow:0 30px 70px -30px rgba(0,0,0,0.55);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bk-darker);color:var(--bk-cream);font-size:13px;}
+@media (max-width:480px){.bkapp-scope{max-width:100%;border-radius:18px;height:min(640px,72vh);}}
+.bkapp-scope *{box-sizing:border-box;}
+.bkapp-scope button{font-family:inherit;}
+
+/* ---- splash ---- */
+.bkapp-scope .bka-splash{position:absolute;inset:0;background:linear-gradient(160deg,#7a1500 0%,#4a1200 45%,#2b160e 100%);display:flex;flex-direction:column;align-items:center;justify-content:flex-end;text-align:center;padding:60px 24px 70px;transition:transform .45s cubic-bezier(.4,0,.2,1),opacity .4s ease;cursor:grab;z-index:20;}
+.bkapp-scope .bka-splash.leaving{transform:translateY(-100%);opacity:0;}
+.bkapp-scope .bka-splash-shade{position:absolute;inset:0;background:radial-gradient(circle at 50% 30%,rgba(255,140,60,0.18),transparent 60%);}
+.bkapp-scope .bka-splash-mark{width:84px;height:84px;border-radius:50%;background:var(--bk-red);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:13px;letter-spacing:1px;margin-bottom:22px;box-shadow:0 12px 40px -12px rgba(214,35,0,0.7);position:relative;}
+.bkapp-scope .bka-splash h1{font-size:clamp(28px,6vw,42px);font-weight:800;margin:0 0 8px;letter-spacing:-0.5px;position:relative;}
+.bkapp-scope .bka-splash p.bka-sub{color:var(--bk-muted);font-size:14px;margin:0 0 40px;position:relative;}
+.bkapp-scope .bka-cue{position:relative;display:flex;flex-direction:column;align-items:center;gap:6px;color:#fff;font-size:13px;letter-spacing:0.4px;font-weight:600;}
+.bkapp-scope .bka-chevron{font-size:18px;animation:bkaBounce 1.4s ease-in-out infinite;}
+@keyframes bkaBounce{0%,100%{transform:translateY(0);opacity:0.6;}50%{transform:translateY(-8px);opacity:1;}}
+.bkapp-scope .bka-demo-tag{position:absolute;top:18px;left:50%;transform:translateX(-50%);font-size:10px;letter-spacing:1.2px;text-transform:uppercase;color:rgba(255,255,255,0.55);border:1px solid rgba(255,255,255,0.25);border-radius:20px;padding:5px 12px;z-index:2;}
+
+/* ---- app shell ---- */
+.bkapp-scope .bka-app{position:absolute;inset:0;display:flex;flex-direction:column;opacity:0;transition:opacity .3s ease .1s;}
+.bkapp-scope .bka-app.active{opacity:1;}
+.bkapp-scope .bka-header{background:var(--bk-dark);border-bottom:2px solid var(--bk-red);padding:14px 20px;display:flex;align-items:center;justify-content:space-between;flex-shrink:0;}
+.bkapp-scope .bka-header-left{display:flex;align-items:center;gap:10px;}
+.bkapp-scope .bka-header-left .bka-back{display:none;background:none;border:none;color:var(--bk-cream);font-size:18px;cursor:pointer;padding:2px 4px;}
+.bkapp-scope .bka-header-left .bka-back.show{display:inline-block;}
+.bkapp-scope .bka-header b{font-size:16px;font-weight:800;display:block;}
+.bkapp-scope .bka-header span.bka-sub-lbl{color:var(--bk-muted);font-size:10.5px;}
+.bkapp-scope .bka-header-right{display:flex;align-items:center;gap:10px;}
+.bkapp-scope .bka-lang-toggle{display:flex;background:var(--bk-darker);border-radius:20px;padding:3px;gap:2px;}
+.bkapp-scope .bka-lang-toggle button{background:none;border:none;color:var(--bk-muted);font-size:10.5px;font-weight:700;padding:5px 10px;border-radius:16px;cursor:pointer;}
+.bkapp-scope .bka-lang-toggle button.active{background:var(--bk-red);color:#fff;}
+.bkapp-scope .bka-exit{background:none;border:1px solid rgba(255,255,255,0.25);color:var(--bk-cream);font-size:10.5px;padding:6px 12px;border-radius:16px;cursor:pointer;}
+
+.bkapp-scope .bka-body{flex:1;overflow-y:auto;position:relative;}
+.bkapp-scope .bka-screen{display:none;padding:22px 20px 60px;max-width:820px;margin:0 auto;}
+.bkapp-scope .bka-screen.active{display:block;}
+
+/* dashboard */
+.bkapp-scope .bka-tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:22px;}
+.bkapp-scope .bka-tile{border-radius:14px;padding:20px 10px;text-align:center;color:#fff;font-size:12.5px;font-weight:700;border:none;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:8px;transition:transform .15s ease;}
+.bkapp-scope .bka-tile:hover{transform:translateY(-2px);}
+.bkapp-scope .bka-tile:active{transform:scale(0.97);}
+.bkapp-scope .bka-tile .bka-ico{font-size:24px;}
+.bkapp-scope .bka-tile.large{grid-column:span 1;padding:26px 10px;}
+.bkapp-scope .bka-tile.red{background:linear-gradient(160deg,#e2380a,var(--bk-red));}
+.bkapp-scope .bka-tile.dark{background:linear-gradient(160deg,#63392f,var(--bk-dark));}
+.bkapp-scope .bka-tile.tan{background:linear-gradient(160deg,#deb289,var(--bk-tan));color:var(--bk-dark);}
+
+.bkapp-scope .bka-grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px;}
+@media (max-width:640px){.bkapp-scope .bka-grid2{grid-template-columns:1fr;}}
+.bkapp-scope .bka-card{background:var(--bk-dark);border-radius:12px;padding:16px 16px 14px;}
+.bkapp-scope .bka-card .ttl{font-size:12px;font-weight:700;color:var(--bk-cream);margin-bottom:10px;display:flex;align-items:center;justify-content:space-between;}
+.bkapp-scope .bka-card .ttl span.n{font-size:10px;color:var(--bk-muted);font-weight:600;}
+.bkapp-scope .bka-row{background:rgba(243,233,223,0.06);border-radius:8px;padding:9px 11px;font-size:11.5px;margin-bottom:6px;display:flex;align-items:center;justify-content:space-between;cursor:pointer;}
+.bkapp-scope .bka-row:hover{background:rgba(243,233,223,0.1);}
+.bkapp-scope .bka-row .status-ok{color:#5DCAA5;font-weight:700;font-size:10.5px;}
+.bkapp-scope .bka-row .status-pending{color:var(--bk-muted);font-weight:700;font-size:10.5px;}
+.bkapp-scope .bka-task-row{background:var(--bk-cream);color:var(--bk-dark);border-radius:8px;padding:8px 10px;font-size:11.5px;margin-bottom:6px;display:flex;align-items:center;gap:8px;cursor:pointer;}
+.bkapp-scope .bka-task-row .dot{width:14px;height:14px;border-radius:50%;border:2px solid var(--bk-red);flex-shrink:0;}
+.bkapp-scope .bka-task-row.done{opacity:0.55;text-decoration:line-through;}
+.bkapp-scope .bka-task-row.done .dot{background:var(--bk-red);}
+
+/* sub-screen chrome */
+.bkapp-scope .bka-field-label{font-size:10.5px;color:var(--bk-muted);font-weight:700;text-transform:uppercase;letter-spacing:0.5px;margin:16px 0 7px;}
+.bkapp-scope .bka-field-label:first-child{margin-top:0;}
+.bkapp-scope .bka-chip-row{display:flex;gap:7px;flex-wrap:wrap;}
+.bkapp-scope .bka-chip{background:var(--bk-dark);color:var(--bk-cream);border:1px solid #6b463a;border-radius:22px;padding:7px 14px;font-size:11.5px;cursor:pointer;}
+.bkapp-scope .bka-chip.active{background:var(--bk-red);border-color:var(--bk-red);color:#fff;}
+.bkapp-scope .bka-select,.bkapp-scope .bka-input,.bkapp-scope .bka-textarea{width:100%;background:var(--bk-dark);border:1px solid #6b463a;border-radius:8px;color:var(--bk-cream);font-size:12.5px;padding:10px 12px;font-family:inherit;}
+.bkapp-scope .bka-textarea{resize:vertical;min-height:64px;}
+.bkapp-scope .bka-btn{display:block;width:100%;background:linear-gradient(160deg,#e2380a,var(--bk-red));color:#fff;border:none;border-radius:10px;padding:13px;font-size:13px;font-weight:700;margin-top:18px;cursor:pointer;}
+.bkapp-scope .bka-btn:disabled{opacity:0.5;cursor:default;}
+.bkapp-scope .bka-btn.ghost{background:none;border:1px solid #6b463a;color:var(--bk-cream);margin-top:8px;}
+
+/* checklist */
+.bkapp-scope .bka-chk-row{background:var(--bk-cream);border-radius:8px;padding:10px 12px;font-size:12px;color:var(--bk-dark);margin-bottom:7px;display:flex;align-items:flex-start;gap:9px;cursor:pointer;}
+.bkapp-scope .bka-chk-row .box{width:16px;height:16px;border-radius:4px;border:1.5px solid var(--bk-red);flex-shrink:0;margin-top:1px;display:flex;align-items:center;justify-content:center;font-size:10px;color:var(--bk-red);}
+.bkapp-scope .bka-chk-row.checked{opacity:0.6;}
+.bkapp-scope .bka-chk-row.checked .box{background:var(--bk-red);color:#fff;}
+.bkapp-scope .bka-chk-meta{font-size:9.5px;color:#8a7360;margin-top:2px;}
+.bkapp-scope .bka-photo-req{font-size:9px;background:rgba(214,35,0,0.12);color:#a11700;border-radius:5px;padding:1px 5px;margin-left:5px;font-weight:700;}
+.bkapp-scope .bka-chk-summary{display:flex;justify-content:space-between;align-items:center;background:var(--bk-dark);border-radius:10px;padding:11px 14px;margin-bottom:14px;font-size:11.5px;}
+.bkapp-scope .bka-chk-summary b{font-size:16px;}
+.bkapp-scope .bka-export{background:none;border:1px solid #6b463a;color:var(--bk-cream);font-size:10.5px;padding:6px 11px;border-radius:16px;cursor:pointer;display:inline-flex;align-items:center;gap:5px;}
+
+/* cash count */
+.bkapp-scope .bka-cash-section{margin-bottom:6px;}
+.bkapp-scope .bka-cash-row{display:flex;justify-content:space-between;align-items:center;background:var(--bk-dark);border-radius:8px;padding:8px 12px;font-size:12px;margin-bottom:6px;}
+.bkapp-scope .bka-cash-row input{width:64px;background:var(--bk-darker);border:1px solid #6b463a;border-radius:5px;color:var(--bk-cream);font-size:12px;padding:5px 7px;text-align:center;font-family:inherit;}
+.bkapp-scope .bka-cash-total{margin-top:16px;background:linear-gradient(160deg,#e2380a,var(--bk-red));border-radius:10px;padding:14px;text-align:center;color:#fff;}
+.bkapp-scope .bka-cash-total b{font-size:22px;display:block;}
+.bkapp-scope .bka-cash-total span{font-size:10.5px;opacity:0.85;}
+.bkapp-scope .bka-variance{margin-top:8px;text-align:center;font-size:11.5px;font-weight:700;}
+.bkapp-scope .bka-variance.ok{color:#5DCAA5;}
+.bkapp-scope .bka-variance.off{color:#ff8a6b;}
+
+/* temp log */
+.bkapp-scope .bka-temp-badge{margin-top:10px;padding:10px 12px;border-radius:8px;font-size:11.5px;font-weight:700;text-align:center;}
+.bkapp-scope .bka-temp-badge.pass{background:rgba(93,202,165,0.15);color:#5DCAA5;}
+.bkapp-scope .bka-temp-badge.fail{background:rgba(255,80,50,0.15);color:#ff5032;}
+.bkapp-scope .bka-temp-list .bka-row{cursor:default;}
+
+/* translator */
+.bkapp-scope .bka-lang-row{display:flex;align-items:center;justify-content:center;gap:12px;margin:10px 0 26px;}
+.bkapp-scope .bka-lang-chip{background:var(--bk-dark);color:var(--bk-cream);border-radius:22px;padding:8px 18px;font-size:12px;font-weight:700;cursor:pointer;border:none;}
+.bkapp-scope .bka-lang-chip.active{background:var(--bk-red);color:#fff;}
+.bkapp-scope .bka-mic-wrap{display:flex;flex-direction:column;align-items:center;gap:12px;}
+.bkapp-scope .bka-mic{width:78px;height:78px;border-radius:50%;background:linear-gradient(160deg,#e2380a,var(--bk-red));color:#fff;border:none;font-size:28px;cursor:pointer;display:flex;align-items:center;justify-content:center;}
+.bkapp-scope .bka-mic.listening{animation:bkaPulse 1s ease-in-out infinite;}
+@keyframes bkaPulse{0%,100%{box-shadow:0 0 0 0 rgba(214,35,0,0.5);}50%{box-shadow:0 0 0 16px rgba(214,35,0,0);}}
+.bkapp-scope .bka-translate-bubble{background:var(--bk-dark);border-radius:12px;padding:16px;font-size:13px;margin-top:24px;text-align:center;}
+.bkapp-scope .bka-translate-bubble .orig{color:var(--bk-muted);font-size:11px;margin-bottom:6px;}
+.bkapp-scope .bka-translate-bubble .out{font-size:16px;font-weight:700;}
+.bkapp-scope .bka-translate-note{text-align:center;font-size:10px;color:var(--bk-muted);margin-top:20px;}
+
+/* reports */
+.bkapp-scope .bka-stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:20px;}
+@media (max-width:640px){.bkapp-scope .bka-stat-grid{grid-template-columns:repeat(2,1fr);}}
+.bkapp-scope .bka-stat{background:var(--bk-dark);border-radius:10px;padding:14px 8px;text-align:center;}
+.bkapp-scope .bka-stat b{display:block;font-size:22px;font-weight:800;}
+.bkapp-scope .bka-stat span{color:var(--bk-muted);font-size:9.5px;}
+.bkapp-scope .bka-report-row{background:var(--bk-cream);color:var(--bk-dark);border-radius:8px;padding:9px 12px;font-size:11.5px;margin-bottom:6px;display:flex;justify-content:space-between;}
+.bkapp-scope .bka-report-row span.meta{color:#8a7360;font-size:10px;}
+
+/* footer */
+.bkapp-scope .bka-footer{text-align:center;font-size:9.5px;color:var(--bk-muted);padding:18px 0 4px;}
+
+/* toast */
+.bkapp-scope .bka-toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--bk-dark);color:var(--bk-cream);padding:11px 20px;border-radius:24px;font-size:12.5px;font-weight:600;box-shadow:0 12px 30px -10px rgba(0,0,0,0.5);opacity:0;pointer-events:none;transition:opacity .25s ease,transform .25s ease;z-index:50;border:1px solid var(--bk-red);}
+.bkapp-scope .bka-toast.show{opacity:1;transform:translateX(-50%) translateY(0);}
+</style>
+
+<div class="bka-splash" id="bkaSplash">
+  <div class="bka-splash-shade"></div>
+  <div class="bka-demo-tag">A recreation for demonstration purposes only &mdash; not the live application</div>
+  <div class="bka-splash-mark">BK<br>OPS</div>
+  <h1>BK Operations</h1>
+  <p class="bka-sub">Restaurant Operations Platform</p>
+  <div class="bka-cue" id="bkaCue"><span class="bka-chevron">&#8963;</span>Swipe up to enter</div>
+</div>
+
+<div class="bka-app" id="bkaApp">
+  <div class="bka-header">
+    <div class="bka-header-left">
+      <button class="bka-back" id="bkaBack">&#8592;</button>
+      <div>
+        <b id="bkaHeaderTitle">BK Operations</b>
+        <span class="bka-sub-lbl" id="bkaHeaderSub">Dashboard</span>
+      </div>
+    </div>
+    <div class="bka-header-right">
+      <div class="bka-lang-toggle">
+        <button class="active" data-lang="en">EN</button>
+        <button data-lang="es">ES</button>
+      </div>
+      <button class="bka-exit" id="bkaExit">&#8635; Restart</button>
+    </div>
+  </div>
+
+  <div class="bka-body">
+
+    <!-- DASHBOARD -->
+    <div class="bka-screen active" data-screen="dashboard">
+      <div class="bka-tiles">
+        <button class="bka-tile red large" data-open="checklist"><span class="bka-ico">&#9745;</span>Checklist</button>
+        <button class="bka-tile red large" data-open="cash"><span class="bka-ico">&#128181;</span>Cash Count</button>
+        <button class="bka-tile dark" data-open="incident"><span class="bka-ico">&#9888;</span>Incident</button>
+        <button class="bka-tile dark" data-open="temp"><span class="bka-ico">&#127777;</span>Temp</button>
+        <button class="bka-tile tan" data-open="translate"><span class="bka-ico">&#127760;</span>Translate</button>
+        <button class="bka-tile tan" data-open="reports"><span class="bka-ico">&#128196;</span>Reports</button>
+      </div>
+
+      <div class="bka-grid2">
+        <div class="bka-card">
+          <div class="ttl">Shift Summary <span class="n">today</span></div>
+          <div class="bka-row" data-open="checklist"><span>AM Shift checklist</span><span class="status-ok">Complete</span></div>
+          <div class="bka-row" data-open="checklist"><span>PM Shift checklist</span><span class="status-pending">Pending</span></div>
+          <div class="bka-row" data-open="checklist"><span>Shift change walk</span><span class="status-ok">Complete</span></div>
+          <div class="bka-row" data-open="checklist"><span>Food safety walk</span><span class="status-pending">Pending</span></div>
+        </div>
+        <div class="bka-card">
+          <div class="ttl">Temp Status <span class="n">last logged</span></div>
+          <div class="bka-row"><span>Walk-in Cooler</span><span class="status-ok">37&deg;F &middot; OK</span></div>
+          <div class="bka-row"><span>Walk-in Freezer</span><span class="status-ok">-4&deg;F &middot; OK</span></div>
+          <div class="bka-row"><span>Fryer</span><span class="status-ok">350&deg;F &middot; OK</span></div>
+          <div class="bka-row" data-open="temp"><span>+ Log new reading</span><span></span></div>
+        </div>
+      </div>
+
+      <div class="bka-grid2">
+        <div class="bka-card">
+          <div class="ttl">Current Tasks <span class="n" id="bkaTaskCount">0/6</span></div>
+          <div id="bkaTaskList"></div>
+        </div>
+        <div class="bka-card">
+          <div class="ttl">Recent Incidents <span class="n">7 days</span></div>
+          <div class="bka-row"><span>Guest complaint &middot; order accuracy</span><span class="status-pending">Low</span></div>
+          <div class="bka-row"><span>Equipment: ice machine slow</span><span class="status-pending">Medium</span></div>
+          <div class="bka-row" data-open="incident"><span>+ Log new incident</span><span></span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKLIST -->
+    <div class="bka-screen" data-screen="checklist">
+      <div class="bka-chip-row" id="bkaChkTypeRow" style="margin-bottom:16px;">
+        <button class="bka-chip active" data-chk-type="opening">AM Shift</button>
+        <button class="bka-chip" data-chk-type="closing">PM Shift</button>
+        <button class="bka-chip" data-chk-type="shift_handoff">Shift Change</button>
+        <button class="bka-chip" data-chk-type="food_safety_walk">Food Safety Walk</button>
+      </div>
+      <div class="bka-chk-summary">
+        <div><b id="bkaChkDone">0</b><div style="color:var(--bk-muted);font-size:10px;">items checked</div></div>
+        <button class="bka-export">&#8681; Export to form</button>
+      </div>
+      <div id="bkaChkList"></div>
+      <div class="bka-field-label">Notes</div>
+      <textarea class="bka-textarea" placeholder="Add notes for this checklist..."></textarea>
+      <div class="bka-field-label">Photos</div>
+      <button class="bka-btn ghost">&#128247; Upload photo</button>
+      <button class="bka-btn" id="bkaChkSubmit">Save checklist</button>
+    </div>
+
+    <!-- CASH COUNT -->
+    <div class="bka-screen" data-screen="cash">
+      <div class="bka-field-label">Register #</div>
+      <input class="bka-input" placeholder="e.g. Register 2">
+      <div class="bka-field-label">Shift</div>
+      <div class="bka-chip-row">
+        <button class="bka-chip active">Morning</button>
+        <button class="bka-chip">Afternoon</button>
+        <button class="bka-chip">Night</button>
+      </div>
+      <div class="bka-field-label">Cashier Name</div>
+      <input class="bka-input" placeholder="Full name">
+      <div class="bka-field-label">Expected Amount</div>
+      <input class="bka-input" id="bkaCashExpected" placeholder="$0.00">
+
+      <div class="bka-field-label">Bills</div>
+      <div class="bka-cash-section" id="bkaCashBills"></div>
+      <div class="bka-field-label">Loose Coins</div>
+      <div class="bka-cash-section" id="bkaCashCoins"></div>
+      <div class="bka-field-label">Rolled Coins</div>
+      <div class="bka-cash-section" id="bkaCashRolls"></div>
+
+      <div class="bka-cash-total">
+        <b id="bkaCashTotal">$0.00</b>
+        <span>counted total</span>
+      </div>
+      <div class="bka-variance ok" id="bkaCashVariance">No expected amount entered yet</div>
+      <div class="bka-field-label">Explanation (if variance)</div>
+      <textarea class="bka-textarea" placeholder="Explain any variance..."></textarea>
+      <button class="bka-btn" id="bkaCashSubmit">Submit cash count</button>
+    </div>
+
+    <!-- INCIDENT -->
+    <div class="bka-screen" data-screen="incident">
+      <div class="bka-field-label">Incident Type</div>
+      <select class="bka-select" id="bkaIncType">
+        <option value="guest_complaint">Guest Complaint</option>
+        <option value="food_safety">Food Safety</option>
+        <option value="employee_injury">Employee Injury</option>
+        <option value="cash_variance">Cash Variance</option>
+        <option value="equipment_failure">Equipment Failure</option>
+        <option value="staffing">Staffing Issue</option>
+        <option value="other">Other</option>
+      </select>
+      <div class="bka-field-label">Severity</div>
+      <div class="bka-chip-row" id="bkaSeverityRow">
+        <button class="bka-chip" data-sev="low" style="border-color:#3fae7a;">Low</button>
+        <button class="bka-chip active" data-sev="medium" style="border-color:#c98a1f;">Medium</button>
+        <button class="bka-chip" data-sev="high" style="border-color:#c9631f;">High</button>
+        <button class="bka-chip" data-sev="critical" style="border-color:var(--bk-red);">Critical</button>
+      </div>
+      <div class="bka-field-label">Shift</div>
+      <div class="bka-chip-row">
+        <button class="bka-chip active">Morning</button>
+        <button class="bka-chip">Afternoon</button>
+        <button class="bka-chip">Night</button>
+      </div>
+      <div class="bka-field-label">Description</div>
+      <textarea class="bka-textarea" placeholder="What happened?"></textarea>
+      <div class="bka-field-label">Immediate Action Taken</div>
+      <textarea class="bka-textarea" placeholder="What did you do about it?"></textarea>
+      <button class="bka-btn" id="bkaIncSubmit">Log incident</button>
+    </div>
+
+    <!-- TEMP LOG -->
+    <div class="bka-screen" data-screen="temp">
+      <div class="bka-field-label">Equipment</div>
+      <select class="bka-select" id="bkaTempEquip">
+        <option value="walk_in_cooler" data-min="33" data-max="40">Walk-in Cooler (33&ndash;40&deg;F)</option>
+        <option value="walk_in_freezer" data-min="-10" data-max="0">Walk-in Freezer (-10&ndash;0&deg;F)</option>
+        <option value="prep_cooler" data-min="33" data-max="40">Prep Cooler (33&ndash;40&deg;F)</option>
+        <option value="broiler" data-min="350" data-max="500">Broiler (350&ndash;500&deg;F)</option>
+        <option value="fryer" data-min="325" data-max="375">Fryer (325&ndash;375&deg;F)</option>
+        <option value="holding_cabinet" data-min="135" data-max="165">Holding Cabinet (135&ndash;165&deg;F)</option>
+      </select>
+      <div class="bka-field-label">Temperature (&deg;F)</div>
+      <input class="bka-input" id="bkaTempReading" type="number" placeholder="Enter reading">
+      <div class="bka-temp-badge" id="bkaTempBadge" style="display:none;"></div>
+      <div class="bka-field-label">Shift</div>
+      <div class="bka-chip-row">
+        <button class="bka-chip active">Morning</button>
+        <button class="bka-chip">Afternoon</button>
+        <button class="bka-chip">Night</button>
+      </div>
+      <div id="bkaTempCorrectiveWrap" style="display:none;">
+        <div class="bka-field-label">Corrective Action</div>
+        <textarea class="bka-textarea" placeholder="What corrective action was taken?"></textarea>
+      </div>
+      <button class="bka-btn" id="bkaTempSubmit">Log temperature</button>
+    </div>
+
+    <!-- TRANSLATOR -->
+    <div class="bka-screen" data-screen="translate">
+      <div style="text-align:center;color:var(--bk-muted);font-size:12px;margin-bottom:4px;">Live Translator</div>
+      <div class="bka-lang-row">
+        <button class="bka-lang-chip active" data-tr="en">English</button>
+        <span style="color:var(--bk-muted);">&#8596;</span>
+        <button class="bka-lang-chip" data-tr="es">Espa&ntilde;ol</button>
+      </div>
+      <div class="bka-mic-wrap">
+        <button class="bka-mic" id="bkaMic">&#127908;</button>
+        <div id="bkaMicLabel" style="font-size:12px;color:var(--bk-muted);font-weight:600;">Tap to speak</div>
+      </div>
+      <div class="bka-translate-bubble" id="bkaTranslateBubble" style="display:none;">
+        <div class="orig" id="bkaTrOrig"></div>
+        <div class="out" id="bkaTrOut"></div>
+      </div>
+      <div class="bka-translate-note">Demo simulation &mdash; speech input isn't wired up in this recreation.</div>
+    </div>
+
+    <!-- REPORTS -->
+    <div class="bka-screen" data-screen="reports">
+      <div class="bka-stat-grid">
+        <div class="bka-stat"><b>18</b><span>Checklists this week</span></div>
+        <div class="bka-stat"><b>3</b><span>Incidents logged</span></div>
+        <div class="bka-stat"><b>97%</b><span>Temp compliance</span></div>
+        <div class="bka-stat"><b>$4.25</b><span>Cash variance total</span></div>
+      </div>
+      <div class="bka-field-label">Recent Completions</div>
+      <div class="bka-report-row"><span>AM Shift checklist</span><span class="meta">Today, 7:02 AM &middot; D. Stott</span></div>
+      <div class="bka-report-row"><span>Cash count &middot; Register 1</span><span class="meta">Today, 6:48 AM &middot; D. Stott</span></div>
+      <div class="bka-report-row"><span>Food safety walk</span><span class="meta">Yesterday, 9:14 PM &middot; M. Rivera</span></div>
+      <div class="bka-report-row"><span>Incident: equipment failure</span><span class="meta">Yesterday, 2:30 PM &middot; M. Rivera</span></div>
+      <div class="bka-report-row"><span>PM Shift checklist</span><span class="meta">Yesterday, 9:40 PM &middot; D. Stott</span></div>
+      <button class="bka-btn ghost">&#8681; Export full report packet</button>
+    </div>
+
+  </div>
+  <div class="bka-footer">A recreation for demonstration purposes only &mdash; not the live application &middot; &copy; Stottly Enterprises</div>
+</div>
+
+<div class="bka-toast" id="bkaToast"></div>
+
+<script>
+(function(){
+  var root = document.currentScript.closest('.bkapp-scope');
+  if(!root) return;
+
+  var splash = root.querySelector('#bkaSplash');
+  var cue = root.querySelector('#bkaCue');
+  var app = root.querySelector('#bkaApp');
+  var toastEl = root.querySelector('#bkaToast');
+  var startY = null, dragUp = 0, leaving = false;
+
+  function toast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add('show');
+    clearTimeout(toastEl._t);
+    toastEl._t = setTimeout(function(){ toastEl.classList.remove('show'); }, 2200);
+  }
+
+  function enterApp(){
+    if(leaving) return;
+    leaving = true;
+    splash.classList.add('leaving');
+    setTimeout(function(){
+      splash.style.display = 'none';
+      app.classList.add('active');
+    }, 380);
+  }
+
+  splash.addEventListener('touchstart', function(e){ startY = e.touches[0].clientY; }, {passive:true});
+  splash.addEventListener('touchmove', function(e){
+    if(startY === null) return;
+    dragUp = startY - e.touches[0].clientY;
+    if(dragUp > 80) enterApp();
+  }, {passive:true});
+  splash.addEventListener('touchend', function(){ startY = null; dragUp = 0; });
+  splash.addEventListener('mousedown', function(e){ startY = e.clientY; });
+  splash.addEventListener('mouseup', function(e){
+    if(startY !== null && (startY - e.clientY) > 60){ enterApp(); }
+    startY = null;
+  });
+  splash.addEventListener('wheel', function(e){ if(e.deltaY < -20) enterApp(); }, {passive:true});
+  cue.addEventListener('click', enterApp);
+  splash.addEventListener('click', function(e){ if(e.target === splash || splash.contains(e.target)) enterApp(); });
+
+  root.querySelector('#bkaExit').addEventListener('click', function(){
+    app.classList.remove('active');
+    splash.style.display = '';
+    splash.classList.remove('leaving');
+    leaving = false;
+    showScreen('dashboard');
+  });
+
+  /* -------- navigation -------- */
+  var screens = root.querySelectorAll('.bka-screen');
+  var backBtn = root.querySelector('#bkaBack');
+  var headerTitle = root.querySelector('#bkaHeaderTitle');
+  var headerSub = root.querySelector('#bkaHeaderSub');
+  var titles = {
+    dashboard:['BK Operations','Dashboard'],
+    checklist:['Checklists','Daily shift checklist'],
+    cash:['Cash Count','Register reconciliation'],
+    incident:['Log Incident','Report an issue'],
+    temp:['Temperature Check','Equipment log'],
+    translate:['Live Translator','EN ↔ ES'],
+    reports:['Reports','Shift & compliance history']
+  };
+
+  function showScreen(name){
+    screens.forEach(function(s){ s.classList.toggle('active', s.getAttribute('data-screen') === name); });
+    backBtn.classList.toggle('show', name !== 'dashboard');
+    headerTitle.textContent = titles[name][0];
+    headerSub.textContent = titles[name][1];
+    root.querySelector('.bka-body').scrollTop = 0;
+  }
+
+  Array.prototype.forEach.call(root.querySelectorAll('[data-open]'), function(el){
+    el.addEventListener('click', function(){ showScreen(this.getAttribute('data-open')); });
+  });
+  backBtn.addEventListener('click', function(){ showScreen('dashboard'); });
+
+  /* -------- language toggle (chrome only, demo simplification) -------- */
+  var langBtns = root.querySelectorAll('.bka-lang-toggle button');
+  var esLabels = {
+    dashboard:['Operaciones BK','Panel'],
+    checklist:['Listas de Verificación','Lista de turno diaria'],
+    cash:['Conteo de Efectivo','Conciliación de caja'],
+    incident:['Registrar Incidente','Reportar un problema'],
+    temp:['Control de Temperatura','Registro de equipo'],
+    translate:['Traductor en Vivo','EN ↔ ES'],
+    reports:['Informes','Historial de cumplimiento']
+  };
+  var currentLang = 'en';
+  langBtns.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      langBtns.forEach(function(b){ b.classList.remove('active'); });
+      btn.classList.add('active');
+      currentLang = btn.getAttribute('data-lang');
+      var active = root.querySelector('.bka-screen.active');
+      var name = active.getAttribute('data-screen');
+      var map = currentLang === 'es' ? esLabels : titles;
+      headerTitle.textContent = map[name][0];
+      headerSub.textContent = map[name][1];
+      toast(currentLang === 'es' ? 'Cambiado a Español (demo de interfaz)' : 'Switched to English');
+    });
+  });
+
+  /* -------- current tasks -------- */
+  var tasks = [
+    'Correct soda mix calibration',
+    'Assess kitchen flow and pace',
+    'Evaluate expo station condition and organization',
+    'Reinforce guest engagement standards',
+    'Address tardiness issues',
+    'Deep clean stainless steel surfaces'
+  ];
+  var taskList = root.querySelector('#bkaTaskList');
+  var taskCount = root.querySelector('#bkaTaskCount');
+  function renderTasks(){
+    taskList.innerHTML = '';
+    var done = 0;
+    tasks.forEach(function(t, i){
+      var row = document.createElement('div');
+      row.className = 'bka-task-row' + (t._done ? ' done' : '');
+      var dot = document.createElement('span');
+      dot.className = 'dot';
+      var lbl = document.createElement('span');
+      lbl.textContent = t;
+      row.appendChild(dot);
+      row.appendChild(lbl);
+      row.addEventListener('click', function(){
+        tasks[i] = t; // no-op keep ref
+        row.classList.toggle('done');
+        renderCount();
+      });
+      taskList.appendChild(row);
+    });
+    renderCount();
+  }
+  function renderCount(){
+    var doneEls = taskList.querySelectorAll('.bka-task-row.done').length;
+    taskCount.textContent = doneEls + '/' + tasks.length;
+  }
+  renderTasks();
+
+  /* -------- checklist -------- */
+  var checklistTypes = {
+    opening: { label:'AM Shift', items:[
+      {id:'travel_path_6am', label:'Travel Path Tracking (6:00 AM)'},
+      {id:'travel_path_9_30am', label:'Travel Path Tracking (9:30 AM)'},
+      {id:'travel_path_12_30pm', label:'Travel Path Tracking (12:30 PM)'},
+      {id:'check_dining', label:'Dining room checked and clean (Daily Cleaning Planner)'},
+      {id:'check_restrooms', label:'Restrooms checked and clean (Daily Cleaning Planner)'},
+      {id:'stock_restroom_supplies', label:'Paper towels, soap, sanitizer, and gloves stocked'},
+      {id:'sanitizer_buckets', label:'Sanitizer buckets washed and refilled (once per hour)'},
+      {id:'sanitizer_buckets_photo', label:'Sanitizer buckets setup', photo:true},
+      {id:'test_strips_available', label:'Sanitizer test strips readily available'},
+      {id:'sanitizer_test_strips_photo', label:'Sanitizer test strips', photo:true},
+      {id:'veg_wash_test_strip_photo', label:'Veg-wash test strip', photo:true},
+      {id:'chemical_rack_photo', label:'Chemical rack (soap, sanitizer, dish soap)', photo:true},
+      {id:'waste_bins', label:'Waste bins emptied, liners in good repair'},
+      {id:'health_inspection_posted', label:'Current health inspection report available'},
+      {id:'violations_corrected', label:'All critical & non-critical violations corrected'},
+      {id:'labeled_containers', label:'Containers and spray bottles properly labeled'},
+      {id:'ppm_190_400', label:'Sanitizer at proper PPM (190-400)'},
+      {id:'color_coded_cloths', label:'Color-coded cloths stored in sanitizer solutions'},
+      {id:'brushes_clean', label:'All brushes clean, stored properly, dated'},
+      {id:'thermometers_calibrated', label:'Thermometers calibrated and available'},
+      {id:'cutting_boards_clean', label:'Cutting boards clean and in use'},
+      {id:'hazardous_foods_labeled', label:'Potentially hazardous foods labeled with hold times'},
+      {id:'date_labels_current', label:'All date labels current and visible'},
+      {id:'food_thawed_properly', label:'Thawed food stored properly'},
+      {id:'ice_scoops_available', label:'Ice scoops/holders clean and available'},
+      {id:'product_temps_safe', label:'Product temps kept in safe range'}
+    ]},
+    closing: { label:'PM Shift', items:[
+      {id:'travel_path_close', label:'Travel Path Tracking (closing rounds)'},
+      {id:'broiler_cleaning_photo', label:'Broiler deep-cleaned per WIBs schedule', photo:true},
+      {id:'fryer_filtered', label:'Fryers filtered/boiled out'},
+      {id:'walk_in_org', label:'Walk-in cooler/freezer organized, FIFO followed'},
+      {id:'trash_taken_out', label:'All trash taken to dumpster, area swept'},
+      {id:'equipment_powered_down', label:'Non-essential equipment powered down'},
+      {id:'safe_counted', label:'Safe counted and reconciled'},
+      {id:'doors_locked', label:'All doors and windows locked'},
+      {id:'alarm_set', label:'Alarm system armed'}
+    ]},
+    shift_handoff: { label:'Shift Change', items:[
+      {id:'cash_drawers_verified', label:'Cash drawers verified and signed off'},
+      {id:'open_tasks_communicated', label:'Open tasks communicated to incoming manager'},
+      {id:'staffing_confirmed', label:'Incoming shift staffing confirmed'},
+      {id:'equipment_issues_flagged', label:'Any equipment issues flagged to incoming MOD'}
+    ]},
+    food_safety_walk: { label:'Food Safety Walk', items:[
+      {id:'temps_spot_checked', label:'Spot-checked hot/cold holding temps'},
+      {id:'handwashing_observed', label:'Handwashing compliance observed'},
+      {id:'cross_contam_check', label:'No cross-contamination risks observed'},
+      {id:'labeling_spot_check', label:'Date labels spot-checked'}
+    ]}
+  };
+  var chkState = {};
+  var chkTypeRow = root.querySelector('#bkaChkTypeRow');
+  var chkList = root.querySelector('#bkaChkList');
+  var chkDone = root.querySelector('#bkaChkDone');
+  var currentChkType = 'opening';
+
+  function renderChecklist(){
+    var def = checklistTypes[currentChkType];
+    chkList.innerHTML = '';
+    var doneCount = 0;
+    def.items.forEach(function(item){
+      var checked = !!(chkState[currentChkType] && chkState[currentChkType][item.id]);
+      if(checked) doneCount++;
+      var row = document.createElement('div');
+      row.className = 'bka-chk-row' + (checked ? ' checked' : '');
+
+      var box = document.createElement('span');
+      box.className = 'box';
+      box.textContent = checked ? '✓' : '';
+      row.appendChild(box);
+
+      var textWrap = document.createElement('span');
+      var labelLine = document.createElement('div');
+      labelLine.textContent = item.label;
+      if(item.photo){
+        var photoTag = document.createElement('span');
+        photoTag.className = 'bka-photo-req';
+        photoTag.textContent = '\u{1F4F7} PHOTO';
+        labelLine.appendChild(photoTag);
+      }
+      textWrap.appendChild(labelLine);
+      if(checked){
+        var meta = document.createElement('div');
+        meta.className = 'bka-chk-meta';
+        meta.textContent = 'Checked by You · just now';
+        textWrap.appendChild(meta);
+      }
+      row.appendChild(textWrap);
+
+      row.addEventListener('click', function(){
+        if(!chkState[currentChkType]) chkState[currentChkType] = {};
+        if(chkState[currentChkType][item.id]) return; // immutable once checked, matches real app
+        chkState[currentChkType][item.id] = true;
+        renderChecklist();
+      });
+      chkList.appendChild(row);
+    });
+    chkDone.textContent = doneCount + '/' + def.items.length;
+  }
+  Array.prototype.forEach.call(chkTypeRow.querySelectorAll('[data-chk-type]'), function(btn){
+    btn.addEventListener('click', function(){
+      chkTypeRow.querySelectorAll('.bka-chip').forEach(function(b){ b.classList.remove('active'); });
+      btn.classList.add('active');
+      currentChkType = btn.getAttribute('data-chk-type');
+      renderChecklist();
+    });
+  });
+  renderChecklist();
+  root.querySelector('#bkaChkSubmit').addEventListener('click', function(){ toast('Checklist saved'); });
+  root.querySelector('.bka-export').addEventListener('click', function(){ toast('Exported to BK form (demo)'); });
+
+  /* -------- cash count -------- */
+  var denominations = {
+    bill: [
+      {label:'$100', value:100}, {label:'$50', value:50}, {label:'$20', value:20},
+      {label:'$10', value:10}, {label:'$5', value:5}, {label:'$1', value:1}
+    ],
+    coin: [
+      {label:'Quarters', value:0.25}, {label:'Dimes', value:0.10},
+      {label:'Nickels', value:0.05}, {label:'Pennies', value:0.01}
+    ],
+    roll: [
+      {label:'Roll Quarters', value:10}, {label:'Roll Dimes', value:5},
+      {label:'Roll Nickels', value:2}, {label:'Roll Pennies', value:0.50}
+    ]
+  };
+  var cashCounts = {};
+  function buildCashRows(container, list, prefix){
+    list.forEach(function(d, i){
+      var key = prefix + '_' + i;
+      var row = document.createElement('div');
+      row.className = 'bka-cash-row';
+
+      var label = document.createElement('span');
+      label.textContent = d.label + ' ($' + d.value.toFixed(2) + ' ea)';
+      row.appendChild(label);
+
+      var input = document.createElement('input');
+      input.type = 'number';
+      input.min = '0';
+      input.value = '0';
+      input.setAttribute('data-key', key);
+      input.setAttribute('data-val', d.value);
+      row.appendChild(input);
+
+      container.appendChild(row);
+    });
+  }
+  buildCashRows(root.querySelector('#bkaCashBills'), denominations.bill, 'bill');
+  buildCashRows(root.querySelector('#bkaCashCoins'), denominations.coin, 'coin');
+  buildCashRows(root.querySelector('#bkaCashRolls'), denominations.roll, 'roll');
+
+  var cashTotalEl = root.querySelector('#bkaCashTotal');
+  var cashVarianceEl = root.querySelector('#bkaCashVariance');
+  var cashExpected = root.querySelector('#bkaCashExpected');
+
+  function recalcCash(){
+    var total = 0;
+    root.querySelectorAll('.bka-cash-row input').forEach(function(inp){
+      var qty = parseFloat(inp.value) || 0;
+      var val = parseFloat(inp.getAttribute('data-val')) || 0;
+      total += qty * val;
+    });
+    cashTotalEl.textContent = '$' + total.toFixed(2);
+    var expected = parseFloat((cashExpected.value || '').replace(/[^0-9.]/g,''));
+    if(!expected){
+      cashVarianceEl.textContent = 'No expected amount entered yet';
+      cashVarianceEl.className = 'bka-variance ok';
+    } else {
+      var diff = total - expected;
+      if(Math.abs(diff) < 0.01){
+        cashVarianceEl.textContent = 'Balanced — matches expected amount';
+        cashVarianceEl.className = 'bka-variance ok';
+      } else {
+        cashVarianceEl.textContent = (diff > 0 ? 'Over by $' : 'Short by $') + Math.abs(diff).toFixed(2);
+        cashVarianceEl.className = 'bka-variance off';
+      }
+    }
+  }
+  root.querySelectorAll('.bka-cash-row input').forEach(function(inp){ inp.addEventListener('input', recalcCash); });
+  cashExpected.addEventListener('input', recalcCash);
+  recalcCash();
+  root.querySelector('#bkaCashSubmit').addEventListener('click', function(){ toast('Cash count submitted'); });
+
+  /* -------- shift chips (cash/incident/temp, generic) -------- */
+  Array.prototype.forEach.call(root.querySelectorAll('.bka-chip-row'), function(rowEl){
+    if(rowEl.id === 'bkaChkTypeRow' || rowEl.id === 'bkaSeverityRow') return;
+    var chips = rowEl.querySelectorAll('.bka-chip');
+    chips.forEach(function(chip){
+      chip.addEventListener('click', function(){
+        chips.forEach(function(c){ c.classList.remove('active'); });
+        chip.classList.add('active');
+      });
+    });
+  });
+  var sevRow = root.querySelector('#bkaSeverityRow');
+  sevRow.querySelectorAll('.bka-chip').forEach(function(chip){
+    chip.addEventListener('click', function(){
+      sevRow.querySelectorAll('.bka-chip').forEach(function(c){ c.classList.remove('active'); });
+      chip.classList.add('active');
+    });
+  });
+  root.querySelector('#bkaIncSubmit').addEventListener('click', function(){ toast('Incident logged'); });
+
+  /* -------- temp log -------- */
+  var tempSelect = root.querySelector('#bkaTempEquip');
+  var tempReading = root.querySelector('#bkaTempReading');
+  var tempBadge = root.querySelector('#bkaTempBadge');
+  var tempCorrectiveWrap = root.querySelector('#bkaTempCorrectiveWrap');
+  function checkTemp(){
+    var val = parseFloat(tempReading.value);
+    if(isNaN(val)){ tempBadge.style.display = 'none'; tempCorrectiveWrap.style.display = 'none'; return; }
+    var opt = tempSelect.options[tempSelect.selectedIndex];
+    var min = parseFloat(opt.getAttribute('data-min'));
+    var max = parseFloat(opt.getAttribute('data-max'));
+    var inRange = val >= min && val <= max;
+    tempBadge.style.display = 'block';
+    tempBadge.className = 'bka-temp-badge ' + (inRange ? 'pass' : 'fail');
+    tempBadge.textContent = inRange ? ('✓ Within safe range (' + min + '–' + max + '°F)') : ('⚠ OUT OF RANGE (safe: ' + min + '–' + max + '°F)');
+    tempCorrectiveWrap.style.display = inRange ? 'none' : 'block';
+  }
+  tempSelect.addEventListener('change', checkTemp);
+  tempReading.addEventListener('input', checkTemp);
+  root.querySelector('#bkaTempSubmit').addEventListener('click', function(){ toast('Temperature logged'); });
+
+  /* -------- translator (canned demo) -------- */
+  var mic = root.querySelector('#bkaMic');
+  var micLabel = root.querySelector('#bkaMicLabel');
+  var trBubble = root.querySelector('#bkaTranslateBubble');
+  var trOrig = root.querySelector('#bkaTrOrig');
+  var trOut = root.querySelector('#bkaTrOut');
+  var trLangBtns = root.querySelectorAll('.bka-lang-chip');
+  var trDir = 'en';
+  trLangBtns.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      trLangBtns.forEach(function(b){ b.classList.remove('active'); });
+      btn.classList.add('active');
+      trDir = btn.getAttribute('data-tr');
+    });
+  });
+  var phrases = [
+    {en:'Wash your hands before returning to the line.', es:'Lávate las manos antes de volver a la línea.'},
+    {en:'The fryer oil needs to be changed.', es:'El aceite de la freidora necesita cambiarse.'},
+    {en:'Can you check the walk-in temperature?', es:'¿Puedes revisar la temperatura del walk-in?'},
+    {en:'Great job on today’s shift.', es:'Buen trabajo en el turno de hoy.'}
+  ];
+  var pIndex = 0;
+  mic.addEventListener('click', function(){
+    mic.classList.toggle('listening');
+    if(mic.classList.contains('listening')){
+      micLabel.textContent = 'Listening...';
+      trBubble.style.display = 'none';
+      setTimeout(function(){
+        mic.classList.remove('listening');
+        micLabel.textContent = 'Tap to speak';
+        var p = phrases[pIndex % phrases.length];
+        pIndex++;
+        var fromEs = trDir === 'es';
+        trOrig.textContent = fromEs ? p.es : p.en;
+        trOut.textContent = fromEs ? p.en : p.es;
+        trBubble.style.display = 'block';
+      }, 1400);
+    } else {
+      micLabel.textContent = 'Tap to speak';
+    }
+  });
+
+  /* -------- direct-link support: #checklist, #cash, etc -------- */
+  if(location.hash){
+    var target = location.hash.replace('#','');
+    if(titles[target]){
+      enterApp();
+      splash.style.display = 'none';
+      app.classList.add('active');
+      showScreen(target);
+    }
+  }
+})();
+</script>
+        </div>
+      </div>
+    </div>
+    <div class="portfolio-grid pf-compact-grid" style="margin-top:32px;">
+      <div class="p-card">
+        <div class="tag">Turnaround</div>
+        <h3>Operational Recovery</h3>
+        <p>Service businesses came to us showing performance decline, drift, or pre-acquisition risk. We mapped the early-warning signals, rebuilt the metrics that mattered, and put decision frameworks and leadership rhythms in place that teams kept using well after the engagement ended.</p>
+      </div>
+      <div class="p-card">
+        <div class="tag">Systems Design</div>
+        <h3>Training &amp; Onboarding</h3>
+        <p>A high-turnover environment was losing new hires faster than training could replace them. We mapped a leaner onboarding progression, set clear readiness standards, and built a hands-on learning flow that shortened time-to-productivity without breaking the labor plan.</p>
+      </div>
+      <div class="p-card">
+        <div class="tag">Career Systems</div>
+        <h3>Resume Systems</h3>
+        <p>Career changers needed one story that could flex across industries without rebuilding it from scratch each time. We built a modular, ATS-optimized resume and narrative system, reframed for modern hiring managers.</p>
+      </div>
+      <div class="p-card">
+        <div class="tag">Brand</div>
+        <h3>Brand &amp; Identity Direction</h3>
+        <p>An early-stage operator needed to look as credible as the work it did, without an agency budget or hype aesthetics. We defined a calm, confident tone and anchored the whole visual system in that same operational credibility.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section" style="padding-top:64px;">
+  <div class="wrap" style="text-align:center;">
+    <div class="section-head" style="margin-left:auto;margin-right:auto;">
+      <div class="section-label">Looking for more AI work?</div>
+      <h2>Additional AI-integrated projects live on StottifAI.</h2>
+      <p>The full technical detail behind the BK Operations App, plus other AI-integrated work, is showcased on our AI venture's site.</p>
+    </div>
+    <a class="btn-secondary" href="https://stottifai.com/case-studies.html">See StottifAI Case Studies →</a>
+  </div>
+</section>
+
+<section class="cta-band">
+  <h2>Bring us the place where work is stuck.</h2>
+  <a class="btn-primary" href="/contact">Start Your Project</a>
+</section>
+
+
+<script src="https://helloskip.com/agent.js" data-agent-id="7RwCEiIXeglIzRmdTu8L"></script>
+</div>
+
+<div class="stottly-scope">
+<style>
+.stottly-scope .footer-ticker{max-width:280px;overflow:hidden;margin-top:48px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 24px,#000 calc(100% - 24px),transparent);mask-image:linear-gradient(90deg,transparent,#000 24px,#000 calc(100% - 24px),transparent);}
+.stottly-scope .footer-ticker-track{display:flex;align-items:center;gap:22px;width:max-content;white-space:nowrap;animation:stottlyFooterScroll 26s linear infinite;}
+.stottly-scope .footer-ticker-track a{font-size:12.5px;color:var(--muted);text-decoration:none;letter-spacing:0.2px;}
+.stottly-scope .footer-ticker-track a:hover{color:var(--ink);}
+.stottly-scope .footer-ticker-track .dot{color:var(--line);font-size:12px;}
+@keyframes stottlyFooterScroll{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+@media (prefers-reduced-motion: reduce){.stottly-scope .footer-ticker-track{animation:none;}}
+.stottly-scope .footer-grid{grid-template-columns:2fr 1fr 1fr;}
+@media (max-width:860px){
+  .stottly-scope .footer-grid{grid-template-columns:1fr 1fr;row-gap:32px;}
+  .stottly-scope .footer-grid > div:first-child{grid-column:1 / -1;}
+}
+@media (max-width:480px){
+  .stottly-scope .footer-grid{grid-template-columns:1fr;}
+  .stottly-scope .footer-grid > div:first-child{grid-column:auto;}
+}
+</style>
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>Stottly Enterprises</h4>
+        <p style="font-size:13.5px;max-width:280px;">The company behind the work: consulting, project management, and the ventures we build. Based in Central Florida.</p>
+        <div class="footer-ticker">
+          <div class="footer-ticker-track">
+            <a href="/press/pr-deeds">New: D.E.E.D.S. launches in August →</a>
+            <span class="dot">&#9679;</span>
+            <a href="/press/pr-cryptoifai-v2">New: CryptoifAI v2 is live →</a>
+            <span class="dot">&#9679;</span>
+            <a href="/press/pr-agentic-forge">Agentic Forge targets Q4 2026 →</a>
+            <span class="dot">&#9679;</span>
+            <a href="/press/pr-deeds">New: D.E.E.D.S. launches in August →</a>
+            <span class="dot">&#9679;</span>
+            <a href="/press/pr-cryptoifai-v2">New: CryptoifAI v2 is live →</a>
+            <span class="dot">&#9679;</span>
+            <a href="/press/pr-agentic-forge">Agentic Forge targets Q4 2026 →</a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/who-we-are">Who We Are</a></li>
+          <li><a href="/services">Services</a></li>
+          <li><a href="/ventures">Ventures</a></li>
+          <li><a href="/portfolio">Portfolio</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in Touch</h4>
+        <ul>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/press">Press</a></li>
+        </ul>
+      </div>
+    </div>
+    <div style="margin-top:32px;padding-top:20px;border-top:1px solid var(--line);display:flex;gap:20px;flex-wrap:wrap;font-size:12.5px;">
+      <a href="/privacy" style="color:var(--muted);">Privacy Policy</a>
+      <a href="/terms-of-service" style="color:var(--muted);">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy | Stottly Enterprises</title>
+<meta name="description" content="Privacy Policy for Stottly Enterprises.">
+<link rel="canonical" href="https://www.stottlyenterprises.com/privacy">
+<meta property="og:title" content="Privacy Policy | Stottly Enterprises">
+<meta property="og:description" content="Privacy Policy for Stottly Enterprises.">
+<meta property="og:url" content="https://www.stottlyenterprises.com/privacy">
+<meta property="og:type" content="website">
+<style>
+
+:root{
+  --ink:#2E3B4E;
+  --slate:#5B7A9D;
+  --muted:#7C8CA3;
+  --sky1:#F7FAFD;
+  --sky2:#E7F0F8;
+  --sky3:#D3E4F2;
+  --silver:#AEC4DA;
+  --accent:#6E93BE;
+  --accent-deep:#4B6E96;
+  --line:rgba(46,59,78,0.1);
+  --white:#FFFFFF;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  background:var(--sky1);
+  color:var(--ink);
+  line-height:1.65;
+  font-weight:300;
+}
+a{text-decoration:none;color:inherit;}
+img{max-width:100%;display:block;}
+.wrap{max-width:1140px;margin:0 auto;padding:0 32px;}
+.tracked{letter-spacing:3px;}
+
+/* NAV (shared across interior pages, non-hero version) */
+.site-header{background:var(--white);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50;}
+.site-header nav{display:flex;align-items:center;justify-content:space-between;padding:22px 32px;max-width:1140px;margin:0 auto;}
+.brand{display:flex;align-items:center;gap:12px;}
+.brand svg{width:28px;height:28px;}
+.brand .name{font-size:13px;letter-spacing:3px;color:var(--ink);font-weight:400;}
+.nav-links{display:flex;gap:34px;font-size:12.5px;letter-spacing:1.5px;color:var(--slate);text-transform:uppercase;}
+.nav-links a{transition:color .2s;}
+.nav-links a:hover,.nav-links a.active{color:var(--ink);}
+.nav-cta{border:1px solid var(--accent-deep);color:var(--accent-deep);padding:10px 22px;border-radius:30px;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;font-weight:400;}
+@media (max-width:860px){.nav-links{display:none;}}
+
+/* PAGE HERO (smaller, for interior pages) */
+.page-hero{position:relative;overflow:hidden;padding:80px 0 70px;}
+.page-hero-bg{position:absolute;inset:0;z-index:0;
+  background:radial-gradient(ellipse 600px 400px at 90% 0%, rgba(255,252,244,0.8), transparent 60%),
+  linear-gradient(155deg, #F7FAFD 0%, #EAF1F8 50%, #D9E7F3 100%);
+}
+.page-hero-content{position:relative;z-index:2;max-width:720px;}
+.breadcrumb{font-size:11.5px;letter-spacing:2px;text-transform:uppercase;color:var(--accent-deep);font-weight:500;margin-bottom:18px;}
+.page-hero h1{font-size:42px;font-weight:200;color:var(--ink);line-height:1.25;margin-bottom:16px;letter-spacing:-0.5px;}
+.page-hero p{font-size:16.5px;color:var(--muted);max-width:560px;}
+
+/* HERO with wave art (homepage only) */
+.hero{position:relative;overflow:hidden;min-height:760px;display:flex;flex-direction:column;}
+.hero-bg{position:absolute;inset:0;z-index:0;
+  background:
+    radial-gradient(ellipse 700px 500px at 12% 8%, rgba(255,252,244,0.95), transparent 60%),
+    linear-gradient(155deg, #F7FAFD 0%, #EAF1F8 35%, #D9E7F3 65%, #C3D9EC 100%);
+}
+.hero-bg svg{position:absolute;bottom:0;left:0;width:100%;height:78%;}
+.hero header{position:relative;z-index:5;}
+.hero-content{position:relative;z-index:5;flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:60px 32px 100px;}
+.eyebrow{font-size:11.5px;letter-spacing:4px;text-transform:uppercase;color:var(--accent-deep);font-weight:500;margin-bottom:18px;}
+.hero-divider{width:36px;height:1px;background:var(--accent-deep);opacity:0.5;margin-bottom:26px;}
+.hero h1{font-size:50px;font-weight:200;max-width:780px;line-height:1.25;margin-bottom:24px;color:var(--ink);letter-spacing:-0.5px;}
+.hero p{font-size:17px;color:var(--muted);max-width:480px;margin-bottom:40px;font-weight:300;}
+.btn-row{display:flex;gap:16px;flex-wrap:wrap;}
+.btn-primary{background:var(--ink);color:#fff;padding:15px 30px;border-radius:30px;font-weight:400;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;display:inline-block;}
+.btn-secondary{border:1px solid var(--line);color:var(--ink);padding:15px 30px;border-radius:30px;font-weight:400;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;display:inline-block;}
+
+/* DNA STRIP */
+.dna{background:var(--white);padding:64px 0;border-bottom:1px solid var(--line);}
+.dna-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:48px;text-align:center;}
+.dna-grid .num{font-size:11px;letter-spacing:3px;color:var(--accent-deep);font-weight:500;margin-bottom:14px;text-transform:uppercase;}
+.dna-grid h3{font-size:21px;color:var(--ink);margin-bottom:10px;font-weight:300;}
+.dna-grid p{font-size:14px;color:var(--muted);}
+
+.section{padding:96px 0;}
+.section-alt{background:var(--white);}
+.section-head{max-width:640px;margin:0 auto 56px;text-align:center;}
+.section-head.left{margin:0 0 48px;text-align:left;}
+.section-label{font-size:11.5px;text-transform:uppercase;letter-spacing:3px;color:var(--accent-deep);font-weight:500;margin-bottom:16px;}
+.section-head h2{font-size:32px;font-weight:200;color:var(--ink);line-height:1.3;}
+.section-head p{color:var(--muted);font-size:15px;margin-top:12px;}
+
+.services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
+.service-card{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:32px 26px;box-shadow:0 12px 30px -20px rgba(46,59,78,0.25);}
+.service-card .chip{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--sky3),var(--silver));margin-bottom:20px;}
+.service-card h3{font-size:16.5px;color:var(--ink);margin-bottom:10px;font-weight:500;}
+.service-card p{font-size:13.5px;color:var(--muted);}
+
+/* VENTURE SPOTLIGHT */
+.venture{background:linear-gradient(180deg,var(--sky1),var(--sky2));border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+.venture-inner{display:grid;grid-template-columns:1.1fr 0.9fr;gap:56px;align-items:center;padding:90px 0;}
+.venture-tag{display:inline-block;font-size:11px;letter-spacing:2px;text-transform:uppercase;background:rgba(124,92,255,0.1);color:#6C5CE7;padding:7px 16px;border-radius:20px;margin-bottom:22px;font-weight:600;}
+.venture h2{font-size:34px;font-weight:200;margin-bottom:18px;color:var(--ink);}
+.venture h2 b{background:linear-gradient(90deg,#4C6FFF,#8B5CF6);-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:600;}
+.venture p{font-size:15px;color:var(--muted);margin-bottom:28px;line-height:1.8;}
+.venture-link{font-weight:600;color:#5B4BDB;font-size:13.5px;letter-spacing:0.3px;}
+.venture-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:34px;box-shadow:0 20px 44px -24px rgba(46,59,78,0.3);}
+.venture-card .vc-title{font-weight:600;font-size:12px;letter-spacing:2px;text-transform:uppercase;margin-bottom:18px;color:var(--ink);}
+.venture-card ul{list-style:none;font-size:14px;color:var(--slate);}
+.venture-card li{padding:11px 0;border-bottom:1px solid var(--line);display:flex;gap:10px;align-items:center;}
+.venture-card li:last-child{border-bottom:none;}
+.venture-card li::before{content:"";width:6px;height:6px;border-radius:50%;background:linear-gradient(135deg,#4C6FFF,#8B5CF6);flex-shrink:0;}
+
+.portfolio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.p-card{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:30px 26px;box-shadow:0 12px 30px -20px rgba(46,59,78,0.2);}
+.p-card .tag{font-size:10.5px;text-transform:uppercase;letter-spacing:2px;color:var(--accent-deep);font-weight:600;margin-bottom:12px;}
+.p-card h3{font-size:18px;color:var(--ink);font-weight:400;margin-bottom:10px;}
+.p-card p{font-size:13.5px;color:var(--muted);}
+.p-card img{border-radius:10px;margin-bottom:18px;aspect-ratio:16/10;object-fit:cover;}
+
+.testimonial{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:96px 0;text-align:center;}
+.testimonial blockquote{font-size:26px;font-weight:200;color:var(--ink);max-width:760px;margin:0 auto 22px;line-height:1.55;font-style:italic;}
+.testimonial cite{font-size:12px;color:var(--muted);letter-spacing:2px;text-transform:uppercase;font-style:normal;}
+
+.cta-band{background:linear-gradient(135deg,var(--sky2),var(--sky3));padding:70px 0;text-align:center;}
+.cta-band h2{font-size:28px;color:var(--ink);font-weight:200;margin-bottom:26px;}
+
+footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top:1px solid var(--line);}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:32px;margin-bottom:44px;}
+.footer-grid h4{color:var(--ink);font-size:12px;letter-spacing:2px;text-transform:uppercase;margin-bottom:18px;font-weight:500;}
+.footer-grid ul{list-style:none;font-size:13.5px;}
+.footer-grid li{margin-bottom:11px;}
+.footer-grid a:hover{color:var(--ink);}
+.footer-bottom{border-top:1px solid var(--line);padding-top:26px;font-size:12px;display:flex;justify-content:space-between;letter-spacing:0.5px;}
+
+/* --- Interior page components --- */
+
+/* Two-column content + image */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;}
+.split img{border-radius:16px;box-shadow:0 24px 50px -30px rgba(46,59,78,0.35);aspect-ratio:4/5;object-fit:cover;}
+.split.reverse{direction:rtl;}
+.split.reverse > *{direction:ltr;}
+.split h2{font-size:30px;font-weight:200;margin-bottom:18px;color:var(--ink);}
+.split p{font-size:15px;color:var(--muted);margin-bottom:16px;line-height:1.85;}
+
+/* Values / DNA large */
+.value-list{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:20px;}
+.value-list .v{border-top:1px solid var(--line);padding-top:20px;}
+.value-list .num{font-size:11px;letter-spacing:2px;color:var(--accent-deep);font-weight:600;margin-bottom:10px;}
+.value-list h3{font-size:18px;font-weight:400;margin-bottom:8px;color:var(--ink);}
+.value-list p{font-size:13.5px;color:var(--muted);}
+
+/* Team grid */
+.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;}
+.team-card img{border-radius:16px;aspect-ratio:1/1;object-fit:cover;margin-bottom:16px;}
+.team-card h3{font-size:16px;font-weight:600;color:var(--ink);margin-bottom:4px;}
+.team-card span{font-size:12.5px;color:var(--muted);letter-spacing:0.5px;}
+
+/* Service detail blocks (image + list) */
+.service-block{display:grid;grid-template-columns:0.9fr 1.1fr;gap:56px;align-items:center;padding:70px 0;border-bottom:1px solid var(--line);}
+.service-block.reverse{grid-template-columns:1.1fr 0.9fr;}
+.service-block img{border-radius:16px;aspect-ratio:4/3;object-fit:cover;box-shadow:0 20px 44px -28px rgba(46,59,78,0.3);}
+.service-block.reverse img{order:2;}
+.service-block .num-tag{font-size:11px;letter-spacing:2px;color:var(--accent-deep);font-weight:600;margin-bottom:14px;text-transform:uppercase;}
+.service-block h3{font-size:26px;font-weight:200;margin-bottom:16px;color:var(--ink);}
+.service-block p{font-size:15px;color:var(--muted);margin-bottom:20px;line-height:1.8;}
+.service-block ul{list-style:none;}
+.service-block li{font-size:14px;color:var(--slate);padding:9px 0;border-top:1px solid var(--line);display:flex;gap:10px;align-items:center;}
+.service-block li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--accent-deep);flex-shrink:0;}
+
+/* Case study detail card */
+.case-detail{background:var(--white);border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:0 20px 50px -30px rgba(46,59,78,0.3);margin-bottom:32px;}
+.case-detail img{aspect-ratio:16/9;object-fit:cover;}
+.case-detail .body{padding:36px 40px;}
+.case-detail .tag{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--accent-deep);font-weight:600;margin-bottom:14px;}
+.case-detail h3{font-size:24px;font-weight:200;margin-bottom:14px;color:var(--ink);}
+.case-detail p{font-size:14.5px;color:var(--muted);margin-bottom:14px;line-height:1.8;}
+.case-detail .thumbs{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:20px;}
+.case-detail .thumbs img{border-radius:8px;aspect-ratio:3/4;object-fit:cover;}
+
+/* Blog */
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+.blog-card{background:var(--white);border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 12px 30px -20px rgba(46,59,78,0.2);}
+.blog-card img{aspect-ratio:16/10;object-fit:cover;}
+.blog-card .body{padding:22px 22px 26px;}
+.blog-card .tag{font-size:10.5px;text-transform:uppercase;letter-spacing:2px;color:var(--accent-deep);font-weight:600;margin-bottom:10px;}
+.blog-card h3{font-size:17px;font-weight:500;color:var(--ink);margin-bottom:10px;line-height:1.4;}
+.blog-card p{font-size:13px;color:var(--muted);}
+.blog-card .meta{font-size:11.5px;color:var(--muted);margin-top:14px;letter-spacing:0.5px;}
+.blog-featured{display:grid;grid-template-columns:1.1fr 0.9fr;gap:0;background:var(--white);border:1px solid var(--line);border-radius:20px;overflow:hidden;margin-bottom:48px;box-shadow:0 20px 50px -30px rgba(46,59,78,0.3);}
+.blog-featured img{height:100%;object-fit:cover;}
+.blog-featured .body{padding:44px 44px;display:flex;flex-direction:column;justify-content:center;}
+.blog-featured h3{font-size:26px;font-weight:200;color:var(--ink);margin-bottom:14px;}
+
+/* Contact */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;}
+.contact-info h2{font-size:28px;font-weight:200;margin-bottom:18px;color:var(--ink);}
+.contact-info p{font-size:15px;color:var(--muted);margin-bottom:28px;line-height:1.8;}
+.contact-detail{margin-bottom:20px;}
+.contact-detail .label{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--accent-deep);font-weight:600;margin-bottom:6px;}
+.contact-detail .value{font-size:15px;color:var(--ink);}
+.contact-form{background:var(--white);border:1px solid var(--line);border-radius:20px;padding:40px;box-shadow:0 20px 50px -30px rgba(46,59,78,0.3);}
+.form-row{margin-bottom:20px;}
+.form-row label{display:block;font-size:11.5px;letter-spacing:1.5px;text-transform:uppercase;color:var(--slate);margin-bottom:8px;font-weight:500;}
+.form-row input, .form-row textarea{width:100%;border:1px solid var(--line);border-radius:10px;padding:13px 16px;font-family:inherit;font-size:14px;color:var(--ink);background:var(--sky1);}
+.form-row textarea{min-height:110px;resize:vertical;}
+.form-submit{background:var(--ink);color:#fff;border:none;padding:15px 34px;border-radius:30px;font-weight:400;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;width:100%;}
+
+@media (max-width:900px){
+  .split{grid-template-columns:1fr;}
+  .split.reverse{direction:ltr;}
+  .service-block, .service-block.reverse{grid-template-columns:1fr;}
+  .service-block.reverse img{order:0;}
+  .blog-featured{grid-template-columns:1fr;}
+  .contact-grid{grid-template-columns:1fr;}
+  .case-detail .thumbs{grid-template-columns:repeat(2,1fr);}
+}
+@media (max-width:860px){
+  .hero h1{font-size:34px;}
+  .services-grid{grid-template-columns:1fr 1fr;}
+  .venture-inner{grid-template-columns:1fr;}
+  .portfolio-grid{grid-template-columns:1fr;}
+  .footer-grid{grid-template-columns:1fr 1fr;}
+  .dna-grid{grid-template-columns:1fr;gap:32px;}
+  .value-list{grid-template-columns:1fr;}
+  .team-grid{grid-template-columns:1fr;}
+  .blog-grid{grid-template-columns:1fr;}
+  .page-hero h1{font-size:30px;}
+}
+
+
+
+</style>
+</head>
+<body>
+<div class="stottly-nav-scope">
+<style>
+.stottly-nav-scope{position:relative;z-index:50;}
+.stottly-nav-scope .fancy-nav{position:sticky;top:0;z-index:60;background:rgba(255,255,255,0.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line);transition:box-shadow .35s ease,background .35s ease;}
+.stottly-nav-scope .fancy-nav.is-scrolled{box-shadow:0 12px 30px -22px rgba(46,59,78,0.45);background:rgba(255,255,255,0.97);}
+.stottly-nav-scope .fn-wrap{max-width:1140px;margin:0 auto;padding:0 32px;display:flex;align-items:center;justify-content:center;height:62px;}
+.stottly-nav-scope .fn-list{display:flex;align-items:center;gap:4px;list-style:none;margin:0;padding:0;}
+.stottly-nav-scope .fn-item{position:relative;}
+.stottly-nav-scope .fn-link{display:inline-flex;align-items:center;gap:5px;padding:10px 17px;font-size:12px;letter-spacing:1.8px;text-transform:uppercase;font-weight:600;color:var(--ink);text-decoration:none;position:relative;white-space:nowrap;}
+.stottly-nav-scope .fn-link::after{content:"";position:absolute;left:17px;right:17px;bottom:5px;height:1.5px;background:var(--accent-deep);transform:scaleX(0);transform-origin:left;transition:transform .4s cubic-bezier(.4,0,.2,1);}
+.stottly-nav-scope .fn-item:hover .fn-link::after,
+.stottly-nav-scope .fn-link.is-active::after{transform:scaleX(1);}
+.stottly-nav-scope .fn-link.is-active{color:var(--accent-deep);}
+.stottly-nav-scope .fn-caret{width:8px;height:8px;transition:transform .3s ease;opacity:.5;}
+.stottly-nav-scope .fn-item:hover .fn-caret{transform:rotate(180deg);}
+.stottly-nav-scope .fn-panel{position:absolute;top:100%;left:50%;transform:translate(-50%,10px);min-width:270px;background:var(--white);border:1px solid var(--line);border-radius:14px;box-shadow:0 24px 50px -25px rgba(46,59,78,0.35);padding:14px;opacity:0;visibility:hidden;transition:opacity .3s ease,transform .3s ease,visibility .3s;}
+.stottly-nav-scope .fn-item:hover .fn-panel{opacity:1;visibility:visible;transform:translate(-50%,0);}
+.stottly-nav-scope .fn-panel-group{margin-bottom:8px;}
+.stottly-nav-scope .fn-panel-group:last-child{margin-bottom:0;}
+.stottly-nav-scope .fn-panel a{display:block;padding:7px 12px;border-radius:8px;font-size:13.5px;color:var(--ink);text-decoration:none;letter-spacing:0.1px;transition:background .2s ease,color .2s ease,padding-left .2s ease;}
+.stottly-nav-scope .fn-panel a:hover{background:var(--sky1);padding-left:16px;color:var(--accent-deep);}
+.stottly-nav-scope .fn-panel .fn-sub{padding-left:12px;margin-top:2px;}
+.stottly-nav-scope .fn-panel .fn-sub a{font-size:12.5px;color:var(--muted);}
+.stottly-nav-scope .fn-divider{height:1px;background:var(--line);margin:8px 4px;}
+.stottly-nav-scope .fn-burger{display:none;width:24px;height:18px;position:relative;cursor:pointer;border:none;background:none;padding:0;}
+.stottly-nav-scope .fn-burger span{position:absolute;left:0;right:0;height:2.5px;background:linear-gradient(90deg,var(--accent-deep),#8B5CF6);border-radius:2px;transition:transform .4s cubic-bezier(.4,0,.2,1),opacity .25s ease .1s,width .3s ease,background .3s ease;}
+.stottly-nav-scope .fn-burger span:nth-child(1){top:0;}
+.stottly-nav-scope .fn-burger span:nth-child(2){top:8px;width:70%;}
+.stottly-nav-scope .fn-burger span:nth-child(3){top:16px;}
+.stottly-nav-scope .fn-burger:hover span:nth-child(2){width:100%;}
+.stottly-nav-scope .fn-burger.is-open span:nth-child(1){top:8px;transform:rotate(45deg);}
+.stottly-nav-scope .fn-burger.is-open span:nth-child(2){opacity:0;transform:scaleX(0);transition:opacity .15s ease,transform .15s ease;}
+.stottly-nav-scope .fn-burger.is-open span:nth-child(3){top:8px;width:100%;transform:rotate(-45deg);}
+@media (max-width:900px){
+  .stottly-nav-scope .fn-list{display:none;position:absolute;top:62px;left:0;right:0;background:var(--white);flex-direction:column;align-items:stretch;border-bottom:1px solid var(--line);box-shadow:0 24px 40px -30px rgba(46,59,78,0.4);padding:10px 20px 20px;gap:0;}
+  .stottly-nav-scope .fn-list.is-open{display:flex;}
+  .stottly-nav-scope .fn-item{width:100%;}
+  .stottly-nav-scope .fn-link{width:100%;padding:14px 6px;justify-content:space-between;}
+  .stottly-nav-scope .fn-link::after{display:none;}
+  .stottly-nav-scope .fn-panel{position:static;opacity:1;visibility:visible;transform:none;box-shadow:none;border:none;display:none;padding:0 0 6px 14px;}
+  .stottly-nav-scope .fn-item.is-open .fn-panel{display:block;}
+  .stottly-nav-scope .fn-burger{display:block;}
+  .stottly-nav-scope .fn-wrap{justify-content:space-between;}
+}
+</style>
+<nav class="fancy-nav" id="stottlyFancyNav">
+  <div class="fn-wrap">
+    <ul class="fn-list" id="stottlyFnList">
+      <li class="fn-item"><a class="fn-link" href="/">Home</a></li>
+      <li class="fn-item"><a class="fn-link" href="/who-we-are">Who We Are</a></li>
+      <li class="fn-item"><a class="fn-link" href="/services">Services</a></li>
+      <li class="fn-item">
+        <a class="fn-link" href="/ventures">Ventures <svg class="fn-caret" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <div class="fn-panel">
+          <div class="fn-panel-group">
+            <a href="/ventures/stottifai" style="font-weight:600;">StottifAI</a>
+            <div class="fn-sub">
+              <a href="https://stottifai.com/what-we-do.html">What We Do</a>
+              <a href="https://stottifai.com/case-studies.html">Case Studies</a>
+              <a href="https://stottifai.com/about.html">About</a>
+              <a href="https://stottifai.com/contact.html">Contact</a>
+            </div>
+          </div>
+          <div class="fn-divider"></div>
+          <div class="fn-panel-group">
+            <a href="/ventures/gurilla-studios">Gurilla Studios</a>
+            <a href="https://cartcurios.com" target="_blank" rel="noopener">CartCurios ↗</a>
+          </div>
+        </div>
+      </li>
+      <li class="fn-item"><a class="fn-link" href="/portfolio">Portfolio</a></li>
+      <li class="fn-item"><a class="fn-link" href="/blog">Blog</a></li>
+      <li class="fn-item"><a class="fn-link" href="/contact">Contact</a></li>
+    </ul>
+    <button class="fn-burger" id="stottlyFnBurger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<script>
+(function(){
+  var nav = document.getElementById('stottlyFancyNav');
+  var burger = document.getElementById('stottlyFnBurger');
+  var list = document.getElementById('stottlyFnList');
+  if(!nav) return;
+
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 8){ nav.classList.add('is-scrolled'); }
+    else{ nav.classList.remove('is-scrolled'); }
+  }, {passive:true});
+
+  if(burger && list){
+    burger.addEventListener('click', function(){
+      list.classList.toggle('is-open');
+      burger.classList.toggle('is-open');
+    });
+    Array.prototype.forEach.call(list.querySelectorAll('.fn-item'), function(item){
+      var link = item.querySelector('.fn-link');
+      var panel = item.querySelector('.fn-panel');
+      if(panel && link){
+        link.addEventListener('click', function(e){
+          if(window.innerWidth <= 900){
+            e.preventDefault();
+            item.classList.toggle('is-open');
+          }
+        });
+      }
+    });
+  }
+
+  var path = window.location.pathname.replace(/\/$/, '') || '/';
+  Array.prototype.forEach.call(list.querySelectorAll('.fn-link'), function(link){
+    var href = link.getAttribute('href');
+    if(!href || href.indexOf('http') === 0) return;
+    var linkPath = href.replace(/\/$/, '') || '/';
+    if(linkPath === path || (path !== '/' && linkPath !== '/' && path.indexOf(linkPath) === 0)){
+      link.classList.add('is-active');
+    }
+  });
+})();
+</script>
+</div>
+
+<div class="stottly-scope">
+<style>
+.stottly-scope .legal-content{max-width:760px;}
+.stottly-scope .legal-content h2{font-size:22px;font-weight:500;color:var(--ink);margin-top:40px;margin-bottom:12px;}
+.stottly-scope .legal-content h2:first-child{margin-top:0;}
+.stottly-scope .legal-content h3{font-size:16px;font-weight:500;color:var(--ink);margin-top:20px;margin-bottom:8px;}
+.stottly-scope .legal-content p{font-size:14.5px;color:var(--muted);line-height:1.8;margin-bottom:14px;}
+.stottly-scope .legal-content ul{margin:0 0 14px 20px;padding:0;}
+.stottly-scope .legal-content li{font-size:14.5px;color:var(--muted);line-height:1.8;margin-bottom:6px;}
+.stottly-scope .legal-meta{font-size:13px;color:var(--accent-deep);margin-bottom:28px;}
+.stottly-scope .legal-content hr{border:none;border-top:1px solid var(--line);margin:28px 0;}
+</style>
+
+<section class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="wrap page-hero-content">
+    <div class="breadcrumb">Privacy</div>
+    <h1>Privacy Policy</h1>
+    <p>How Stottly Enterprises and its ventures collect, use, and protect your information.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap legal-content">
+    <div class="legal-meta">Effective Date: July 12, 2026 &nbsp;·&nbsp; Last Updated: July 12, 2026</div>
+
+    <p>Stottly Enterprises ("we," "us," or "our") respects your privacy and is committed to protecting your personal information. This Privacy Policy describes how we collect, use, disclose, and safeguard your information when you visit stottlyenterprises.com, stottifai.com, or gurilla-studios.com (together, the "Sites"), and when you interact with any of our ventures, including StottifAI and Gurilla Studios (together with Stottly Enterprises, the "Services").</p>
+    <p>By using our Sites or Services, you agree to the terms of this Privacy Policy.</p>
+
+    <hr>
+
+    <h2>1. Information We Collect</h2>
+    <h3>1.1 Information You Provide Directly</h3>
+    <ul>
+      <li>Name, company, email address, and other contact details submitted through forms, email inquiries, or newsletter signups.</li>
+      <li>Information provided when you request consultations, product demonstrations, assessments, or downloads.</li>
+    </ul>
+    <h3>1.2 Information Collected Automatically</h3>
+    <p>When you visit our Sites, we may automatically collect:</p>
+    <ul>
+      <li>IP address, browser type, device information, operating system, and referring URLs.</li>
+      <li>Usage data such as pages visited, time spent, and navigation paths.</li>
+      <li>Cookies and similar technologies for analytics and personalization.</li>
+    </ul>
+    <h3>1.3 Analytics and Tracking Technologies</h3>
+    <p>We may use third-party analytics services to help us understand how visitors engage with our Sites. These tools may collect data including your IP address, device type, and on-site interactions.</p>
+
+    <h2>2. How We Use Your Information</h2>
+    <ul>
+      <li>To provide, maintain, and improve our services across all ventures.</li>
+      <li>To respond to inquiries, requests, or customer support messages.</li>
+      <li>To send marketing or informational communications, consistent with applicable law.</li>
+      <li>To analyze user behavior and enhance the functionality and security of our Sites.</li>
+      <li>To comply with legal obligations or enforce our agreements.</li>
+    </ul>
+
+    <h2>3. Legal Bases for Processing (GDPR)</h2>
+    <p>If you are located in the European Economic Area (EEA) or the United Kingdom, we process your personal information under one or more of the following legal bases:</p>
+    <ul>
+      <li><b style="color:var(--ink);">Consent:</b> You have given us permission to process your information.</li>
+      <li><b style="color:var(--ink);">Contractual necessity:</b> Processing is required to provide you with requested services.</li>
+      <li><b style="color:var(--ink);">Legitimate interests:</b> Processing is necessary for our legitimate business interests, provided they do not override your rights.</li>
+      <li><b style="color:var(--ink);">Legal obligation:</b> Processing is necessary to comply with applicable laws.</li>
+    </ul>
+
+    <h2>4. Sharing of Information</h2>
+    <p>We do not sell, rent, or trade personal information. We may share your data with:</p>
+    <ul>
+      <li><b style="color:var(--ink);">Service providers</b> that perform functions on our behalf, such as analytics, hosting, and email communications.</li>
+      <li><b style="color:var(--ink);">Business partners or affiliates</b> in connection with our consulting or technology services.</li>
+      <li><b style="color:var(--ink);">Legal or regulatory authorities</b> when required by law or to protect our rights.</li>
+    </ul>
+    <p>All third parties are bound by appropriate data protection obligations consistent with this Policy.</p>
+
+    <h2>5. International Data Transfers</h2>
+    <p>Your personal information may be transferred to and processed in countries outside your residence, including the United States, where data protection laws may differ. We take appropriate safeguards to ensure that your data remains protected in accordance with this Policy.</p>
+
+    <h2>6. Data Retention</h2>
+    <p>We retain your information only as long as necessary to fulfill the purposes outlined in this Policy, comply with our legal obligations, resolve disputes, and enforce agreements.</p>
+
+    <h2>7. Your Rights</h2>
+    <p>Depending on your jurisdiction, you may have rights to access, correct, or delete your personal data; object to or restrict processing; withdraw consent at any time; and request data portability.</p>
+    <p>If you are a California resident, you may have additional rights under the California Consumer Privacy Act (CCPA), including the right to know what personal information we collect and the right to request deletion.</p>
+    <p>To exercise these rights, contact us at info@stottlyenterprises.com. We may require verification of your identity before fulfilling any request.</p>
+
+    <h2>8. Cookies</h2>
+    <p>We use cookies and similar technologies to improve your experience and analyze site traffic. You may refuse or delete cookies through your browser settings; however, some portions of our Sites may not function properly if cookies are disabled.</p>
+
+    <h2>9. Data Security</h2>
+    <p>We implement reasonable technical and organizational measures to protect your personal information against unauthorized access, disclosure, alteration, or destruction. No system is completely secure, and we cannot guarantee absolute protection of your information.</p>
+
+    <h2>10. AI-Assisted Services</h2>
+    <p>Because our ventures, including StottifAI, build and deploy AI-assisted tools and workflows, some services may involve processing information through third-party AI models and platforms. We take reasonable steps to work with providers who maintain appropriate data protections, and we encourage you not to submit sensitive personal information through AI-assisted tools unless necessary.</p>
+
+    <h2>11. Children's Privacy</h2>
+    <p>Our Sites and Services are not directed toward individuals under 16 years of age, and we do not knowingly collect personal information from children.</p>
+
+    <h2>12. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy periodically. Any changes will be posted to this page with an updated "Last Updated" date. We encourage you to review this Policy regularly to stay informed about how we protect your information.</p>
+
+    <h2>13. Contact Us</h2>
+    <p>For questions or concerns about this Privacy Policy or our data practices, please contact us at:</p>
+    <p><b style="color:var(--ink);">Stottly Enterprises</b><br>Email: info@stottlyenterprises.com<br>Website: stottlyenterprises.com</p>
+    <p style="font-size:13px;">This Policy applies to Stottly Enterprises and its ventures, including StottifAI and Gurilla Studios.</p>
+  </div>
+</section>
+
+
+<script src="https://helloskip.com/agent.js" data-agent-id="7RwCEiIXeglIzRmdTu8L"></script>
+</div>
+<div class="stottly-scope">
+<style>
+.stottly-scope .footer-ticker{max-width:280px;overflow:hidden;margin-top:48px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 24px,#000 calc(100% - 24px),transparent);mask-image:linear-gradient(90deg,transparent,#000 24px,#000 calc(100% - 24px),transparent);}
+.stottly-scope .footer-ticker-track{display:flex;align-items:center;gap:22px;width:max-content;white-space:nowrap;animation:stottlyFooterScroll 26s linear infinite;}
+.stottly-scope .footer-ticker-track a{font-size:12.5px;color:var(--muted);text-decoration:none;letter-spacing:0.2px;}
+.stottly-scope .footer-ticker-track a:hover{color:var(--ink);}
+.stottly-scope .footer-ticker-track .dot{color:var(--line);font-size:12px;}
+@keyframes stottlyFooterScroll{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+@media (prefers-reduced-motion: reduce){.stottly-scope .footer-ticker-track{animation:none;}}
+.stottly-scope .footer-grid{grid-template-columns:2fr 1fr 1fr;}
+@media (max-width:860px){
+  .stottly-scope .footer-grid{grid-template-columns:1fr 1fr;row-gap:32px;}
+  .stottly-scope .footer-grid > div:first-child{grid-column:1 / -1;}
+}
+@media (max-width:480px){
+  .stottly-scope .footer-grid{grid-template-columns:1fr;}
+  .stottly-scope .footer-grid > div:first-child{grid-column:auto;}
+}
+</style>
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>Stottly Enterprises</h4>
+        <p style="font-size:13.5px;max-width:280px;">The company behind the work: consulting, project management, and the ventures we build. Based in Central Florida.</p>
+        <div class="footer-ticker">
+          <div class="footer-ticker-track">
+            <a href="/press/pr-deeds">New: D.E.E.D.S. launches in August →</a>
+            <span class="dot">&#9679;</span>
+            <a href="/press/pr-cryptoifai-v2">New: CryptoifAI v2 is live →</a>
+            <span class="dot">&#9679;</span>
+            <a href="/press/pr-agentic-forge">Agentic Forge targets Q4 2026 →</a>
+            <span class="dot">&#9679;</span>
+            <a href="/press/pr-deeds">New: D.E.E.D.S. launches in August →</a>
+            <span class="dot">&#9679;</span>
+            <a href="/press/pr-cryptoifai-v2">New: CryptoifAI v2 is live →</a>
+            <span class="dot">&#9679;</span>
+            <a href="/press/pr-agentic-forge">Agentic Forge targets Q4 2026 →</a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/who-we-are">Who We Are</a></li>
+          <li><a href="/services">Services</a></li>
+          <li><a href="/ventures">Ventures</a></li>
+          <li><a href="/portfolio">Portfolio</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in Touch</h4>
+        <ul>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/press">Press</a></li>
+        </ul>
+      </div>
+    </div>
+    <div style="margin-top:32px;padding-top:20px;border-top:1px solid var(--line);display:flex;gap:20px;flex-wrap:wrap;font-size:12.5px;">
+      <a href="/privacy" style="color:var(--muted);">Privacy Policy</a>
+      <a href="/terms-of-service" style="color:var(--muted);">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+</div>
+
+</body>
+</html>

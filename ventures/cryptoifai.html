@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CryptoifAI | Ventures | Stottly Enterprises</title>
+<meta name="description" content="CryptoifAI is a free autonomous crypto trading system built by StottifAI, a Stottly Enterprises venture.">
+<link rel="canonical" href="https://www.stottlyenterprises.com/ventures/cryptoifai">
+<meta property="og:title" content="CryptoifAI | Ventures | Stottly Enterprises">
+<meta property="og:description" content="CryptoifAI is a free autonomous crypto trading system built by StottifAI, a Stottly Enterprises venture.">
+<meta property="og:url" content="https://www.stottlyenterprises.com/ventures/cryptoifai">
+<meta property="og:type" content="website">
+<style>
+
+:root{
+  --ink:#2E3B4E;
+  --slate:#5B7A9D;
+  --muted:#7C8CA3;
+  --sky1:#F7FAFD;
+  --sky2:#E7F0F8;
+  --sky3:#D3E4F2;
+  --silver:#AEC4DA;
+  --accent:#6E93BE;
+  --accent-deep:#4B6E96;
+  --line:rgba(46,59,78,0.1);
+  --white:#FFFFFF;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  background:var(--sky1);
+  color:var(--ink);
+  line-height:1.65;
+  font-weight:300;
+}
+a{text-decoration:none;color:inherit;}
+img{max-width:100%;display:block;}
+.wrap{max-width:1140px;margin:0 auto;padding:0 32px;}
+.tracked{letter-spacing:3px;}
+
+/* NAV (shared across interior pages, non-hero version) */
+.site-header{background:var(--white);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50;}
+.site-header nav{display:flex;align-items:center;justify-content:space-between;padding:22px 32px;max-width:1140px;margin:0 auto;}
+.brand{display:flex;align-items:center;gap:12px;}
+.brand svg{width:28px;height:28px;}
+.brand .name{font-size:13px;letter-spacing:3px;color:var(--ink);font-weight:400;}
+.nav-links{display:flex;gap:34px;font-size:12.5px;letter-spacing:1.5px;color:var(--slate);text-transform:uppercase;}
+.nav-links a{transition:color .2s;}
+.nav-links a:hover,.nav-links a.active{color:var(--ink);}
+.nav-cta{border:1px solid var(--accent-deep);color:var(--accent-deep);padding:10px 22px;border-radius:30px;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;font-weight:400;}
+@media (max-width:860px){.nav-links{display:none;}}
+
+/* PAGE HERO (smaller, for interior pages) */
+.page-hero{position:relative;overflow:hidden;padding:80px 0 70px;}
+.page-hero-bg{position:absolute;inset:0;z-index:0;
+  background:radial-gradient(ellipse 600px 400px at 90% 0%, rgba(255,252,244,0.8), transparent 60%),
+  linear-gradient(155deg, #F7FAFD 0%, #EAF1F8 50%, #D9E7F3 100%);
+}
+.page-hero-content{position:relative;z-index:2;max-width:720px;}
+.breadcrumb{font-size:11.5px;letter-spacing:2px;text-transform:uppercase;color:var(--accent-deep);font-weight:500;margin-bottom:18px;}
+.page-hero h1{font-size:42px;font-weight:200;color:var(--ink);line-height:1.25;margin-bottom:16px;letter-spacing:-0.5px;}
+.page-hero p{font-size:16.5px;color:var(--muted);max-width:560px;}
+
+/* HERO with wave art (homepage only) */
+.hero{position:relative;overflow:hidden;min-height:760px;display:flex;flex-direction:column;}
+.hero-bg{position:absolute;inset:0;z-index:0;
+  background:
+    radial-gradient(ellipse 700px 500px at 12% 8%, rgba(255,252,244,0.95), transparent 60%),
+    linear-gradient(155deg, #F7FAFD 0%, #EAF1F8 35%, #D9E7F3 65%, #C3D9EC 100%);
+}
+.hero-bg svg{position:absolute;bottom:0;left:0;width:100%;height:78%;}
+.hero header{position:relative;z-index:5;}
+.hero-content{position:relative;z-index:5;flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:60px 32px 100px;}
+.eyebrow{font-size:11.5px;letter-spacing:4px;text-transform:uppercase;color:var(--accent-deep);font-weight:500;margin-bottom:18px;}
+.hero-divider{width:36px;height:1px;background:var(--accent-deep);opacity:0.5;margin-bottom:26px;}
+.hero h1{font-size:50px;font-weight:200;max-width:780px;line-height:1.25;margin-bottom:24px;color:var(--ink);letter-spacing:-0.5px;}
+.hero p{font-size:17px;color:var(--muted);max-width:480px;margin-bottom:40px;font-weight:300;}
+.btn-row{display:flex;gap:16px;flex-wrap:wrap;}
+.btn-primary{background:var(--ink);color:#fff;padding:15px 30px;border-radius:30px;font-weight:400;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;display:inline-block;}
+.btn-secondary{border:1px solid var(--line);color:var(--ink);padding:15px 30px;border-radius:30px;font-weight:400;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;display:inline-block;}
+
+/* DNA STRIP */
+.dna{background:var(--white);padding:64px 0;border-bottom:1px solid var(--line);}
+.dna-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:48px;text-align:center;}
+.dna-grid .num{font-size:11px;letter-spacing:3px;color:var(--accent-deep);font-weight:500;margin-bottom:14px;text-transform:uppercase;}
+.dna-grid h3{font-size:21px;color:var(--ink);margin-bottom:10px;font-weight:300;}
+.dna-grid p{font-size:14px;color:var(--muted);}
+
+.section{padding:96px 0;}
+.section-alt{background:var(--white);}
+.section-head{max-width:640px;margin:0 auto 56px;text-align:center;}
+.section-head.left{margin:0 0 48px;text-align:left;}
+.section-label{font-size:11.5px;text-transform:uppercase;letter-spacing:3px;color:var(--accent-deep);font-weight:500;margin-bottom:16px;}
+.section-head h2{font-size:32px;font-weight:200;color:var(--ink);line-height:1.3;}
+.section-head p{color:var(--muted);font-size:15px;margin-top:12px;}
+
+.services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
+.service-card{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:32px 26px;box-shadow:0 12px 30px -20px rgba(46,59,78,0.25);}
+.service-card .chip{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--sky3),var(--silver));margin-bottom:20px;}
+.service-card h3{font-size:16.5px;color:var(--ink);margin-bottom:10px;font-weight:500;}
+.service-card p{font-size:13.5px;color:var(--muted);}
+
+/* VENTURE SPOTLIGHT */
+.venture{background:linear-gradient(180deg,var(--sky1),var(--sky2));border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+.venture-inner{display:grid;grid-template-columns:1.1fr 0.9fr;gap:56px;align-items:center;padding:90px 0;}
+.venture-tag{display:inline-block;font-size:11px;letter-spacing:2px;text-transform:uppercase;background:rgba(124,92,255,0.1);color:#6C5CE7;padding:7px 16px;border-radius:20px;margin-bottom:22px;font-weight:600;}
+.venture h2{font-size:34px;font-weight:200;margin-bottom:18px;color:var(--ink);}
+.venture h2 b{background:linear-gradient(90deg,#4C6FFF,#8B5CF6);-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:600;}
+.venture p{font-size:15px;color:var(--muted);margin-bottom:28px;line-height:1.8;}
+.venture-link{font-weight:600;color:#5B4BDB;font-size:13.5px;letter-spacing:0.3px;}
+.venture-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:34px;box-shadow:0 20px 44px -24px rgba(46,59,78,0.3);}
+.venture-card .vc-title{font-weight:600;font-size:12px;letter-spacing:2px;text-transform:uppercase;margin-bottom:18px;color:var(--ink);}
+.venture-card ul{list-style:none;font-size:14px;color:var(--slate);}
+.venture-card li{padding:11px 0;border-bottom:1px solid var(--line);display:flex;gap:10px;align-items:center;}
+.venture-card li:last-child{border-bottom:none;}
+.venture-card li::before{content:"";width:6px;height:6px;border-radius:50%;background:linear-gradient(135deg,#4C6FFF,#8B5CF6);flex-shrink:0;}
+
+.portfolio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.p-card{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:30px 26px;box-shadow:0 12px 30px -20px rgba(46,59,78,0.2);}
+.p-card .tag{font-size:10.5px;text-transform:uppercase;letter-spacing:2px;color:var(--accent-deep);font-weight:600;margin-bottom:12px;}
+.p-card h3{font-size:18px;color:var(--ink);font-weight:400;margin-bottom:10px;}
+.p-card p{font-size:13.5px;color:var(--muted);}
+.p-card img{border-radius:10px;margin-bottom:18px;aspect-ratio:16/10;object-fit:cover;}
+
+.testimonial{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:96px 0;text-align:center;}
+.testimonial blockquote{font-size:26px;font-weight:200;color:var(--ink);max-width:760px;margin:0 auto 22px;line-height:1.55;font-style:italic;}
+.testimonial cite{font-size:12px;color:var(--muted);letter-spacing:2px;text-transform:uppercase;font-style:normal;}
+
+.cta-band{background:linear-gradient(135deg,var(--sky2),var(--sky3));padding:70px 0;text-align:center;}
+.cta-band h2{font-size:28px;color:var(--ink);font-weight:200;margin-bottom:26px;}
+
+footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top:1px solid var(--line);}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:32px;margin-bottom:44px;}
+.footer-grid h4{color:var(--ink);font-size:12px;letter-spacing:2px;text-transform:uppercase;margin-bottom:18px;font-weight:500;}
+.footer-grid ul{list-style:none;font-size:13.5px;}
+.footer-grid li{margin-bottom:11px;}
+.footer-grid a:hover{color:var(--ink);}
+.footer-bottom{border-top:1px solid var(--line);padding-top:26px;font-size:12px;display:flex;justify-content:space-between;letter-spacing:0.5px;}
+
+/* --- Interior page components --- */
+
+/* Two-column content + image */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;}
+.split img{border-radius:16px;box-shadow:0 24px 50px -30px rgba(46,59,78,0.35);aspect-ratio:4/5;object-fit:cover;}
+.split.reverse{direction:rtl;}
+.split.reverse > *{direction:ltr;}
+.split h2{font-size:30px;font-weight:200;margin-bottom:18px;color:var(--ink);}
+.split p{font-size:15px;color:var(--muted);margin-bottom:16px;line-height:1.85;}
+
+/* Values / DNA large */
+.value-list{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:20px;}
+.value-list .v{border-top:1px solid var(--line);padding-top:20px;}
+.value-list .num{font-size:11px;letter-spacing:2px;color:var(--accent-deep);font-weight:600;margin-bottom:10px;}
+.value-list h3{font-size:18px;font-weight:400;margin-bottom:8px;color:var(--ink);}
+.value-list p{font-size:13.5px;color:var(--muted);}
+
+/* Team grid */
+.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;}
+.team-card img{border-radius:16px;aspect-ratio:1/1;object-fit:cover;margin-bottom:16px;}
+.team-card h3{font-size:16px;font-weight:600;color:var(--ink);margin-bottom:4px;}
+.team-card span{font-size:12.5px;color:var(--muted);letter-spacing:0.5px;}
+
+/* Service detail blocks (image + list) */
+.service-block{display:grid;grid-template-columns:0.9fr 1.1fr;gap:56px;align-items:center;padding:70px 0;border-bottom:1px solid var(--line);}
+.service-block.reverse{grid-template-columns:1.1fr 0.9fr;}
+.service-block img{border-radius:16px;aspect-ratio:4/3;object-fit:cover;box-shadow:0 20px 44px -28px rgba(46,59,78,0.3);}
+.service-block.reverse img{order:2;}
+.service-block .num-tag{font-size:11px;letter-spacing:2px;color:var(--accent-deep);font-weight:600;margin-bottom:14px;text-transform:uppercase;}
+.service-block h3{font-size:26px;font-weight:200;margin-bottom:16px;color:var(--ink);}
+.service-block p{font-size:15px;color:var(--muted);margin-bottom:20px;line-height:1.8;}
+.service-block ul{list-style:none;}
+.service-block li{font-size:14px;color:var(--slate);padding:9px 0;border-top:1px solid var(--line);display:flex;gap:10px;align-items:center;}
+.service-block li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--accent-deep);flex-shrink:0;}
+
+/* Case study detail card */
+.case-detail{background:var(--white);border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:0 20px 50px -30px rgba(46,59,78,0.3);margin-bottom:32px;}
+.case-detail img{aspect-ratio:16/9;object-fit:cover;}
+.case-detail .body{padding:36px 40px;}
+.case-detail .tag{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--accent-deep);font-weight:600;margin-bottom:14px;}
+.case-detail h3{font-size:24px;font-weight:200;margin-bottom:14px;color:var(--ink);}
+.case-detail p{font-size:14.5px;color:var(--muted);margin-bottom:14px;line-height:1.8;}
+.case-detail .thumbs{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:20px;}
+.case-detail .thumbs img{border-radius:8px;aspect-ratio:3/4;object-fit:cover;}
+
+/* Blog */
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+.blog-card{background:var(--white);border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 12px 30px -20px rgba(46,59,78,0.2);}
+.blog-card img{aspect-ratio:16/10;object-fit:cover;}
+.blog-card .body{padding:22px 22px 26px;}
+.blog-card .tag{font-size:10.5px;text-transform:uppercase;letter-spacing:2px;color:var(--accent-deep);font-weight:600;margin-bottom:10px;}
+.blog-card h3{font-size:17px;font-weight:500;color:var(--ink);margin-bottom:10px;line-height:1.4;}
+.blog-card p{font-size:13px;color:var(--muted);}
+.blog-card .meta{font-size:11.5px;color:var(--muted);margin-top:14px;letter-spacing:0.5px;}
+.blog-featured{display:grid;grid-template-columns:1.1fr 0.9fr;gap:0;background:var(--white);border:1px solid var(--line);border-radius:20px;overflow:hidden;margin-bottom:48px;box-shadow:0 20px 50px -30px rgba(46,59,78,0.3);}
+.blog-featured img{height:100%;object-fit:cover;}
+.blog-featured .body{padding:44px 44px;display:flex;flex-direction:column;justify-content:center;}
+.blog-featured h3{font-size:26px;font-weight:200;color:var(--ink);margin-bottom:14px;}
+
+/* Contact */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;}
+.contact-info h2{font-size:28px;font-weight:200;margin-bottom:18px;color:var(--ink);}
+.contact-info p{font-size:15px;color:var(--muted);margin-bottom:28px;line-height:1.8;}
+.contact-detail{margin-bottom:20px;}
+.contact-detail .label{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--accent-deep);font-weight:600;margin-bottom:6px;}
+.contact-detail .value{font-size:15px;color:var(--ink);}
+.contact-form{background:var(--white);border:1px solid var(--line);border-radius:20px;padding:40px;box-shadow:0 20px 50px -30px rgba(46,59,78,0.3);}
+.form-row{margin-bottom:20px;}
+.form-row label{display:block;font-size:11.5px;letter-spacing:1.5px;text-transform:uppercase;color:var(--slate);margin-bottom:8px;font-weight:500;}
+.form-row input, .form-row textarea{width:100%;border:1px solid var(--line);border-radius:10px;padding:13px 16px;font-family:inherit;font-size:14px;color:var(--ink);background:var(--sky1);}
+.form-row textarea{min-height:110px;resize:vertical;}
+.form-submit{background:var(--ink);color:#fff;border:none;padding:15px 34px;border-radius:30px;font-weight:400;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;width:100%;}
+
+@media (max-width:900px){
+  .split{grid-template-columns:1fr;}
+  .split.reverse{direction:ltr;}
+  .service-block, .service-block.reverse{grid-template-columns:1fr;}
+  .service-block.reverse img{order:0;}
+  .blog-featured{grid-template-columns:1fr;}
+  .contact-grid{grid-template-columns:1fr;}
+  .case-detail .thumbs{grid-template-columns:repeat(2,1fr);}
+}
+@media (max-width:860px){
+  .hero h1{font-size:34px;}
+  .services-grid{grid-template-columns:1fr 1fr;}
+  .venture-inner{grid-template-columns:1fr;}
+  .portfolio-grid{grid-template-columns:1fr;}
+  .footer-grid{grid-template-columns:1fr 1fr;}
+  .dna-grid{grid-template-columns:1fr;gap:32px;}
+  .value-list{grid-template-columns:1fr;}
+  .team-grid{grid-template-columns:1fr;}
+  .blog-grid{grid-template-columns:1fr;}
+  .page-hero h1{font-size:30px;}
+}
+
+
+
+</style>
+</head>
+<body>
+<div class="stottly-nav-scope">
+<style>
+.stottly-nav-scope{position:relative;z-index:50;}
+.stottly-nav-scope .fancy-nav{position:sticky;top:0;z-index:60;background:rgba(255,255,255,0.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line);transition:box-shadow .35s ease,background .35s ease;}
+.stottly-nav-scope .fancy-nav.is-scrolled{box-shadow:0 12px 30px -22px rgba(46,59,78,0.45);background:rgba(255,255,255,0.97);}
+.stottly-nav-scope .fn-wrap{max-width:1140px;margin:0 auto;padding:0 32px;display:flex;align-items:center;justify-content:center;height:62px;}
+.stottly-nav-scope .fn-list{display:flex;align-items:center;gap:4px;list-style:none;margin:0;padding:0;}
+.stottly-nav-scope .fn-item{position:relative;}
+.stottly-nav-scope .fn-link{display:inline-flex;align-items:center;gap:5px;padding:10px 17px;font-size:12px;letter-spacing:1.8px;text-transform:uppercase;font-weight:600;color:var(--ink);text-decoration:none;position:relative;white-space:nowrap;}
+.stottly-nav-scope .fn-link::after{content:"";position:absolute;left:17px;right:17px;bottom:5px;height:1.5px;background:var(--accent-deep);transform:scaleX(0);transform-origin:left;transition:transform .4s cubic-bezier(.4,0,.2,1);}
+.stottly-nav-scope .fn-item:hover .fn-link::after,
+.stottly-nav-scope .fn-link.is-active::after{transform:scaleX(1);}
+.stottly-nav-scope .fn-link.is-active{color:var(--accent-deep);}
+.stottly-nav-scope .fn-caret{width:8px;height:8px;transition:transform .3s ease;opacity:.5;}
+.stottly-nav-scope .fn-item:hover .fn-caret{transform:rotate(180deg);}
+.stottly-nav-scope .fn-panel{position:absolute;top:100%;left:50%;transform:translate(-50%,10px);min-width:270px;background:var(--white);border:1px solid var(--line);border-radius:14px;box-shadow:0 24px 50px -25px rgba(46,59,78,0.35);padding:14px;opacity:0;visibility:hidden;transition:opacity .3s ease,transform .3s ease,visibility .3s;}
+.stottly-nav-scope .fn-item:hover .fn-panel{opacity:1;visibility:visible;transform:translate(-50%,0);}
+.stottly-nav-scope .fn-panel-group{margin-bottom:8px;}
+.stottly-nav-scope .fn-panel-group:last-child{margin-bottom:0;}
+.stottly-nav-scope .fn-panel a{display:block;padding:7px 12px;border-radius:8px;font-size:13.5px;color:var(--ink);text-decoration:none;letter-spacing:0.1px;transition:background .2s ease,color .2s ease,padding-left .2s ease;}
+.stottly-nav-scope .fn-panel a:hover{background:var(--sky1);padding-left:16px;color:var(--accent-deep);}
+.stottly-nav-scope .fn-panel .fn-sub{padding-left:12px;margin-top:2px;}
+.stottly-nav-scope .fn-panel .fn-sub a{font-size:12.5px;color:var(--muted);}
+.stottly-nav-scope .fn-divider{height:1px;background:var(--line);margin:8px 4px;}
+.stottly-nav-scope .fn-burger{display:none;width:24px;height:18px;position:relative;cursor:pointer;border:none;background:none;padding:0;}
+.stottly-nav-scope .fn-burger span{position:absolute;left:0;right:0;height:2.5px;background:linear-gradient(90deg,var(--accent-deep),#8B5CF6);border-radius:2px;transition:transform .4s cubic-bezier(.4,0,.2,1),opacity .25s ease .1s,width .3s ease,background .3s ease;}
+.stottly-nav-scope .fn-burger span:nth-child(1){top:0;}
+.stottly-nav-scope .fn-burger span:nth-child(2){top:8px;width:70%;}
+.stottly-nav-scope .fn-burger span:nth-child(3){top:16px;}
+.stottly-nav-scope .fn-burger:hover span:nth-child(2){width:100%;}
+.stottly-nav-scope .fn-burger.is-open span:nth-child(1){top:8px;transform:rotate(45deg);}
+.stottly-nav-scope .fn-burger.is-open span:nth-child(2){opacity:0;transform:scaleX(0);transition:opacity .15s ease,transform .15s ease;}
+.stottly-nav-scope .fn-burger.is-open span:nth-child(3){top:8px;width:100%;transform:rotate(-45deg);}
+@media (max-width:900px){
+  .stottly-nav-scope .fn-list{display:none;position:absolute;top:62px;left:0;right:0;background:var(--white);flex-direction:column;align-items:stretch;border-bottom:1px solid var(--line);box-shadow:0 24px 40px -30px rgba(46,59,78,0.4);padding:10px 20px 20px;gap:0;}
+  .stottly-nav-scope .fn-list.is-open{display:flex;}
+  .stottly-nav-scope .fn-item{width:100%;}
+  .stottly-nav-scope .fn-link{width:100%;padding:14px 6px;justify-content:space-between;}
+  .stottly-nav-scope .fn-link::after{display:none;}
+  .stottly-nav-scope .fn-panel{position:static;opacity:1;visibility:visible;transform:none;box-shadow:none;border:none;display:none;padding:0 0 6px 14px;}
+  .stottly-nav-scope .fn-item.is-open .fn-panel{display:block;}
+  .stottly-nav-scope .fn-burger{display:block;}
+  .stottly-nav-scope .fn-wrap{justify-content:space-between;}
+}
+</style>
+<nav class="fancy-nav" id="stottlyFancyNav">
+  <div class="fn-wrap">
+    <ul class="fn-list" id="stottlyFnList">
+      <li class="fn-item"><a class="fn-link" href="/">Home</a></li>
+      <li class="fn-item"><a class="fn-link" href="/who-we-are">Who We Are</a></li>
+      <li class="fn-item"><a class="fn-link" href="/services">Services</a></li>
+      <li class="fn-item">
+        <a class="fn-link" href="/ventures">Ventures <svg class="fn-caret" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <div class="fn-panel">
+          <div class="fn-panel-group">
+            <a href="/ventures/stottifai" style="font-weight:600;">StottifAI</a>
+            <div class="fn-sub">
+              <a href="https://stottifai.com/what-we-do.html">What We Do</a>
+              <a href="https://stottifai.com/case-studies.html">Case Studies</a>
+              <a href="https://stottifai.com/about.html">About</a>
+              <a href="https://stottifai.com/contact.html">Contact</a>
+            </div>
+          </div>
+          <div class="fn-divider"></div>
+          <div class="fn-panel-group">
+            <a href="/ventures/gurilla-studios">Gurilla Studios</a>
+            <a href="https://cartcurios.com" target="_blank" rel="noopener">CartCurios ↗</a>
+          </div>
+        </div>
+      </li>
+      <li class="fn-item"><a class="fn-link" href="/portfolio">Portfolio</a></li>
+      <li class="fn-item"><a class="fn-link" href="/blog">Blog</a></li>
+      <li class="fn-item"><a class="fn-link" href="/contact">Contact</a></li>
+    </ul>
+    <button class="fn-burger" id="stottlyFnBurger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<script>
+(function(){
+  var nav = document.getElementById('stottlyFancyNav');
+  var burger = document.getElementById('stottlyFnBurger');
+  var list = document.getElementById('stottlyFnList');
+  if(!nav) return;
+
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 8){ nav.classList.add('is-scrolled'); }
+    else{ nav.classList.remove('is-scrolled'); }
+  }, {passive:true});
+
+  if(burger && list){
+    burger.addEventListener('click', function(){
+      list.classList.toggle('is-open');
+      burger.classList.toggle('is-open');
+    });
+    Array.prototype.forEach.call(list.querySelectorAll('.fn-item'), function(item){
+      var link = item.querySelector('.fn-link');
+      var panel = item.querySelector('.fn-panel');
+      if(panel && link){
+        link.addEventListener('click', function(e){
+          if(window.innerWidth <= 900){
+            e.preventDefault();
+            item.classList.toggle('is-open');
+          }
+        });
+      }
+    });
+  }
+
+  var path = window.location.pathname.replace(/\/$/, '') || '/';
+  Array.prototype.forEach.call(list.querySelectorAll('.fn-link'), function(link){
+    var href = link.getAttribute('href');
+    if(!href || href.indexOf('http') === 0) return;
+    var linkPath = href.replace(/\/$/, '') || '/';
+    if(linkPath === path || (path !== '/' && linkPath !== '/' && path.indexOf(linkPath) === 0)){
+      link.classList.add('is-active');
+    }
+  });
+})();
+</script>
+</div>
+
+<!-- ============================================================
+  CryptoifAI — product page (embeddable HTML block)
+  A StottifAI project · Stottly Enterprises LLC
+  All styles scoped under .cfai — safe to paste into a site-builder
+  HTML/embed block without affecting the rest of the page.
+  Palette matches the CryptoifAI app: #0D1017 / #8C7CFF / #5DCAA5
+============================================================= -->
+<div class="cfai">
+<style>
+  .cfai{background:#0D1017;color:#E7E9EC;font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;line-height:1.6;padding:64px 24px;border-radius:16px}
+  .cfai *{box-sizing:border-box;margin:0}
+  .cfai .wrap{max-width:960px;margin:0 auto}
+  .cfai .eyebrow{color:#8C7CFF;font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:600}
+  .cfai h1{font-size:clamp(32px,5vw,52px);line-height:1.1;margin:16px 0 20px;font-weight:700}
+  .cfai h1 .glow{color:#8C7CFF;text-shadow:0 0 24px rgba(140,124,255,.45)}
+  .cfai h2{font-size:clamp(22px,3vw,30px);margin:0 0 12px}
+  .cfai .lead{color:#8A90A0;font-size:18px;max-width:640px}
+  .cfai .badge{display:inline-block;background:rgba(93,202,165,.12);color:#5DCAA5;border:1px solid rgba(93,202,165,.35);border-radius:999px;padding:4px 14px;font-size:13px;font-weight:600;margin-bottom:20px}
+  .cfai .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;margin:48px 0}
+  .cfai .stat{background:#161A22;border:1px solid #232833;border-radius:12px;padding:20px}
+  .cfai .stat b{display:block;font-size:30px;color:#E7E9EC}
+  .cfai .stat span{color:#8A90A0;font-size:14px}
+  .cfai .sect{margin-top:64px}
+  .cfai .sect-label{color:#8A90A0;font-size:13px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:8px}
+  .cfai .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:24px}
+  .cfai .card{background:#161A22;border:1px solid #232833;border-radius:12px;padding:22px}
+  .cfai .card h3{font-size:17px;margin-bottom:8px}
+  .cfai .card .num{color:#8C7CFF;font-size:13px;font-weight:600;letter-spacing:.1em;display:block;margin-bottom:10px}
+  .cfai .card p{color:#8A90A0;font-size:14.5px}
+  .cfai .risk-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:24px}
+  .cfai .risk{background:#161A22;border:1px solid #232833;border-left:3px solid #5DCAA5;border-radius:10px;padding:14px 16px}
+  .cfai .risk b{display:block;font-size:14.5px;margin-bottom:3px}
+  .cfai .risk span{color:#8A90A0;font-size:13.5px}
+  .cfai .plain{background:#161A22;border:1px solid #232833;border-radius:12px;padding:26px;margin-top:24px}
+  .cfai .plain p{color:#8A90A0;font-size:15px}
+  .cfai .plain p+p{margin-top:12px}
+  .cfai .plain b{color:#E7E9EC}
+  .cfai .cta{margin-top:64px;text-align:center;background:linear-gradient(180deg,rgba(140,124,255,.10),rgba(140,124,255,.02));border:1px solid rgba(140,124,255,.3);border-radius:16px;padding:48px 24px}
+  .cfai .btn{display:inline-block;background:#8C7CFF;color:#0D1017;font-weight:700;text-decoration:none;border-radius:10px;padding:13px 28px;margin-top:20px;font-size:15.5px}
+  .cfai .btn:hover{filter:brightness(1.1)}
+  .cfai .disclaimer{margin-top:56px;border-top:1px solid #232833;padding-top:24px;color:#8A90A0;font-size:12.5px;max-width:820px}
+  .cfai .disclaimer b{color:#EF9F27}
+  .cfai .brand-row{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-bottom:2px}
+  .cfai .brand-mark{width:56px;height:56px;flex:0 0 auto}
+
+  .cfai .dash{background:#0F1319;border:1px solid #232833;border-radius:16px;padding:22px 22px 26px;margin-top:24px;box-shadow:0 30px 60px -35px rgba(0,0,0,.6)}
+  .cfai .dash-top{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:18px}
+  .cfai .dash-brand{display:flex;align-items:center;gap:8px;font-weight:700;font-size:15px}
+  .cfai .dash-brand .dot{width:8px;height:8px;border-radius:50%;background:#8C7CFF;box-shadow:0 0 10px rgba(140,124,255,.7)}
+  .cfai .dash-badges{display:flex;gap:8px}
+  .cfai .pill{font-size:11.5px;font-weight:700;padding:4px 11px;border-radius:999px}
+  .cfai .pill-live{background:rgba(93,202,165,.15);color:#5DCAA5;border:1px solid rgba(93,202,165,.35)}
+  .cfai .pill-off{background:rgba(239,159,39,.14);color:#EF9F27;border:1px solid rgba(239,159,39,.3)}
+  .cfai .dash-agents{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:18px}
+  .cfai .agent{background:#161A22;border:1px solid #232833;border-radius:10px;padding:12px 14px;display:flex;align-items:center;gap:8px;font-size:13.5px;font-weight:600}
+  .cfai .agent .adot{width:7px;height:7px;border-radius:50%;background:#5DCAA5;flex:0 0 auto}
+  .cfai .agent .adot.idle{background:#565D6B}
+  .cfai .agent-btns{margin-left:auto;color:#565D6B;font-size:11px;font-weight:500;letter-spacing:.03em}
+  .cfai .dash-chart{background:#0D1017;border:1px solid #1B2028;border-radius:12px;padding:14px 10px 6px;margin-bottom:18px}
+  .cfai .dash-chart-label{display:flex;justify-content:space-between;align-items:center;padding:0 8px 10px;color:#565D6B;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase}
+  .cfai .dash-positions{background:#161A22;border:1px solid #232833;border-radius:10px;overflow:hidden}
+  .cfai .pos-row{display:grid;grid-template-columns:1.2fr 1fr 1fr;padding:11px 16px;font-size:13.5px}
+  .cfai .pos-row+.pos-row{border-top:1px solid #232833}
+  .cfai .pos-head{color:#565D6B;font-size:11px;letter-spacing:.08em;text-transform:uppercase;font-weight:600}
+  .cfai .pos-gain{color:#5DCAA5;font-weight:600}
+  .cfai .dash-caption{color:#565D6B;font-size:13px;margin-top:14px;text-align:center}
+
+  .cfai .get-row{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-top:28px}
+  .cfai .get-row .btn,.cfai .get-row .btn-outline{margin-top:0}
+  .cfai .btn-outline{display:inline-block;background:transparent;color:#E7E9EC;border:1px solid #333A47;text-decoration:none;border-radius:10px;padding:12px 27px;font-size:15.5px;font-weight:600}
+  .cfai .btn-outline:hover{border-color:#565D6B}
+
+  .cfai-modal-overlay{display:none;position:fixed;inset:0;background:rgba(6,8,12,.72);z-index:9999;align-items:center;justify-content:center;padding:20px}
+  .cfai-modal{position:relative;background:#161A22;border:1px solid #232833;border-radius:18px;max-width:420px;width:100%;padding:36px 32px 30px;text-align:center;box-shadow:0 40px 80px -30px rgba(0,0,0,.6)}
+  .cfai-modal-close{position:absolute;top:14px;right:16px;background:none;border:none;color:#565D6B;font-size:22px;line-height:1;cursor:pointer;padding:4px}
+  .cfai-modal-close:hover{color:#E7E9EC}
+  .cfai-modal-icon{font-size:34px;margin-bottom:14px}
+  .cfai-modal h3{font-size:20px;margin-bottom:10px;color:#E7E9EC}
+  .cfai-modal p{color:#8A90A0;font-size:14.5px;margin-bottom:24px;line-height:1.6}
+  .cfai-modal-coffee{display:block;width:100%;background:#8C7CFF;color:#0D1017;font-weight:700;text-decoration:none;border-radius:10px;padding:13px 20px;font-size:15px;margin-bottom:14px}
+  .cfai-modal-coffee:hover{filter:brightness(1.1)}
+  .cfai-modal-skip{display:block;color:#8A90A0;text-decoration:underline;font-size:13.5px}
+  .cfai-modal-skip:hover{color:#E7E9EC}
+</style>
+<div class="wrap">
+
+  <div class="brand-row">
+    <div>
+      <p class="eyebrow">A StottifAI Project &middot; Stottly Enterprises</p>
+      <h1>Crypto<span class="glow">ifAI</span></h1>
+    </div>
+    <svg class="brand-mark" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="cfaiArrowGrad" gradientUnits="userSpaceOnUse" x1="68" y1="132" x2="144" y2="56">
+          <stop offset="0%" stop-color="#5C7CFA"/>
+          <stop offset="100%" stop-color="#8C7CFF"/>
+        </linearGradient>
+      </defs>
+      <circle cx="100" cy="100" r="66" fill="none" stroke="#5C7CFA" stroke-width="9"/>
+      <line x1="68" y1="132" x2="122" y2="78" stroke="url(#cfaiArrowGrad)" stroke-width="9" stroke-linecap="round"/>
+      <circle cx="68" cy="132" r="8" fill="#5C7CFA"/>
+      <polygon points="143.6,56.4 134.4,84 116,65.6" fill="#8C7CFF"/>
+    </svg>
+  </div>
+  <span class="badge">&#9679; Live and free to use, trading real funds since February 2026</span>
+  <p class="lead">An automated crypto trading system that learns market patterns, sizes its own entries, and manages every position with a risk layer that never sleeps. This is the StottifAI way: skip the hype, build something that works, put it in the field, and let it prove itself.</p>
+  <div class="get-row">
+    <a class="btn cfai-get-btn" href="/contact">Get CryptoifAI →</a>
+    <a class="btn-outline" href="#how-it-works">See how it works</a>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><b>8</b><span>independent risk safeguards on every trade</span></div>
+    <div class="stat"><b>81</b><span>automated tests behind every release</span></div>
+    <div class="stat"><b>7</b><span>coins tracked with individually trained models</span></div>
+    <div class="stat"><b>24/7</b><span>autonomous operation, day and night</span></div>
+  </div>
+
+  <div class="sect">
+    <p class="sect-label">Live system</p>
+    <h2>Inside the control panel.</h2>
+    <p class="lead" style="font-size:16px">A simplified look at the actual dashboard: the same three engines, the same live safeguards, running in production right now.</p>
+    <div class="dash">
+      <div class="dash-top">
+        <div class="dash-brand"><span class="dot"></span>CryptoifAI</div>
+        <div class="dash-badges"><span class="pill pill-live">Active</span><span class="pill pill-off">Kill switch OFF</span></div>
+      </div>
+      <div class="dash-agents">
+        <div class="agent"><span class="adot idle"></span>Modeler<span class="agent-btns">START&nbsp; STOP</span></div>
+        <div class="agent"><span class="adot"></span>Analyst<span class="agent-btns">START&nbsp; STOP</span></div>
+        <div class="agent"><span class="adot"></span>Executor<span class="agent-btns">START&nbsp; STOP</span></div>
+      </div>
+      <div class="dash-chart">
+        <div class="dash-chart-label"><span>BTC &middot; 1M</span><span style="color:#8C7CFF;">conviction (long)</span></div>
+        <svg viewBox="0 0 640 190" width="100%" height="190" xmlns="http://www.w3.org/2000/svg">
+          <line x1="0" y1="30" x2="640" y2="30" stroke="#1B2028" stroke-width="1"/>
+          <line x1="0" y1="75" x2="640" y2="75" stroke="#1B2028" stroke-width="1"/>
+          <line x1="0" y1="120" x2="640" y2="120" stroke="#1B2028" stroke-width="1"/>
+          <line x1="0" y1="165" x2="640" y2="165" stroke="#1B2028" stroke-width="1"/>
+          <g stroke-width="1.4">
+            <line x1="20" y1="112" x2="20" y2="132" stroke="#5DCAA5"/><rect x="15" y="116" width="10" height="12" fill="#5DCAA5"/>
+            <line x1="45" y1="118" x2="45" y2="140" stroke="#E24B4A"/><rect x="40" y="120" width="10" height="14" fill="#E24B4A"/>
+            <line x1="70" y1="108" x2="70" y2="128" stroke="#5DCAA5"/><rect x="65" y="110" width="10" height="12" fill="#5DCAA5"/>
+            <line x1="95" y1="112" x2="95" y2="150" stroke="#E24B4A"/><rect x="90" y="115" width="10" height="30" fill="#E24B4A"/>
+            <line x1="120" y1="140" x2="120" y2="170" stroke="#E24B4A"/><rect x="115" y="144" width="10" height="20" fill="#E24B4A"/>
+            <line x1="145" y1="150" x2="145" y2="170" stroke="#5DCAA5"/><rect x="140" y="153" width="10" height="10" fill="#5DCAA5"/>
+            <line x1="170" y1="148" x2="170" y2="166" stroke="#E24B4A"/><rect x="165" y="150" width="10" height="10" fill="#E24B4A"/>
+            <line x1="195" y1="140" x2="195" y2="160" stroke="#5DCAA5"/><rect x="190" y="143" width="10" height="10" fill="#5DCAA5"/>
+            <line x1="220" y1="122" x2="220" y2="146" stroke="#5DCAA5"/><rect x="215" y="125" width="10" height="15" fill="#5DCAA5"/>
+            <line x1="245" y1="108" x2="245" y2="128" stroke="#5DCAA5"/><rect x="240" y="111" width="10" height="12" fill="#5DCAA5"/>
+            <line x1="270" y1="98" x2="270" y2="118" stroke="#E24B4A"/><rect x="265" y="100" width="10" height="12" fill="#E24B4A"/>
+            <line x1="295" y1="90" x2="295" y2="110" stroke="#E24B4A"/><rect x="290" y="92" width="10" height="12" fill="#E24B4A"/>
+            <line x1="320" y1="80" x2="320" y2="100" stroke="#5DCAA5"/><rect x="315" y="83" width="10" height="12" fill="#5DCAA5"/>
+            <line x1="345" y1="72" x2="345" y2="92" stroke="#E24B4A"/><rect x="340" y="74" width="10" height="12" fill="#E24B4A"/>
+            <line x1="370" y1="66" x2="370" y2="86" stroke="#E24B4A"/><rect x="365" y="68" width="10" height="12" fill="#E24B4A"/>
+            <line x1="395" y1="60" x2="395" y2="80" stroke="#5DCAA5"/><rect x="390" y="62" width="10" height="12" fill="#5DCAA5"/>
+            <line x1="420" y1="70" x2="420" y2="90" stroke="#E24B4A"/><rect x="415" y="72" width="10" height="12" fill="#E24B4A"/>
+            <line x1="445" y1="42" x2="445" y2="98" stroke="#5DCAA5"/><rect x="440" y="45" width="10" height="40" fill="#5DCAA5"/>
+            <line x1="470" y1="55" x2="470" y2="72" stroke="#E24B4A"/><rect x="465" y="57" width="10" height="10" fill="#E24B4A"/>
+            <line x1="495" y1="48" x2="495" y2="65" stroke="#5DCAA5"/><rect x="490" y="50" width="10" height="10" fill="#5DCAA5"/>
+            <line x1="520" y1="40" x2="520" y2="58" stroke="#E24B4A"/><rect x="515" y="42" width="10" height="10" fill="#E24B4A"/>
+            <line x1="545" y1="30" x2="545" y2="50" stroke="#5DCAA5"/><rect x="540" y="32" width="10" height="12" fill="#5DCAA5"/>
+            <line x1="570" y1="18" x2="570" y2="38" stroke="#5DCAA5"/><rect x="565" y="20" width="10" height="12" fill="#5DCAA5"/>
+          </g>
+          <line x1="570" y1="12" x2="620" y2="12" stroke="#8C7CFF" stroke-width="1.4" stroke-dasharray="3 3"/>
+          <rect x="558" y="4" width="70" height="16" rx="4" fill="#8C7CFF"/>
+          <text x="593" y="15" text-anchor="middle" font-size="10" font-weight="700" fill="#0D1017">conviction L</text>
+        </svg>
+      </div>
+      <div class="dash-positions">
+        <div class="pos-row pos-head"><span>Coin</span><span>Gain / Loss</span><span>DCA Stage</span></div>
+        <div class="pos-row"><span>SOL</span><span class="pos-gain">+1.87%</span><span>0</span></div>
+        <div class="pos-row"><span>LINK</span><span class="pos-gain">+2.23%</span><span>0</span></div>
+        <div class="pos-row"><span>DOGE</span><span class="pos-gain">+0.60%</span><span>0</span></div>
+      </div>
+    </div>
+    <p class="dash-caption">Illustrative view of the live control panel. The account is sized deliberately small while it scales up, so figures are shown as percentages rather than dollar amounts.</p>
+  </div>
+
+  <div class="sect" id="how-it-works">
+    <p class="sect-label">How it works</p>
+    <h2>Three engines. One disciplined loop.</h2>
+    <div class="cols">
+      <div class="card"><span class="num">01 &middot; LEARN</span><h3>The Modeler</h3><p>Trains a pattern memory for each coin across seven timeframes, from hourly moves to weekly trends. It refreshes on a regular cycle, so the system is never trading on stale learning.</p></div>
+      <div class="card"><span class="num">02 &middot; ANALYZE</span><h3>The Analyst</h3><p>Watches live market data around the clock, matching current conditions against trained memory to produce a conviction signal: a graded read on how strongly the data supports an entry.</p></div>
+      <div class="card"><span class="num">03 &middot; EXECUTE</span><h3>The Executor</h3><p>Turns signals into orders only after every risk check passes. Sizes positions, averages in on confirmed dips, locks in gains with a trailing exit, and journals a plain-English reason for every trade.</p></div>
+    </div>
+  </div>
+
+  <div class="sect">
+    <p class="sect-label">The part that matters</p>
+    <h2>Risk management first. Everything else second.</h2>
+    <p class="lead" style="font-size:16px">Most trading bots are an entry signal with a dream. CryptoifAI was built in the opposite order: the safeguards came first, and every one of them is enforced in code on every single tick.</p>
+    <div class="risk-grid">
+      <div class="risk"><b>Hard stop-loss</b><span>Every position has a firm exit floor. No exceptions, no averaging into oblivion.</span></div>
+      <div class="risk"><b>Trailing profit lock</b><span>Gains arm a trailing exit that follows the peak up, and it never gives ground back.</span></div>
+      <div class="risk"><b>Time-stop</b><span>Positions that stall too long are closed. Capital doesn't get held hostage.</span></div>
+      <div class="risk"><b>Disciplined DCA ladder</b><span>Averages down only at defined levels or on a strong signal, capped per day and per position.</span></div>
+      <div class="risk"><b>Kill switch</b><span>A drawdown circuit breaker that can halt all new buying automatically.</span></div>
+      <div class="risk"><b>Cash reserve</b><span>A fixed share of the account is never spent, regardless of any signal.</span></div>
+      <div class="risk"><b>Price sanity guard</b><span>Cross-checks two independent market feeds before buying, so a bad quote never triggers a trade.</span></div>
+      <div class="risk"><b>Hard scope limit</b><span>Trades crypto cash only. Structurally unable to touch stocks, options, or other holdings.</span></div>
+    </div>
+  </div>
+
+  <div class="sect">
+    <p class="sect-label">Straight talk</p>
+    <h2>No fantasy, no finish line.</h2>
+    <div class="plain">
+      <p>CryptoifAI has been live since February 2026, placing real orders with real funds, and every trade gets logged with the reasoning behind it. We're not promising you a get-rich machine, and honestly, it isn't one. This is live automation, watched and measured continuously, and it keeps improving in the open.</p>
+      <p>That's the same process behind every system we've shipped at StottifAI. Get it working, prove it in the field, then scale it.</p>
+    </div>
+  </div>
+
+  <div class="cta">
+    <h2>Free to use. Live and running. Yours if you want it.</h2>
+    <p class="lead" style="margin:0 auto">CryptoifAI is a free release from the StottifAI portfolio, and it's only getting started. Get it, follow along, or tell us what disciplined automation could do inside your own business.</p>
+    <a class="btn cfai-get-btn" href="/contact">Get CryptoifAI →</a>
+  </div>
+
+  <p class="disclaimer"><b>Risk disclosure:</b> CryptoifAI is an experimental automated trading system, released free by Stottly Enterprises. Nothing on this page is financial, investment, or trading advice, and no performance outcome is promised or implied. Cryptocurrency trading is volatile and involves substantial risk, including total loss of funds. Automated safeguards reduce risk; they do not eliminate it. Use is at your own risk. &copy; 2026 Stottly Enterprises LLC.</p>
+
+</div>
+
+<div class="cfai-modal-overlay" id="cfaiCoffeeModal" onclick="if(event.target===this){this.style.display='none';}">
+  <div class="cfai-modal">
+    <button class="cfai-modal-close" type="button" aria-label="Close" onclick="document.getElementById('cfaiCoffeeModal').style.display='none';">&times;</button>
+    <div class="cfai-modal-icon">&#9749;</div>
+    <h3>Enjoying what we build?</h3>
+    <p>CryptoifAI is free, no catch. If it's worth something to you, a coffee helps keep projects like this alive.</p>
+    <a class="cfai-modal-coffee" href="https://buy.stripe.com/fZu28k2And4g7KGbKf5J600" target="_blank" rel="noopener">Buy us a coffee &#9749; →</a>
+    <a class="cfai-modal-skip" href="/contact">No thanks, just take me to CryptoifAI →</a>
+  </div>
+</div>
+
+<script>
+(function(){
+  var modal = document.getElementById('cfaiCoffeeModal');
+  if(!modal) return;
+  var btns = document.querySelectorAll('.cfai-get-btn');
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener('click', function(e){
+      e.preventDefault();
+      modal.style.display = 'flex';
+    });
+  }
+})();
+</script>
+</div>
+
+<div class="stottly-scope">
+<style>
+.stottly-scope .footer-ticker{max-width:280px;overflow:hidden;margin-top:48px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 24px,#000 calc(100% - 24px),transparent);mask-image:linear-gradient(90deg,transparent,#000 24px,#000 calc(100% - 24px),transparent);}
+.stottly-scope .footer-ticker-track{display:flex;align-items:center;gap:22px;width:max-content;white-space:nowrap;animation:stottlyFooterScroll 26s linear infinite;}
+.stottly-scope .footer-ticker-track a{font-size:12.5px;color:var(--muted);text-decoration:none;letter-spacing:0.2px;}
+.stottly-scope .footer-ticker-track a:hover{color:var(--ink);}
+.stottly-scope .footer-ticker-track .dot{color:var(--line);font-size:12px;}
+@keyframes stottlyFooterScroll{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+@media (prefers-reduced-motion: reduce){.stottly-scope .footer-ticker-track{animation:none;}}
+.stottly-scope .footer-grid{grid-template-columns:2fr 1fr 1fr;}
+@media (max-width:860px){
+  .stottly-scope .footer-grid{grid-template-columns:1fr 1fr;row-gap:32px;}
+  .stottly-scope .footer-grid > div:first-child{grid-column:1 / -1;}
+}
+@media (max-width:480px){
+  .stottly-scope .footer-grid{grid-template-columns:1fr;}
+  .stottly-scope .footer-grid > div:first-child{grid-column:auto;}
+}
+</style>
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>Stottly Enterprises</h4>
+        <p style="font-size:13.5px;max-width:280px;">The company behind the work: consulting, project management, and the ventures we build. Based in Central Florida.</p>
+        <div class="footer-ticker">
+          <div class="footer-ticker-track">
+            <a href="/press/pr-deeds">New: D.E.E.D.S. launches in August →</a>
+            <span class="dot">&#9679;</span>
+            <a href="/press/pr-cryptoifai-v2">New: CryptoifAI v2 is live →</a>
+            <span class="dot">&#9679;</span>
+            <a href="/press/pr-agentic-forge">Agentic Forge targets Q4 2026 →</a>
+            <span class="dot">&#9679;</span>
+            <a href="/press/pr-deeds">New: D.E.E.D.S. launches in August →</a>
+            <span class="dot">&#9679;</span>
+            <a href="/press/pr-cryptoifai-v2">New: CryptoifAI v2 is live →</a>
+            <span class="dot">&#9679;</span>
+            <a href="/press/pr-agentic-forge">Agentic Forge targets Q4 2026 →</a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/who-we-are">Who We Are</a></li>
+          <li><a href="/services">Services</a></li>
+          <li><a href="/ventures">Ventures</a></li>
+          <li><a href="/portfolio">Portfolio</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in Touch</h4>
+        <ul>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/press">Press</a></li>
+        </ul>
+      </div>
+    </div>
+    <div style="margin-top:32px;padding-top:20px;border-top:1px solid var(--line);display:flex;gap:20px;flex-wrap:wrap;font-size:12.5px;">
+      <a href="/privacy" style="color:var(--muted);">Privacy Policy</a>
+      <a href="/terms-of-service" style="color:var(--muted);">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+</div>
+
+</body>
+</html>

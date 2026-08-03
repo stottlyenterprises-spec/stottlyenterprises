@@ -1,0 +1,43 @@
+# Stottly Enterprises
+
+> Stottly Enterprises is a Central Florida operating company that helps small and mid-sized organizations turn operational friction into measurable improvement through consulting, project management, and change management, and that incubates its own technology ventures out of the patterns it sees repeatedly in client work.
+
+## What Stottly Enterprises does
+
+- Business Consulting: strategic planning, operational optimization, and data-driven decisions.
+- Project Management: concept-to-completion delivery with clear ownership, budgets, and timelines.
+- Change Management & Training: turnarounds, onboarding systems, and leadership alignment.
+- Ventures: incubating and operating focused businesses built from the same operational discipline behind its consulting work.
+
+## Ventures
+
+- StottifAI (https://stottifai.com/): AI adoption studio and R&D arm. Helps businesses find real AI use cases, build working prototypes, and integrate them without the hype. Home of CryptoifAI.
+- CryptoifAI (https://www.stottlyenterprises.com/ventures/cryptoifai): a free, autonomous cryptocurrency trading system built by StottifAI, live and trading real funds, now on version 2, with 8 independent risk safeguards on every trade.
+- Gurilla Studios (https://gurilla-studios.com/): full-service media production studio based in Davenport, Florida, covering brand, editorial, social, video, sound, graphic design, advertising, web, and AI-assisted production.
+- CartCurios (https://cartcurios.com/): product curation venture publishing research-backed roundups of top-rated products, under the brand TopRated Picks.
+- Agentic Forge: a business operating system in development, meant to replace the patchwork of separate project management, communication, document, and AI tools most companies run on. Version 1.0 is targeted for Q4 2026.
+- D.E.E.D.S.: Stottly Enterprises' first App Store app, a private personal operating system for tasks, goals, health, relationships, business, calendar, and reflection. Currently in alpha; public launch targeted for August 2026.
+
+## Flagship client work
+
+The BK Operations App: a manager-first digital operations hub built for an international Burger King franchise operator, replacing paper checklists, verbal handoffs, and spreadsheets with real-time issue tracking, shift handoff notes, and labor awareness tools. Delivered to the client and in active use across their franchise operations.
+
+## Company
+
+Founded 2025 by Daniel J. Stott. Based in Central Florida.
+
+## Pages
+
+- Home: https://www.stottlyenterprises.com/
+- Who We Are: https://www.stottlyenterprises.com/who-we-are
+- Services: https://www.stottlyenterprises.com/services
+- Ventures: https://www.stottlyenterprises.com/ventures
+- Portfolio: https://www.stottlyenterprises.com/portfolio
+- Founder's Portfolio: https://www.stottlyenterprises.com/founders-portfolio
+- Press: https://www.stottlyenterprises.com/press
+- Blog: https://www.stottlyenterprises.com/blog
+- Contact: https://www.stottlyenterprises.com/contact
+
+## Contact
+
+info@stottlyenterprises.com
