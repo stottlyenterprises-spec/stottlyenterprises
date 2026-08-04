@@ -1257,7 +1257,7 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
     } else {
       var diff = total - expected;
       if(Math.abs(diff) < 0.01){
-        cashVarianceEl.textContent = 'Balanced — matches expected amount';
+        cashVarianceEl.textContent = 'Balanced: matches expected amount';
         cashVarianceEl.className = 'bka-variance ok';
       } else {
         cashVarianceEl.textContent = (diff > 0 ? 'Over by $' : 'Short by $') + Math.abs(diff).toFixed(2);
