@@ -14,7 +14,7 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
 .footer-grid ul{list-style:none;font-size:13.5px;} .footer-grid li{margin-bottom:11px;}
 .btn-primary{background:var(--ink);color:#fff;padding:15px 30px;border-radius:30px;font-weight:400;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;display:inline-block;}
 .cta-band{background:linear-gradient(135deg,var(--sky2),var(--sky3));padding:70px 0;text-align:center;} .cta-band h2{font-size:28px;color:var(--ink);font-weight:200;margin-bottom:26px;}
-.article-hero svg{width:100%;height:340px;display:block;} .article-wrap{max-width:760px;margin:0 auto;padding:56px 32px 80px;}
+.article-hero svg,.article-hero img{width:100%;height:340px;display:block;object-fit:cover;} .article-wrap{max-width:760px;margin:0 auto;padding:56px 32px 80px;}
 .article-tag{font-size:11.5px;letter-spacing:2px;text-transform:uppercase;color:var(--accent-deep);font-weight:600;margin-bottom:16px;}
 .article-wrap h1{font-size:38px;font-weight:200;color:var(--ink);line-height:1.28;margin-bottom:18px;letter-spacing:-0.5px;}
 .article-meta{font-size:13px;color:var(--muted);margin-bottom:40px;letter-spacing:0.3px;border-bottom:1px solid var(--line);padding-bottom:28px;}
@@ -143,16 +143,9 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
 })();
 </script>
 </div>
-<div class="article-hero"><svg viewBox="0 0 1140 340" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
-<defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#4C6FFF"/><stop offset="100%" stop-color="#8B5CF6"/></linearGradient>
-<linearGradient id="g2" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#EAF1F8"/><stop offset="100%" stop-color="#D3E4F2"/></linearGradient></defs>
-<rect width="1140" height="340" fill="url(#g2)"/>
-<g fill="none" stroke="url(#g1)" stroke-width="4" stroke-linecap="round">
-<path d="M300 170 h180"/><circle cx="270" cy="170" r="34" fill="#fff" stroke-width="3"/><circle cx="510" cy="170" r="34" fill="#fff" stroke-width="3"/>
-<path d="M550 170 h180"/><circle cx="770" cy="170" r="34" fill="#fff" stroke-width="3"/>
-</g>
-<circle cx="900" cy="110" r="70" fill="url(#g1)" opacity="0.15"/>
-</svg></div>
+<div class="article-hero">
+<img src="/assets/blog/customer-handoff.jpg" alt="Customers Do Not Care Which Department Owns the Problem">
+</div>
 <div class="article-wrap">
 <div class="article-tag">Customer Experience</div>
 <h1>Customers Do Not Care Which Department Owns the Problem</h1>
