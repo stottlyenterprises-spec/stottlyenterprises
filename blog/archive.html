@@ -3,12 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>D.E.E.D.S. | Ventures | Stottly Enterprises</title>
-<meta name="description" content="D.E.E.D.S. is Stottly Enterprises' first App Store app: a private personal operating system for tasks, goals, health, relationships, business, calendar, and reflection. Currently in alpha, launching August 2026.">
-<link rel="canonical" href="https://www.stottlyenterprises.com/ventures/deeds">
-<meta property="og:title" content="D.E.E.D.S. | Ventures | Stottly Enterprises">
-<meta property="og:description" content="D.E.E.D.S. is Stottly Enterprises' first App Store app: a private personal operating system for tasks, goals, health, relationships, business, calendar, and reflection. Currently in alpha, launching August 2026.">
-<meta property="og:url" content="https://www.stottlyenterprises.com/ventures/deeds">
+<title>Blog Archive | Stottly Enterprises</title>
+<meta name="description" content="Every Stottly Enterprises blog post, listed chronologically — consulting, project management, AI adoption, and small business news.">
+<link rel="canonical" href="https://www.stottlyenterprises.com/blog/archive.html">
+<meta property="og:title" content="Blog Archive | Stottly Enterprises">
+<meta property="og:description" content="Every Stottly Enterprises blog post, listed chronologically.">
 <meta property="og:type" content="website">
 <style>
 
@@ -36,49 +35,35 @@ body{
 a{text-decoration:none;color:inherit;}
 img{max-width:100%;display:block;}
 .wrap{max-width:1140px;margin:0 auto;padding:0 32px;}
-.tracked{letter-spacing:3px;}
 
-/* NAV (shared across interior pages, non-hero version) */
-.site-header{background:var(--white);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50;}
-.site-header nav{display:flex;align-items:center;justify-content:space-between;padding:22px 32px;max-width:1140px;margin:0 auto;}
-.brand{display:flex;align-items:center;gap:12px;}
-.brand svg{width:28px;height:28px;}
-.brand .name{font-size:13px;letter-spacing:3px;color:var(--ink);font-weight:400;}
-.nav-links{display:flex;gap:34px;font-size:12.5px;letter-spacing:1.5px;color:var(--slate);text-transform:uppercase;}
-.nav-links a{transition:color .2s;}
-.nav-links a:hover,.nav-links a.active{color:var(--ink);}
-.nav-cta{border:1px solid var(--accent-deep);color:var(--accent-deep);padding:10px 22px;border-radius:30px;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;font-weight:400;}
-@media (max-width:860px){.nav-links{display:none;}}
-
-/* PAGE HERO (smaller, for interior pages) */
-.page-hero{position:relative;overflow:hidden;padding:80px 0 70px;}
+.page-hero{position:relative;overflow:hidden;padding:80px 0 60px;}
 .page-hero-bg{position:absolute;inset:0;z-index:0;
   background:radial-gradient(ellipse 600px 400px at 90% 0%, rgba(255,252,244,0.8), transparent 60%),
   linear-gradient(155deg, #F7FAFD 0%, #EAF1F8 50%, #D9E7F3 100%);
 }
 .page-hero-content{position:relative;z-index:2;max-width:720px;}
 .breadcrumb{font-size:11.5px;letter-spacing:2px;text-transform:uppercase;color:var(--accent-deep);font-weight:500;margin-bottom:18px;}
-.page-hero h1{font-size:42px;font-weight:200;color:var(--ink);line-height:1.25;margin-bottom:16px;letter-spacing:-0.5px;}
-.page-hero p{font-size:16.5px;color:var(--muted);max-width:560px;}
+.page-hero h1{font-size:38px;font-weight:200;color:var(--ink);line-height:1.25;margin-bottom:16px;letter-spacing:-0.5px;}
+.page-hero p{font-size:16px;color:var(--muted);max-width:600px;}
+.page-hero .back-link{display:inline-block;margin-top:18px;font-size:13px;color:var(--accent-deep);font-weight:500;}
 
-.btn-primary{background:var(--ink);color:#fff;padding:15px 30px;border-radius:30px;font-weight:400;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;display:inline-block;}
-.btn-secondary{border:1px solid var(--line);color:var(--ink);padding:15px 30px;border-radius:30px;font-weight:400;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;display:inline-block;}
-
-.section{padding:96px 0;}
+.section{padding:56px 0 96px;}
 .section-alt{background:var(--white);}
-.section-head{max-width:640px;margin:0 auto 56px;text-align:center;}
-.section-head.left{margin:0 0 48px;text-align:left;}
-.section-label{font-size:11.5px;text-transform:uppercase;letter-spacing:3px;color:var(--accent-deep);font-weight:500;margin-bottom:16px;}
-.section-head h2{font-size:32px;font-weight:200;color:var(--ink);line-height:1.3;}
-.section-head p{color:var(--muted);font-size:15px;margin-top:12px;}
 
-/* VENTURE SPOTLIGHT */
-.venture{background:linear-gradient(180deg,var(--sky1),var(--sky2));border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
-.venture-tag{display:inline-block;font-size:11px;letter-spacing:2px;text-transform:uppercase;background:rgba(124,92,255,0.1);color:#6C5CE7;padding:7px 16px;border-radius:20px;margin-bottom:22px;font-weight:600;}
-.venture h2{font-size:34px;font-weight:200;margin-bottom:18px;color:var(--ink);}
-.venture h2 b{background:linear-gradient(90deg,#4C6FFF,#8B5CF6);-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:600;}
-.venture p{font-size:15px;color:var(--muted);margin-bottom:28px;line-height:1.8;}
-.venture-link{font-weight:600;color:#5B4BDB;font-size:13.5px;letter-spacing:0.3px;}
+/* Dense archive list */
+.archive-year{font-size:11px;text-transform:uppercase;letter-spacing:3px;color:var(--accent-deep);font-weight:600;margin:36px 0 10px;}
+.archive-year:first-child{margin-top:0;}
+.archive-list{border-top:1px solid var(--line);}
+.archive-row{display:grid;grid-template-columns:110px 1fr auto;gap:20px;align-items:baseline;padding:16px 4px;border-bottom:1px solid var(--line);transition:background .15s ease;}
+.archive-row:hover{background:var(--sky1);}
+.archive-row .a-date{font-size:12px;color:var(--muted);letter-spacing:0.3px;white-space:nowrap;}
+.archive-row .a-main h3{font-size:15.5px;font-weight:500;color:var(--ink);margin-bottom:4px;line-height:1.4;}
+.archive-row .a-main p{font-size:12.5px;color:var(--muted);}
+.archive-row .a-tag{font-size:10px;text-transform:uppercase;letter-spacing:1.5px;color:var(--accent-deep);font-weight:600;white-space:nowrap;text-align:right;}
+
+.cta-band{background:linear-gradient(135deg,var(--sky2),var(--sky3));padding:70px 0;text-align:center;}
+.cta-band h2{font-size:28px;color:var(--ink);font-weight:200;margin-bottom:26px;}
+.btn-primary{background:var(--ink);color:#fff;padding:15px 30px;border-radius:30px;font-weight:400;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;display:inline-block;}
 
 footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top:1px solid var(--line);}
 .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:32px;margin-bottom:44px;}
@@ -86,40 +71,11 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
 .footer-grid ul{list-style:none;font-size:13.5px;}
 .footer-grid li{margin-bottom:11px;}
 .footer-grid a:hover{color:var(--ink);}
-.footer-bottom{border-top:1px solid var(--line);padding-top:26px;font-size:12px;display:flex;justify-content:space-between;letter-spacing:0.5px;}
 
-/* --- Interior page components --- */
-
-/* Two-column content + image */
-.split{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;}
-.split img{border-radius:16px;box-shadow:0 24px 50px -30px rgba(46,59,78,0.35);aspect-ratio:4/5;object-fit:cover;}
-.split.reverse{direction:rtl;}
-.split.reverse > *{direction:ltr;}
-.split h2{font-size:30px;font-weight:200;margin-bottom:18px;color:var(--ink);}
-.split p{font-size:15px;color:var(--muted);margin-bottom:16px;line-height:1.85;}
-
-/* Values / DNA large */
-.value-list{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:20px;}
-.value-list .v{border-top:1px solid var(--line);padding-top:20px;}
-.value-list .num{font-size:11px;letter-spacing:2px;color:var(--accent-deep);font-weight:600;margin-bottom:10px;}
-.value-list h3{font-size:18px;font-weight:400;margin-bottom:8px;color:var(--ink);}
-.value-list p{font-size:13.5px;color:var(--muted);}
-
-.cta-band{background:linear-gradient(135deg,var(--sky2),var(--sky3));padding:70px 0;text-align:center;}
-.cta-band h2{font-size:28px;color:var(--ink);font-weight:200;margin-bottom:26px;}
-
-@media (max-width:900px){
-  .split{grid-template-columns:1fr;}
-  .split.reverse{direction:ltr;}
+@media (max-width:700px){
+  .archive-row{grid-template-columns:1fr;gap:4px;padding:14px 4px;}
+  .archive-row .a-tag{text-align:left;}
 }
-@media (max-width:860px){
-  .page-hero h1{font-size:30px;}
-  .footer-grid{grid-template-columns:1fr 1fr;}
-  .value-list{grid-template-columns:1fr;}
-}
-
-
-
 </style>
 </head>
 <body>
@@ -193,7 +149,7 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
         </div>
       </li>
       <li class="fn-item"><a class="fn-link" href="/portfolio">Portfolio</a></li>
-      <li class="fn-item"><a class="fn-link" href="/blog">Blog</a></li>
+      <li class="fn-item"><a class="fn-link is-active" href="/blog">Blog</a></li>
     </ul>
     <button class="fn-burger" id="stottlyFnBurger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
   </div>
@@ -243,115 +199,171 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
 </div>
 
 <div class="stottly-scope">
-<style>
-.stottly-scope .deeds-badge{display:inline-flex;align-items:center;gap:8px;background:#15281f;color:#fff;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;font-weight:600;padding:11px 22px;border-radius:30px;opacity:0.55;cursor:default;}
-.stottly-scope .deeds-icon-tile{width:34px;height:34px;border-radius:10px;background:#15281f;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
-.stottly-scope .deeds-framework{display:grid;grid-template-columns:repeat(5,1fr);gap:20px;margin-top:20px;}
-.stottly-scope .deeds-framework .d{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:26px 20px;box-shadow:0 12px 30px -20px rgba(46,59,78,0.2);}
-.stottly-scope .deeds-framework .letter{width:34px;height:34px;border-radius:10px;background:#15281f;color:#fff;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:600;margin-bottom:14px;}
-.stottly-scope .deeds-framework h3{font-size:15px;color:var(--ink);margin-bottom:8px;font-weight:500;}
-.stottly-scope .deeds-framework p{font-size:13px;color:var(--muted);}
-@media (max-width:900px){
-  .stottly-scope .deeds-framework{grid-template-columns:1fr 1fr;}
-}
-@media (max-width:560px){
-  .stottly-scope .deeds-framework{grid-template-columns:1fr;}
-}
-</style>
-
 <section class="page-hero">
   <div class="page-hero-bg"></div>
   <div class="wrap page-hero-content">
-    <div class="breadcrumb">Ventures &middot; D.E.E.D.S.</div>
-    <h1>D.E.E.D.S.</h1>
-    <p>Progress, Not Perfection. Stottly Enterprises' first App Store app — a private personal operating system for tasks, goals, health, relationships, business, calendar, and reflection.</p>
+    <div class="breadcrumb">Blog / Archive</div>
+    <h1>Every post, in order.</h1>
+    <p>A compact index of everything we've published — consulting, project management, AI adoption, and small business news. Looking for the visual view with post images? Head back to the main blog.</p>
+    <a class="back-link" href="/blog.html">&larr; Back to Blog</a>
   </div>
 </section>
 
 <section class="section section-alt">
-  <div class="wrap split">
-    <div style="border-radius:16px;border:1px solid var(--line);overflow:hidden;max-width:320px;margin:0 auto;">
-      <img src="/assets/deeds-app-screenshot.jpg" alt="D.E.E.D.S. app home screen showing the Detect, Explore, Enable, Drive, Sustain dashboard with tiles for Tasks, Calendar, Business, Mail, Goals, Health, Relationships, Journal, Feedback, Settings, and Review" width="480" height="851" style="display:block;width:100%;height:auto;">
-    </div>
-    <div>
-      <div class="venture-tag">First App Store Release &middot; Alpha</div>
-      <h2>A calm command center for your whole life.</h2>
-      <p>D.E.E.D.S. is Stottly Enterprises' first App Store app: a private personal operating system that brings tasks, goals, health, relationships, business, calendar, and reflection into one place. It's built around a simple idea — steady, honest progress beats chasing an impossible standard.</p>
-      <p>It's currently in alpha with a small group of early users, ahead of a public App Store launch targeted for August 2026.</p>
-      <div style="display:flex;gap:14px;flex-wrap:wrap;align-items:center;">
-        <span class="deeds-badge">Coming August 2026</span>
-        <a class="btn-secondary" href="mailto:info@stottlyenterprises.com?subject=Notify%20me%20about%20D.E.E.D.S.">Get notified →</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
   <div class="wrap">
-    <div class="section-head left">
-      <div class="section-label">The Framework</div>
-      <h2>What D.E.E.D.S. stands for.</h2>
-      <p>Five plain-language stages that describe how real progress happens — the framework the app is organized around.</p>
-    </div>
-    <div class="deeds-framework">
-      <div class="d">
-        <div class="letter">D</div>
-        <h3>Detect</h3>
-        <p>Notice where you actually are right now, across the parts of life that matter to you.</p>
-      </div>
-      <div class="d">
-        <div class="letter">E</div>
-        <h3>Explore</h3>
-        <p>Look at your options honestly before committing to a direction.</p>
-      </div>
-      <div class="d">
-        <div class="letter">E</div>
-        <h3>Enable</h3>
-        <p>Set up the small structures and habits that make progress possible.</p>
-      </div>
-      <div class="d">
-        <div class="letter">D</div>
-        <h3>Drive</h3>
-        <p>Take consistent action, one deliberate step at a time.</p>
-      </div>
-      <div class="d">
-        <div class="letter">S</div>
-        <h3>Sustain</h3>
-        <p>Keep it going — reflect, adjust, and protect the progress you've made.</p>
-      </div>
-    </div>
-  </div>
-</section>
 
-<section class="section section-alt">
-  <div class="wrap" style="text-align:center;">
-    <div class="section-head" style="text-align:center;margin-left:auto;margin-right:auto;">
-      <div class="section-label">Early Access</div>
-      <h2>Want to hear when D.E.E.D.S. launches?</h2>
-      <p>We're keeping the alpha small while we get the details right. If you'd like to be notified at public launch, reach out and we'll follow up personally.</p>
+    <div class="archive-year">August 2026</div>
+    <div class="archive-list">
+      <a class="archive-row" href="/blog/the-meeting-is-not-the-work.html">
+        <div class="a-date">Aug 4, 2026</div>
+        <div class="a-main"><h3>The Meeting Is Not the Work. So Why Does It Control the Week?</h3><p>A meeting begins as a tool for a real decision, then earns a permanent place on the calendar.</p></div>
+        <div class="a-tag">Operations & Leadership</div>
+      </a>
+      <a class="archive-row" href="/blog/the-process-looks-efficient-because-the-rework.html">
+        <div class="a-date">Aug 3, 2026</div>
+        <div class="a-main"><h3>The Process Looks Efficient Because the Rework Happens Somewhere Else</h3><p>How to measure rework across the whole transaction, not just one department.</p></div>
+        <div class="a-tag">Operations & Quality</div>
+      </a>
+      <a class="archive-row" href="/blog/weekly-recap-july-27-aug-1-2026.html">
+        <div class="a-date">Aug 2, 2026</div>
+        <div class="a-main"><h3>Weekly Recap: The Week Business Leaders Learned to Stop Buying Around the Problem</h3><p>AI productivity, supply-chain constraints, manager capacity, experienced workers, and customer handoffs.</p></div>
+        <div class="a-tag">Weekly Recap</div>
+      </a>
+      <a class="archive-row" href="/blog/customers-do-not-care-which-department-owns-the-problem.html">
+        <div class="a-date">Aug 1, 2026</div>
+        <div class="a-main"><h3>Customers Do Not Care Which Department Owns the Problem</h3><p>How to map the handoffs that actually matter to the customer experience.</p></div>
+        <div class="a-tag">Customer Experience</div>
+      </a>
     </div>
-    <a class="btn-primary" href="mailto:info@stottlyenterprises.com?subject=Notify%20me%20about%20D.E.E.D.S.">Get notified →</a>
-  </div>
-</section>
 
-<section class="section">
-  <div class="wrap" style="text-align:center;">
-    <div class="section-head" style="margin-left:auto;margin-right:auto;">
-      <div class="section-label">Part of Something Larger</div>
-      <h2>D.E.E.D.S. is a venture of Stottly Enterprises.</h2>
-      <p>Stottly Enterprises is a Central Florida operating company behind a portfolio of consulting, project management, and technology ventures, including StottifAI, Gurilla Studios, and CartCurios.</p>
+    <div class="archive-year">July 2026</div>
+    <div class="archive-list">
+      <a class="archive-row" href="/blog/free-ai-training-wont-fix-a-bad-workflow.html">
+        <div class="a-date">Jul 31, 2026</div>
+        <div class="a-main"><h3>Free AI Training Won't Fix a Bad Workflow</h3><p>OpenAI's small business training program is valuable, but it can't repair unclear ownership.</p></div>
+        <div class="a-tag">AI Adoption</div>
+      </a>
+      <a class="archive-row" href="/blog/labor-market-experience-refuses-to-use.html">
+        <div class="a-date">Jul 30, 2026</div>
+        <div class="a-main"><h3>The Labor Market Has Experience It Refuses to Use</h3><p>Employers say they can't find experienced people. Capable candidates describe months of silence.</p></div>
+        <div class="a-tag">Workforce & Hiring</div>
+      </a>
+      <a class="archive-row" href="/blog/press-release-deeds-app-launch.html">
+        <div class="a-date">Jul 30, 2026</div>
+        <div class="a-main"><h3>Stottly Enterprises Announces D.E.E.D.S., Its First App Store App, Launching in August</h3><p>A private personal operating system for tasks, goals, health, relationships, business, and reflection.</p></div>
+        <div class="a-tag">Press Release</div>
+      </a>
+      <a class="archive-row" href="/blog/org-chart-flattened-manager-buried.html">
+        <div class="a-date">Jul 29, 2026</div>
+        <div class="a-main"><h3>The Org Chart Got Flattend, But So Did The Manager</h3><p>Flattening can remove delay and clarify accountability — or bury one manager under the whole business.</p></div>
+        <div class="a-tag">Leadership & Management</div>
+      </a>
+      <a class="archive-row" href="/blog/cryptoifai-v2-live-decisions.html">
+        <div class="a-date">Jul 28, 2026</div>
+        <div class="a-main"><h3>StottifAI Ships CryptoifAI v2, Making the Bot's Decisions Visible in Real Time</h3><p>Live per-coin status, phone push alerts, a read-only remote view, and visible training.</p></div>
+        <div class="a-tag">Product & Ventures</div>
+      </a>
+      <a class="archive-row" href="/blog/supply-chain-bottleneck-name-before-funding.html">
+        <div class="a-date">Jul 28, 2026</div>
+        <div class="a-main"><h3>Supply-Chain Bottleneck Need a Name Before Needing Funding</h3><p>New SBA funding helps once a business can name its actual constraint.</p></div>
+        <div class="a-tag">Operations & Supply Chain</div>
+      </a>
+      <a class="archive-row" href="/blog/ai-saving-time-business-not-faster.html">
+        <div class="a-date">Jul 27, 2026</div>
+        <div class="a-main"><h3>AI Is Saving Time. Why Isn't the Business Getting Faster?</h3><p>The second measure every leader should track alongside task time.</p></div>
+        <div class="a-tag">AI & Operating Speed</div>
+      </a>
+      <a class="archive-row" href="/blog/weekly-recap-july-20-25-2026.html">
+        <div class="a-date">Jul 26, 2026</div>
+        <div class="a-main"><h3>Weekly Recap: Nobody Owned the Handoff. Everybody Paid for It.</h3><p>Exhausted managers, key-person dependency, attendance, hiring, AI, and software transformation.</p></div>
+        <div class="a-tag">Weekly Recap</div>
+      </a>
+      <a class="archive-row" href="/blog/weekly-recap-july-6-11-2026.html">
+        <div class="a-date">Jul 12, 2026</div>
+        <div class="a-main"><h3>Weekly Recap: AI Warnings, AI Wins, and the New Management Skill Everyone Needs</h3></div>
+        <div class="a-tag">Weekly Recap</div>
+      </a>
+      <a class="archive-row" href="/blog/new-pmp-exam-ai-2026.html">
+        <div class="a-date">Jul 11, 2026</div>
+        <div class="a-main"><h3>Project Management Just Got an AI Upgrade — the PMP Exam Changed This Week</h3></div>
+        <div class="a-tag">Operations</div>
+      </a>
+      <a class="archive-row" href="/blog/gusto-ai-small-business-revenue-data.html">
+        <div class="a-date">Jul 10, 2026</div>
+        <div class="a-main"><h3>New Payroll Data From 400,000 Small Businesses Says AI Isn't Killing Jobs There</h3></div>
+        <div class="a-tag">Small Business Trends</div>
+      </a>
+      <a class="archive-row" href="/blog/ai-management-advantage-2026.html">
+        <div class="a-date">Jul 9, 2026</div>
+        <div class="a-main"><h3>The Next Business Advantage Isn't Using AI. It's Managing It Well.</h3></div>
+        <div class="a-tag">Leadership</div>
+      </a>
+      <a class="archive-row" href="/blog/ai-agents-business-roi-2026.html">
+        <div class="a-date">Jul 8, 2026</div>
+        <div class="a-main"><h3>AI Agents Are Already On Your Payroll — Even If You Never Hired Them</h3></div>
+        <div class="a-tag">AI Adoption</div>
+      </a>
+      <a class="archive-row" href="/blog/open-source-local-ai-models-2026.html">
+        <div class="a-date">Jul 7, 2026</div>
+        <div class="a-main"><h3>The Open-Source AI Models Catching Up to the Big Names</h3></div>
+        <div class="a-tag">AI & Technology</div>
+      </a>
+      <a class="archive-row" href="/blog/five-eyes-ai-cyberattack-warning-smb.html">
+        <div class="a-date">Jul 6, 2026</div>
+        <div class="a-main"><h3>Five Intelligence Agencies Just Warned That AI-Powered Cyberattacks Are Coming</h3></div>
+        <div class="a-tag">Security</div>
+      </a>
+      <a class="archive-row" href="/blog/weekly-recap-june-29-july-4-2026.html">
+        <div class="a-date">Jul 5, 2026</div>
+        <div class="a-main"><h3>Weekly Recap: What Small Business Owners Should Take From This Week's AI News</h3></div>
+        <div class="a-tag">Weekly Recap</div>
+      </a>
+      <a class="archive-row" href="/blog/restaurant-ai-manager-tools-2026.html">
+        <div class="a-date">Jul 4, 2026</div>
+        <div class="a-main"><h3>Burger King and Yum Brands Are Betting on AI Coaches for Managers</h3></div>
+        <div class="a-tag">Restaurant Tech</div>
+      </a>
+      <a class="archive-row" href="/blog/small-business-ai-video-adoption-2026.html">
+        <div class="a-date">Jul 3, 2026</div>
+        <div class="a-main"><h3>Small Businesses Now Make Up Nearly Half of All AI Video Sign-Ups</h3></div>
+        <div class="a-tag">Marketing</div>
+      </a>
+      <a class="archive-row" href="/blog/small-business-index-july-2026-hospitality.html">
+        <div class="a-date">Jul 2, 2026</div>
+        <div class="a-main"><h3>Leisure and Hospitality Just Took the Hardest Hit in the Latest Jobs Data</h3></div>
+        <div class="a-tag">Small Business Trends</div>
+      </a>
+      <a class="archive-row" href="/blog/fake-ai-tool-scams-small-business.html">
+        <div class="a-date">Jul 1, 2026</div>
+        <div class="a-main"><h3>The AI Tool Your Employee Just Downloaded Might Not Be Real</h3></div>
+        <div class="a-tag">AI Adoption</div>
+      </a>
     </div>
-    <a class="btn-secondary" href="/ventures">See all our ventures →</a>
+
+    <div class="archive-year">June 2026</div>
+    <div class="archive-list">
+      <a class="archive-row" href="/blog/small-business-hiring-slows-june-2026.html">
+        <div class="a-date">Jun 30, 2026</div>
+        <div class="a-main"><h3>Small Business Hiring Is Cooling Off</h3></div>
+        <div class="a-tag">Small Business Trends</div>
+      </a>
+      <a class="archive-row" href="/blog/ai-receptionist-tools-small-business-2026.html">
+        <div class="a-date">Jun 29, 2026</div>
+        <div class="a-main"><h3>A New Wave of &quot;AI Receptionist&quot; Tools Wants to Fix the Missed Call Problem</h3></div>
+        <div class="a-tag">AI Adoption</div>
+      </a>
+    </div>
+
+    <p style="font-size:13px;color:var(--muted);margin-top:40px;">Posts published between July 13 &ndash; 25, 2026, and the remaining archive beyond this list, are still being migrated from the live Webador blog. They remain available at <a href="https://www.stottlyenterprises.com/blog" style="color:var(--accent-deep);text-decoration:underline;">stottlyenterprises.com/blog</a> in the meantime.</p>
+
   </div>
 </section>
 
 <section class="cta-band">
-  <h2>Want to follow the build?</h2>
-  <a class="btn-primary" href="/contact">Start a Conversation</a>
+  <h2>Have a problem worth writing about?</h2>
+  <a class="btn-primary" href="/contact">Tell Us About It</a>
 </section>
-
 </div>
-
 <div class="stottly-scope">
 <style>
 .stottly-scope .footer-ticker{max-width:280px;overflow:hidden;margin-top:48px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 24px,#000 calc(100% - 24px),transparent);mask-image:linear-gradient(90deg,transparent,#000 24px,#000 calc(100% - 24px),transparent);}

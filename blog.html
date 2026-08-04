@@ -61,31 +61,6 @@ img{max-width:100%;display:block;}
 .page-hero h1{font-size:42px;font-weight:200;color:var(--ink);line-height:1.25;margin-bottom:16px;letter-spacing:-0.5px;}
 .page-hero p{font-size:16.5px;color:var(--muted);max-width:560px;}
 
-/* HERO with wave art (homepage only) */
-.hero{position:relative;overflow:hidden;min-height:760px;display:flex;flex-direction:column;}
-.hero-bg{position:absolute;inset:0;z-index:0;
-  background:
-    radial-gradient(ellipse 700px 500px at 12% 8%, rgba(255,252,244,0.95), transparent 60%),
-    linear-gradient(155deg, #F7FAFD 0%, #EAF1F8 35%, #D9E7F3 65%, #C3D9EC 100%);
-}
-.hero-bg svg{position:absolute;bottom:0;left:0;width:100%;height:78%;}
-.hero header{position:relative;z-index:5;}
-.hero-content{position:relative;z-index:5;flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:60px 32px 100px;}
-.eyebrow{font-size:11.5px;letter-spacing:4px;text-transform:uppercase;color:var(--accent-deep);font-weight:500;margin-bottom:18px;}
-.hero-divider{width:36px;height:1px;background:var(--accent-deep);opacity:0.5;margin-bottom:26px;}
-.hero h1{font-size:50px;font-weight:200;max-width:780px;line-height:1.25;margin-bottom:24px;color:var(--ink);letter-spacing:-0.5px;}
-.hero p{font-size:17px;color:var(--muted);max-width:480px;margin-bottom:40px;font-weight:300;}
-.btn-row{display:flex;gap:16px;flex-wrap:wrap;}
-.btn-primary{background:var(--ink);color:#fff;padding:15px 30px;border-radius:30px;font-weight:400;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;display:inline-block;}
-.btn-secondary{border:1px solid var(--line);color:var(--ink);padding:15px 30px;border-radius:30px;font-weight:400;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;display:inline-block;}
-
-/* DNA STRIP */
-.dna{background:var(--white);padding:64px 0;border-bottom:1px solid var(--line);}
-.dna-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:48px;text-align:center;}
-.dna-grid .num{font-size:11px;letter-spacing:3px;color:var(--accent-deep);font-weight:500;margin-bottom:14px;text-transform:uppercase;}
-.dna-grid h3{font-size:21px;color:var(--ink);margin-bottom:10px;font-weight:300;}
-.dna-grid p{font-size:14px;color:var(--muted);}
-
 .section{padding:96px 0;}
 .section-alt{background:var(--white);}
 .section-head{max-width:640px;margin:0 auto 56px;text-align:center;}
@@ -94,40 +69,10 @@ img{max-width:100%;display:block;}
 .section-head h2{font-size:32px;font-weight:200;color:var(--ink);line-height:1.3;}
 .section-head p{color:var(--muted);font-size:15px;margin-top:12px;}
 
-.services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
-.service-card{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:32px 26px;box-shadow:0 12px 30px -20px rgba(46,59,78,0.25);}
-.service-card .chip{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--sky3),var(--silver));margin-bottom:20px;}
-.service-card h3{font-size:16.5px;color:var(--ink);margin-bottom:10px;font-weight:500;}
-.service-card p{font-size:13.5px;color:var(--muted);}
-
-/* VENTURE SPOTLIGHT */
-.venture{background:linear-gradient(180deg,var(--sky1),var(--sky2));border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
-.venture-inner{display:grid;grid-template-columns:1.1fr 0.9fr;gap:56px;align-items:center;padding:90px 0;}
-.venture-tag{display:inline-block;font-size:11px;letter-spacing:2px;text-transform:uppercase;background:rgba(124,92,255,0.1);color:#6C5CE7;padding:7px 16px;border-radius:20px;margin-bottom:22px;font-weight:600;}
-.venture h2{font-size:34px;font-weight:200;margin-bottom:18px;color:var(--ink);}
-.venture h2 b{background:linear-gradient(90deg,#4C6FFF,#8B5CF6);-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:600;}
-.venture p{font-size:15px;color:var(--muted);margin-bottom:28px;line-height:1.8;}
-.venture-link{font-weight:600;color:#5B4BDB;font-size:13.5px;letter-spacing:0.3px;}
-.venture-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:34px;box-shadow:0 20px 44px -24px rgba(46,59,78,0.3);}
-.venture-card .vc-title{font-weight:600;font-size:12px;letter-spacing:2px;text-transform:uppercase;margin-bottom:18px;color:var(--ink);}
-.venture-card ul{list-style:none;font-size:14px;color:var(--slate);}
-.venture-card li{padding:11px 0;border-bottom:1px solid var(--line);display:flex;gap:10px;align-items:center;}
-.venture-card li:last-child{border-bottom:none;}
-.venture-card li::before{content:"";width:6px;height:6px;border-radius:50%;background:linear-gradient(135deg,#4C6FFF,#8B5CF6);flex-shrink:0;}
-
-.portfolio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
-.p-card{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:30px 26px;box-shadow:0 12px 30px -20px rgba(46,59,78,0.2);}
-.p-card .tag{font-size:10.5px;text-transform:uppercase;letter-spacing:2px;color:var(--accent-deep);font-weight:600;margin-bottom:12px;}
-.p-card h3{font-size:18px;color:var(--ink);font-weight:400;margin-bottom:10px;}
-.p-card p{font-size:13.5px;color:var(--muted);}
-.p-card img{border-radius:10px;margin-bottom:18px;aspect-ratio:16/10;object-fit:cover;}
-
-.testimonial{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:96px 0;text-align:center;}
-.testimonial blockquote{font-size:26px;font-weight:200;color:var(--ink);max-width:760px;margin:0 auto 22px;line-height:1.55;font-style:italic;}
-.testimonial cite{font-size:12px;color:var(--muted);letter-spacing:2px;text-transform:uppercase;font-style:normal;}
-
 .cta-band{background:linear-gradient(135deg,var(--sky2),var(--sky3));padding:70px 0;text-align:center;}
 .cta-band h2{font-size:28px;color:var(--ink);font-weight:200;margin-bottom:26px;}
+.btn-primary{background:var(--ink);color:#fff;padding:15px 30px;border-radius:30px;font-weight:400;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;display:inline-block;}
+.btn-secondary{border:1px solid var(--accent-deep);color:var(--accent-deep);padding:13px 28px;border-radius:30px;font-weight:400;font-size:12.5px;letter-spacing:1.5px;text-transform:uppercase;display:inline-block;}
 
 footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top:1px solid var(--line);}
 .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:32px;margin-bottom:44px;}
@@ -137,104 +82,32 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
 .footer-grid a:hover{color:var(--ink);}
 .footer-bottom{border-top:1px solid var(--line);padding-top:26px;font-size:12px;display:flex;justify-content:space-between;letter-spacing:0.5px;}
 
-/* --- Interior page components --- */
+/* Blog — image-forward post rows */
+.blog-toolbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:36px;flex-wrap:wrap;gap:16px;}
+.blog-toolbar p{font-size:14px;color:var(--muted);max-width:520px;}
+.post-list{display:flex;flex-direction:column;gap:28px;}
+.post-row{display:grid;grid-template-columns:340px 1fr;gap:0;background:var(--white);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 14px 34px -24px rgba(46,59,78,0.28);}
+.post-row .thumb{position:relative;background:var(--sky2);}
+.post-row .thumb svg{width:100%;height:100%;display:block;object-fit:cover;}
+.post-row .body{padding:30px 36px;display:flex;flex-direction:column;justify-content:center;}
+.post-row .tag{font-size:10.5px;text-transform:uppercase;letter-spacing:2px;color:var(--accent-deep);font-weight:600;margin-bottom:10px;}
+.post-row h3{font-size:21px;font-weight:400;color:var(--ink);margin-bottom:10px;line-height:1.35;}
+.post-row p{font-size:14px;color:var(--muted);margin-bottom:14px;}
+.post-row .meta{font-size:11.5px;color:var(--muted);letter-spacing:0.5px;}
+.post-row:first-child{grid-template-columns:1fr;}
+.post-row:first-child .thumb{aspect-ratio:1140/340;}
+.post-row:first-child h3{font-size:27px;}
+.post-row:not(:first-child) .thumb{aspect-ratio:16/11;}
 
-/* Two-column content + image */
-.split{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;}
-.split img{border-radius:16px;box-shadow:0 24px 50px -30px rgba(46,59,78,0.35);aspect-ratio:4/5;object-fit:cover;}
-.split.reverse{direction:rtl;}
-.split.reverse > *{direction:ltr;}
-.split h2{font-size:30px;font-weight:200;margin-bottom:18px;color:var(--ink);}
-.split p{font-size:15px;color:var(--muted);margin-bottom:16px;line-height:1.85;}
+.archive-cta{margin:56px 0 0;text-align:center;padding:44px 32px;background:var(--white);border:1px solid var(--line);border-radius:18px;}
+.archive-cta h3{font-size:20px;font-weight:300;color:var(--ink);margin-bottom:14px;}
+.archive-cta p{font-size:14px;color:var(--muted);margin-bottom:22px;max-width:480px;margin-left:auto;margin-right:auto;}
 
-/* Values / DNA large */
-.value-list{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:20px;}
-.value-list .v{border-top:1px solid var(--line);padding-top:20px;}
-.value-list .num{font-size:11px;letter-spacing:2px;color:var(--accent-deep);font-weight:600;margin-bottom:10px;}
-.value-list h3{font-size:18px;font-weight:400;margin-bottom:8px;color:var(--ink);}
-.value-list p{font-size:13.5px;color:var(--muted);}
-
-/* Team grid */
-.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;}
-.team-card img{border-radius:16px;aspect-ratio:1/1;object-fit:cover;margin-bottom:16px;}
-.team-card h3{font-size:16px;font-weight:600;color:var(--ink);margin-bottom:4px;}
-.team-card span{font-size:12.5px;color:var(--muted);letter-spacing:0.5px;}
-
-/* Service detail blocks (image + list) */
-.service-block{display:grid;grid-template-columns:0.9fr 1.1fr;gap:56px;align-items:center;padding:70px 0;border-bottom:1px solid var(--line);}
-.service-block.reverse{grid-template-columns:1.1fr 0.9fr;}
-.service-block img{border-radius:16px;aspect-ratio:4/3;object-fit:cover;box-shadow:0 20px 44px -28px rgba(46,59,78,0.3);}
-.service-block.reverse img{order:2;}
-.service-block .num-tag{font-size:11px;letter-spacing:2px;color:var(--accent-deep);font-weight:600;margin-bottom:14px;text-transform:uppercase;}
-.service-block h3{font-size:26px;font-weight:200;margin-bottom:16px;color:var(--ink);}
-.service-block p{font-size:15px;color:var(--muted);margin-bottom:20px;line-height:1.8;}
-.service-block ul{list-style:none;}
-.service-block li{font-size:14px;color:var(--slate);padding:9px 0;border-top:1px solid var(--line);display:flex;gap:10px;align-items:center;}
-.service-block li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--accent-deep);flex-shrink:0;}
-
-/* Case study detail card */
-.case-detail{background:var(--white);border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:0 20px 50px -30px rgba(46,59,78,0.3);margin-bottom:32px;}
-.case-detail img{aspect-ratio:16/9;object-fit:cover;}
-.case-detail .body{padding:36px 40px;}
-.case-detail .tag{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--accent-deep);font-weight:600;margin-bottom:14px;}
-.case-detail h3{font-size:24px;font-weight:200;margin-bottom:14px;color:var(--ink);}
-.case-detail p{font-size:14.5px;color:var(--muted);margin-bottom:14px;line-height:1.8;}
-.case-detail .thumbs{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:20px;}
-.case-detail .thumbs img{border-radius:8px;aspect-ratio:3/4;object-fit:cover;}
-
-/* Blog */
-.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
-.blog-card{background:var(--white);border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 12px 30px -20px rgba(46,59,78,0.2);}
-.blog-card img{aspect-ratio:16/10;object-fit:cover;}
-.blog-card .body{padding:22px 22px 26px;}
-.blog-card .tag{font-size:10.5px;text-transform:uppercase;letter-spacing:2px;color:var(--accent-deep);font-weight:600;margin-bottom:10px;}
-.blog-card h3{font-size:17px;font-weight:500;color:var(--ink);margin-bottom:10px;line-height:1.4;}
-.blog-card p{font-size:13px;color:var(--muted);}
-.blog-card .meta{font-size:11.5px;color:var(--muted);margin-top:14px;letter-spacing:0.5px;}
-.blog-featured{display:grid;grid-template-columns:1.1fr 0.9fr;gap:0;background:var(--white);border:1px solid var(--line);border-radius:20px;overflow:hidden;margin-bottom:48px;box-shadow:0 20px 50px -30px rgba(46,59,78,0.3);}
-.blog-featured img{height:100%;object-fit:cover;}
-.blog-featured .body{padding:44px 44px;display:flex;flex-direction:column;justify-content:center;}
-.blog-featured h3{font-size:26px;font-weight:200;color:var(--ink);margin-bottom:14px;}
-
-/* Contact */
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;}
-.contact-info h2{font-size:28px;font-weight:200;margin-bottom:18px;color:var(--ink);}
-.contact-info p{font-size:15px;color:var(--muted);margin-bottom:28px;line-height:1.8;}
-.contact-detail{margin-bottom:20px;}
-.contact-detail .label{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--accent-deep);font-weight:600;margin-bottom:6px;}
-.contact-detail .value{font-size:15px;color:var(--ink);}
-.contact-form{background:var(--white);border:1px solid var(--line);border-radius:20px;padding:40px;box-shadow:0 20px 50px -30px rgba(46,59,78,0.3);}
-.form-row{margin-bottom:20px;}
-.form-row label{display:block;font-size:11.5px;letter-spacing:1.5px;text-transform:uppercase;color:var(--slate);margin-bottom:8px;font-weight:500;}
-.form-row input, .form-row textarea{width:100%;border:1px solid var(--line);border-radius:10px;padding:13px 16px;font-family:inherit;font-size:14px;color:var(--ink);background:var(--sky1);}
-.form-row textarea{min-height:110px;resize:vertical;}
-.form-submit{background:var(--ink);color:#fff;border:none;padding:15px 34px;border-radius:30px;font-weight:400;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;width:100%;}
-
-@media (max-width:900px){
-  .split{grid-template-columns:1fr;}
-  .split.reverse{direction:ltr;}
-  .service-block, .service-block.reverse{grid-template-columns:1fr;}
-  .service-block.reverse img{order:0;}
-  .blog-featured{grid-template-columns:1fr;}
-  .contact-grid{grid-template-columns:1fr;}
-  .case-detail .thumbs{grid-template-columns:repeat(2,1fr);}
+@media (max-width:760px){
+  .post-row{grid-template-columns:1fr;}
+  .post-row .thumb{aspect-ratio:16/10;}
+  .post-row .body{padding:24px 24px 28px;}
 }
-@media (max-width:860px){
-  .hero h1{font-size:34px;}
-  .services-grid{grid-template-columns:1fr 1fr;}
-  .venture-inner{grid-template-columns:1fr;}
-  .portfolio-grid{grid-template-columns:1fr;}
-  .footer-grid{grid-template-columns:1fr 1fr;}
-  .dna-grid{grid-template-columns:1fr;gap:32px;}
-  .value-list{grid-template-columns:1fr;}
-  .team-grid{grid-template-columns:1fr;}
-  .blog-grid{grid-template-columns:1fr;}
-  .page-hero h1{font-size:30px;}
-}
-
-
-.blog-featured .body{padding:40px;}
-.blog-card .body{padding:22px 22px 26px;}
 </style>
 </head>
 <body>
@@ -297,23 +170,18 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
         <a class="fn-link" href="/ventures">Ventures <svg class="fn-caret" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
         <div class="fn-panel">
           <div class="fn-panel-group">
-            <a href="/ventures/stottifai" style="font-weight:600;">StottifAI</a>
-            <div class="fn-sub">
-              <a href="https://stottifai.com/what-we-do.html">What We Do</a>
-              <a href="https://stottifai.com/case-studies.html">Case Studies</a>
-              <a href="https://stottifai.com/about.html">About</a>
-              <a href="https://stottifai.com/contact.html">Contact</a>
-            </div>
+            <a href="https://stottifai.com/" target="_blank" rel="noopener" style="font-weight:600;">StottifAI ↗</a>
           </div>
           <div class="fn-divider"></div>
           <div class="fn-panel-group">
             <a href="/ventures/gurilla-studios">Gurilla Studios</a>
             <a href="https://cartcurios.com" target="_blank" rel="noopener">CartCurios ↗</a>
+            <a href="/ventures/deeds">D.E.E.D.S.</a>
           </div>
         </div>
       </li>
       <li class="fn-item"><a class="fn-link" href="/portfolio">Portfolio</a></li>
-      <li class="fn-item"><a class="fn-link" href="/blog">Blog</a></li>
+      <li class="fn-item"><a class="fn-link is-active" href="/blog">Blog</a></li>
     </ul>
     <button class="fn-burger" id="stottlyFnBurger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
   </div>
@@ -368,133 +236,277 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
   <div class="wrap page-hero-content">
     <div class="breadcrumb">Blog</div>
     <h1>Insights on running smarter businesses.</h1>
-    <p>Notes from the field on consulting, project management, AI adoption, and where the news actually affects small business owners.</p>
+    <p>Notes from the field on consulting, project management, AI adoption, and where the news actually affects small business owners. Showing our latest posts below — browse the full archive for everything we've published.</p>
   </div>
 </section>
 
 <section class="section section-alt">
   <div class="wrap">
 
-    <div class="blog-featured">
-      <div class="body">
-        <div class="tag">Operations & Leadership</div>
-        <h3><a href="/blog/the-meeting-is-not-the-work.html" style="color:inherit;">The Meeting Is Not the Work. So Why Does It Control the Week?</a></h3>
-        <p>A meeting begins as a tool for a real decision. Then it earns a permanent place on the calendar. Here's how to tell when the meeting has started managing the business instead of the other way around.</p>
-        <div class="meta">August 4, 2026 &middot; Stottly Enterprises</div>
-      </div>
+    <div class="blog-toolbar">
+      <div class="section-label" style="margin-bottom:0;">Latest Posts</div>
+      <a class="btn-secondary" href="/blog/archive.html">View Full Archive →</a>
     </div>
 
-    <div class="blog-grid">
-      <div class="blog-card">
+    <div class="post-list">
+
+      <a class="post-row" href="/blog/the-meeting-is-not-the-work.html">
+        <div class="thumb"><svg viewBox="0 0 1140 340" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+          <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#4C6FFF"/><stop offset="100%" stop-color="#8B5CF6"/></linearGradient>
+          <linearGradient id="g2" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#EAF1F8"/><stop offset="100%" stop-color="#D3E4F2"/></linearGradient></defs>
+          <rect width="1140" height="340" fill="url(#g2)"/>
+          <g opacity="0.9">
+            <rect x="120" y="70" width="360" height="200" rx="14" fill="#fff" stroke="url(#g1)" stroke-width="2"/>
+            <line x1="120" y1="120" x2="480" y2="120" stroke="url(#g1)" stroke-width="2"/>
+            <circle cx="160" cy="95" r="6" fill="url(#g1)"/>
+            <circle cx="190" cy="95" r="6" fill="url(#g1)"/>
+            <g stroke="#AEC4DA" stroke-width="1.5">
+              <line x1="150" y1="150" x2="450" y2="150"/>
+              <line x1="150" y1="180" x2="410" y2="180"/>
+              <line x1="150" y1="210" x2="430" y2="210"/>
+              <line x1="150" y1="240" x2="370" y2="240"/>
+            </g>
+          </g>
+          <circle cx="760" cy="120" r="90" fill="url(#g1)" opacity="0.15"/>
+          <circle cx="880" cy="230" r="50" fill="url(#g1)" opacity="0.25"/>
+          <g transform="translate(700,150)">
+            <circle r="60" fill="none" stroke="url(#g1)" stroke-width="3"/>
+            <line x1="0" y1="0" x2="0" y2="-38" stroke="#2E3B4E" stroke-width="3" stroke-linecap="round"/>
+            <line x1="0" y1="0" x2="28" y2="10" stroke="#2E3B4E" stroke-width="3" stroke-linecap="round"/>
+          </g>
+        </svg></div>
+        <div class="body">
+          <div class="tag">Operations & Leadership</div>
+          <h3>The Meeting Is Not the Work. So Why Does It Control the Week?</h3>
+          <p>A meeting begins as a tool for a real decision. Then it earns a permanent place on the calendar. Here's how to tell when the meeting has started managing the business instead of the other way around.</p>
+          <div class="meta">August 4, 2026 &middot; Stottly Enterprises</div>
+        </div>
+      </a>
+
+      <a class="post-row" href="/blog/the-process-looks-efficient-because-the-rework.html">
+        <div class="thumb"><svg viewBox="0 0 1140 340" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+          <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#4C6FFF"/><stop offset="100%" stop-color="#8B5CF6"/></linearGradient>
+          <linearGradient id="g2" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#EAF1F8"/><stop offset="100%" stop-color="#D3E4F2"/></linearGradient></defs>
+          <rect width="1140" height="340" fill="url(#g2)"/>
+          <g fill="none" stroke="url(#g1)" stroke-width="3">
+            <path d="M200 260 C 200 150, 340 150, 340 240 C 340 300, 460 300, 460 220" />
+            <path d="M460 220 l -14 -10 M460 220 l 6 16" stroke-linecap="round"/>
+          </g>
+          <g fill="none" stroke="#AEC4DA" stroke-width="2" stroke-dasharray="6 6">
+            <path d="M600 100 C 750 100, 750 240, 900 240"/>
+          </g>
+          <circle cx="900" cy="240" r="8" fill="url(#g1)"/>
+          <circle cx="200" cy="260" r="8" fill="url(#g1)"/>
+          <circle cx="780" cy="90" r="60" fill="url(#g1)" opacity="0.18"/>
+          <circle cx="980" cy="150" r="34" fill="url(#g1)" opacity="0.28"/>
+        </svg></div>
         <div class="body">
           <div class="tag">Operations & Quality</div>
-          <h3><a href="/blog/the-process-looks-efficient-because-the-rework.html" style="color:inherit;">The Process Looks Efficient Because the Rework Happens Somewhere Else</a></h3>
+          <h3>The Process Looks Efficient Because the Rework Happens Somewhere Else</h3>
           <p>A process can look remarkably efficient when it's allowed to send its mistakes downstream. Here's how to measure rework across the whole transaction.</p>
           <div class="meta">August 3, 2026 &middot; Stottly Enterprises</div>
         </div>
-      </div>
-      <div class="blog-card">
+      </a>
+
+      <a class="post-row" href="/blog/weekly-recap-july-27-aug-1-2026.html">
+        <div class="thumb"><svg viewBox="0 0 1140 340" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+          <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#4C6FFF"/><stop offset="100%" stop-color="#8B5CF6"/></linearGradient>
+          <linearGradient id="g2" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#EAF1F8"/><stop offset="100%" stop-color="#D3E4F2"/></linearGradient></defs>
+          <rect width="1140" height="340" fill="url(#g2)"/>
+          <g stroke="url(#g1)" stroke-width="2" fill="none" opacity="0.8">
+            <circle cx="260" cy="120" r="6" fill="url(#g1)"/><circle cx="420" cy="190" r="6" fill="url(#g1)"/><circle cx="560" cy="100" r="6" fill="url(#g1)"/><circle cx="700" cy="220" r="6" fill="url(#g1)"/><circle cx="860" cy="140" r="6" fill="url(#g1)"/><circle cx="980" cy="230" r="6" fill="url(#g1)"/>
+            <line x1="260" y1="120" x2="420" y2="190"/><line x1="420" y1="190" x2="560" y2="100"/><line x1="560" y1="100" x2="700" y2="220"/><line x1="700" y1="220" x2="860" y2="140"/><line x1="860" y1="140" x2="980" y2="230"/><line x1="260" y1="120" x2="560" y2="100"/>
+          </g>
+          <circle cx="180" cy="260" r="60" fill="url(#g1)" opacity="0.15"/>
+        </svg></div>
         <div class="body">
           <div class="tag">Weekly Recap</div>
-          <h3><a href="/blog/weekly-recap-july-27-aug-1-2026.html" style="color:inherit;">Weekly Recap: The Week Business Leaders Learned to Stop Buying Around the Problem</a></h3>
+          <h3>Weekly Recap: The Week Business Leaders Learned to Stop Buying Around the Problem</h3>
           <p>AI productivity, supply-chain constraints, manager capacity, experienced workers, and customer handoffs — this week's common thread was uncomfortable.</p>
           <div class="meta">August 2, 2026 &middot; Stottly Enterprises</div>
         </div>
-      </div>
-      <div class="blog-card">
+      </a>
+
+      <a class="post-row" href="/blog/customers-do-not-care-which-department-owns-the-problem.html">
+        <div class="thumb"><svg viewBox="0 0 1140 340" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+          <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#4C6FFF"/><stop offset="100%" stop-color="#8B5CF6"/></linearGradient>
+          <linearGradient id="g2" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#EAF1F8"/><stop offset="100%" stop-color="#D3E4F2"/></linearGradient></defs>
+          <rect width="1140" height="340" fill="url(#g2)"/>
+          <g fill="none" stroke="url(#g1)" stroke-width="4" stroke-linecap="round">
+          <path d="M300 170 h180"/><circle cx="270" cy="170" r="34" fill="#fff" stroke-width="3"/><circle cx="510" cy="170" r="34" fill="#fff" stroke-width="3"/>
+          <path d="M550 170 h180"/><circle cx="770" cy="170" r="34" fill="#fff" stroke-width="3"/>
+          </g>
+          <circle cx="900" cy="110" r="70" fill="url(#g1)" opacity="0.15"/>
+        </svg></div>
         <div class="body">
           <div class="tag">Customer Experience</div>
-          <h3><a href="/blog/customers-do-not-care-which-department-owns-the-problem.html" style="color:inherit;">Customers Do Not Care Which Department Owns the Problem</a></h3>
+          <h3>Customers Do Not Care Which Department Owns the Problem</h3>
           <p>A business can hit every departmental target while producing a frustrating customer journey. Here's how to map the handoffs that actually matter.</p>
           <div class="meta">August 1, 2026 &middot; Stottly Enterprises</div>
         </div>
-      </div>
-      <div class="blog-card">
+      </a>
+
+      <a class="post-row" href="/blog/free-ai-training-wont-fix-a-bad-workflow.html">
+        <div class="thumb"><svg viewBox="0 0 1140 340" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+          <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#4C6FFF"/><stop offset="100%" stop-color="#8B5CF6"/></linearGradient>
+          <linearGradient id="g2" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#EAF1F8"/><stop offset="100%" stop-color="#D3E4F2"/></linearGradient></defs>
+          <rect width="1140" height="340" fill="url(#g2)"/>
+          <g fill="none" stroke="url(#g1)" stroke-width="3">
+          <circle cx="420" cy="170" r="70"/><circle cx="420" cy="170" r="16" fill="url(#g1)" stroke="none"/>
+          <path d="M420 100 v-22 M420 240 v22 M350 170 h-22 M490 170 h22 M372 122 l-16-16 M468 122 l16-16 M372 218 l-16 16 M468 218 l16 16" stroke-linecap="round"/>
+          </g>
+          <g fill="none" stroke="#AEC4DA" stroke-width="2"><rect x="700" y="110" width="110" height="70" rx="8"/><rect x="740" y="150" width="110" height="70" rx="8" fill="#fff" stroke="url(#g1)"/></g>
+        </svg></div>
         <div class="body">
           <div class="tag">AI Adoption</div>
-          <h3><a href="/blog/free-ai-training-wont-fix-a-bad-workflow.html" style="color:inherit;">Free AI Training Won't Fix a Bad Workflow</a></h3>
+          <h3>Free AI Training Won't Fix a Bad Workflow</h3>
           <p>OpenAI's new small business training program is valuable, but it can't decide which workflow deserves attention or repair unclear ownership.</p>
           <div class="meta">July 31, 2026 &middot; Stottly Enterprises</div>
         </div>
-      </div>
-      <div class="blog-card">
+      </a>
+
+      <a class="post-row" href="/blog/labor-market-experience-refuses-to-use.html">
+        <div class="thumb"><svg viewBox="0 0 1140 340" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+          <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#4C6FFF"/><stop offset="100%" stop-color="#8B5CF6"/></linearGradient>
+          <linearGradient id="g2" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#EAF1F8"/><stop offset="100%" stop-color="#D3E4F2"/></linearGradient></defs>
+          <rect width="1140" height="340" fill="url(#g2)"/>
+          <g fill="url(#g1)" opacity="0.85">
+          <rect x="260" y="200" width="40" height="70" rx="4"/><rect x="320" y="150" width="40" height="120" rx="4"/><rect x="380" y="100" width="40" height="170" rx="4" opacity="0.4"/><rect x="440" y="170" width="40" height="100" rx="4"/>
+          </g>
+          <circle cx="760" cy="150" r="70" fill="url(#g1)" opacity="0.15"/>
+          <circle cx="880" cy="220" r="36" fill="url(#g1)" opacity="0.25"/>
+        </svg></div>
         <div class="body">
           <div class="tag">Workforce & Hiring</div>
-          <h3><a href="/blog/labor-market-experience-refuses-to-use.html" style="color:inherit;">The Labor Market Has Experience It Refuses to Use</a></h3>
+          <h3>The Labor Market Has Experience It Refuses to Use</h3>
           <p>Employers say they can't find experienced people while capable candidates in their 40s and 50s describe months of silence. Both can be true at once.</p>
           <div class="meta">July 30, 2026 &middot; Stottly Enterprises</div>
         </div>
-      </div>
-      <div class="blog-card">
+      </a>
+
+      <a class="post-row" href="/blog/press-release-deeds-app-launch.html">
+        <div class="thumb"><svg viewBox="0 0 1140 340" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+          <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#4C6FFF"/><stop offset="100%" stop-color="#8B5CF6"/></linearGradient>
+          <linearGradient id="g2" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#EAF1F8"/><stop offset="100%" stop-color="#D3E4F2"/></linearGradient></defs>
+          <rect width="1140" height="340" fill="url(#g2)"/>
+          <g>
+          <rect x="470" y="70" width="200" height="200" rx="40" fill="#fff" stroke="url(#g1)" stroke-width="3"/>
+          <rect x="505" y="105" width="50" height="50" rx="10" fill="url(#g1)" opacity="0.85"/>
+          <rect x="585" y="105" width="50" height="50" rx="10" fill="url(#g1)" opacity="0.5"/>
+          <rect x="505" y="185" width="50" height="50" rx="10" fill="url(#g1)" opacity="0.5"/>
+          <rect x="585" y="185" width="50" height="50" rx="10" fill="url(#g1)" opacity="0.85"/>
+          </g>
+          <circle cx="880" cy="100" r="40" fill="url(#g1)" opacity="0.2"/>
+          <circle cx="240" cy="240" r="50" fill="url(#g1)" opacity="0.15"/>
+        </svg></div>
         <div class="body">
           <div class="tag">Press Release</div>
-          <h3><a href="/blog/press-release-deeds-app-launch.html" style="color:inherit;">Stottly Enterprises Announces D.E.E.D.S., Its First App Store App, Launching in August</a></h3>
+          <h3>Stottly Enterprises Announces D.E.E.D.S., Its First App Store App, Launching in August</h3>
           <p>A private personal operating system for tasks, goals, health, relationships, business, calendar, and reflection. Currently in alpha.</p>
           <div class="meta">July 30, 2026 &middot; Stottly Enterprises</div>
         </div>
-      </div>
-      <div class="blog-card">
+      </a>
+
+      <a class="post-row" href="/blog/org-chart-flattened-manager-buried.html">
+        <div class="thumb"><svg viewBox="0 0 1140 340" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+          <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#4C6FFF"/><stop offset="100%" stop-color="#8B5CF6"/></linearGradient>
+          <linearGradient id="g2" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#EAF1F8"/><stop offset="100%" stop-color="#D3E4F2"/></linearGradient></defs>
+          <rect width="1140" height="340" fill="url(#g2)"/>
+          <g stroke="url(#g1)" stroke-width="2.5" fill="none">
+          <circle cx="570" cy="90" r="20" fill="url(#g1)" stroke="none"/>
+          <line x1="570" y1="110" x2="380" y2="200"/><line x1="570" y1="110" x2="480" y2="200"/><line x1="570" y1="110" x2="570" y2="200"/><line x1="570" y1="110" x2="660" y2="200"/><line x1="570" y1="110" x2="760" y2="200"/>
+          <circle cx="380" cy="215" r="12" fill="#AEC4DA" stroke="none"/><circle cx="480" cy="215" r="12" fill="#AEC4DA" stroke="none"/><circle cx="570" cy="215" r="12" fill="#AEC4DA" stroke="none"/><circle cx="660" cy="215" r="12" fill="#AEC4DA" stroke="none"/><circle cx="760" cy="215" r="12" fill="#AEC4DA" stroke="none"/>
+          </g>
+        </svg></div>
         <div class="body">
           <div class="tag">Leadership & Management</div>
-          <h3><a href="/blog/org-chart-flattened-manager-buried.html" style="color:inherit;">The Org Chart Got Flattend, But So Did The Manager</a></h3>
+          <h3>The Org Chart Got Flattend, But So Did The Manager</h3>
           <p>Flattening an organization can remove delay and clarify accountability. It can also bury one manager under an entire business's routing.</p>
           <div class="meta">July 29, 2026 &middot; Stottly Enterprises</div>
         </div>
-      </div>
-      <div class="blog-card">
+      </a>
+
+      <a class="post-row" href="/blog/cryptoifai-v2-live-decisions.html">
+        <div class="thumb"><svg viewBox="0 0 1140 340" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+          <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#4C6FFF"/><stop offset="100%" stop-color="#8B5CF6"/></linearGradient>
+          <linearGradient id="g2" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#EAF1F8"/><stop offset="100%" stop-color="#D3E4F2"/></linearGradient></defs>
+          <rect width="1140" height="340" fill="url(#g2)"/>
+          <polyline points="220,220 320,180 400,230 480,140 560,190 660,110 760,170 860,90 960,150" fill="none" stroke="url(#g1)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          <g fill="url(#g1)"><circle cx="320" cy="180" r="6"/><circle cx="480" cy="140" r="6"/><circle cx="660" cy="110" r="6"/><circle cx="860" cy="90" r="6"/></g>
+        </svg></div>
         <div class="body">
-          <div class="tag">Product & Ventures</div>
-          <h3><a href="/blog/cryptoifai-v2-live-decisions.html" style="color:inherit;">StottifAI Ships CryptoifAI v2, Making the Bot's Decisions Visible in Real Time</a></h3>
+          <div class="tag">Product & Ventures &middot; StottifAI</div>
+          <h3>StottifAI Ships CryptoifAI v2, Making the Bot's Decisions Visible in Real Time</h3>
           <p>Live per-coin status, phone push alerts, a read-only remote view, and training you can finally watch happen.</p>
           <div class="meta">July 28, 2026 &middot; Stottly Enterprises</div>
         </div>
-      </div>
-      <div class="blog-card">
+      </a>
+
+      <a class="post-row" href="/blog/supply-chain-bottleneck-name-before-funding.html">
+        <div class="thumb"><svg viewBox="0 0 1140 340" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+          <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#4C6FFF"/><stop offset="100%" stop-color="#8B5CF6"/></linearGradient>
+          <linearGradient id="g2" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#EAF1F8"/><stop offset="100%" stop-color="#D3E4F2"/></linearGradient></defs>
+          <rect width="1140" height="340" fill="url(#g2)"/>
+          <path d="M250 100 L 700 100 L 560 240 L 390 240 Z" fill="url(#g1)" opacity="0.18"/>
+          <path d="M250 100 L 700 100 L 560 240 L 390 240 Z" fill="none" stroke="url(#g1)" stroke-width="3"/>
+          <circle cx="560" cy="240" r="8" fill="url(#g1)"/>
+          <line x1="560" y1="248" x2="560" y2="285" stroke="url(#g1)" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="890" cy="150" r="50" fill="url(#g1)" opacity="0.15"/>
+        </svg></div>
         <div class="body">
           <div class="tag">Operations & Supply Chain</div>
-          <h3><a href="/blog/supply-chain-bottleneck-name-before-funding.html" style="color:inherit;">Supply-Chain Bottleneck Need a Name Before Needing Funding</a></h3>
+          <h3>Supply-Chain Bottleneck Need a Name Before Needing Funding</h3>
           <p>New SBA supply-chain funding creates real opportunity, but a business can't solve a bottleneck it has only described as a general supply-chain problem.</p>
           <div class="meta">July 28, 2026 &middot; Stottly Enterprises</div>
         </div>
-      </div>
-      <div class="blog-card">
+      </a>
+
+      <a class="post-row" href="/blog/ai-saving-time-business-not-faster.html">
+        <div class="thumb"><svg viewBox="0 0 1140 340" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+          <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#4C6FFF"/><stop offset="100%" stop-color="#8B5CF6"/></linearGradient>
+          <linearGradient id="g2" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#EAF1F8"/><stop offset="100%" stop-color="#D3E4F2"/></linearGradient></defs>
+          <rect width="1140" height="340" fill="url(#g2)"/>
+          <circle cx="570" cy="170" r="90" fill="none" stroke="url(#g1)" stroke-width="3"/>
+          <line x1="570" y1="170" x2="570" y2="105" stroke="#2E3B4E" stroke-width="3" stroke-linecap="round"/>
+          <line x1="570" y1="170" x2="620" y2="185" stroke="#2E3B4E" stroke-width="3" stroke-linecap="round"/>
+          <g stroke="url(#g1)" stroke-width="3" stroke-linecap="round" opacity="0.7">
+          <line x1="700" y1="120" x2="760" y2="120"/><line x1="720" y1="160" x2="800" y2="160"/><line x1="700" y1="200" x2="770" y2="200"/>
+          </g>
+        </svg></div>
         <div class="body">
           <div class="tag">AI & Operating Speed</div>
-          <h3><a href="/blog/ai-saving-time-business-not-faster.html" style="color:inherit;">AI Is Saving Time. Why Isn't the Business Getting Faster?</a></h3>
+          <h3>AI Is Saving Time. Why Isn't the Business Getting Faster?</h3>
           <p>AI can make an employee faster without making the business faster. Here's the second measure every leader should be tracking alongside task time.</p>
           <div class="meta">July 27, 2026 &middot; Stottly Enterprises</div>
         </div>
-      </div>
-      <div class="blog-card">
+      </a>
+
+      <a class="post-row" href="/blog/weekly-recap-july-20-25-2026.html">
+        <div class="thumb"><svg viewBox="0 0 1140 340" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+          <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#4C6FFF"/><stop offset="100%" stop-color="#8B5CF6"/></linearGradient>
+          <linearGradient id="g2" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#EAF1F8"/><stop offset="100%" stop-color="#D3E4F2"/></linearGradient></defs>
+          <rect width="1140" height="340" fill="url(#g2)"/>
+          <g fill="none" stroke="url(#g1)" stroke-width="3" stroke-linecap="round">
+          <path d="M280 190 h230"/><path d="M470 150 l40 40 -40 40" />
+          <path d="M600 190 h230"/>
+          </g>
+          <circle cx="280" cy="190" r="14" fill="url(#g1)"/><circle cx="830" cy="190" r="14" fill="url(#g1)"/>
+          <circle cx="960" cy="120" r="46" fill="url(#g1)" opacity="0.18"/>
+        </svg></div>
         <div class="body">
           <div class="tag">Weekly Recap</div>
-          <h3><a href="/blog/weekly-recap-july-20-25-2026.html" style="color:inherit;">Weekly Recap: Nobody Owned the Handoff. Everybody Paid for It.</a></h3>
+          <h3>Weekly Recap: Nobody Owned the Handoff. Everybody Paid for It.</h3>
           <p>Exhausted managers, key-person dependency, attendance, hiring, AI, and software transformation — six different problems, one underlying failure.</p>
           <div class="meta">July 26, 2026 &middot; Stottly Enterprises</div>
         </div>
-      </div>
+      </a>
+
     </div>
 
-    <div style="margin:64px 0 32px;padding-top:32px;border-top:1px solid var(--line);">
-      <div class="section-label" style="margin-bottom:8px;">Earlier in 2026</div>
-      <p style="font-size:14px;color:var(--muted);max-width:640px;">The posts below (June 29 &ndash; July 12, 2026) were built in a previous pass and remain live. Posts published between July 13 and July 25, 2026, and the full archive beyond page 1 of the live blog (roughly 70+ additional posts across pages 2&ndash;8) still need to be crawled and rebuilt as individual pages &mdash; see the report for details. In the meantime they remain available on the <a href="https://www.stottlyenterprises.com/blog" style="color:var(--accent-deep);text-decoration:underline;">live Webador blog</a>.</p>
-    </div>
-
-    <div class="blog-grid">
-      <div class="blog-card"><div class="body"><div class="tag">Weekly Recap</div><h3><a href="/blog/weekly-recap-july-6-11-2026.html" style="color:inherit;">Weekly Recap: AI Warnings, AI Wins, and the New Management Skill Everyone Needs</a></h3><div class="meta">July 12, 2026</div></div></div>
-      <div class="blog-card"><div class="body"><div class="tag">Operations</div><h3><a href="/blog/new-pmp-exam-ai-2026.html" style="color:inherit;">Project Management Just Got an AI Upgrade — the PMP Exam Changed This Week</a></h3><div class="meta">July 11, 2026</div></div></div>
-      <div class="blog-card"><div class="body"><div class="tag">Small Business Trends</div><h3><a href="/blog/gusto-ai-small-business-revenue-data.html" style="color:inherit;">New Payroll Data From 400,000 Small Businesses Says AI Isn't Killing Jobs There</a></h3><div class="meta">July 10, 2026</div></div></div>
-      <div class="blog-card"><div class="body"><div class="tag">Leadership</div><h3><a href="/blog/ai-management-advantage-2026.html" style="color:inherit;">The Next Business Advantage Isn't Using AI. It's Managing It Well.</a></h3><div class="meta">July 9, 2026</div></div></div>
-      <div class="blog-card"><div class="body"><div class="tag">AI Adoption</div><h3><a href="/blog/ai-agents-business-roi-2026.html" style="color:inherit;">AI Agents Are Already On Your Payroll — Even If You Never Hired Them</a></h3><div class="meta">July 8, 2026</div></div></div>
-      <div class="blog-card"><div class="body"><div class="tag">AI & Technology</div><h3><a href="/blog/open-source-local-ai-models-2026.html" style="color:inherit;">The Open-Source AI Models Catching Up to the Big Names</a></h3><div class="meta">July 7, 2026</div></div></div>
-      <div class="blog-card"><div class="body"><div class="tag">Security</div><h3><a href="/blog/five-eyes-ai-cyberattack-warning-smb.html" style="color:inherit;">Five Intelligence Agencies Just Warned That AI-Powered Cyberattacks Are Coming</a></h3><div class="meta">July 6, 2026</div></div></div>
-      <div class="blog-card"><div class="body"><div class="tag">Weekly Recap</div><h3><a href="/blog/weekly-recap-june-29-july-4-2026.html" style="color:inherit;">Weekly Recap: What Small Business Owners Should Take From This Week's AI News</a></h3><div class="meta">July 5, 2026</div></div></div>
-      <div class="blog-card"><div class="body"><div class="tag">Restaurant Tech</div><h3><a href="/blog/restaurant-ai-manager-tools-2026.html" style="color:inherit;">Burger King and Yum Brands Are Betting on AI Coaches for Managers</a></h3><div class="meta">July 4, 2026</div></div></div>
-      <div class="blog-card"><div class="body"><div class="tag">Marketing</div><h3><a href="/blog/small-business-ai-video-adoption-2026.html" style="color:inherit;">Small Businesses Now Make Up Nearly Half of All AI Video Sign-Ups</a></h3><div class="meta">July 3, 2026</div></div></div>
-      <div class="blog-card"><div class="body"><div class="tag">Small Business Trends</div><h3><a href="/blog/small-business-index-july-2026-hospitality.html" style="color:inherit;">Leisure and Hospitality Just Took the Hardest Hit in the Latest Jobs Data</a></h3><div class="meta">July 2, 2026</div></div></div>
-      <div class="blog-card"><div class="body"><div class="tag">AI Adoption</div><h3><a href="/blog/fake-ai-tool-scams-small-business.html" style="color:inherit;">The AI Tool Your Employee Just Downloaded Might Not Be Real</a></h3><div class="meta">July 1, 2026</div></div></div>
-      <div class="blog-card"><div class="body"><div class="tag">Small Business Trends</div><h3><a href="/blog/small-business-hiring-slows-june-2026.html" style="color:inherit;">Small Business Hiring Is Cooling Off</a></h3><div class="meta">June 30, 2026</div></div></div>
-      <div class="blog-card"><div class="body"><div class="tag">AI Adoption</div><h3><a href="/blog/ai-receptionist-tools-small-business-2026.html" style="color:inherit;">A New Wave of "AI Receptionist" Tools Wants to Fix the Missed Call Problem</a></h3><div class="meta">June 29, 2026</div></div></div>
+    <div class="archive-cta">
+      <h3>Looking for older posts?</h3>
+      <p>The full archive lists every post we've published — including earlier 2026 coverage not shown here — in a compact, scannable list.</p>
+      <a class="btn-primary" href="/blog/archive.html">Browse the Full Archive</a>
     </div>
 
   </div>
