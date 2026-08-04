@@ -241,29 +241,30 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
 <div class="stottly-nav-scope">
 <style>
 .stottly-nav-scope{position:relative;z-index:50;}
-.stottly-nav-scope .fancy-nav{position:sticky;top:0;z-index:60;background:rgba(255,255,255,0.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line);transition:box-shadow .35s ease,background .35s ease;}
-.stottly-nav-scope .fancy-nav.is-scrolled{box-shadow:0 12px 30px -22px rgba(46,59,78,0.45);background:rgba(255,255,255,0.97);}
-.stottly-nav-scope .fn-wrap{max-width:1140px;margin:0 auto;padding:0 32px;display:flex;align-items:center;justify-content:center;height:62px;}
-.stottly-nav-scope .fn-list{display:flex;align-items:center;gap:4px;list-style:none;margin:0;padding:0;}
+.stottly-nav-scope .fancy-nav{position:sticky;top:0;z-index:60;background:rgba(255,255,255,0.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line);transition:box-shadow .35s ease,background .35s ease;}
+.stottly-nav-scope .fancy-nav.is-scrolled{box-shadow:0 12px 30px -22px rgba(46,59,78,0.45);background:rgba(255,255,255,0.98);}
+.stottly-nav-scope .fn-wrap{max-width:1140px;margin:0 auto;padding:0 32px;display:flex;align-items:center;justify-content:space-between;height:62px;}
+.stottly-nav-scope .fn-logo{display:flex;align-items:center;flex-shrink:0;}
+.stottly-nav-scope .fn-logo img{width:34px;height:34px;display:block;}
+.stottly-nav-scope .fn-list{display:flex;align-items:center;justify-content:flex-end;gap:28px;list-style:none;margin:0;padding:0;}
 .stottly-nav-scope .fn-item{position:relative;}
-.stottly-nav-scope .fn-link{display:inline-flex;align-items:center;gap:5px;padding:10px 17px;font-size:12px;letter-spacing:1.8px;text-transform:uppercase;font-weight:600;color:var(--ink);text-decoration:none;position:relative;white-space:nowrap;}
-.stottly-nav-scope .fn-link::after{content:"";position:absolute;left:17px;right:17px;bottom:5px;height:1.5px;background:var(--accent-deep);transform:scaleX(0);transform-origin:left;transition:transform .4s cubic-bezier(.4,0,.2,1);}
-.stottly-nav-scope .fn-item:hover .fn-link::after,
-.stottly-nav-scope .fn-link.is-active::after{transform:scaleX(1);}
-.stottly-nav-scope .fn-link.is-active{color:var(--accent-deep);}
+.stottly-nav-scope .fn-link{display:inline-flex;align-items:center;gap:5px;padding:6px 0;font-size:14px;font-weight:400;color:var(--text-primary,#2E3B4E);text-decoration:none;position:relative;white-space:nowrap;transform:scale(1);transition:transform .22s cubic-bezier(.34,1.56,.64,1),color .22s ease;}
+.stottly-nav-scope .fn-link:hover{transform:scale(1.16) translateY(-1px);color:#1F6FEB;}
+.stottly-nav-scope .fn-link.is-active{color:var(--text-primary,#111827);font-weight:500;}
+.stottly-nav-scope .fn-link.is-active:hover{color:#1F6FEB;}
 .stottly-nav-scope .fn-caret{width:8px;height:8px;transition:transform .3s ease;opacity:.5;}
 .stottly-nav-scope .fn-item:hover .fn-caret{transform:rotate(180deg);}
-.stottly-nav-scope .fn-panel{position:absolute;top:100%;left:50%;transform:translate(-50%,10px);min-width:270px;background:var(--white);border:1px solid var(--line);border-radius:14px;box-shadow:0 24px 50px -25px rgba(46,59,78,0.35);padding:14px;opacity:0;visibility:hidden;transition:opacity .3s ease,transform .3s ease,visibility .3s;}
+.stottly-nav-scope .fn-panel{position:absolute;top:100%;left:50%;transform:translate(-50%,10px);min-width:270px;background:var(--white,#fff);border:1px solid var(--line);border-radius:14px;box-shadow:0 24px 50px -25px rgba(46,59,78,0.35);padding:14px;opacity:0;visibility:hidden;transition:opacity .3s ease,transform .3s ease,visibility .3s;}
 .stottly-nav-scope .fn-item:hover .fn-panel{opacity:1;visibility:visible;transform:translate(-50%,0);}
 .stottly-nav-scope .fn-panel-group{margin-bottom:8px;}
 .stottly-nav-scope .fn-panel-group:last-child{margin-bottom:0;}
-.stottly-nav-scope .fn-panel a{display:block;padding:7px 12px;border-radius:8px;font-size:13.5px;color:var(--ink);text-decoration:none;letter-spacing:0.1px;transition:background .2s ease,color .2s ease,padding-left .2s ease;}
-.stottly-nav-scope .fn-panel a:hover{background:var(--sky1);padding-left:16px;color:var(--accent-deep);}
+.stottly-nav-scope .fn-panel a{display:block;padding:7px 12px;border-radius:8px;font-size:13.5px;color:var(--ink,#2E3B4E);text-decoration:none;letter-spacing:0.1px;transition:background .2s ease,color .2s ease,padding-left .2s ease;}
+.stottly-nav-scope .fn-panel a:hover{background:var(--sky1,#F7FAFD);padding-left:16px;color:#1F6FEB;}
 .stottly-nav-scope .fn-panel .fn-sub{padding-left:12px;margin-top:2px;}
-.stottly-nav-scope .fn-panel .fn-sub a{font-size:12.5px;color:var(--muted);}
+.stottly-nav-scope .fn-panel .fn-sub a{font-size:12.5px;color:var(--muted,#7C8CA3);}
 .stottly-nav-scope .fn-divider{height:1px;background:var(--line);margin:8px 4px;}
 .stottly-nav-scope .fn-burger{display:none;width:24px;height:18px;position:relative;cursor:pointer;border:none;background:none;padding:0;}
-.stottly-nav-scope .fn-burger span{position:absolute;left:0;right:0;height:2.5px;background:linear-gradient(90deg,var(--accent-deep),#8B5CF6);border-radius:2px;transition:transform .4s cubic-bezier(.4,0,.2,1),opacity .25s ease .1s,width .3s ease,background .3s ease;}
+.stottly-nav-scope .fn-burger span{position:absolute;left:0;right:0;height:2.5px;background:linear-gradient(90deg,#1F6FEB,#4C6FFF);border-radius:2px;transition:transform .4s cubic-bezier(.4,0,.2,1),opacity .25s ease .1s,width .3s ease,background .3s ease;}
 .stottly-nav-scope .fn-burger span:nth-child(1){top:0;}
 .stottly-nav-scope .fn-burger span:nth-child(2){top:8px;width:70%;}
 .stottly-nav-scope .fn-burger span:nth-child(3){top:16px;}
@@ -272,11 +273,11 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
 .stottly-nav-scope .fn-burger.is-open span:nth-child(2){opacity:0;transform:scaleX(0);transition:opacity .15s ease,transform .15s ease;}
 .stottly-nav-scope .fn-burger.is-open span:nth-child(3){top:8px;width:100%;transform:rotate(-45deg);}
 @media (max-width:900px){
-  .stottly-nav-scope .fn-list{display:none;position:absolute;top:62px;left:0;right:0;background:var(--white);flex-direction:column;align-items:stretch;border-bottom:1px solid var(--line);box-shadow:0 24px 40px -30px rgba(46,59,78,0.4);padding:10px 20px 20px;gap:0;}
+  .stottly-nav-scope .fn-list{display:none;position:absolute;top:62px;left:0;right:0;background:var(--white,#fff);flex-direction:column;align-items:stretch;border-bottom:1px solid var(--line);box-shadow:0 24px 40px -30px rgba(46,59,78,0.4);padding:10px 20px 20px;gap:0;}
   .stottly-nav-scope .fn-list.is-open{display:flex;}
   .stottly-nav-scope .fn-item{width:100%;}
-  .stottly-nav-scope .fn-link{width:100%;padding:14px 6px;justify-content:space-between;}
-  .stottly-nav-scope .fn-link::after{display:none;}
+  .stottly-nav-scope .fn-link{width:100%;padding:14px 6px;justify-content:space-between;transform:none !important;}
+  .stottly-nav-scope .fn-link:hover{transform:none !important;}
   .stottly-nav-scope .fn-panel{position:static;opacity:1;visibility:visible;transform:none;box-shadow:none;border:none;display:none;padding:0 0 6px 14px;}
   .stottly-nav-scope .fn-item.is-open .fn-panel{display:block;}
   .stottly-nav-scope .fn-burger{display:block;}
@@ -285,6 +286,9 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
 </style>
 <nav class="fancy-nav" id="stottlyFancyNav">
   <div class="fn-wrap">
+    <a class="fn-logo" href="/" aria-label="Stottly Enterprises home">
+      <img src="/assets/se-logo-nav.png" alt="Stottly Enterprises" width="34" height="34">
+    </a>
     <ul class="fn-list" id="stottlyFnList">
       <li class="fn-item"><a class="fn-link" href="/">Home</a></li>
       <li class="fn-item"><a class="fn-link" href="/who-we-are">Who We Are</a></li>
@@ -310,7 +314,6 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
       </li>
       <li class="fn-item"><a class="fn-link" href="/portfolio">Portfolio</a></li>
       <li class="fn-item"><a class="fn-link" href="/blog">Blog</a></li>
-      <li class="fn-item"><a class="fn-link" href="/contact">Contact</a></li>
     </ul>
     <button class="fn-burger" id="stottlyFnBurger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
   </div>
@@ -374,118 +377,124 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
 
     <div class="blog-featured">
       <div class="body">
-        <div class="tag">Weekly Recap</div>
-        <h3><a href="/blog/weekly-recap-july-6-11-2026" style="color:inherit;">Weekly Recap: AI Warnings, AI Wins, and the New Management Skill Everyone Needs</a></h3>
-        <p>This week: a Five Eyes AI cyberattack warning, open-source AI catching up, the ROI gap in AI agents, and why managing AI well is the new edge.</p>
-        <div class="meta">July 12, 2026 &middot; Stottly Enterprises</div>
+        <div class="tag">Operations & Leadership</div>
+        <h3><a href="/blog/the-meeting-is-not-the-work.html" style="color:inherit;">The Meeting Is Not the Work. So Why Does It Control the Week?</a></h3>
+        <p>A meeting begins as a tool for a real decision. Then it earns a permanent place on the calendar. Here's how to tell when the meeting has started managing the business instead of the other way around.</p>
+        <div class="meta">August 4, 2026 &middot; Stottly Enterprises</div>
       </div>
     </div>
 
     <div class="blog-grid">
       <div class="blog-card">
         <div class="body">
-          <div class="tag">Operations & Professional Development</div>
-          <h3><a href="/blog/new-pmp-exam-ai-2026" style="color:inherit;">Project Management Just Got an AI Upgrade — the PMP Exam Changed This Week</a></h3>
-          <p>PMI's updated PMP exam launched July 9, 2026, with AI and value delivery now nearly a quarter of the test. Here's what it signals about the field.</p>
-          <div class="meta">July 11, 2026 &middot; Stottly Enterprises</div>
-        </div>
-      </div>
-      <div class="blog-card">
-        <div class="body">
-          <div class="tag">Small Business Trends</div>
-          <h3><a href="/blog/gusto-ai-small-business-revenue-data" style="color:inherit;">New Payroll Data From 400,000 Small Businesses Says AI Isn't Killing Jobs There — It's Growing Revenue</a></h3>
-          <p>Gusto payroll data from 400,000+ small businesses shows AI-exposed workforces see revenue gains, not job losses. Here's what the numbers actually show.</p>
-          <div class="meta">July 10, 2026 &middot; Stottly Enterprises</div>
-        </div>
-      </div>
-      <div class="blog-card">
-        <div class="body">
-          <div class="tag">Leadership & Strategy</div>
-          <h3><a href="/blog/ai-management-advantage-2026" style="color:inherit;">The Next Business Advantage Isn't Using AI. It's Managing It Well.</a></h3>
-          <p>88% of businesses now use AI regularly, but the real edge comes from managing it deliberately. Here's what separates results from busywork.</p>
-          <div class="meta">July 9, 2026 &middot; Stottly Enterprises</div>
-        </div>
-      </div>
-      <div class="blog-card">
-        <div class="body">
-          <div class="tag">AI Adoption</div>
-          <h3><a href="/blog/ai-agents-business-roi-2026" style="color:inherit;">AI Agents Are Already On Your Payroll — Even If You Never Hired Them</a></h3>
-          <p>51% of enterprises now run AI agents in production, but only 29% see real ROI. The gap comes down to one design choice. Here's what it is.</p>
-          <div class="meta">July 8, 2026 &middot; Stottly Enterprises</div>
-        </div>
-      </div>
-      <div class="blog-card">
-        <div class="body">
-          <div class="tag">AI & Technology</div>
-          <h3><a href="/blog/open-source-local-ai-models-2026" style="color:inherit;">The Open-Source AI Models Catching Up to the Big Names — and Why That Matters for Your Data</a></h3>
-          <p>Open-weight models like DeepSeek and Qwen are closing the gap with proprietary AI. Here's why running AI locally is now a real option for small businesses.</p>
-          <div class="meta">July 7, 2026 &middot; Stottly Enterprises</div>
-        </div>
-      </div>
-      <div class="blog-card">
-        <div class="body">
-          <div class="tag">Security</div>
-          <h3><a href="/blog/five-eyes-ai-cyberattack-warning-smb" style="color:inherit;">Five Intelligence Agencies Just Warned That AI-Powered Cyberattacks Are "Months, Not Years" Away</a></h3>
-          <p>Five Eyes intelligence agencies warn AI-fueled cyberattacks capable of overwhelming small business defenses are coming within months. Here's what to do now.</p>
-          <div class="meta">July 6, 2026 &middot; Stottly Enterprises</div>
+          <div class="tag">Operations & Quality</div>
+          <h3><a href="/blog/the-process-looks-efficient-because-the-rework.html" style="color:inherit;">The Process Looks Efficient Because the Rework Happens Somewhere Else</a></h3>
+          <p>A process can look remarkably efficient when it's allowed to send its mistakes downstream. Here's how to measure rework across the whole transaction.</p>
+          <div class="meta">August 3, 2026 &middot; Stottly Enterprises</div>
         </div>
       </div>
       <div class="blog-card">
         <div class="body">
           <div class="tag">Weekly Recap</div>
-          <h3><a href="/blog/weekly-recap-june-29-july-4-2026" style="color:inherit;">Weekly Recap: What Small Business Owners Should Take From This Week's AI News</a></h3>
-          <p>This week: AI receptionists, a broad jobs dip, fake AI tool scams, cheaper AI video, and restaurant chains coaching managers instead of customers.</p>
-          <div class="meta">July 5, 2026 &middot; Stottly Enterprises</div>
+          <h3><a href="/blog/weekly-recap-july-27-aug-1-2026.html" style="color:inherit;">Weekly Recap: The Week Business Leaders Learned to Stop Buying Around the Problem</a></h3>
+          <p>AI productivity, supply-chain constraints, manager capacity, experienced workers, and customer handoffs — this week's common thread was uncomfortable.</p>
+          <div class="meta">August 2, 2026 &middot; Stottly Enterprises</div>
         </div>
       </div>
       <div class="blog-card">
         <div class="body">
-          <div class="tag">Operations & Restaurant Tech</div>
-          <h3><a href="/blog/restaurant-ai-manager-tools-2026" style="color:inherit;">Burger King and Yum Brands Are Betting on AI Coaches for Managers, Not Customers</a></h3>
-          <p>Burger King's "Patty" and Yum Brands' "Byte Coach" point AI at back-of-house operations, not customer-facing chatbots. Here's why that's the smarter bet.</p>
-          <div class="meta">July 4, 2026 &middot; Stottly Enterprises</div>
-        </div>
-      </div>
-      <div class="blog-card">
-        <div class="body">
-          <div class="tag">Creative & Marketing</div>
-          <h3><a href="/blog/small-business-ai-video-adoption-2026" style="color:inherit;">Small Businesses Now Make Up Nearly Half of All AI Video Sign-Ups</a></h3>
-          <p>Small businesses under 50 employees now account for 46% of AI video platform sign-ups. Here's why — and where the line between AI-assisted and AI-only still matters.</p>
-          <div class="meta">July 3, 2026 &middot; Stottly Enterprises</div>
-        </div>
-      </div>
-      <div class="blog-card">
-        <div class="body">
-          <div class="tag">Small Business Trends</div>
-          <h3><a href="/blog/small-business-index-july-2026-hospitality" style="color:inherit;">Leisure and Hospitality Just Took the Hardest Hit in the Latest Jobs Data</a></h3>
-          <p>Intuit's July 2026 Small Business Index shows employment down across all 12 sectors, with leisure and hospitality leading the decline. What operators should watch.</p>
-          <div class="meta">July 2, 2026 &middot; Stottly Enterprises</div>
+          <div class="tag">Customer Experience</div>
+          <h3><a href="/blog/customers-do-not-care-which-department-owns-the-problem.html" style="color:inherit;">Customers Do Not Care Which Department Owns the Problem</a></h3>
+          <p>A business can hit every departmental target while producing a frustrating customer journey. Here's how to map the handoffs that actually matter.</p>
+          <div class="meta">August 1, 2026 &middot; Stottly Enterprises</div>
         </div>
       </div>
       <div class="blog-card">
         <div class="body">
           <div class="tag">AI Adoption</div>
-          <h3><a href="/blog/fake-ai-tool-scams-small-business" style="color:inherit;">The AI Tool Your Employee Just Downloaded Might Not Be Real</a></h3>
-          <p>Kaspersky logged nearly 5x more fake-AI-tool attacks on small businesses this year. Here's how the scam works and what to check before your team installs anything.</p>
-          <div class="meta">July 1, 2026 &middot; Stottly Enterprises</div>
+          <h3><a href="/blog/free-ai-training-wont-fix-a-bad-workflow.html" style="color:inherit;">Free AI Training Won't Fix a Bad Workflow</a></h3>
+          <p>OpenAI's new small business training program is valuable, but it can't decide which workflow deserves attention or repair unclear ownership.</p>
+          <div class="meta">July 31, 2026 &middot; Stottly Enterprises</div>
         </div>
       </div>
       <div class="blog-card">
         <div class="body">
-          <div class="tag">Small Business Trends</div>
-          <h3><a href="/blog/small-business-hiring-slows-june-2026" style="color:inherit;">Small Business Hiring Is Cooling Off — Here's What That Actually Means</a></h3>
-          <p>Gusto's June 2026 jobs report shows small business hiring slowing from spring's pace. Here's what the numbers mean for owners planning the back half of the year.</p>
-          <div class="meta">June 30, 2026 &middot; Stottly Enterprises</div>
+          <div class="tag">Workforce & Hiring</div>
+          <h3><a href="/blog/labor-market-experience-refuses-to-use.html" style="color:inherit;">The Labor Market Has Experience It Refuses to Use</a></h3>
+          <p>Employers say they can't find experienced people while capable candidates in their 40s and 50s describe months of silence. Both can be true at once.</p>
+          <div class="meta">July 30, 2026 &middot; Stottly Enterprises</div>
         </div>
       </div>
       <div class="blog-card">
         <div class="body">
-          <div class="tag">AI Adoption</div>
-          <h3><a href="/blog/ai-receptionist-tools-small-business-2026" style="color:inherit;">Every Missed Call Is a Missed Customer. A New Wave of "AI Receptionist" Tools Wants to Fix That.</a></h3>
-          <p>Growgent.ai's new AI Growth Engine promises 24/7 call handling and lead follow-up for clinics, restaurants, and small businesses. Here's the real opportunity.</p>
-          <div class="meta">June 29, 2026 &middot; Stottly Enterprises</div>
+          <div class="tag">Press Release</div>
+          <h3><a href="/blog/press-release-deeds-app-launch.html" style="color:inherit;">Stottly Enterprises Announces D.E.E.D.S., Its First App Store App, Launching in August</a></h3>
+          <p>A private personal operating system for tasks, goals, health, relationships, business, calendar, and reflection. Currently in alpha.</p>
+          <div class="meta">July 30, 2026 &middot; Stottly Enterprises</div>
         </div>
       </div>
+      <div class="blog-card">
+        <div class="body">
+          <div class="tag">Leadership & Management</div>
+          <h3><a href="/blog/org-chart-flattened-manager-buried.html" style="color:inherit;">The Org Chart Got Flattend, But So Did The Manager</a></h3>
+          <p>Flattening an organization can remove delay and clarify accountability. It can also bury one manager under an entire business's routing.</p>
+          <div class="meta">July 29, 2026 &middot; Stottly Enterprises</div>
+        </div>
+      </div>
+      <div class="blog-card">
+        <div class="body">
+          <div class="tag">Product & Ventures</div>
+          <h3><a href="/blog/cryptoifai-v2-live-decisions.html" style="color:inherit;">StottifAI Ships CryptoifAI v2, Making the Bot's Decisions Visible in Real Time</a></h3>
+          <p>Live per-coin status, phone push alerts, a read-only remote view, and training you can finally watch happen.</p>
+          <div class="meta">July 28, 2026 &middot; Stottly Enterprises</div>
+        </div>
+      </div>
+      <div class="blog-card">
+        <div class="body">
+          <div class="tag">Operations & Supply Chain</div>
+          <h3><a href="/blog/supply-chain-bottleneck-name-before-funding.html" style="color:inherit;">Supply-Chain Bottleneck Need a Name Before Needing Funding</a></h3>
+          <p>New SBA supply-chain funding creates real opportunity, but a business can't solve a bottleneck it has only described as a general supply-chain problem.</p>
+          <div class="meta">July 28, 2026 &middot; Stottly Enterprises</div>
+        </div>
+      </div>
+      <div class="blog-card">
+        <div class="body">
+          <div class="tag">AI & Operating Speed</div>
+          <h3><a href="/blog/ai-saving-time-business-not-faster.html" style="color:inherit;">AI Is Saving Time. Why Isn't the Business Getting Faster?</a></h3>
+          <p>AI can make an employee faster without making the business faster. Here's the second measure every leader should be tracking alongside task time.</p>
+          <div class="meta">July 27, 2026 &middot; Stottly Enterprises</div>
+        </div>
+      </div>
+      <div class="blog-card">
+        <div class="body">
+          <div class="tag">Weekly Recap</div>
+          <h3><a href="/blog/weekly-recap-july-20-25-2026.html" style="color:inherit;">Weekly Recap: Nobody Owned the Handoff. Everybody Paid for It.</a></h3>
+          <p>Exhausted managers, key-person dependency, attendance, hiring, AI, and software transformation — six different problems, one underlying failure.</p>
+          <div class="meta">July 26, 2026 &middot; Stottly Enterprises</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin:64px 0 32px;padding-top:32px;border-top:1px solid var(--line);">
+      <div class="section-label" style="margin-bottom:8px;">Earlier in 2026</div>
+      <p style="font-size:14px;color:var(--muted);max-width:640px;">The posts below (June 29 &ndash; July 12, 2026) were built in a previous pass and remain live. Posts published between July 13 and July 25, 2026, and the full archive beyond page 1 of the live blog (roughly 70+ additional posts across pages 2&ndash;8) still need to be crawled and rebuilt as individual pages &mdash; see the report for details. In the meantime they remain available on the <a href="https://www.stottlyenterprises.com/blog" style="color:var(--accent-deep);text-decoration:underline;">live Webador blog</a>.</p>
+    </div>
+
+    <div class="blog-grid">
+      <div class="blog-card"><div class="body"><div class="tag">Weekly Recap</div><h3><a href="/blog/weekly-recap-july-6-11-2026.html" style="color:inherit;">Weekly Recap: AI Warnings, AI Wins, and the New Management Skill Everyone Needs</a></h3><div class="meta">July 12, 2026</div></div></div>
+      <div class="blog-card"><div class="body"><div class="tag">Operations</div><h3><a href="/blog/new-pmp-exam-ai-2026.html" style="color:inherit;">Project Management Just Got an AI Upgrade — the PMP Exam Changed This Week</a></h3><div class="meta">July 11, 2026</div></div></div>
+      <div class="blog-card"><div class="body"><div class="tag">Small Business Trends</div><h3><a href="/blog/gusto-ai-small-business-revenue-data.html" style="color:inherit;">New Payroll Data From 400,000 Small Businesses Says AI Isn't Killing Jobs There</a></h3><div class="meta">July 10, 2026</div></div></div>
+      <div class="blog-card"><div class="body"><div class="tag">Leadership</div><h3><a href="/blog/ai-management-advantage-2026.html" style="color:inherit;">The Next Business Advantage Isn't Using AI. It's Managing It Well.</a></h3><div class="meta">July 9, 2026</div></div></div>
+      <div class="blog-card"><div class="body"><div class="tag">AI Adoption</div><h3><a href="/blog/ai-agents-business-roi-2026.html" style="color:inherit;">AI Agents Are Already On Your Payroll — Even If You Never Hired Them</a></h3><div class="meta">July 8, 2026</div></div></div>
+      <div class="blog-card"><div class="body"><div class="tag">AI & Technology</div><h3><a href="/blog/open-source-local-ai-models-2026.html" style="color:inherit;">The Open-Source AI Models Catching Up to the Big Names</a></h3><div class="meta">July 7, 2026</div></div></div>
+      <div class="blog-card"><div class="body"><div class="tag">Security</div><h3><a href="/blog/five-eyes-ai-cyberattack-warning-smb.html" style="color:inherit;">Five Intelligence Agencies Just Warned That AI-Powered Cyberattacks Are Coming</a></h3><div class="meta">July 6, 2026</div></div></div>
+      <div class="blog-card"><div class="body"><div class="tag">Weekly Recap</div><h3><a href="/blog/weekly-recap-june-29-july-4-2026.html" style="color:inherit;">Weekly Recap: What Small Business Owners Should Take From This Week's AI News</a></h3><div class="meta">July 5, 2026</div></div></div>
+      <div class="blog-card"><div class="body"><div class="tag">Restaurant Tech</div><h3><a href="/blog/restaurant-ai-manager-tools-2026.html" style="color:inherit;">Burger King and Yum Brands Are Betting on AI Coaches for Managers</a></h3><div class="meta">July 4, 2026</div></div></div>
+      <div class="blog-card"><div class="body"><div class="tag">Marketing</div><h3><a href="/blog/small-business-ai-video-adoption-2026.html" style="color:inherit;">Small Businesses Now Make Up Nearly Half of All AI Video Sign-Ups</a></h3><div class="meta">July 3, 2026</div></div></div>
+      <div class="blog-card"><div class="body"><div class="tag">Small Business Trends</div><h3><a href="/blog/small-business-index-july-2026-hospitality.html" style="color:inherit;">Leisure and Hospitality Just Took the Hardest Hit in the Latest Jobs Data</a></h3><div class="meta">July 2, 2026</div></div></div>
+      <div class="blog-card"><div class="body"><div class="tag">AI Adoption</div><h3><a href="/blog/fake-ai-tool-scams-small-business.html" style="color:inherit;">The AI Tool Your Employee Just Downloaded Might Not Be Real</a></h3><div class="meta">July 1, 2026</div></div></div>
+      <div class="blog-card"><div class="body"><div class="tag">Small Business Trends</div><h3><a href="/blog/small-business-hiring-slows-june-2026.html" style="color:inherit;">Small Business Hiring Is Cooling Off</a></h3><div class="meta">June 30, 2026</div></div></div>
+      <div class="blog-card"><div class="body"><div class="tag">AI Adoption</div><h3><a href="/blog/ai-receptionist-tools-small-business-2026.html" style="color:inherit;">A New Wave of "AI Receptionist" Tools Wants to Fix the Missed Call Problem</a></h3><div class="meta">June 29, 2026</div></div></div>
     </div>
 
   </div>

@@ -240,29 +240,30 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
 <div class="stottly-nav-scope">
 <style>
 .stottly-nav-scope{position:relative;z-index:50;}
-.stottly-nav-scope .fancy-nav{position:sticky;top:0;z-index:60;background:rgba(255,255,255,0.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line);transition:box-shadow .35s ease,background .35s ease;}
-.stottly-nav-scope .fancy-nav.is-scrolled{box-shadow:0 12px 30px -22px rgba(46,59,78,0.45);background:rgba(255,255,255,0.97);}
-.stottly-nav-scope .fn-wrap{max-width:1140px;margin:0 auto;padding:0 32px;display:flex;align-items:center;justify-content:center;height:62px;}
-.stottly-nav-scope .fn-list{display:flex;align-items:center;gap:4px;list-style:none;margin:0;padding:0;}
+.stottly-nav-scope .fancy-nav{position:sticky;top:0;z-index:60;background:rgba(255,255,255,0.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line);transition:box-shadow .35s ease,background .35s ease;}
+.stottly-nav-scope .fancy-nav.is-scrolled{box-shadow:0 12px 30px -22px rgba(46,59,78,0.45);background:rgba(255,255,255,0.98);}
+.stottly-nav-scope .fn-wrap{max-width:1140px;margin:0 auto;padding:0 32px;display:flex;align-items:center;justify-content:space-between;height:62px;}
+.stottly-nav-scope .fn-logo{display:flex;align-items:center;flex-shrink:0;}
+.stottly-nav-scope .fn-logo img{width:34px;height:34px;display:block;}
+.stottly-nav-scope .fn-list{display:flex;align-items:center;justify-content:flex-end;gap:28px;list-style:none;margin:0;padding:0;}
 .stottly-nav-scope .fn-item{position:relative;}
-.stottly-nav-scope .fn-link{display:inline-flex;align-items:center;gap:5px;padding:10px 17px;font-size:12px;letter-spacing:1.8px;text-transform:uppercase;font-weight:600;color:var(--ink);text-decoration:none;position:relative;white-space:nowrap;}
-.stottly-nav-scope .fn-link::after{content:"";position:absolute;left:17px;right:17px;bottom:5px;height:1.5px;background:var(--accent-deep);transform:scaleX(0);transform-origin:left;transition:transform .4s cubic-bezier(.4,0,.2,1);}
-.stottly-nav-scope .fn-item:hover .fn-link::after,
-.stottly-nav-scope .fn-link.is-active::after{transform:scaleX(1);}
-.stottly-nav-scope .fn-link.is-active{color:var(--accent-deep);}
+.stottly-nav-scope .fn-link{display:inline-flex;align-items:center;gap:5px;padding:6px 0;font-size:14px;font-weight:400;color:var(--text-primary,#2E3B4E);text-decoration:none;position:relative;white-space:nowrap;transform:scale(1);transition:transform .22s cubic-bezier(.34,1.56,.64,1),color .22s ease;}
+.stottly-nav-scope .fn-link:hover{transform:scale(1.16) translateY(-1px);color:#1F6FEB;}
+.stottly-nav-scope .fn-link.is-active{color:var(--text-primary,#111827);font-weight:500;}
+.stottly-nav-scope .fn-link.is-active:hover{color:#1F6FEB;}
 .stottly-nav-scope .fn-caret{width:8px;height:8px;transition:transform .3s ease;opacity:.5;}
 .stottly-nav-scope .fn-item:hover .fn-caret{transform:rotate(180deg);}
-.stottly-nav-scope .fn-panel{position:absolute;top:100%;left:50%;transform:translate(-50%,10px);min-width:270px;background:var(--white);border:1px solid var(--line);border-radius:14px;box-shadow:0 24px 50px -25px rgba(46,59,78,0.35);padding:14px;opacity:0;visibility:hidden;transition:opacity .3s ease,transform .3s ease,visibility .3s;}
+.stottly-nav-scope .fn-panel{position:absolute;top:100%;left:50%;transform:translate(-50%,10px);min-width:270px;background:var(--white,#fff);border:1px solid var(--line);border-radius:14px;box-shadow:0 24px 50px -25px rgba(46,59,78,0.35);padding:14px;opacity:0;visibility:hidden;transition:opacity .3s ease,transform .3s ease,visibility .3s;}
 .stottly-nav-scope .fn-item:hover .fn-panel{opacity:1;visibility:visible;transform:translate(-50%,0);}
 .stottly-nav-scope .fn-panel-group{margin-bottom:8px;}
 .stottly-nav-scope .fn-panel-group:last-child{margin-bottom:0;}
-.stottly-nav-scope .fn-panel a{display:block;padding:7px 12px;border-radius:8px;font-size:13.5px;color:var(--ink);text-decoration:none;letter-spacing:0.1px;transition:background .2s ease,color .2s ease,padding-left .2s ease;}
-.stottly-nav-scope .fn-panel a:hover{background:var(--sky1);padding-left:16px;color:var(--accent-deep);}
+.stottly-nav-scope .fn-panel a{display:block;padding:7px 12px;border-radius:8px;font-size:13.5px;color:var(--ink,#2E3B4E);text-decoration:none;letter-spacing:0.1px;transition:background .2s ease,color .2s ease,padding-left .2s ease;}
+.stottly-nav-scope .fn-panel a:hover{background:var(--sky1,#F7FAFD);padding-left:16px;color:#1F6FEB;}
 .stottly-nav-scope .fn-panel .fn-sub{padding-left:12px;margin-top:2px;}
-.stottly-nav-scope .fn-panel .fn-sub a{font-size:12.5px;color:var(--muted);}
+.stottly-nav-scope .fn-panel .fn-sub a{font-size:12.5px;color:var(--muted,#7C8CA3);}
 .stottly-nav-scope .fn-divider{height:1px;background:var(--line);margin:8px 4px;}
 .stottly-nav-scope .fn-burger{display:none;width:24px;height:18px;position:relative;cursor:pointer;border:none;background:none;padding:0;}
-.stottly-nav-scope .fn-burger span{position:absolute;left:0;right:0;height:2.5px;background:linear-gradient(90deg,var(--accent-deep),#8B5CF6);border-radius:2px;transition:transform .4s cubic-bezier(.4,0,.2,1),opacity .25s ease .1s,width .3s ease,background .3s ease;}
+.stottly-nav-scope .fn-burger span{position:absolute;left:0;right:0;height:2.5px;background:linear-gradient(90deg,#1F6FEB,#4C6FFF);border-radius:2px;transition:transform .4s cubic-bezier(.4,0,.2,1),opacity .25s ease .1s,width .3s ease,background .3s ease;}
 .stottly-nav-scope .fn-burger span:nth-child(1){top:0;}
 .stottly-nav-scope .fn-burger span:nth-child(2){top:8px;width:70%;}
 .stottly-nav-scope .fn-burger span:nth-child(3){top:16px;}
@@ -271,11 +272,11 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
 .stottly-nav-scope .fn-burger.is-open span:nth-child(2){opacity:0;transform:scaleX(0);transition:opacity .15s ease,transform .15s ease;}
 .stottly-nav-scope .fn-burger.is-open span:nth-child(3){top:8px;width:100%;transform:rotate(-45deg);}
 @media (max-width:900px){
-  .stottly-nav-scope .fn-list{display:none;position:absolute;top:62px;left:0;right:0;background:var(--white);flex-direction:column;align-items:stretch;border-bottom:1px solid var(--line);box-shadow:0 24px 40px -30px rgba(46,59,78,0.4);padding:10px 20px 20px;gap:0;}
+  .stottly-nav-scope .fn-list{display:none;position:absolute;top:62px;left:0;right:0;background:var(--white,#fff);flex-direction:column;align-items:stretch;border-bottom:1px solid var(--line);box-shadow:0 24px 40px -30px rgba(46,59,78,0.4);padding:10px 20px 20px;gap:0;}
   .stottly-nav-scope .fn-list.is-open{display:flex;}
   .stottly-nav-scope .fn-item{width:100%;}
-  .stottly-nav-scope .fn-link{width:100%;padding:14px 6px;justify-content:space-between;}
-  .stottly-nav-scope .fn-link::after{display:none;}
+  .stottly-nav-scope .fn-link{width:100%;padding:14px 6px;justify-content:space-between;transform:none !important;}
+  .stottly-nav-scope .fn-link:hover{transform:none !important;}
   .stottly-nav-scope .fn-panel{position:static;opacity:1;visibility:visible;transform:none;box-shadow:none;border:none;display:none;padding:0 0 6px 14px;}
   .stottly-nav-scope .fn-item.is-open .fn-panel{display:block;}
   .stottly-nav-scope .fn-burger{display:block;}
@@ -284,6 +285,9 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
 </style>
 <nav class="fancy-nav" id="stottlyFancyNav">
   <div class="fn-wrap">
+    <a class="fn-logo" href="/" aria-label="Stottly Enterprises home">
+      <img src="/assets/se-logo-nav.png" alt="Stottly Enterprises" width="34" height="34">
+    </a>
     <ul class="fn-list" id="stottlyFnList">
       <li class="fn-item"><a class="fn-link" href="/">Home</a></li>
       <li class="fn-item"><a class="fn-link" href="/who-we-are">Who We Are</a></li>
@@ -309,7 +313,6 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
       </li>
       <li class="fn-item"><a class="fn-link" href="/portfolio">Portfolio</a></li>
       <li class="fn-item"><a class="fn-link" href="/blog">Blog</a></li>
-      <li class="fn-item"><a class="fn-link" href="/contact">Contact</a></li>
     </ul>
     <button class="fn-burger" id="stottlyFnBurger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
   </div>
@@ -758,7 +761,7 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
         <div style="display:inline-block;font-size:10.5px;letter-spacing:1.5px;text-transform:uppercase;color:var(--accent-deep);font-weight:600;margin-bottom:10px;">Launching August 2026</div>
         <h3>D.E.E.D.S.</h3>
         <p>Our first App Store app: a private personal operating system for tasks, goals, health, relationships, and reflection. Currently in alpha.</p>
-        <a class="venture-link" href="mailto:info@stottlyenterprises.com" style="display:inline-block;margin-top:6px;">Get in touch →</a>
+        <a class="venture-link" href="/ventures/deeds" style="display:inline-block;margin-top:6px;">Learn more →</a>
       </div>
       <div class="service-card">
         <div class="chip" style="display:flex;align-items:center;justify-content:center;background:var(--white);border:1px solid var(--line);">
