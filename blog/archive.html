@@ -55,8 +55,11 @@ img{max-width:100%;display:block;}
 .archive-year:first-child{margin-top:0;}
 .archive-list{border-top:1px solid var(--line);}
 .archive-row{display:grid;grid-template-columns:110px 1fr auto;gap:20px;align-items:baseline;padding:16px 4px;border-bottom:1px solid var(--line);transition:background .15s ease;}
+.archive-row.has-thumb{grid-template-columns:110px 52px 1fr auto;align-items:center;}
 .archive-row:hover{background:var(--sky1);}
 .archive-row .a-date{font-size:12px;color:var(--muted);letter-spacing:0.3px;white-space:nowrap;}
+.archive-row .a-thumb{width:52px;height:52px;border-radius:8px;overflow:hidden;flex-shrink:0;}
+.archive-row .a-thumb img{width:52px;height:52px;object-fit:cover;display:block;border-radius:8px;}
 .archive-row .a-main h3{font-size:15.5px;font-weight:500;color:var(--ink);margin-bottom:4px;line-height:1.4;}
 .archive-row .a-main p{font-size:12.5px;color:var(--muted);}
 .archive-row .a-tag{font-size:10px;text-transform:uppercase;letter-spacing:1.5px;color:var(--accent-deep);font-weight:600;white-space:nowrap;text-align:right;}
@@ -74,6 +77,8 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
 
 @media (max-width:700px){
   .archive-row{grid-template-columns:1fr;gap:4px;padding:14px 4px;}
+  .archive-row.has-thumb{grid-template-columns:1fr;}
+  .archive-row.has-thumb .a-thumb{display:none;}
   .archive-row .a-tag{text-align:left;}
 }
 </style>
@@ -279,38 +284,119 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
         <div class="a-main"><h3>Weekly Recap: Nobody Owned the Handoff. Everybody Paid for It.</h3><p>Exhausted managers, key-person dependency, attendance, hiring, AI, and software transformation.</p></div>
         <div class="a-tag">Weekly Recap</div>
       </a>
+      <a class="archive-row" href="/blog/transformation-failed-before-software-live.html">
+        <div class="a-date">Jul 25, 2026</div>
+        <div class="a-main"><h3>The Transformation Failed Before the Software Went Live</h3><p>Transformation failure begins with unclear outcomes, ownership, and process decisions.</p></div>
+        <div class="a-tag">Operations &amp; Transformation</div>
+      </a>
+      <a class="archive-row" href="/blog/press-release-agentic-forge-q4-2026.html">
+        <div class="a-date">Jul 24, 2026</div>
+        <div class="a-main"><h3>Press Release: Stottly Enterprises Targets Fourth Quarter 2026 for Agentic Forge 1.0</h3><p>The preview build is live now, shaping what ships when Agentic Forge 1.0 launches this fall.</p></div>
+        <div class="a-tag">Press Release</div>
+      </a>
+      <a class="archive-row" href="/blog/intel-rebuilding-work-not-buying-ai-tool.html">
+        <div class="a-date">Jul 24, 2026</div>
+        <div class="a-main"><h3>Intel Is Rebuilding Work, Not Buying Another AI Tool</h3><p>Intel's enterprise AI rollout shows why companies must redesign workflows and controls before technology can create value.</p></div>
+        <div class="a-tag">AI Adoption</div>
+      </a>
+      <a class="archive-row" href="/blog/job-description-screening-out-candidate.html">
+        <div class="a-date">Jul 23, 2026</div>
+        <div class="a-main"><h3>The Job Description Is Screening Out the Person You Need</h3><p>Job descriptions packed with unnecessary requirements screen out capable candidates.</p></div>
+        <div class="a-tag">Workforce &amp; Hiring</div>
+      </a>
+      <a class="archive-row" href="/blog/attendance-policy-customer-experience.html">
+        <div class="a-date">Jul 22, 2026</div>
+        <div class="a-main"><h3>Attendance Policy Is a Customer Experience Policy</h3><p>Attendance is treated as an HR issue, but its consequences arrive at the counter.</p></div>
+        <div class="a-tag">Workforce &amp; Customer Experience</div>
+      </a>
+      <a class="archive-row" href="/blog/key-person-risk-small-business.html">
+        <div class="a-date">Jul 21, 2026</div>
+        <div class="a-main"><h3>If One Employee Knows How Everything Works, You Have a Failure Point</h3><p>How to capture operating knowledge without replacing judgment with bureaucracy.</p></div>
+        <div class="a-tag">Operations &amp; Continuity</div>
+      </a>
+      <a class="archive-row" href="/blog/press-release-cryptoifai-launch.html">
+        <div class="a-date">Jul 20, 2026</div>
+        <div class="a-main"><h3>Press Release: StottifAI Launches CryptoifAI, a Free Autonomous Crypto Trading System</h3><p>Live and trading real funds since February 2026, and free to use.</p></div>
+        <div class="a-tag">Press Release</div>
+      </a>
+      <a class="archive-row" href="/blog/managers-tired-holding-business-together.html">
+        <div class="a-date">Jul 20, 2026</div>
+        <div class="a-main"><h3>Managers Are Tired of Holding the Business Together</h3><p>Manager engagement is falling because managers are carrying broken processes and unclear authority.</p></div>
+        <div class="a-tag">Leadership &amp; Management</div>
+      </a>
+      <a class="archive-row" href="/blog/weekly-recap-july-13-19-2026.html">
+        <div class="a-date">Jul 19, 2026</div>
+        <div class="a-main"><h3>Weekly Recap: Six Days, One Problem: The Work Still Gets Stuck.</h3><p>AI pilots, decision speed, experienced workers, and governance all trace back to one operating truth.</p></div>
+        <div class="a-tag">Weekly Recap</div>
+      </a>
+      <a class="archive-row" href="/blog/ai-policy-cannot-stop-bad-decision.html">
+        <div class="a-date">Jul 18, 2026</div>
+        <div class="a-main"><h3>Your AI Policy Cannot Stop a Bad Decision</h3><p>Small businesses should begin AI adoption with one measurable operating problem, not a broad strategy.</p></div>
+        <div class="a-tag">AI Adoption</div>
+      </a>
+      <a class="archive-row" href="/blog/ai-pilots-easy-operating-change-hard.html">
+        <div class="a-date">Jul 17, 2026</div>
+        <div class="a-main"><h3>AI Pilots Are Easy. Operating Change Is Hard.</h3><p>Enterprise AI is becoming an operating-model challenge, not a product decision.</p></div>
+        <div class="a-tag">AI Adoption</div>
+      </a>
+      <a class="archive-row" href="/blog/job-market-strong-unless-experienced.html">
+        <div class="a-date">Jul 16, 2026</div>
+        <div class="a-main"><h3>The Job Market Is Strong, Unless You Are Experienced</h3><p>The job market is harder for experienced workers in their 40s and 50s.</p></div>
+        <div class="a-tag">Workforce &amp; Hiring</div>
+      </a>
+      <a class="archive-row" href="/blog/speed-kills-slow-decisions-kill-businesses.html">
+        <div class="a-date">Jul 15, 2026</div>
+        <div class="a-main"><h3>Speed Kills. Slow Decisions Kill Businesses.</h3><p>The companies that outperform their competitors recognize problems sooner and decide faster.</p></div>
+        <div class="a-tag">Leadership &amp; Decision-Making</div>
+      </a>
+      <a class="archive-row" href="/blog/technology-not-competitive-advantage-execution-is.html">
+        <div class="a-date">Jul 14, 2026</div>
+        <div class="a-main"><h3>Technology Isn't Your Competitive Advantage. Execution Is.</h3><p>Successful businesses focus on execution and operational excellence before adopting new technology.</p></div>
+        <div class="a-tag">Operations &amp; Strategy</div>
+      </a>
+      <a class="archive-row" href="/blog/ai-pilot-trap-why-projects-never-scale.html">
+        <div class="a-date">Jul 13, 2026</div>
+        <div class="a-main"><h3>The AI Pilot Trap: Why Most AI Projects Never Deliver Real Business Value</h3><p>Most businesses successfully pilot AI but never achieve meaningful operational change.</p></div>
+        <div class="a-tag">AI Adoption</div>
+      </a>
       <a class="archive-row" href="/blog/weekly-recap-july-6-11-2026.html">
         <div class="a-date">Jul 12, 2026</div>
         <div class="a-main"><h3>Weekly Recap: AI Warnings, AI Wins, and the New Management Skill Everyone Needs</h3></div>
         <div class="a-tag">Weekly Recap</div>
       </a>
-      <a class="archive-row" href="/blog/new-pmp-exam-ai-2026.html">
+      <a class="archive-row has-thumb" href="/blog/new-pmp-exam-ai-2026.html">
         <div class="a-date">Jul 11, 2026</div>
+        <div class="a-thumb"><img src="/assets/blog/pmp-exam-ai-thumb.jpg" alt="" loading="lazy"></div>
         <div class="a-main"><h3>Project Management Just Got an AI Upgrade — the PMP Exam Changed This Week</h3></div>
         <div class="a-tag">Operations</div>
       </a>
-      <a class="archive-row" href="/blog/gusto-ai-small-business-revenue-data.html">
+      <a class="archive-row has-thumb" href="/blog/gusto-ai-small-business-revenue-data.html">
         <div class="a-date">Jul 10, 2026</div>
+        <div class="a-thumb"><img src="/assets/blog/gusto-ai-data-thumb.jpg" alt="" loading="lazy"></div>
         <div class="a-main"><h3>New Payroll Data From 400,000 Small Businesses Says AI Isn't Killing Jobs There</h3></div>
         <div class="a-tag">Small Business Trends</div>
       </a>
-      <a class="archive-row" href="/blog/ai-management-advantage-2026.html">
+      <a class="archive-row has-thumb" href="/blog/ai-management-advantage-2026.html">
         <div class="a-date">Jul 9, 2026</div>
+        <div class="a-thumb"><img src="/assets/blog/ai-management-advantage-thumb.jpg" alt="" loading="lazy"></div>
         <div class="a-main"><h3>The Next Business Advantage Isn't Using AI. It's Managing It Well.</h3></div>
         <div class="a-tag">Leadership</div>
       </a>
-      <a class="archive-row" href="/blog/ai-agents-business-roi-2026.html">
+      <a class="archive-row has-thumb" href="/blog/ai-agents-business-roi-2026.html">
         <div class="a-date">Jul 8, 2026</div>
+        <div class="a-thumb"><img src="/assets/blog/ai-agents-roi-thumb.jpg" alt="" loading="lazy"></div>
         <div class="a-main"><h3>AI Agents Are Already On Your Payroll — Even If You Never Hired Them</h3></div>
         <div class="a-tag">AI Adoption</div>
       </a>
-      <a class="archive-row" href="/blog/open-source-local-ai-models-2026.html">
+      <a class="archive-row has-thumb" href="/blog/open-source-local-ai-models-2026.html">
         <div class="a-date">Jul 7, 2026</div>
+        <div class="a-thumb"><img src="/assets/blog/open-source-ai-thumb.jpg" alt="" loading="lazy"></div>
         <div class="a-main"><h3>The Open-Source AI Models Catching Up to the Big Names</h3></div>
         <div class="a-tag">AI & Technology</div>
       </a>
-      <a class="archive-row" href="/blog/five-eyes-ai-cyberattack-warning-smb.html">
+      <a class="archive-row has-thumb" href="/blog/five-eyes-ai-cyberattack-warning-smb.html">
         <div class="a-date">Jul 6, 2026</div>
+        <div class="a-thumb"><img src="/assets/blog/five-eyes-warning-thumb.jpg" alt="" loading="lazy"></div>
         <div class="a-main"><h3>Five Intelligence Agencies Just Warned That AI-Powered Cyberattacks Are Coming</h3></div>
         <div class="a-tag">Security</div>
       </a>
@@ -319,23 +405,27 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
         <div class="a-main"><h3>Weekly Recap: What Small Business Owners Should Take From This Week's AI News</h3></div>
         <div class="a-tag">Weekly Recap</div>
       </a>
-      <a class="archive-row" href="/blog/restaurant-ai-manager-tools-2026.html">
+      <a class="archive-row has-thumb" href="/blog/restaurant-ai-manager-tools-2026.html">
         <div class="a-date">Jul 4, 2026</div>
+        <div class="a-thumb"><img src="/assets/blog/restaurant-ai-thumb.jpg" alt="" loading="lazy"></div>
         <div class="a-main"><h3>Burger King and Yum Brands Are Betting on AI Coaches for Managers</h3></div>
         <div class="a-tag">Restaurant Tech</div>
       </a>
-      <a class="archive-row" href="/blog/small-business-ai-video-adoption-2026.html">
+      <a class="archive-row has-thumb" href="/blog/small-business-ai-video-adoption-2026.html">
         <div class="a-date">Jul 3, 2026</div>
+        <div class="a-thumb"><img src="/assets/blog/ai-video-adoption-thumb.jpg" alt="" loading="lazy"></div>
         <div class="a-main"><h3>Small Businesses Now Make Up Nearly Half of All AI Video Sign-Ups</h3></div>
         <div class="a-tag">Marketing</div>
       </a>
-      <a class="archive-row" href="/blog/small-business-index-july-2026-hospitality.html">
+      <a class="archive-row has-thumb" href="/blog/small-business-index-july-2026-hospitality.html">
         <div class="a-date">Jul 2, 2026</div>
+        <div class="a-thumb"><img src="/assets/blog/hospitality-jobs-thumb.jpg" alt="" loading="lazy"></div>
         <div class="a-main"><h3>Leisure and Hospitality Just Took the Hardest Hit in the Latest Jobs Data</h3></div>
         <div class="a-tag">Small Business Trends</div>
       </a>
-      <a class="archive-row" href="/blog/fake-ai-tool-scams-small-business.html">
+      <a class="archive-row has-thumb" href="/blog/fake-ai-tool-scams-small-business.html">
         <div class="a-date">Jul 1, 2026</div>
+        <div class="a-thumb"><img src="/assets/blog/fake-ai-scams-thumb.jpg" alt="" loading="lazy"></div>
         <div class="a-main"><h3>The AI Tool Your Employee Just Downloaded Might Not Be Real</h3></div>
         <div class="a-tag">AI Adoption</div>
       </a>
@@ -343,19 +433,21 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
 
     <div class="archive-year">June 2026</div>
     <div class="archive-list">
-      <a class="archive-row" href="/blog/small-business-hiring-slows-june-2026.html">
+      <a class="archive-row has-thumb" href="/blog/small-business-hiring-slows-june-2026.html">
         <div class="a-date">Jun 30, 2026</div>
+        <div class="a-thumb"><img src="/assets/blog/hiring-slows-thumb.jpg" alt="" loading="lazy"></div>
         <div class="a-main"><h3>Small Business Hiring Is Cooling Off</h3></div>
         <div class="a-tag">Small Business Trends</div>
       </a>
-      <a class="archive-row" href="/blog/ai-receptionist-tools-small-business-2026.html">
+      <a class="archive-row has-thumb" href="/blog/ai-receptionist-tools-small-business-2026.html">
         <div class="a-date">Jun 29, 2026</div>
+        <div class="a-thumb"><img src="/assets/blog/ai-receptionist-thumb.jpg" alt="" loading="lazy"></div>
         <div class="a-main"><h3>A New Wave of &quot;AI Receptionist&quot; Tools Wants to Fix the Missed Call Problem</h3></div>
         <div class="a-tag">AI Adoption</div>
       </a>
     </div>
 
-    <p style="font-size:13px;color:var(--muted);margin-top:40px;">Posts published between July 13 &ndash; 25, 2026, and the remaining archive beyond this list, are still being migrated from the live Webador blog. They remain available at <a href="https://www.stottlyenterprises.com/blog" style="color:var(--accent-deep);text-decoration:underline;">stottlyenterprises.com/blog</a> in the meantime.</p>
+    <p style="font-size:13px;color:var(--muted);margin-top:40px;">Posts published before Jun 29, 2026, and the remaining archive beyond this list, will become inaccessible as of 10/4/2026. They remain available at <a href="https://www.stottlyenterprises.com/blog-archive" style="color:var(--accent-deep);text-decoration:underline;">https://www.stottlyenterprises.com/blog-archive</a> in the meantime.</p>
 
   </div>
 </section>

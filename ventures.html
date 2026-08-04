@@ -523,13 +523,18 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
   }
   function swap(svg){
     if(!svg || svg.dataset.deedsSwapped) return;
-    var color = getColor(svg);
+    var color = '#2563EB';
     svg.dataset.deedsSwapped = '1';
     svg.setAttribute('viewBox','0 0 30 30');
     svg.innerHTML =
-      '<g class="deeds-spark-icon" fill="none" stroke="'+color+'" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">' +
-        '<path d="M15 3 C15.9 9.2 18.8 12.1 25 13 C18.8 13.9 15.9 16.8 15 23 C14.1 16.8 11.2 13.9 5 13 C11.2 12.1 14.1 9.2 15 3 Z" fill="'+color+'" fill-opacity="0.18"/>' +
-        '<circle cx="21.5" cy="21.5" r="1.7" fill="'+color+'" stroke="none"/>' +
+      '<g class="deeds-spark-icon" fill="none" stroke="'+color+'" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">' +
+        '<g transform="translate(0.6 0.6) scale(1.2)">' +
+          '<path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/>' +
+          '<path d="M5 3v4"/>' +
+          '<path d="M19 17v4"/>' +
+          '<path d="M3 5h4"/>' +
+          '<path d="M17 19h4"/>' +
+        '</g>' +
       '</g>';
   }
   function scan(){
