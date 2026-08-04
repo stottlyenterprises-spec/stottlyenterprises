@@ -1,0 +1,22 @@
+<svg viewBox="0 0 1140 340" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="cfg1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0D1017"/>
+      <stop offset="100%" stop-color="#1B2028"/>
+    </linearGradient>
+    <linearGradient id="cfaiArrowGrad" gradientUnits="userSpaceOnUse" x1="440" y1="200" x2="560" y2="90">
+      <stop offset="0%" stop-color="#5C7CFA"/>
+      <stop offset="100%" stop-color="#8C7CFF"/>
+    </linearGradient>
+  </defs>
+  <rect width="1140" height="340" fill="url(#cfg1)"/>
+  <circle cx="850" cy="90" r="170" fill="#5C7CFA" opacity="0.10"/>
+  <circle cx="220" cy="280" r="150" fill="#8C7CFF" opacity="0.08"/>
+  <g transform="translate(400,60)">
+    <circle cx="100" cy="100" r="66" fill="none" stroke="#5C7CFA" stroke-width="9"/>
+    <line x1="68" y1="132" x2="122" y2="78" stroke="url(#cfaiArrowGrad)" stroke-width="9" stroke-linecap="round"/>
+    <circle cx="68" cy="132" r="8" fill="#5C7CFA"/>
+    <polygon points="143.6,56.4 134.4,84 116,65.6" fill="#8C7CFF"/>
+  </g>
+  <text x="570" y="270" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="30" font-weight="300" letter-spacing="2" fill="#EAF1F8">Crypto<tspan fill="#8C7CFF">ifAI</tspan></text>
+</svg>

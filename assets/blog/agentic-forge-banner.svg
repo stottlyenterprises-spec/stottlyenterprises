@@ -1,0 +1,21 @@
+<svg viewBox="0 0 1140 340" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="afg1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1B2028"/>
+      <stop offset="100%" stop-color="#2E3B4E"/>
+    </linearGradient>
+    <linearGradient id="afg2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#5C7CFA"/>
+      <stop offset="100%" stop-color="#8C7CFF"/>
+    </linearGradient>
+  </defs>
+  <rect width="1140" height="340" fill="url(#afg1)"/>
+  <circle cx="960" cy="80" r="180" fill="url(#afg2)" opacity="0.12"/>
+  <circle cx="120" cy="300" r="140" fill="url(#afg2)" opacity="0.10"/>
+  <g transform="translate(495,90) scale(1.5)">
+    <path fill="url(#afg2)" d="M8 112 42 31V13L48 3v109H36V61l-14 51H8Z"/>
+    <path fill="url(#afg2)" d="m52 3 6 10v18l34 81H78L64 61v51H52V3Z"/>
+    <path fill="url(#afg2)" d="M52 48h25v10H52zM52 68h19v9H52z"/>
+  </g>
+  <text x="570" y="270" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="30" font-weight="300" letter-spacing="4" fill="#EAF1F8">AGENTIC FORGE</text>
+</svg>

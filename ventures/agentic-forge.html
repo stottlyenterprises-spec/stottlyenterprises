@@ -434,7 +434,11 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
     var color = '#2563EB';
     svg.dataset.deedsSwapped = '1';
     svg.setAttribute('viewBox','0 0 30 30');
+    var uid = 'deedsGlow'+Math.random().toString(36).slice(2,9);
     svg.innerHTML =
+      '<defs><filter id="'+uid+'" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="2.5"/></filter></defs>' +
+      '<circle class="deeds-glow-halo" cx="15" cy="15" r="10" fill="#ffffff" filter="url(#'+uid+')"/>' +
+      '<circle class="deeds-ring-rotate" cx="15" cy="15" r="12" fill="none" stroke="#ffffff" stroke-width="1.2" stroke-dasharray="4 5"/>' +
       '<g class="deeds-spark-icon" fill="none" stroke="'+color+'" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">' +
         '<g transform="translate(0.6 0.6) scale(1.2)">' +
           '<path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/>' +
@@ -464,9 +468,29 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
   transform-origin: 15px 15px;
   animation: deedsSparkPulse 2.4s ease-in-out infinite;
 }
+.skip-agent-button svg .deeds-glow-halo{
+  transform-box: fill-box;
+  transform-origin: center;
+  opacity: 0.35;
+  animation: deedsGlowPulse 2.4s ease-in-out infinite;
+}
+.skip-agent-button svg .deeds-ring-rotate{
+  transform-box: fill-box;
+  transform-origin: center;
+  opacity: 0.5;
+  animation: deedsRingRotate 7s linear infinite;
+}
 @keyframes deedsSparkPulse{
   0%, 100% { transform: scale(1); opacity: 1; }
   50% { transform: scale(1.12); opacity: 0.85; }
+}
+@keyframes deedsGlowPulse{
+  0%, 100% { opacity: 0.35; transform: scale(1); }
+  50% { opacity: 0.55; transform: scale(1.15); }
+}
+@keyframes deedsRingRotate{
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 </style>
 </div>
