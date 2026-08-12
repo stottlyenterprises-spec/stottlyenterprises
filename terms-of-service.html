@@ -240,6 +240,7 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
 <body>
 <a href="#main-content" class="skip-link">Skip to content</a>
 <style>.skip-link{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;z-index:9999;background:#fff;color:#111;padding:12px 20px;border-radius:0 0 8px 0;font:600 14px/1.4 system-ui,sans-serif;text-decoration:none;}.skip-link:focus{left:0;top:0;width:auto;height:auto;overflow:visible;}</style>
+<style>.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}</style>
 <div class="stottly-nav-scope">
 <style>
 .stottly-nav-scope{position:relative;z-index:50;}
@@ -299,12 +300,12 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
         <a class="fn-link" href="/ventures">Ventures <svg class="fn-caret" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
         <div class="fn-panel">
           <div class="fn-panel-group">
-            <a href="https://stottifai.com/" target="_blank" rel="noopener" style="font-weight:600;">StottifAI ↗</a>
+            <a href="https://stottifai.com/" target="_blank" rel="noopener" style="font-weight:600;">StottifAI ↗<span class="sr-only"> (opens in new tab)</span></a>
           </div>
           <div class="fn-divider"></div>
           <div class="fn-panel-group">
-            <a href="https://gurilla-studios.com/" target="_blank" rel="noopener">Gurilla Studios ↗</a>
-            <a href="https://cartcurios.com" target="_blank" rel="noopener">CartCurios ↗</a>
+            <a href="https://gurilla-studios.com/" target="_blank" rel="noopener">Gurilla Studios ↗<span class="sr-only"> (opens in new tab)</span></a>
+            <a href="https://cartcurios.com" target="_blank" rel="noopener">CartCurios ↗<span class="sr-only"> (opens in new tab)</span></a>
             <a href="/ventures/deeds">D.E.E.D.S.</a>
             <a href="/ventures/agentic-forge">Agentic Forge</a>
           </div>
