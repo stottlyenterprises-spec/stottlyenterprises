@@ -237,6 +237,8 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
 </style>
 </head>
 <body>
+<a href="#main-content" class="skip-link">Skip to content</a>
+<style>.skip-link{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;z-index:9999;background:#fff;color:#111;padding:12px 20px;border-radius:0 0 8px 0;font:600 14px/1.4 system-ui,sans-serif;text-decoration:none;}.skip-link:focus{left:0;top:0;width:auto;height:auto;overflow:visible;}</style>
 <div class="stottly-nav-scope">
 <style>
 .stottly-nav-scope{position:relative;z-index:50;}
@@ -357,7 +359,7 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
 </script>
 </div>
 
-<div class="stottly-scope">
+<div id="main-content" class="stottly-scope">
 <style>
 .stottly-scope .af-fp-col{display:flex;flex-direction:column;justify-content:space-between;gap:20px;}
 .stottly-scope .af-fp-btn{align-self:flex-start;margin-top:8px;}
