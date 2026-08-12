@@ -263,7 +263,7 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
 .stottly-nav-scope .fn-panel .fn-sub{padding-left:12px;margin-top:2px;}
 .stottly-nav-scope .fn-panel .fn-sub a{font-size:12.5px;color:var(--muted,#7C8CA3);}
 .stottly-nav-scope .fn-divider{height:1px;background:var(--line);margin:8px 4px;}
-.stottly-nav-scope .fn-burger{display:none;width:24px;height:18px;position:relative;cursor:pointer;border:none;background:none;padding:0;}
+.stottly-nav-scope .fn-burger{display:none;width:24px;height:18px;position:relative;cursor:pointer;border:none;background:none;padding:0;}.stottly-nav-scope .fn-burger::before{content:"";position:absolute;top:50%;left:50%;width:44px;height:44px;transform:translate(-50%,-50%);}
 .stottly-nav-scope .fn-burger span{position:absolute;left:0;right:0;height:2.5px;background:linear-gradient(90deg,#1F6FEB,#4C6FFF);border-radius:2px;transition:transform .4s cubic-bezier(.4,0,.2,1),opacity .25s ease .1s,width .3s ease,background .3s ease;}
 .stottly-nav-scope .fn-burger span:nth-child(1){top:0;}
 .stottly-nav-scope .fn-burger span:nth-child(2){top:8px;width:70%;}
@@ -311,7 +311,7 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
       <li class="fn-item"><a class="fn-link" href="/portfolio">Portfolio</a></li>
       <li class="fn-item"><a class="fn-link" href="/blog">Blog</a></li>
     </ul>
-    <button class="fn-burger" id="stottlyFnBurger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <button class="fn-burger" id="stottlyFnBurger" aria-label="Toggle menu" aria-expanded="false" aria-controls="stottlyFnList"><span></span><span></span><span></span></button>
   </div>
 </nav>
 <script>
@@ -326,10 +326,20 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
     else{ nav.classList.remove('is-scrolled'); }
   }, {passive:true});
 
+  function closeMenu(){
+    list.classList.remove('is-open');
+    burger.classList.remove('is-open');
+    burger.setAttribute('aria-expanded', 'false');
+    Array.prototype.forEach.call(list.querySelectorAll('.fn-item.is-open'), function(item){
+      item.classList.remove('is-open');
+    });
+  }
+
   if(burger && list){
     burger.addEventListener('click', function(){
-      list.classList.toggle('is-open');
-      burger.classList.toggle('is-open');
+      var isOpen = list.classList.toggle('is-open');
+      burger.classList.toggle('is-open', isOpen);
+      burger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
     });
     Array.prototype.forEach.call(list.querySelectorAll('.fn-item'), function(item){
       var link = item.querySelector('.fn-link');
@@ -342,6 +352,12 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
           }
         });
       }
+    });
+    document.addEventListener('keydown', function(e){
+      if(e.key === 'Escape'){ closeMenu(); }
+    });
+    document.addEventListener('click', function(e){
+      if(!nav.contains(e.target)){ closeMenu(); }
     });
   }
 
