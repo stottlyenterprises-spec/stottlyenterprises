@@ -387,6 +387,10 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
 .stottly-scope .case-detail-split .body{padding:36px 8px 36px 40px;}
 .stottly-scope .case-detail-split .bka-embed-frame{padding:28px 24px;display:flex;align-items:center;}
 @media (max-width:900px){.stottly-scope .case-detail-split{grid-template-columns:1fr;}.stottly-scope .case-detail-split .body{padding:36px 40px 8px;}}
+.stottly-scope .bka-demo-preview{padding:40px 28px;background:linear-gradient(160deg,#241209,#160b05);border-radius:16px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px;}
+.stottly-scope .bka-demo-preview-mark{width:64px;height:64px;border-radius:50%;background:#d62300;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:12px;letter-spacing:1px;box-shadow:0 12px 30px -12px rgba(214,35,0,0.7);margin-bottom:6px;}
+.stottly-scope .bka-demo-preview-label{color:#f3e9df;font-size:14px;font-weight:600;}
+.stottly-scope .bka-demo-preview-desc{color:#c99a72;font-size:13px;max-width:280px;margin-bottom:8px;}
 .stottly-scope .pf-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;padding:44px 0;border-bottom:1px solid var(--line);}
 .stottly-scope .pf-stats .fstat{text-align:center;}
 .stottly-scope .pf-stats .fstat b{display:block;font-size:32px;font-weight:200;color:var(--ink);margin-bottom:6px;}
@@ -655,10 +659,16 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
         <p><b>Friction:</b> Shift readiness, food safety, and labor tracking all depended on individual manager habits. Nothing was standardized, nothing was visible past a single shift, and problems surfaced only after they'd already cost time or money.</p>
         <p><b>Intervention:</b> We designed and built a manager-first digital operations hub: daily checklists tied to real standards, real-time issue tracking, shift handoff notes, and labor awareness tools, built around how managers actually move through a shift, not how a corporate system assumes they do.</p>
         <p><b>Adoption:</b> Built for speed and clarity so it would survive contact with a fast-paced kitchen instead of getting abandoned after week one. Multi-lingual support and a visual, low-friction interface removed the usual reasons frontline teams reject new systems.</p>
-        <p><b>Result:</b> Delivered to the client and in active use across their franchise operations. The architecture extends cleanly to multi-unit oversight and broader QSR brands. Deployment specifics are withheld under client confidentiality.</p>
+        <p><b>Result:</b> Delivered to the client and in active use across 12 locations and roughly 50 managers, with a 15% increase in checklist completion rates and an estimated 9,000+ management hours returned annually. The architecture extends cleanly to multi-unit oversight and broader QSR brands. Deployment specifics beyond these figures are withheld under client confidentiality.</p>
         <a class="venture-link" href="https://stottifai.com/case-studies.html">See the full case study on StottifAI →</a>
       </div>
-      <div class="bka-embed-frame">
+      <div class="bka-demo-preview" id="bkaDemoPreview">
+        <div class="bka-demo-preview-mark">BK<br>OPS</div>
+        <p class="bka-demo-preview-label">Restaurant Operations Platform</p>
+        <p class="bka-demo-preview-desc">A recreation of the live application: checklists, cash counts, incident logging, temperature tracking, and a bilingual translator.</p>
+        <button type="button" class="btn-secondary" id="bkaLaunchBtn" aria-expanded="false" aria-controls="bkaDemoGate">Launch interactive demo</button>
+      </div>
+      <div class="bka-embed-frame" id="bkaDemoGate" style="display:none;" role="region" aria-label="BK Operations interactive demo">
         <div class="bkapp-scope">
 <style>
 .bkapp-scope{--bk-red:#d62300;--bk-dark:#512f2a;--bk-darker:#2b160e;--bk-tan:#d4a574;--bk-cream:#f3e9df;--bk-muted:#c99a72;position:relative;width:100%;max-width:400px;margin:0 auto;height:min(720px,78vh);min-height:520px;border-radius:26px;overflow:hidden;box-shadow:0 30px 70px -30px rgba(0,0,0,0.55);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bk-darker);color:var(--bk-cream);font-size:13px;}
@@ -1445,6 +1455,21 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
 </script>
         </div>
       </div>
+      <script>
+      (function(){
+        var btn = document.getElementById('bkaLaunchBtn');
+        var preview = document.getElementById('bkaDemoPreview');
+        var gate = document.getElementById('bkaDemoGate');
+        if(!btn || !preview || !gate) return;
+        btn.addEventListener('click', function(){
+          preview.style.display = 'none';
+          gate.style.display = 'flex';
+          btn.setAttribute('aria-expanded', 'true');
+          var focusable = gate.querySelector('button, [tabindex]');
+          if(focusable) focusable.focus();
+        });
+      })();
+      </script>
     </div>
     <div class="portfolio-grid pf-compact-grid" style="margin-top:32px;">
       <div class="p-card">
