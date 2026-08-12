@@ -394,6 +394,7 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
 <style>
 .stottly-scope .footer-ticker{max-width:280px;overflow:hidden;margin-top:48px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 24px,#000 calc(100% - 24px),transparent);mask-image:linear-gradient(90deg,transparent,#000 24px,#000 calc(100% - 24px),transparent);}
 .stottly-scope .footer-ticker-track{display:flex;align-items:center;gap:22px;width:max-content;white-space:nowrap;animation:stottlyFooterScroll 26s linear infinite;}
+.stottly-scope .footer-ticker:hover .footer-ticker-track,.stottly-scope .footer-ticker:focus-within .footer-ticker-track{animation-play-state:paused;}
 .stottly-scope .footer-ticker-track a{font-size:12.5px;color:var(--muted);text-decoration:none;letter-spacing:0.2px;}
 .stottly-scope .footer-ticker-track a:hover{color:var(--ink);}
 .stottly-scope .footer-ticker-track .dot{color:var(--line);font-size:12px;}
@@ -418,16 +419,16 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
         <div class="footer-ticker">
           <div class="footer-ticker-track">
             <a href="/press/pr-deeds">New: D.E.E.D.S. launches in August →</a>
-            <span class="dot">&#9679;</span>
+            <span class="dot" aria-hidden="true">&#9679;</span>
             <a href="/press/pr-cryptoifai-v2">New: CryptoifAI v2 is live →</a>
-            <span class="dot">&#9679;</span>
+            <span class="dot" aria-hidden="true">&#9679;</span>
             <a href="/press/pr-agentic-forge">Agentic Forge targets Q4 2026 →</a>
-            <span class="dot">&#9679;</span>
-            <a href="/press/pr-deeds">New: D.E.E.D.S. launches in August →</a>
-            <span class="dot">&#9679;</span>
-            <a href="/press/pr-cryptoifai-v2">New: CryptoifAI v2 is live →</a>
-            <span class="dot">&#9679;</span>
-            <a href="/press/pr-agentic-forge">Agentic Forge targets Q4 2026 →</a>
+            <span class="dot" aria-hidden="true">&#9679;</span>
+            <a href="/press/pr-deeds" aria-hidden="true" tabindex="-1">New: D.E.E.D.S. launches in August →</a>
+            <span class="dot" aria-hidden="true">&#9679;</span>
+            <a href="/press/pr-cryptoifai-v2" aria-hidden="true" tabindex="-1">New: CryptoifAI v2 is live →</a>
+            <span class="dot" aria-hidden="true">&#9679;</span>
+            <a href="/press/pr-agentic-forge" aria-hidden="true" tabindex="-1">Agentic Forge targets Q4 2026 →</a>
           </div>
         </div>
       </div>
