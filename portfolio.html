@@ -827,7 +827,7 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
   <div class="bka-splash-mark">BK<br>OPS</div>
   <h1>BK Operations</h1>
   <p class="bka-sub">Restaurant Operations Platform</p>
-  <div class="bka-cue" id="bkaCue"><span class="bka-chevron">&#8963;</span>Swipe up to enter</div>
+  <div class="bka-cue" id="bkaCue" role="button" tabindex="0" aria-label="Enter the BK Operations demo"><span class="bka-chevron">&#8963;</span>Swipe up to enter</div>
 </div>
 
 <div class="bka-app" id="bkaApp">
@@ -864,17 +864,17 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
       <div class="bka-grid2">
         <div class="bka-card">
           <div class="ttl">Shift Summary <span class="n">today</span></div>
-          <div class="bka-row" data-open="checklist"><span>AM Shift checklist</span><span class="status-ok">Complete</span></div>
-          <div class="bka-row" data-open="checklist"><span>PM Shift checklist</span><span class="status-pending">Pending</span></div>
-          <div class="bka-row" data-open="checklist"><span>Shift change walk</span><span class="status-ok">Complete</span></div>
-          <div class="bka-row" data-open="checklist"><span>Food safety walk</span><span class="status-pending">Pending</span></div>
+          <div class="bka-row" data-open="checklist" role="button" tabindex="0"><span>AM Shift checklist</span><span class="status-ok">Complete</span></div>
+          <div class="bka-row" data-open="checklist" role="button" tabindex="0"><span>PM Shift checklist</span><span class="status-pending">Pending</span></div>
+          <div class="bka-row" data-open="checklist" role="button" tabindex="0"><span>Shift change walk</span><span class="status-ok">Complete</span></div>
+          <div class="bka-row" data-open="checklist" role="button" tabindex="0"><span>Food safety walk</span><span class="status-pending">Pending</span></div>
         </div>
         <div class="bka-card">
           <div class="ttl">Temp Status <span class="n">last logged</span></div>
           <div class="bka-row"><span>Walk-in Cooler</span><span class="status-ok">37&deg;F &middot; OK</span></div>
           <div class="bka-row"><span>Walk-in Freezer</span><span class="status-ok">-4&deg;F &middot; OK</span></div>
           <div class="bka-row"><span>Fryer</span><span class="status-ok">350&deg;F &middot; OK</span></div>
-          <div class="bka-row" data-open="temp"><span>+ Log new reading</span><span></span></div>
+          <div class="bka-row" data-open="temp" role="button" tabindex="0"><span>+ Log new reading</span><span></span></div>
         </div>
       </div>
 
@@ -887,7 +887,7 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
           <div class="ttl">Recent Incidents <span class="n">7 days</span></div>
           <div class="bka-row"><span>Guest complaint &middot; order accuracy</span><span class="status-pending">Low</span></div>
           <div class="bka-row"><span>Equipment: ice machine slow</span><span class="status-pending">Medium</span></div>
-          <div class="bka-row" data-open="incident"><span>+ Log new incident</span><span></span></div>
+          <div class="bka-row" data-open="incident" role="button" tabindex="0"><span>+ Log new incident</span><span></span></div>
         </div>
       </div>
     </div>
@@ -906,7 +906,7 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
       </div>
       <div id="bkaChkList"></div>
       <div class="bka-field-label">Notes</div>
-      <textarea class="bka-textarea" placeholder="Add notes for this checklist..."></textarea>
+      <textarea class="bka-textarea" placeholder="Add notes for this checklist..." aria-label="Notes"></textarea>
       <div class="bka-field-label">Photos</div>
       <button class="bka-btn ghost">&#128247; Upload photo</button>
       <button class="bka-btn" id="bkaChkSubmit">Save checklist</button>
@@ -915,7 +915,7 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
     <!-- CASH COUNT -->
     <div class="bka-screen" data-screen="cash">
       <div class="bka-field-label">Register #</div>
-      <input class="bka-input" placeholder="e.g. Register 2">
+      <input class="bka-input" placeholder="e.g. Register 2" aria-label="Register #">
       <div class="bka-field-label">Shift</div>
       <div class="bka-chip-row">
         <button class="bka-chip active">Morning</button>
@@ -923,9 +923,9 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
         <button class="bka-chip">Night</button>
       </div>
       <div class="bka-field-label">Cashier Name</div>
-      <input class="bka-input" placeholder="Full name">
+      <input class="bka-input" placeholder="Full name" aria-label="Cashier Name">
       <div class="bka-field-label">Expected Amount</div>
-      <input class="bka-input" id="bkaCashExpected" placeholder="$0.00">
+      <input class="bka-input" id="bkaCashExpected" placeholder="$0.00" aria-label="Expected Amount">
 
       <div class="bka-field-label">Bills</div>
       <div class="bka-cash-section" id="bkaCashBills"></div>
@@ -940,14 +940,14 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
       </div>
       <div class="bka-variance ok" id="bkaCashVariance">No expected amount entered yet</div>
       <div class="bka-field-label">Explanation (if variance)</div>
-      <textarea class="bka-textarea" placeholder="Explain any variance..."></textarea>
+      <textarea class="bka-textarea" placeholder="Explain any variance..." aria-label="Explanation (if variance)"></textarea>
       <button class="bka-btn" id="bkaCashSubmit">Submit cash count</button>
     </div>
 
     <!-- INCIDENT -->
     <div class="bka-screen" data-screen="incident">
       <div class="bka-field-label">Incident Type</div>
-      <select class="bka-select" id="bkaIncType">
+      <select class="bka-select" id="bkaIncType" aria-label="Incident Type">
         <option value="guest_complaint">Guest Complaint</option>
         <option value="food_safety">Food Safety</option>
         <option value="employee_injury">Employee Injury</option>
@@ -970,16 +970,16 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
         <button class="bka-chip">Night</button>
       </div>
       <div class="bka-field-label">Description</div>
-      <textarea class="bka-textarea" placeholder="What happened?"></textarea>
+      <textarea class="bka-textarea" placeholder="What happened?" aria-label="Description"></textarea>
       <div class="bka-field-label">Immediate Action Taken</div>
-      <textarea class="bka-textarea" placeholder="What did you do about it?"></textarea>
+      <textarea class="bka-textarea" placeholder="What did you do about it?" aria-label="Immediate Action Taken"></textarea>
       <button class="bka-btn" id="bkaIncSubmit">Log incident</button>
     </div>
 
     <!-- TEMP LOG -->
     <div class="bka-screen" data-screen="temp">
       <div class="bka-field-label">Equipment</div>
-      <select class="bka-select" id="bkaTempEquip">
+      <select class="bka-select" id="bkaTempEquip" aria-label="Equipment">
         <option value="walk_in_cooler" data-min="33" data-max="40">Walk-in Cooler (33&ndash;40&deg;F)</option>
         <option value="walk_in_freezer" data-min="-10" data-max="0">Walk-in Freezer (-10&ndash;0&deg;F)</option>
         <option value="prep_cooler" data-min="33" data-max="40">Prep Cooler (33&ndash;40&deg;F)</option>
@@ -988,7 +988,7 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
         <option value="holding_cabinet" data-min="135" data-max="165">Holding Cabinet (135&ndash;165&deg;F)</option>
       </select>
       <div class="bka-field-label">Temperature (&deg;F)</div>
-      <input class="bka-input" id="bkaTempReading" type="number" placeholder="Enter reading">
+      <input class="bka-input" id="bkaTempReading" type="number" placeholder="Enter reading" aria-label="Temperature (&deg;F)">
       <div class="bka-temp-badge" id="bkaTempBadge" style="display:none;"></div>
       <div class="bka-field-label">Shift</div>
       <div class="bka-chip-row">
@@ -998,7 +998,7 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
       </div>
       <div id="bkaTempCorrectiveWrap" style="display:none;">
         <div class="bka-field-label">Corrective Action</div>
-        <textarea class="bka-textarea" placeholder="What corrective action was taken?"></textarea>
+        <textarea class="bka-textarea" placeholder="What corrective action was taken?" aria-label="Corrective Action"></textarea>
       </div>
       <button class="bka-btn" id="bkaTempSubmit">Log temperature</button>
     </div>
@@ -1070,6 +1070,7 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
     setTimeout(function(){
       splash.style.display = 'none';
       app.classList.add('active');
+      showScreen('dashboard');
     }, 380);
   }
 
@@ -1087,6 +1088,9 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
   });
   splash.addEventListener('wheel', function(e){ if(e.deltaY < -20) enterApp(); }, {passive:true});
   cue.addEventListener('click', enterApp);
+  cue.addEventListener('keydown', function(e){
+    if(e.key === 'Enter' || e.key === ' ' || e.key === 'Spacebar'){ e.preventDefault(); enterApp(); }
+  });
   splash.addEventListener('click', function(e){ if(e.target === splash || splash.contains(e.target)) enterApp(); });
 
   root.querySelector('#bkaExit').addEventListener('click', function(){
@@ -1118,10 +1122,25 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
     headerTitle.textContent = titles[name][0];
     headerSub.textContent = titles[name][1];
     root.querySelector('.bka-body').scrollTop = 0;
+    var activeScreen = root.querySelector('.bka-screen.active');
+    if(activeScreen){
+      activeScreen.setAttribute('tabindex', '-1');
+      activeScreen.setAttribute('role', 'region');
+      activeScreen.setAttribute('aria-label', titles[name][0]);
+      activeScreen.focus();
+    }
   }
 
   Array.prototype.forEach.call(root.querySelectorAll('[data-open]'), function(el){
     el.addEventListener('click', function(){ showScreen(this.getAttribute('data-open')); });
+    if(el.tagName !== 'BUTTON'){
+      el.addEventListener('keydown', function(e){
+        if(e.key === 'Enter' || e.key === ' ' || e.key === 'Spacebar'){
+          e.preventDefault();
+          showScreen(this.getAttribute('data-open'));
+        }
+      });
+    }
   });
   backBtn.addEventListener('click', function(){ showScreen('dashboard'); });
 
