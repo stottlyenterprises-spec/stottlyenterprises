@@ -272,12 +272,47 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
 <section class="section section-alt">
   <div class="wrap">
 
+    <div class="section-label" style="margin-bottom:16px;">Start Here</div>
+    <div class="featured-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:56px;">
+      <a href="/blog/ai-pilot-trap-why-projects-never-scale" style="display:block;background:var(--white);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 14px 34px -24px rgba(46,59,78,0.28);">
+        <div style="aspect-ratio:16/9;background:var(--sky2);"><img src="/assets/blog/ai-pilot-trap-hero.jpg" alt="" style="width:100%;height:100%;object-fit:cover;"></div>
+        <div style="padding:20px 22px;">
+          <div style="font-size:10.5px;text-transform:uppercase;letter-spacing:2px;color:var(--accent-deep);font-weight:600;margin-bottom:8px;">AI Adoption</div>
+          <h3 style="font-size:16px;font-weight:500;color:var(--ink);margin-bottom:8px;line-height:1.35;">The AI Pilot Trap: Why Most AI Projects Never Deliver Real Business Value</h3>
+          <p style="font-size:13px;color:var(--muted);">Most businesses successfully pilot AI but never achieve meaningful operational change &mdash; here's why, and how to fix it.</p>
+        </div>
+      </a>
+      <a href="/blog/the-process-looks-efficient-because-the-rework" style="display:block;background:var(--white);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 14px 34px -24px rgba(46,59,78,0.28);">
+        <div style="aspect-ratio:16/9;background:var(--sky2);"><img src="/assets/blog/process-rework-feature.jpg" alt="" style="width:100%;height:100%;object-fit:cover;"></div>
+        <div style="padding:20px 22px;">
+          <div style="font-size:10.5px;text-transform:uppercase;letter-spacing:2px;color:var(--accent-deep);font-weight:600;margin-bottom:8px;">Operations &amp; Transformation</div>
+          <h3 style="font-size:16px;font-weight:500;color:var(--ink);margin-bottom:8px;line-height:1.35;">The Process Looks Efficient Because Rework Happens Elsewhere</h3>
+          <p style="font-size:13px;color:var(--muted);">How to measure rework across a whole transaction instead of one department, and why that changes what "efficient" means.</p>
+        </div>
+      </a>
+      <a href="/blog/managers-tired-holding-business-together" style="display:block;background:var(--white);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 14px 34px -24px rgba(46,59,78,0.28);">
+        <div style="aspect-ratio:16/9;background:var(--sky2);"><img src="/assets/blog/managers-tired-hero.jpg" alt="" style="width:100%;height:100%;object-fit:cover;"></div>
+        <div style="padding:20px 22px;">
+          <div style="font-size:10.5px;text-transform:uppercase;letter-spacing:2px;color:var(--accent-deep);font-weight:600;margin-bottom:8px;">Leadership &amp; Decision-Making</div>
+          <h3 style="font-size:16px;font-weight:500;color:var(--ink);margin-bottom:8px;line-height:1.35;">Managers Are Tired of Holding the Business Together</h3>
+          <p style="font-size:13px;color:var(--muted);">Manager engagement falls when managers carry broken processes and unclear authority. Here's how leaders remove that burden.</p>
+        </div>
+      </a>
+    </div>
+    <style>@media (max-width:760px){.featured-grid{grid-template-columns:1fr !important;}}</style>
+
     <div class="blog-toolbar">
       <div class="section-label" style="margin-bottom:0;">Latest Posts</div>
       <a class="btn-secondary" href="/blog/archive">View Full Archive →</a>
     </div>
 
-    <div class="post-list">
+    <div class="blog-search" style="margin-bottom:24px;">
+      <label for="blogSearchInput" style="display:block;font-size:12.5px;color:var(--muted);margin-bottom:6px;">Search posts by keyword</label>
+      <input type="search" id="blogSearchInput" placeholder="e.g. AI adoption, hiring, checklist..." style="width:100%;max-width:420px;padding:11px 16px;border-radius:24px;border:1px solid var(--line);font-size:14px;font-family:inherit;color:var(--ink);background:var(--white);">
+      <div id="blogSearchStatus" aria-live="polite" style="font-size:12.5px;color:var(--muted);margin-top:8px;"></div>
+    </div>
+
+    <div class="post-list" id="blogPostList">
 
       <a class="post-row" href="/blog/self-service-option-became-another-line-to-wait-in.html">
         <div class="thumb"><img src="/assets/blog/2026-08-12-self-service-second-line.png" alt="The self-service option became another line to wait in."></div>
@@ -429,6 +464,30 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
 
   </div>
 </section>
+<script>
+(function(){
+  var input = document.getElementById('blogSearchInput');
+  var status = document.getElementById('blogSearchStatus');
+  var list = document.getElementById('blogPostList');
+  if(!input || !list) return;
+  var rows = Array.prototype.slice.call(list.querySelectorAll('.post-row'));
+  input.addEventListener('input', function(){
+    var q = input.value.trim().toLowerCase();
+    var shown = 0;
+    rows.forEach(function(row){
+      var text = row.textContent.toLowerCase();
+      var match = !q || text.indexOf(q) !== -1;
+      row.style.display = match ? '' : 'none';
+      if(match) shown++;
+    });
+    if(!q){
+      status.textContent = '';
+    } else {
+      status.textContent = shown === 0 ? 'No posts match "' + input.value.trim() + '".' : shown + ' post' + (shown === 1 ? '' : 's') + ' match "' + input.value.trim() + '".';
+    }
+  });
+})();
+</script>
 
 <section class="cta-band">
   <h2>Have a problem worth writing about?</h2>
