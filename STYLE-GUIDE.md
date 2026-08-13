@@ -96,3 +96,13 @@ Piloted on `blog.html` and `blog/archive.html`, then adopted sitewide. Replaces 
 - v1 (Fraunces serif, static diagram, bone/forest palette) read as "business journal," not technology. Avoid calm symmetric serif layouts if the goal is a technical read.
 - v2 (dark-mode-first, bracket/coordinate chrome, terminal status lines, blinking cursor) read as generic "hacker aesthetic," not Apple-style precision. Avoid literal engineering/terminal signifiers.
 - The direction that worked: quiet confidence via typography and whitespace, not visual noise.
+
+## Workflow rules (non-negotiable — read before touching this project)
+
+1. **One working copy only.** All edits happen in the `outputs` folder copy of `stottlyenterprises-site-redesign`. This is the sole source of truth.
+2. **Never write, copy, or sync files to the Desktop.** Not a backup, not a mirror, not "just in case." If the user explicitly asks for a Desktop copy of something, that's the one exception; otherwise, outputs only, always.
+3. **Git lives in one place.** The outputs folder is the actual git working copy with `origin` already pointing at `https://github.com/stottlyenterprises-spec/stottlyenterprises`. Never re-add a remote elsewhere, never suggest committing from a second copy.
+4. **Deploy = commit in outputs, then a single `git push origin main` (or `--force` only if history has diverged and outputs is confirmed authoritative) run by the user from that exact folder.** No intermediate "sync to Desktop" step, ever.
+5. **Verify live, don't assume.** After any push, fetch the actual production URL (cache-busted query string if needed) and confirm the change is really there before telling the user it's done.
+6. **Never fabricate content, photography, data, or stats.** Zero em dashes anywhere in copy (exception: pre-existing content inside the untouched BK Ops demo embed, and the `&mdash;` byline pattern already used across all 93 existing posts, kept for consistency).
+7. **Before presenting any file as finished:** check tag balance (div open/close counts), JS/JSON syntax, and contrast against this guide's color rules.
