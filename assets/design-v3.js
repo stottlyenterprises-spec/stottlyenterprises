@@ -71,6 +71,14 @@
       });
     }, {threshold:0.15, rootMargin:'0px 0px -40px 0px'});
     revealEls.forEach(function(el){ io.observe(el); });
+    /* Safety net: if the observer never fires for some reason (device quirk,
+       layout shift during font load, etc.), force everything visible after
+       1.5s so content can never get stuck permanently invisible. */
+    setTimeout(function(){
+      document.querySelectorAll('.reveal:not(.is-visible)').forEach(function(el){
+        el.classList.add('is-visible');
+      });
+    }, 1500);
   } else {
     document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('is-visible'); });
   }
