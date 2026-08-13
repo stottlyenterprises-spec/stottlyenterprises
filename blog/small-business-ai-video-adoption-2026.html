@@ -14,21 +14,21 @@
 <style>
 
 :root{
-  --ink:#2E3B4E;
-  --slate:#5B7A9D;
-  --muted:#5A6B84;
-  --sky1:#F7FAFD;
-  --sky2:#E7F0F8;
-  --sky3:#D3E4F2;
-  --silver:#AEC4DA;
-  --accent:#6E93BE;
-  --accent-deep:#4B6E96;
-  --line:rgba(46,59,78,0.1);
+  --ink:#1D1D1F;
+  --slate:#6E6E73;
+  --muted:#6E6E73;
+  --sky1:#FBFBFA;
+  --sky2:#F3F2EF;
+  --sky3:#F3F2EF;
+  --silver:#E5E5E0;
+  --accent:#B83A15;
+  --accent-deep:#B83A15;
+  --line:rgba(0,0,0,0.08);
   --white:#FFFFFF;
 }
 *{box-sizing:border-box;margin:0;padding:0;}
 body{
-  font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  font-family:'Inter',-apple-system,BlinkMacSystemFont,'SF Pro Text',sans-serif;
   background:var(--sky1);
   color:var(--ink);
   line-height:1.65;
@@ -55,11 +55,11 @@ img{max-width:100%;display:block;}
 .page-hero{position:relative;overflow:hidden;padding:80px 0 70px;}
 .page-hero-bg{position:absolute;inset:0;z-index:0;
   background:radial-gradient(ellipse 600px 400px at 90% 0%, rgba(255,252,244,0.8), transparent 60%),
-  linear-gradient(155deg, #F7FAFD 0%, #EAF1F8 50%, #D9E7F3 100%);
+  linear-gradient(155deg, #FBFBFA 0%, #EAF1F8 50%, #D9E7F3 100%);
 }
 .page-hero-content{position:relative;z-index:2;max-width:720px;}
 .breadcrumb{font-size:11.5px;letter-spacing:2px;text-transform:uppercase;color:var(--accent-deep);font-weight:500;margin-bottom:18px;}
-.page-hero h1{font-size:42px;font-weight:200;color:var(--ink);line-height:1.25;margin-bottom:16px;letter-spacing:-0.5px;}
+.page-hero h1{font-size:42px;font-weight:800;color:var(--ink);line-height:1.25;margin-bottom:16px;letter-spacing:-0.5px;}
 .page-hero p{font-size:16.5px;color:var(--muted);max-width:560px;}
 
 /* HERO with wave art (homepage only) */
@@ -67,14 +67,14 @@ img{max-width:100%;display:block;}
 .hero-bg{position:absolute;inset:0;z-index:0;
   background:
     radial-gradient(ellipse 700px 500px at 12% 8%, rgba(255,252,244,0.95), transparent 60%),
-    linear-gradient(155deg, #F7FAFD 0%, #EAF1F8 35%, #D9E7F3 65%, #C3D9EC 100%);
+    linear-gradient(155deg, #FBFBFA 0%, #EAF1F8 35%, #D9E7F3 65%, #C3D9EC 100%);
 }
 .hero-bg svg{position:absolute;bottom:0;left:0;width:100%;height:78%;}
 .hero header{position:relative;z-index:5;}
 .hero-content{position:relative;z-index:5;flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:60px 32px 100px;}
 .eyebrow{font-size:11.5px;letter-spacing:4px;text-transform:uppercase;color:var(--accent-deep);font-weight:500;margin-bottom:18px;}
 .hero-divider{width:36px;height:1px;background:var(--accent-deep);opacity:0.5;margin-bottom:26px;}
-.hero h1{font-size:50px;font-weight:200;max-width:780px;line-height:1.25;margin-bottom:24px;color:var(--ink);letter-spacing:-0.5px;}
+.hero h1{font-size:50px;font-weight:800;max-width:780px;line-height:1.25;margin-bottom:24px;color:var(--ink);letter-spacing:-0.5px;}
 .hero p{font-size:17px;color:var(--muted);max-width:480px;margin-bottom:40px;font-weight:300;}
 .btn-row{display:flex;gap:16px;flex-wrap:wrap;}
 .btn-primary{background:var(--ink);color:#fff;padding:15px 30px;border-radius:30px;font-weight:400;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;display:inline-block;}
@@ -92,7 +92,7 @@ img{max-width:100%;display:block;}
 .section-head{max-width:640px;margin:0 auto 56px;text-align:center;}
 .section-head.left{margin:0 0 48px;text-align:left;}
 .section-label{font-size:11.5px;text-transform:uppercase;letter-spacing:3px;color:var(--accent-deep);font-weight:500;margin-bottom:16px;}
-.section-head h2{font-size:32px;font-weight:200;color:var(--ink);line-height:1.3;}
+.section-head h2{font-size:32px;font-weight:800;color:var(--ink);line-height:1.3;}
 .section-head p{color:var(--muted);font-size:15px;margin-top:12px;}
 
 .services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
@@ -105,7 +105,7 @@ img{max-width:100%;display:block;}
 .venture{background:linear-gradient(180deg,var(--sky1),var(--sky2));border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
 .venture-inner{display:grid;grid-template-columns:1.1fr 0.9fr;gap:56px;align-items:center;padding:90px 0;}
 .venture-tag{display:inline-block;font-size:11px;letter-spacing:2px;text-transform:uppercase;background:rgba(124,92,255,0.1);color:#6C5CE7;padding:7px 16px;border-radius:20px;margin-bottom:22px;font-weight:600;}
-.venture h2{font-size:34px;font-weight:200;margin-bottom:18px;color:var(--ink);}
+.venture h2{font-size:34px;font-weight:800;margin-bottom:18px;color:var(--ink);}
 .venture h2 b{background:linear-gradient(90deg,#4C6FFF,#8B5CF6);-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:600;}
 .venture p{font-size:15px;color:var(--muted);margin-bottom:28px;line-height:1.8;}
 .venture-link{font-weight:600;color:#5B4BDB;font-size:13.5px;letter-spacing:0.3px;}
@@ -124,11 +124,11 @@ img{max-width:100%;display:block;}
 .p-card img{border-radius:10px;margin-bottom:18px;aspect-ratio:16/10;object-fit:cover;}
 
 .testimonial{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:96px 0;text-align:center;}
-.testimonial blockquote{font-size:26px;font-weight:200;color:var(--ink);max-width:760px;margin:0 auto 22px;line-height:1.55;font-style:italic;}
+.testimonial blockquote{font-size:26px;font-weight:800;color:var(--ink);max-width:760px;margin:0 auto 22px;line-height:1.55;font-style:italic;}
 .testimonial cite{font-size:12px;color:var(--muted);letter-spacing:2px;text-transform:uppercase;font-style:normal;}
 
 .cta-band{background:linear-gradient(135deg,var(--sky2),var(--sky3));padding:70px 0;text-align:center;}
-.cta-band h2{font-size:28px;color:var(--ink);font-weight:200;margin-bottom:26px;}
+.cta-band h2{font-size:28px;color:var(--ink);font-weight:800;margin-bottom:26px;}
 
 footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top:1px solid var(--line);}
 .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:32px;margin-bottom:44px;}
@@ -145,7 +145,7 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
 .split img{border-radius:16px;box-shadow:0 24px 50px -30px rgba(46,59,78,0.35);aspect-ratio:4/5;object-fit:cover;}
 .split.reverse{direction:rtl;}
 .split.reverse > *{direction:ltr;}
-.split h2{font-size:30px;font-weight:200;margin-bottom:18px;color:var(--ink);}
+.split h2{font-size:30px;font-weight:800;margin-bottom:18px;color:var(--ink);}
 .split p{font-size:15px;color:var(--muted);margin-bottom:16px;line-height:1.85;}
 
 /* Values / DNA large */
@@ -167,7 +167,7 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
 .service-block img{border-radius:16px;aspect-ratio:4/3;object-fit:cover;box-shadow:0 20px 44px -28px rgba(46,59,78,0.3);}
 .service-block.reverse img{order:2;}
 .service-block .num-tag{font-size:11px;letter-spacing:2px;color:var(--accent-deep);font-weight:600;margin-bottom:14px;text-transform:uppercase;}
-.service-block h3{font-size:26px;font-weight:200;margin-bottom:16px;color:var(--ink);}
+.service-block h3{font-size:26px;font-weight:800;margin-bottom:16px;color:var(--ink);}
 .service-block p{font-size:15px;color:var(--muted);margin-bottom:20px;line-height:1.8;}
 .service-block ul{list-style:none;}
 .service-block li{font-size:14px;color:var(--slate);padding:9px 0;border-top:1px solid var(--line);display:flex;gap:10px;align-items:center;}
@@ -178,7 +178,7 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
 .case-detail img{aspect-ratio:16/9;object-fit:cover;}
 .case-detail .body{padding:36px 40px;}
 .case-detail .tag{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--accent-deep);font-weight:600;margin-bottom:14px;}
-.case-detail h3{font-size:24px;font-weight:200;margin-bottom:14px;color:var(--ink);}
+.case-detail h3{font-size:24px;font-weight:800;margin-bottom:14px;color:var(--ink);}
 .case-detail p{font-size:14.5px;color:var(--muted);margin-bottom:14px;line-height:1.8;}
 .case-detail .thumbs{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:20px;}
 .case-detail .thumbs img{border-radius:8px;aspect-ratio:3/4;object-fit:cover;}
@@ -195,11 +195,11 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
 .blog-featured{display:grid;grid-template-columns:1.1fr 0.9fr;gap:0;background:var(--white);border:1px solid var(--line);border-radius:20px;overflow:hidden;margin-bottom:48px;box-shadow:0 20px 50px -30px rgba(46,59,78,0.3);}
 .blog-featured img{height:100%;object-fit:cover;}
 .blog-featured .body{padding:44px 44px;display:flex;flex-direction:column;justify-content:center;}
-.blog-featured h3{font-size:26px;font-weight:200;color:var(--ink);margin-bottom:14px;}
+.blog-featured h3{font-size:26px;font-weight:800;color:var(--ink);margin-bottom:14px;}
 
 /* Contact */
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;}
-.contact-info h2{font-size:28px;font-weight:200;margin-bottom:18px;color:var(--ink);}
+.contact-info h2{font-size:28px;font-weight:800;margin-bottom:18px;color:var(--ink);}
 .contact-info p{font-size:15px;color:var(--muted);margin-bottom:28px;line-height:1.8;}
 .contact-detail{margin-bottom:20px;}
 .contact-detail .label{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--accent-deep);font-weight:600;margin-bottom:6px;}
@@ -245,146 +245,161 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Why Small Businesses Are Driving AI Video Adoption", "description": "Small businesses under 50 employees now account for 46% of AI video platform sign-ups. Here's why, and where the line between AI-assisted and AI-only still matters.", "image": "https://www.stottlyenterprises.com/assets/se-logo-nav.png", "datePublished": "2026-07-03", "author": {"@type": "Organization", "name": "Stottly Enterprises"}, "publisher": {"@type": "Organization", "name": "Stottly Enterprises", "logo": {"@type": "ImageObject", "url": "https://www.stottlyenterprises.com/assets/se-logo-nav.png"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://www.stottlyenterprises.com/blog/small-business-ai-video-adoption-2026"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.stottlyenterprises.com/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.stottlyenterprises.com/blog"}, {"@type": "ListItem", "position": 3, "name": "Why Small Businesses Are Driving AI Video Adoption", "item": "https://www.stottlyenterprises.com/blog/small-business-ai-video-adoption-2026"}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Inter+Tight:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* ============ COMMAND BAR (Stottly Index nav) ============ */
+.cmd-bar{position:fixed;top:14px;left:14px;right:14px;z-index:200;max-width:1120px;margin:0 auto;background:rgba(251,251,250,0.86);backdrop-filter:blur(16px) saturate(180%);-webkit-backdrop-filter:blur(16px) saturate(180%);border:1px solid rgba(0,0,0,0.1);border-radius:14px;box-shadow:0 8px 30px -20px rgba(0,0,0,0.25);transition:transform .35s cubic-bezier(.2,.7,.3,1),background .3s ease,box-shadow .3s ease;}
+.cmd-bar.is-condensed{background:rgba(251,251,250,0.97);box-shadow:0 12px 34px -18px rgba(0,0,0,0.3);}
+.cmd-bar.is-hidden{transform:translateY(-140%);}
+.cmd-bar-inner{display:flex;align-items:center;justify-content:space-between;height:60px;padding:0 20px;transition:height .3s ease;}
+.cmd-bar.is-condensed .cmd-bar-inner{height:48px;}
+.cmd-brand{display:flex;align-items:center;gap:9px;font-family:'Inter Tight','Inter',-apple-system,BlinkMacSystemFont,sans-serif;font-size:14px;font-weight:800;letter-spacing:-0.2px;color:#1D1D1F;}
+.cmd-brand .mark{width:22px;height:22px;flex-shrink:0;display:block;}
+.cmd-links{display:flex;align-items:center;gap:26px;}
+.cmd-links a{font-size:13px;font-weight:600;color:#6E6E73;position:relative;padding-bottom:3px;}
+.cmd-links a:hover{color:#1D1D1F;}
+.cmd-links a.active{color:#1D1D1F;}
+.cmd-links a.active::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:2px;background:#FF5A2E;border-radius:2px;}
+.cmd-right{display:flex;align-items:center;gap:10px;}
+.cmd-cta{background:#1D1D1F;color:#FBFBFA;padding:9px 16px;border-radius:8px;font-size:12.5px;font-weight:700;display:inline-flex;align-items:center;gap:6px;transition:background .2s ease,transform .2s ease;font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;}
+.cmd-cta:hover{background:#FF5A2E;color:#1D1D1F;transform:translateY(-1px);}
+.index-toggle{display:flex;align-items:center;gap:6px;font-size:12px;font-weight:700;letter-spacing:0.3px;color:#1D1D1F;border:1px solid rgba(0,0,0,0.08);border-radius:8px;padding:8px 12px;background:#FFFFFF;cursor:pointer;transition:border-color .2s ease;font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;}
+.index-toggle:hover{border-color:#1D1D1F;}
+.index-toggle .plus{font-size:14px;line-height:1;}
+@media (max-width:760px){.cmd-links{display:none;}}
+
+/* ============ EDITORIAL INDEX OVERLAY ============ */
+.editorial-index{position:fixed;inset:0;z-index:300;background:#FBFBFA;opacity:0;visibility:hidden;transform:translateY(-12px);transition:opacity .3s cubic-bezier(.2,.7,.3,1),transform .3s cubic-bezier(.2,.7,.3,1),visibility .3s;overflow-y:auto;font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;}
+.editorial-index.is-open{opacity:1;visibility:visible;transform:translateY(0);}
+.ei-top{max-width:1120px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:26px 20px 10px;}
+.ei-top .ei-brand{font-family:'Inter Tight','Inter',-apple-system,BlinkMacSystemFont,sans-serif;font-size:13px;font-weight:800;letter-spacing:1px;color:#1D1D1F;}
+.ei-close{display:flex;align-items:center;gap:8px;font-size:12px;font-weight:700;letter-spacing:0.5px;color:#1D1D1F;background:none;border:1px solid rgba(0,0,0,0.08);border-radius:8px;padding:8px 14px;cursor:pointer;font-family:inherit;}
+.ei-close:hover{border-color:#1D1D1F;}
+.ei-grid{max-width:1120px;margin:0 auto;padding:26px 20px 60px;display:grid;grid-template-columns:repeat(3,1fr);gap:40px 32px;}
+.ei-col .ei-num{font-family:'Inter Tight','Inter',-apple-system,BlinkMacSystemFont,sans-serif;font-size:13px;font-weight:800;color:#B83A15;letter-spacing:1px;margin-bottom:14px;}
+.ei-col h3{font-family:'Inter Tight','Inter',-apple-system,BlinkMacSystemFont,sans-serif;font-size:22px;font-weight:800;color:#1D1D1F;letter-spacing:-0.5px;margin-bottom:14px;}
+.ei-col ul{list-style:none;display:flex;flex-direction:column;gap:9px;}
+.ei-col a{font-size:14px;color:#6E6E73;transition:color .2s ease;}
+.ei-col a:hover{color:#1D1D1F;}
+.ei-status{font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#86868B;margin-left:6px;}
+.ei-status.is-active{color:#B83A15;}
+.ei-signal{max-width:1120px;margin:0 auto;padding:0 20px 40px;border-top:1px solid rgba(0,0,0,0.08);padding-top:28px;}
+.ei-signal .lbl{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#B83A15;font-weight:700;margin-bottom:10px;}
+.ei-signal a{font-family:'Inter Tight','Inter',-apple-system,BlinkMacSystemFont,sans-serif;font-size:19px;font-weight:700;color:#1D1D1F;letter-spacing:-0.3px;}
+.ei-signal a:hover{color:#B83A15;}
+@media (max-width:760px){.ei-grid{grid-template-columns:1fr;gap:32px;}}
+
+/* ============ V3 FOOTER ============ */
+.v3-footer{background:#FFFFFF;border-top:1px solid rgba(0,0,0,0.08);padding:64px 0 32px;font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;}
+.v3-footer .footer-top{display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap;padding-bottom:32px;}
+.v3-footer .footer-brand{font-family:'Inter Tight','Inter',-apple-system,BlinkMacSystemFont,sans-serif;font-weight:800;font-size:15px;color:#1D1D1F;}
+.v3-footer .footer-links{display:flex;gap:28px;flex-wrap:wrap;font-size:13px;}
+.v3-footer .footer-links a{color:#6E6E73;}
+.v3-footer .footer-links a:hover{color:#B83A15;}
+.v3-footer .footer-bottom{border-top:1px solid rgba(0,0,0,0.08);padding-top:26px;font-size:12px;color:#6E6E73;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;}
+.v3-footer .footer-ticker{max-width:320px;overflow:hidden;margin-top:20px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 24px,#000 calc(100% - 24px),transparent);mask-image:linear-gradient(90deg,transparent,#000 24px,#000 calc(100% - 24px),transparent);}
+.v3-footer .footer-ticker-track{display:flex;align-items:center;gap:22px;width:max-content;white-space:nowrap;animation:v3FooterScroll 26s linear infinite;}
+.v3-footer .footer-ticker:hover .footer-ticker-track,.v3-footer .footer-ticker:focus-within .footer-ticker-track{animation-play-state:paused;}
+.v3-footer .footer-ticker-track a{font-size:12.5px;color:#6E6E73;}
+.v3-footer .footer-ticker-track a:hover{color:#1D1D1F;}
+.v3-footer .footer-ticker-track .dot{color:rgba(0,0,0,0.08);font-size:12px;}
+@keyframes v3FooterScroll{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+@media (prefers-reduced-motion: reduce){.v3-footer .footer-ticker-track{animation:none;}}
+
+#main-content{padding-top:96px;display:block;}
+.article-hero{padding-top:0 !important;margin-top:96px;}
+</style>
 </head>
 <body>
 <a href="#main-content" class="skip-link">Skip to content</a>
 <style>.skip-link{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;z-index:9999;background:#fff;color:#111;padding:12px 20px;border-radius:0 0 8px 0;font:600 14px/1.4 system-ui,sans-serif;text-decoration:none;}.skip-link:focus{left:0;top:0;width:auto;height:auto;overflow:visible;}</style>
 <style>.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}</style>
-<div class="stottly-nav-scope">
-<style>
-.stottly-nav-scope{position:relative;z-index:50;}
-.stottly-nav-scope .fancy-nav{position:sticky;top:0;z-index:60;background:rgba(255,255,255,0.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line);transition:box-shadow .35s ease,background .35s ease;}
-.stottly-nav-scope .fancy-nav.is-scrolled{box-shadow:0 12px 30px -22px rgba(46,59,78,0.45);background:rgba(255,255,255,0.98);}
-.stottly-nav-scope .fn-wrap{max-width:1140px;margin:0 auto;padding:0 32px;display:flex;align-items:center;justify-content:space-between;height:62px;}
-.stottly-nav-scope .fn-logo{display:flex;align-items:center;flex-shrink:0;}
-.stottly-nav-scope .fn-logo img{width:34px;height:34px;display:block;}
-.stottly-nav-scope .fn-list{display:flex;align-items:center;justify-content:flex-end;gap:28px;list-style:none;margin:0;padding:0;}
-.stottly-nav-scope .fn-item{position:relative;}
-.stottly-nav-scope .fn-link{display:inline-flex;align-items:center;gap:5px;padding:6px 0;font-size:14px;font-weight:400;color:var(--text-primary,#2E3B4E);text-decoration:none;position:relative;white-space:nowrap;transform:scale(1);transition:transform .22s cubic-bezier(.34,1.56,.64,1),color .22s ease;}
-.stottly-nav-scope .fn-link:hover{transform:scale(1.16) translateY(-1px);color:#1F6FEB;}
-.stottly-nav-scope .fn-link.is-active{color:var(--text-primary,#111827);font-weight:500;}
-.stottly-nav-scope .fn-link.is-active:hover{color:#1F6FEB;}
-.stottly-nav-scope .fn-caret{width:8px;height:8px;transition:transform .3s ease;opacity:.5;}
-.stottly-nav-scope .fn-item:hover .fn-caret{transform:rotate(180deg);}
-.stottly-nav-scope .fn-panel{position:absolute;top:100%;left:50%;transform:translate(-50%,10px);min-width:270px;background:var(--white,#fff);border:1px solid var(--line);border-radius:14px;box-shadow:0 24px 50px -25px rgba(46,59,78,0.35);padding:14px;opacity:0;visibility:hidden;transition:opacity .3s ease,transform .3s ease,visibility .3s;}
-.stottly-nav-scope .fn-item:hover .fn-panel{opacity:1;visibility:visible;transform:translate(-50%,0);}
-.stottly-nav-scope .fn-panel-group{margin-bottom:8px;}
-.stottly-nav-scope .fn-panel-group:last-child{margin-bottom:0;}
-.stottly-nav-scope .fn-panel a{display:block;padding:7px 12px;border-radius:8px;font-size:13.5px;color:var(--ink,#2E3B4E);text-decoration:none;letter-spacing:0.1px;transition:background .2s ease,color .2s ease,padding-left .2s ease;}
-.stottly-nav-scope .fn-panel a:hover{background:var(--sky1,#F7FAFD);padding-left:16px;color:#1F6FEB;}
-.stottly-nav-scope .fn-panel .fn-sub{padding-left:12px;margin-top:2px;}
-.stottly-nav-scope .fn-panel .fn-sub a{font-size:12.5px;color:var(--muted,#5A6B84);}
-.stottly-nav-scope .fn-divider{height:1px;background:var(--line);margin:8px 4px;}
-.stottly-nav-scope .fn-burger{display:none;width:24px;height:18px;position:relative;cursor:pointer;border:none;background:none;padding:0;}.stottly-nav-scope .fn-burger::before{content:"";position:absolute;top:50%;left:50%;width:44px;height:44px;transform:translate(-50%,-50%);}
-.stottly-nav-scope .fn-burger span{position:absolute;left:0;right:0;height:2.5px;background:linear-gradient(90deg,#1F6FEB,#4C6FFF);border-radius:2px;transition:transform .4s cubic-bezier(.4,0,.2,1),opacity .25s ease .1s,width .3s ease,background .3s ease;}
-.stottly-nav-scope .fn-burger span:nth-child(1){top:0;}
-.stottly-nav-scope .fn-burger span:nth-child(2){top:8px;width:70%;}
-.stottly-nav-scope .fn-burger span:nth-child(3){top:16px;}
-.stottly-nav-scope .fn-burger:hover span:nth-child(2){width:100%;}
-.stottly-nav-scope .fn-burger.is-open span:nth-child(1){top:8px;transform:rotate(45deg);}
-.stottly-nav-scope .fn-burger.is-open span:nth-child(2){opacity:0;transform:scaleX(0);transition:opacity .15s ease,transform .15s ease;}
-.stottly-nav-scope .fn-burger.is-open span:nth-child(3){top:8px;width:100%;transform:rotate(-45deg);}
-@media (max-width:900px){
-  .stottly-nav-scope .fn-list{display:none;position:absolute;top:62px;left:0;right:0;background:var(--white,#fff);flex-direction:column;align-items:stretch;border-bottom:1px solid var(--line);box-shadow:0 24px 40px -30px rgba(46,59,78,0.4);padding:10px 20px 20px;gap:0;}
-  .stottly-nav-scope .fn-list.is-open{display:flex;}
-  .stottly-nav-scope .fn-item{width:100%;}
-  .stottly-nav-scope .fn-link{width:100%;padding:14px 6px;justify-content:space-between;transform:none !important;}
-  .stottly-nav-scope .fn-link:hover{transform:none !important;}
-  .stottly-nav-scope .fn-panel{position:static;opacity:1;visibility:visible;transform:none;box-shadow:none;border:none;display:none;padding:0 0 6px 14px;}
-  .stottly-nav-scope .fn-item.is-open .fn-panel{display:block;}
-  .stottly-nav-scope .fn-burger{display:block;}
-  .stottly-nav-scope .fn-wrap{justify-content:space-between;}
-}
-</style>
-<nav class="fancy-nav" id="stottlyFancyNav">
-  <div class="fn-wrap">
-    <a class="fn-logo" href="/" aria-label="Stottly Enterprises home">
-      <img src="/assets/se-logo-nav.png" alt="Stottly Enterprises" width="34" height="34">
+<a href="#main-content" class="skip-link">Skip to content</a>
+<header class="cmd-bar" id="cmdBar">
+  <div class="cmd-bar-inner">
+    <a class="cmd-brand" href="/">
+      <img class="mark" src="/assets/se-logo-nav-black.png" alt="" width="22" height="22">
+      <span class="full">STOTTLY ENTERPRISES</span>
     </a>
-    <ul class="fn-list" id="stottlyFnList">
-      <li class="fn-item"><a class="fn-link" href="/">Home</a></li>
-      <li class="fn-item"><a class="fn-link" href="/who-we-are">Who We Are</a></li>
-      <li class="fn-item"><a class="fn-link" href="/services">Services</a></li>
-      <li class="fn-item">
-        <a class="fn-link" href="/ventures">Ventures <svg class="fn-caret" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-        <div class="fn-panel">
-          <div class="fn-panel-group">
-            <a href="https://stottifai.com/" target="_blank" rel="noopener" style="font-weight:600;">StottifAI ↗<span class="sr-only"> (opens in new tab)</span></a>
-          </div>
-          <div class="fn-divider"></div>
-          <div class="fn-panel-group">
-            <a href="https://gurilla-studios.com/" target="_blank" rel="noopener">Gurilla Studios ↗<span class="sr-only"> (opens in new tab)</span></a>
-            <a href="https://cartcurios.com" target="_blank" rel="noopener">CartCurios ↗<span class="sr-only"> (opens in new tab)</span></a>
-            <a href="/ventures/deeds">D.E.E.D.S.</a>
-            <a href="/ventures/agentic-forge">Agentic Forge</a>
-          </div>
-        </div>
-      </li>
-      <li class="fn-item"><a class="fn-link" href="/portfolio">Portfolio</a></li>
-      <li class="fn-item"><a class="fn-link" href="/blog">Blog</a></li>
-    </ul>
-    <button class="fn-burger" id="stottlyFnBurger" aria-label="Toggle menu" aria-expanded="false" aria-controls="stottlyFnList"><span></span><span></span><span></span></button>
+    <nav class="cmd-links" aria-label="Primary">
+      <a href="/portfolio">Work</a>
+      <a href="/ventures">Ventures</a>
+      <a href="/blog" class="active">Insights</a>
+    </nav>
+    <div class="cmd-right">
+      <a class="cmd-cta magnetic" href="/contact">Start a Project &#8599;</a>
+      <button class="index-toggle" id="indexToggle" aria-expanded="false" aria-controls="editorialIndex">
+        <span>INDEX</span><span class="plus">+</span>
+      </button>
+    </div>
   </div>
-</nav>
-<script>
-(function(){
-  var nav = document.getElementById('stottlyFancyNav');
-  var burger = document.getElementById('stottlyFnBurger');
-  var list = document.getElementById('stottlyFnList');
-  if(!nav) return;
+</header>
 
-  window.addEventListener('scroll', function(){
-    if(window.scrollY > 8){ nav.classList.add('is-scrolled'); }
-    else{ nav.classList.remove('is-scrolled'); }
-  }, {passive:true});
-
-  function closeMenu(){
-    list.classList.remove('is-open');
-    burger.classList.remove('is-open');
-    burger.setAttribute('aria-expanded', 'false');
-    Array.prototype.forEach.call(list.querySelectorAll('.fn-item.is-open'), function(item){
-      item.classList.remove('is-open');
-    });
-  }
-
-  if(burger && list){
-    burger.addEventListener('click', function(){
-      var isOpen = list.classList.toggle('is-open');
-      burger.classList.toggle('is-open', isOpen);
-      burger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-    });
-    Array.prototype.forEach.call(list.querySelectorAll('.fn-item'), function(item){
-      var link = item.querySelector('.fn-link');
-      var panel = item.querySelector('.fn-panel');
-      if(panel && link){
-        link.addEventListener('click', function(e){
-          if(window.innerWidth <= 900){
-            e.preventDefault();
-            item.classList.toggle('is-open');
-          }
-        });
-      }
-    });
-    document.addEventListener('keydown', function(e){
-      if(e.key === 'Escape'){ closeMenu(); }
-    });
-    document.addEventListener('click', function(e){
-      if(!nav.contains(e.target)){ closeMenu(); }
-    });
-  }
-
-  var path = window.location.pathname.replace(/\/$/, '') || '/';
-  Array.prototype.forEach.call(list.querySelectorAll('.fn-link'), function(link){
-    var href = link.getAttribute('href');
-    if(!href || href.indexOf('http') === 0) return;
-    var linkPath = href.replace(/\/$/, '') || '/';
-    if(linkPath === path || (path !== '/' && linkPath !== '/' && path.indexOf(linkPath) === 0)){
-      link.classList.add('is-active');
-    }
-  });
-})();
-</script>
+<div class="editorial-index" id="editorialIndex">
+  <div class="ei-top">
+    <span class="ei-brand">STOTTLY ENTERPRISES</span>
+    <button class="ei-close" id="eiClose" type="button">CLOSE &times;</button>
+  </div>
+  <div class="ei-grid">
+    <div class="ei-col">
+      <div class="ei-num">01</div>
+      <h3>Services</h3>
+      <ul>
+        <li><a href="/services">Business Consulting</a></li>
+        <li><a href="/services">Project Management</a></li>
+        <li><a href="/services">Change Management</a></li>
+        <li><a href="/services">Operational Recovery</a></li>
+      </ul>
+    </div>
+    <div class="ei-col">
+      <div class="ei-num">02</div>
+      <h3>Work</h3>
+      <ul>
+        <li><a href="/portfolio">Featured Case Study</a></li>
+        <li><a href="/portfolio">Client Work</a></li>
+        <li><a href="/portfolio">Systems We've Built</a></li>
+      </ul>
+    </div>
+    <div class="ei-col">
+      <div class="ei-num">03</div>
+      <h3>Ventures</h3>
+      <ul>
+        <li><a href="https://stottifai.com/" target="_blank" rel="noopener">StottifAI <span class="ei-status is-active">Active</span></a></li>
+        <li><a href="https://gurilla-studios.com/" target="_blank" rel="noopener">Gurilla Studios <span class="ei-status is-active">Active</span></a></li>
+        <li><a href="/ventures/deeds">D.E.E.D.S. <span class="ei-status is-active">Active</span></a></li>
+        <li><a href="/ventures/agentic-forge">Agentic Forge <span class="ei-status">Preview</span></a></li>
+      </ul>
+    </div>
+    <div class="ei-col">
+      <div class="ei-num">04</div>
+      <h3>Insights</h3>
+      <ul>
+        <li><a href="/blog">Latest</a></li>
+        <li><a href="/blog/topics/operations-transformation">Operations &amp; Transformation</a></li>
+        <li><a href="/blog/topics/ai-adoption">AI Adoption</a></li>
+        <li><a href="/blog/topics/workforce-hiring">Workforce &amp; Hiring</a></li>
+        <li><a href="/blog/topics/leadership-decisions">Leadership &amp; Decisions</a></li>
+        <li><a href="/blog/topics/customer-experience">Customer Experience</a></li>
+      </ul>
+    </div>
+    <div class="ei-col">
+      <div class="ei-num">05</div>
+      <h3>Company</h3>
+      <ul>
+        <li><a href="/who-we-are">Who We Are</a></li>
+        <li><a href="/press">Press</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="ei-signal">
+    <div class="lbl">Today's Signal</div>
+    <a href="/blog/self-service-option-became-another-line-to-wait-in.html">The self-service option became another line to wait in. &#8600;</a>
+  </div>
 </div>
+
 
 <div id="main-content" class="stottly-scope">
 <section class="page-hero">
@@ -403,9 +418,9 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
 <p>Where it gets murkier is when "AI-assisted" quietly becomes "AI-only," and a business ends up with video that's technically finished but forgettable, because nothing about it was actually made by someone who understood the story they were trying to tell. The tools compress production time. They don't replace the judgment of knowing what's worth saying and how to say it on camera.</p>
 <p>Our approach to AI adoption is consistent across every question like this: use the tools to reclaim time on the parts of the work that don't need a human's judgment, and protect the time you save for the parts that do. That's true whether you're producing a training video internally or a marketing piece meant to actually move someone.</p>
     <div style="margin-top:32px;padding-top:20px;border-top:1px solid var(--line);font-size:13px;color:var(--muted);"><ul>
-<li><a href="https://vivideo.ai/blog/ai-video-statistics-2026">75 AI Video Statistics Marketers Need to Know (2026)</a> — Vivideo</li>
-<li><a href="https://www.digitalapplied.com/blog/video-marketing-statistics-2026-data-points">Video Marketing Statistics 2026: 160+ Essential Data</a> — Digital Applied</li>
-<li><a href="https://blog.mean.ceo/ai-video-generation-trends-july-2026/">AI Video Generation Trends | July 2026</a> — Mean.ceo</li>
+<li><a href="https://vivideo.ai/blog/ai-video-statistics-2026">75 AI Video Statistics Marketers Need to Know (2026)</a>, Vivideo</li>
+<li><a href="https://www.digitalapplied.com/blog/video-marketing-statistics-2026-data-points">Video Marketing Statistics 2026: 160+ Essential Data</a>, Digital Applied</li>
+<li><a href="https://blog.mean.ceo/ai-video-generation-trends-july-2026/">AI Video Generation Trends | July 2026</a>, Mean.ceo</li>
 </ul></div>
     <div style="text-align:center;margin-top:44px;">
       <a class="btn-secondary" href="/blog">See all posts &rarr;</a>
@@ -433,53 +448,79 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
   .stottly-scope .footer-grid > div:first-child{grid-column:auto;}
 }
 </style>
-<footer>
+<footer class="v3-footer">
   <div class="wrap">
-    <div class="footer-grid">
+    <div class="footer-top">
       <div>
-        <h4>Stottly Enterprises</h4>
-        <p style="font-size:13.5px;max-width:280px;">The company behind the work: consulting, project management, and the ventures we build. Based in Central Florida.</p>
+        <div class="footer-brand">Stottly Enterprises</div>
+        <p style="font-size:13.5px;color:#6E6E73;max-width:280px;margin-top:8px;">The company behind the work: consulting, project management, and the ventures we build. Based in Central Florida.</p>
         <div class="footer-ticker">
           <div class="footer-ticker-track">
-            <a href="/press/pr-deeds">New: D.E.E.D.S. launches in August →</a>
+            <a href="/press/pr-deeds">New: D.E.E.D.S. launches in August &rarr;</a>
             <span class="dot" aria-hidden="true">&#9679;</span>
-            <a href="/press/pr-cryptoifai-v2">New: CryptoifAI v2 is live →</a>
+            <a href="/press/pr-cryptoifai-v2">New: CryptoifAI v2 is live &rarr;</a>
             <span class="dot" aria-hidden="true">&#9679;</span>
-            <a href="/press/pr-agentic-forge">Agentic Forge targets Q4 2026 →</a>
+            <a href="/press/pr-agentic-forge">Agentic Forge targets Q4 2026 &rarr;</a>
             <span class="dot" aria-hidden="true">&#9679;</span>
-            <a href="/press/pr-deeds" aria-hidden="true" tabindex="-1">New: D.E.E.D.S. launches in August →</a>
+            <a href="/press/pr-deeds" aria-hidden="true" tabindex="-1">New: D.E.E.D.S. launches in August &rarr;</a>
             <span class="dot" aria-hidden="true">&#9679;</span>
-            <a href="/press/pr-cryptoifai-v2" aria-hidden="true" tabindex="-1">New: CryptoifAI v2 is live →</a>
+            <a href="/press/pr-cryptoifai-v2" aria-hidden="true" tabindex="-1">New: CryptoifAI v2 is live &rarr;</a>
             <span class="dot" aria-hidden="true">&#9679;</span>
-            <a href="/press/pr-agentic-forge" aria-hidden="true" tabindex="-1">Agentic Forge targets Q4 2026 →</a>
+            <a href="/press/pr-agentic-forge" aria-hidden="true" tabindex="-1">Agentic Forge targets Q4 2026 &rarr;</a>
           </div>
         </div>
       </div>
-      <div>
-        <h4>Company</h4>
-        <ul>
-          <li><a href="/who-we-are">Who We Are</a></li>
-          <li><a href="/services">Services</a></li>
-          <li><a href="/ventures">Ventures</a></li>
-          <li><a href="/portfolio">Portfolio</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Get in Touch</h4>
-        <ul>
-          <li><a href="/contact">Contact</a></li>
-          <li><a href="/blog">Blog</a></li>
-          <li><a href="/press">Press</a></li>
-        </ul>
+      <div class="footer-links">
+        <a href="/who-we-are">Who We Are</a>
+        <a href="/services">Services</a>
+        <a href="/ventures">Ventures</a>
+        <a href="/portfolio">Portfolio</a>
+        <a href="/contact">Contact</a>
+        <a href="/blog">Insights</a>
+        <a href="/press">Press</a>
       </div>
     </div>
-    <div style="margin-top:32px;padding-top:20px;border-top:1px solid var(--line);display:flex;gap:20px;flex-wrap:wrap;font-size:12.5px;">
-      <a href="/privacy" style="color:var(--muted);">Privacy Policy</a>
-      <a href="/terms-of-service" style="color:var(--muted);">Terms of Service</a>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Stottly Enterprises LLC &middot; Central Florida</span>
+      <span>
+        <a href="/privacy" style="color:inherit;">Privacy Policy</a> &middot;
+        <a href="/terms-of-service" style="color:inherit;">Terms of Service</a>
+      </span>
     </div>
   </div>
 </footer>
 </div>
 
+<script>
+(function(){
+  var cmdBar = document.getElementById('cmdBar');
+  if(!cmdBar) return;
+  var rm = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var lastY = window.scrollY;
+  var ticking = false;
+  function onScroll(){
+    var y = window.scrollY;
+    cmdBar.classList.toggle('is-condensed', y > 40);
+    if(!rm && y > lastY && y > 140){ cmdBar.classList.add('is-hidden'); }
+    else { cmdBar.classList.remove('is-hidden'); }
+    lastY = y; ticking = false;
+  }
+  window.addEventListener('scroll', function(){
+    if(!ticking){ requestAnimationFrame(onScroll); ticking = true; }
+  }, {passive:true});
+})();
+(function(){
+  var toggle = document.getElementById('indexToggle');
+  var panel = document.getElementById('editorialIndex');
+  var closeBtn = document.getElementById('eiClose');
+  if(!toggle || !panel) return;
+  function openPanel(){ panel.classList.add('is-open'); toggle.setAttribute('aria-expanded','true'); document.body.style.overflow='hidden'; }
+  function closePanel(){ panel.classList.remove('is-open'); toggle.setAttribute('aria-expanded','false'); document.body.style.overflow=''; }
+  toggle.addEventListener('click', function(){ if(panel.classList.contains('is-open')){closePanel();} else {openPanel();} });
+  if(closeBtn) closeBtn.addEventListener('click', closePanel);
+  panel.addEventListener('click', function(e){ if(e.target===panel) closePanel(); });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape' && panel.classList.contains('is-open')) closePanel(); });
+})();
+</script>
 </body>
 </html>

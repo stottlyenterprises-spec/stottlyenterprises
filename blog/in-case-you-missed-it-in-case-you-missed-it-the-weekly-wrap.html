@@ -12,9 +12,9 @@
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://www.stottlyenterprises.com/assets/blog/Weekly Recap.png">
 <style>
-:root{--ink:#2E3B4E;--slate:#5B7A9D;--muted:#5A6B84;--sky1:#F7FAFD;--sky2:#E7F0F8;--sky3:#D3E4F2;--accent-deep:#4B6E96;--line:rgba(46,59,78,0.1);--white:#FFFFFF;}
+:root{--ink:#1D1D1F;--slate:#6E6E73;--muted:#6E6E73;--sky1:#FBFBFA;--sky2:#F3F2EF;--sky3:#F3F2EF;--accent-deep:#B83A15;--line:rgba(0,0,0,0.08);--white:#FFFFFF;}
 *{box-sizing:border-box;margin:0;padding:0;}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;background:var(--sky1);color:var(--ink);line-height:1.65;font-weight:300;}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'SF Pro Text',sans-serif;background:var(--sky1);color:var(--ink);line-height:1.65;font-weight:400;}
 a{text-decoration:none;color:inherit;}
 .wrap{max-width:1140px;margin:0 auto;padding:0 32px;}
 footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top:1px solid var(--line);}
@@ -25,28 +25,172 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
 .footer-grid a:hover{color:var(--ink);}
 .btn-primary{background:var(--ink);color:#fff;padding:15px 30px;border-radius:30px;font-weight:400;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;display:inline-block;}
 .cta-band{background:linear-gradient(135deg,var(--sky2),var(--sky3));padding:70px 0;text-align:center;}
-.cta-band h2{font-size:28px;color:var(--ink);font-weight:200;margin-bottom:26px;}
+.cta-band h2{font-size:28px;color:var(--ink);font-weight:800;margin-bottom:26px;}
 .article-hero svg{width:100%;height:220px;display:block;}
 .article-wrap{max-width:760px;margin:0 auto;padding:56px 32px 80px;}
 .article-tag{font-size:11.5px;letter-spacing:2px;text-transform:uppercase;color:var(--accent-deep);font-weight:600;margin-bottom:16px;}
-.article-wrap h1{font-size:34px;font-weight:200;color:var(--ink);line-height:1.28;margin-bottom:18px;letter-spacing:-0.5px;}
+.article-wrap h1{font-size:34px;font-weight:800;color:var(--ink);line-height:1.28;margin-bottom:18px;letter-spacing:-0.5px;}
 .article-meta{font-size:13px;color:var(--muted);margin-bottom:40px;letter-spacing:0.3px;border-bottom:1px solid var(--line);padding-bottom:28px;}
 .article-body p{font-size:17px;color:#3c4a5c;margin-bottom:24px;line-height:1.9;}
 .back-blog{display:inline-block;margin-top:40px;font-size:13px;letter-spacing:1px;text-transform:uppercase;color:var(--accent-deep);font-weight:600;}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "In Case You Missed It. In Case You Missed It, The Weekly Wrap (Oct 12, 2025)", "description": "We\u2019re excited to announce a change. From now on, StottifAI will publish a fresh blog post each day. We\u2019re shifting from a few posts per week to daily insights in AI, business strategy, human and tech,...", "image": "https://www.stottlyenterprises.com/assets/blog/Weekly Recap.png", "datePublished": "2025-10-12T10:10:00-04:00", "author": {"@type": "Organization", "name": "Stottly Enterprises"}, "publisher": {"@type": "Organization", "name": "Stottly Enterprises", "logo": {"@type": "ImageObject", "url": "https://www.stottlyenterprises.com/assets/se-logo-nav.png"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://www.stottlyenterprises.com/blog/in-case-you-missed-it-in-case-you-missed-it-the-weekly-wrap"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.stottlyenterprises.com/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.stottlyenterprises.com/blog"}, {"@type": "ListItem", "position": 3, "name": "In Case You Missed It. In Case You Missed It, The Weekly Wrap (Oct 12, 2025)", "item": "https://www.stottlyenterprises.com/blog/in-case-you-missed-it-in-case-you-missed-it-the-weekly-wrap"}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Inter+Tight:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* ============ COMMAND BAR (Stottly Index nav) ============ */
+.cmd-bar{position:fixed;top:14px;left:14px;right:14px;z-index:200;max-width:1120px;margin:0 auto;background:rgba(251,251,250,0.86);backdrop-filter:blur(16px) saturate(180%);-webkit-backdrop-filter:blur(16px) saturate(180%);border:1px solid rgba(0,0,0,0.1);border-radius:14px;box-shadow:0 8px 30px -20px rgba(0,0,0,0.25);transition:transform .35s cubic-bezier(.2,.7,.3,1),background .3s ease,box-shadow .3s ease;}
+.cmd-bar.is-condensed{background:rgba(251,251,250,0.97);box-shadow:0 12px 34px -18px rgba(0,0,0,0.3);}
+.cmd-bar.is-hidden{transform:translateY(-140%);}
+.cmd-bar-inner{display:flex;align-items:center;justify-content:space-between;height:60px;padding:0 20px;transition:height .3s ease;}
+.cmd-bar.is-condensed .cmd-bar-inner{height:48px;}
+.cmd-brand{display:flex;align-items:center;gap:9px;font-family:'Inter Tight','Inter',-apple-system,BlinkMacSystemFont,sans-serif;font-size:14px;font-weight:800;letter-spacing:-0.2px;color:#1D1D1F;}
+.cmd-brand .mark{width:22px;height:22px;flex-shrink:0;display:block;}
+.cmd-links{display:flex;align-items:center;gap:26px;}
+.cmd-links a{font-size:13px;font-weight:600;color:#6E6E73;position:relative;padding-bottom:3px;}
+.cmd-links a:hover{color:#1D1D1F;}
+.cmd-links a.active{color:#1D1D1F;}
+.cmd-links a.active::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:2px;background:#FF5A2E;border-radius:2px;}
+.cmd-right{display:flex;align-items:center;gap:10px;}
+.cmd-cta{background:#1D1D1F;color:#FBFBFA;padding:9px 16px;border-radius:8px;font-size:12.5px;font-weight:700;display:inline-flex;align-items:center;gap:6px;transition:background .2s ease,transform .2s ease;font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;}
+.cmd-cta:hover{background:#FF5A2E;color:#1D1D1F;transform:translateY(-1px);}
+.index-toggle{display:flex;align-items:center;gap:6px;font-size:12px;font-weight:700;letter-spacing:0.3px;color:#1D1D1F;border:1px solid rgba(0,0,0,0.08);border-radius:8px;padding:8px 12px;background:#FFFFFF;cursor:pointer;transition:border-color .2s ease;font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;}
+.index-toggle:hover{border-color:#1D1D1F;}
+.index-toggle .plus{font-size:14px;line-height:1;}
+@media (max-width:760px){.cmd-links{display:none;}}
+
+/* ============ EDITORIAL INDEX OVERLAY ============ */
+.editorial-index{position:fixed;inset:0;z-index:300;background:#FBFBFA;opacity:0;visibility:hidden;transform:translateY(-12px);transition:opacity .3s cubic-bezier(.2,.7,.3,1),transform .3s cubic-bezier(.2,.7,.3,1),visibility .3s;overflow-y:auto;font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;}
+.editorial-index.is-open{opacity:1;visibility:visible;transform:translateY(0);}
+.ei-top{max-width:1120px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:26px 20px 10px;}
+.ei-top .ei-brand{font-family:'Inter Tight','Inter',-apple-system,BlinkMacSystemFont,sans-serif;font-size:13px;font-weight:800;letter-spacing:1px;color:#1D1D1F;}
+.ei-close{display:flex;align-items:center;gap:8px;font-size:12px;font-weight:700;letter-spacing:0.5px;color:#1D1D1F;background:none;border:1px solid rgba(0,0,0,0.08);border-radius:8px;padding:8px 14px;cursor:pointer;font-family:inherit;}
+.ei-close:hover{border-color:#1D1D1F;}
+.ei-grid{max-width:1120px;margin:0 auto;padding:26px 20px 60px;display:grid;grid-template-columns:repeat(3,1fr);gap:40px 32px;}
+.ei-col .ei-num{font-family:'Inter Tight','Inter',-apple-system,BlinkMacSystemFont,sans-serif;font-size:13px;font-weight:800;color:#B83A15;letter-spacing:1px;margin-bottom:14px;}
+.ei-col h3{font-family:'Inter Tight','Inter',-apple-system,BlinkMacSystemFont,sans-serif;font-size:22px;font-weight:800;color:#1D1D1F;letter-spacing:-0.5px;margin-bottom:14px;}
+.ei-col ul{list-style:none;display:flex;flex-direction:column;gap:9px;}
+.ei-col a{font-size:14px;color:#6E6E73;transition:color .2s ease;}
+.ei-col a:hover{color:#1D1D1F;}
+.ei-status{font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#86868B;margin-left:6px;}
+.ei-status.is-active{color:#B83A15;}
+.ei-signal{max-width:1120px;margin:0 auto;padding:0 20px 40px;border-top:1px solid rgba(0,0,0,0.08);padding-top:28px;}
+.ei-signal .lbl{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#B83A15;font-weight:700;margin-bottom:10px;}
+.ei-signal a{font-family:'Inter Tight','Inter',-apple-system,BlinkMacSystemFont,sans-serif;font-size:19px;font-weight:700;color:#1D1D1F;letter-spacing:-0.3px;}
+.ei-signal a:hover{color:#B83A15;}
+@media (max-width:760px){.ei-grid{grid-template-columns:1fr;gap:32px;}}
+
+/* ============ V3 FOOTER ============ */
+.v3-footer{background:#FFFFFF;border-top:1px solid rgba(0,0,0,0.08);padding:64px 0 32px;font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;}
+.v3-footer .footer-top{display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap;padding-bottom:32px;}
+.v3-footer .footer-brand{font-family:'Inter Tight','Inter',-apple-system,BlinkMacSystemFont,sans-serif;font-weight:800;font-size:15px;color:#1D1D1F;}
+.v3-footer .footer-links{display:flex;gap:28px;flex-wrap:wrap;font-size:13px;}
+.v3-footer .footer-links a{color:#6E6E73;}
+.v3-footer .footer-links a:hover{color:#B83A15;}
+.v3-footer .footer-bottom{border-top:1px solid rgba(0,0,0,0.08);padding-top:26px;font-size:12px;color:#6E6E73;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;}
+.v3-footer .footer-ticker{max-width:320px;overflow:hidden;margin-top:20px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 24px,#000 calc(100% - 24px),transparent);mask-image:linear-gradient(90deg,transparent,#000 24px,#000 calc(100% - 24px),transparent);}
+.v3-footer .footer-ticker-track{display:flex;align-items:center;gap:22px;width:max-content;white-space:nowrap;animation:v3FooterScroll 26s linear infinite;}
+.v3-footer .footer-ticker:hover .footer-ticker-track,.v3-footer .footer-ticker:focus-within .footer-ticker-track{animation-play-state:paused;}
+.v3-footer .footer-ticker-track a{font-size:12.5px;color:#6E6E73;}
+.v3-footer .footer-ticker-track a:hover{color:#1D1D1F;}
+.v3-footer .footer-ticker-track .dot{color:rgba(0,0,0,0.08);font-size:12px;}
+@keyframes v3FooterScroll{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+@media (prefers-reduced-motion: reduce){.v3-footer .footer-ticker-track{animation:none;}}
+
+#main-content{padding-top:96px;display:block;}
+.article-hero{padding-top:0 !important;margin-top:96px;}
+</style>
 </head>
 <body>
 <a href="#main-content" class="skip-link">Skip to content</a>
 <style>.skip-link{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;z-index:9999;background:#fff;color:#111;padding:12px 20px;border-radius:0 0 8px 0;font:600 14px/1.4 system-ui,sans-serif;text-decoration:none;}.skip-link:focus{left:0;top:0;width:auto;height:auto;overflow:visible;}</style>
 <style>.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}</style>
-<header style="background:var(--white);border-bottom:1px solid var(--line);padding:22px 32px;">
-  <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;">
-    <a href="/" style="font-weight:600;letter-spacing:1px;">STOTTLY ENTERPRISES</a>
-    <a href="/blog.html" style="font-size:13px;letter-spacing:1px;text-transform:uppercase;color:var(--accent-deep);font-weight:600;">&larr; Blog</a>
+<a href="#main-content" class="skip-link">Skip to content</a>
+<header class="cmd-bar" id="cmdBar">
+  <div class="cmd-bar-inner">
+    <a class="cmd-brand" href="/">
+      <img class="mark" src="/assets/se-logo-nav-black.png" alt="" width="22" height="22">
+      <span class="full">STOTTLY ENTERPRISES</span>
+    </a>
+    <nav class="cmd-links" aria-label="Primary">
+      <a href="/portfolio">Work</a>
+      <a href="/ventures">Ventures</a>
+      <a href="/blog" class="active">Insights</a>
+    </nav>
+    <div class="cmd-right">
+      <a class="cmd-cta magnetic" href="/contact">Start a Project &#8599;</a>
+      <button class="index-toggle" id="indexToggle" aria-expanded="false" aria-controls="editorialIndex">
+        <span>INDEX</span><span class="plus">+</span>
+      </button>
+    </div>
   </div>
 </header>
+
+<div class="editorial-index" id="editorialIndex">
+  <div class="ei-top">
+    <span class="ei-brand">STOTTLY ENTERPRISES</span>
+    <button class="ei-close" id="eiClose" type="button">CLOSE &times;</button>
+  </div>
+  <div class="ei-grid">
+    <div class="ei-col">
+      <div class="ei-num">01</div>
+      <h3>Services</h3>
+      <ul>
+        <li><a href="/services">Business Consulting</a></li>
+        <li><a href="/services">Project Management</a></li>
+        <li><a href="/services">Change Management</a></li>
+        <li><a href="/services">Operational Recovery</a></li>
+      </ul>
+    </div>
+    <div class="ei-col">
+      <div class="ei-num">02</div>
+      <h3>Work</h3>
+      <ul>
+        <li><a href="/portfolio">Featured Case Study</a></li>
+        <li><a href="/portfolio">Client Work</a></li>
+        <li><a href="/portfolio">Systems We've Built</a></li>
+      </ul>
+    </div>
+    <div class="ei-col">
+      <div class="ei-num">03</div>
+      <h3>Ventures</h3>
+      <ul>
+        <li><a href="https://stottifai.com/" target="_blank" rel="noopener">StottifAI <span class="ei-status is-active">Active</span></a></li>
+        <li><a href="https://gurilla-studios.com/" target="_blank" rel="noopener">Gurilla Studios <span class="ei-status is-active">Active</span></a></li>
+        <li><a href="/ventures/deeds">D.E.E.D.S. <span class="ei-status is-active">Active</span></a></li>
+        <li><a href="/ventures/agentic-forge">Agentic Forge <span class="ei-status">Preview</span></a></li>
+      </ul>
+    </div>
+    <div class="ei-col">
+      <div class="ei-num">04</div>
+      <h3>Insights</h3>
+      <ul>
+        <li><a href="/blog">Latest</a></li>
+        <li><a href="/blog/topics/operations-transformation">Operations &amp; Transformation</a></li>
+        <li><a href="/blog/topics/ai-adoption">AI Adoption</a></li>
+        <li><a href="/blog/topics/workforce-hiring">Workforce &amp; Hiring</a></li>
+        <li><a href="/blog/topics/leadership-decisions">Leadership &amp; Decisions</a></li>
+        <li><a href="/blog/topics/customer-experience">Customer Experience</a></li>
+      </ul>
+    </div>
+    <div class="ei-col">
+      <div class="ei-num">05</div>
+      <h3>Company</h3>
+      <ul>
+        <li><a href="/who-we-are">Who We Are</a></li>
+        <li><a href="/press">Press</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="ei-signal">
+    <div class="lbl">Today's Signal</div>
+    <a href="/blog/self-service-option-became-another-line-to-wait-in.html">The self-service option became another line to wait in. &#8600;</a>
+  </div>
+</div>
+
 <div id="main-content" class="article-hero">
 <img src="/assets/blog/Weekly Recap.png" alt="">
 </div>
@@ -56,7 +200,7 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
   <div class="article-meta">October 12, 2025 at 10:10 AM &middot; Stottly Enterprises</div>
   <p class="article-byline" style="font-size:12.5px;color:var(--muted);margin-bottom:20px;">Written by <a href="/founders-portfolio" style="color:var(--accent-deep);text-decoration:underline;">Daniel J. Stott</a>, Founder of Stottly Enterprises &mdash; 20+ years across enterprise technology, retail, live production, and consulting.</p>
   <div class="article-body">
-    <p>We’re excited to announce a change. From now on, StottifAI will publish a fresh blog post each day. We’re shifting from a few posts per week to daily insights in AI, business strategy, human and tech, and hands-on ideas because innovation doesn’t wait. Expect concise, high-value posts you can read over coffee that help you stay ahead — and of course, we’ll continue to bring you breaking AI news.</p>
+    <p>We’re excited to announce a change. From now on, StottifAI will publish a fresh blog post each day. We’re shifting from a few posts per week to daily insights in AI, business strategy, human and tech, and hands-on ideas because innovation doesn’t wait. Expect concise, high-value posts you can read over coffee that help you stay ahead, and of course, we’ll continue to bring you breaking AI news.</p>
     <p>So onward with our first official Weekly Wrap!</p>
     <p>This week reinforces a shift: AI is becoming foundational infrastructure, not just flashy experiments. If your business dreams of smarter automation, more responsive systems, or better insights, this is your window. Start asking not if you integrate AI, but how to do it in ways that amplify your strengths rather than disrupt them.</p>
     <p>Stay tuned tomorrow for your first daily post under the new rhythm, and thank you for being part of this journey.</p>
@@ -78,18 +222,77 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
   <h2>Have a problem worth writing about?</h2>
   <a class="btn-primary" href="/contact">Tell Us About It</a>
 </section>
-<footer>
+<footer class="v3-footer">
   <div class="wrap">
-    <div class="footer-grid">
-      <div><h4>Stottly Enterprises</h4><p style="font-size:13.5px;max-width:280px;">The company behind the work: consulting, project management, and the ventures we build. Based in Central Florida.</p></div>
-      <div><h4>Company</h4><ul><li><a href="/who-we-are">Who We Are</a></li><li><a href="/services">Services</a></li><li><a href="/ventures">Ventures</a></li><li><a href="/portfolio">Portfolio</a></li></ul></div>
-      <div><h4>Get in Touch</h4><ul><li><a href="/contact">Contact</a></li><li><a href="/blog.html">Blog</a></li><li><a href="/press">Press</a></li></ul></div>
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">Stottly Enterprises</div>
+        <p style="font-size:13.5px;color:#6E6E73;max-width:280px;margin-top:8px;">The company behind the work: consulting, project management, and the ventures we build. Based in Central Florida.</p>
+        <div class="footer-ticker">
+          <div class="footer-ticker-track">
+            <a href="/press/pr-deeds">New: D.E.E.D.S. launches in August &rarr;</a>
+            <span class="dot" aria-hidden="true">&#9679;</span>
+            <a href="/press/pr-cryptoifai-v2">New: CryptoifAI v2 is live &rarr;</a>
+            <span class="dot" aria-hidden="true">&#9679;</span>
+            <a href="/press/pr-agentic-forge">Agentic Forge targets Q4 2026 &rarr;</a>
+            <span class="dot" aria-hidden="true">&#9679;</span>
+            <a href="/press/pr-deeds" aria-hidden="true" tabindex="-1">New: D.E.E.D.S. launches in August &rarr;</a>
+            <span class="dot" aria-hidden="true">&#9679;</span>
+            <a href="/press/pr-cryptoifai-v2" aria-hidden="true" tabindex="-1">New: CryptoifAI v2 is live &rarr;</a>
+            <span class="dot" aria-hidden="true">&#9679;</span>
+            <a href="/press/pr-agentic-forge" aria-hidden="true" tabindex="-1">Agentic Forge targets Q4 2026 &rarr;</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="/who-we-are">Who We Are</a>
+        <a href="/services">Services</a>
+        <a href="/ventures">Ventures</a>
+        <a href="/portfolio">Portfolio</a>
+        <a href="/contact">Contact</a>
+        <a href="/blog">Insights</a>
+        <a href="/press">Press</a>
+      </div>
     </div>
-    <div style="margin-top:32px;padding-top:20px;border-top:1px solid var(--line);display:flex;gap:20px;flex-wrap:wrap;font-size:12.5px;">
-      <a href="/privacy" style="color:var(--muted);">Privacy Policy</a>
-      <a href="/terms-of-service" style="color:var(--muted);">Terms of Service</a>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Stottly Enterprises LLC &middot; Central Florida</span>
+      <span>
+        <a href="/privacy" style="color:inherit;">Privacy Policy</a> &middot;
+        <a href="/terms-of-service" style="color:inherit;">Terms of Service</a>
+      </span>
     </div>
   </div>
 </footer>
+<script>
+(function(){
+  var cmdBar = document.getElementById('cmdBar');
+  if(!cmdBar) return;
+  var rm = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var lastY = window.scrollY;
+  var ticking = false;
+  function onScroll(){
+    var y = window.scrollY;
+    cmdBar.classList.toggle('is-condensed', y > 40);
+    if(!rm && y > lastY && y > 140){ cmdBar.classList.add('is-hidden'); }
+    else { cmdBar.classList.remove('is-hidden'); }
+    lastY = y; ticking = false;
+  }
+  window.addEventListener('scroll', function(){
+    if(!ticking){ requestAnimationFrame(onScroll); ticking = true; }
+  }, {passive:true});
+})();
+(function(){
+  var toggle = document.getElementById('indexToggle');
+  var panel = document.getElementById('editorialIndex');
+  var closeBtn = document.getElementById('eiClose');
+  if(!toggle || !panel) return;
+  function openPanel(){ panel.classList.add('is-open'); toggle.setAttribute('aria-expanded','true'); document.body.style.overflow='hidden'; }
+  function closePanel(){ panel.classList.remove('is-open'); toggle.setAttribute('aria-expanded','false'); document.body.style.overflow=''; }
+  toggle.addEventListener('click', function(){ if(panel.classList.contains('is-open')){closePanel();} else {openPanel();} });
+  if(closeBtn) closeBtn.addEventListener('click', closePanel);
+  panel.addEventListener('click', function(e){ if(e.target===panel) closePanel(); });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape' && panel.classList.contains('is-open')) closePanel(); });
+})();
+</script>
 </body>
 </html>
