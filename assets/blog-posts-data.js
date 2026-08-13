@@ -3,6 +3,15 @@
    not just the front page's latest cards. */
 window.STOTTLY_POSTS = [
   {
+    "topic": "leadership",
+    "href": "/blog/approval-process-protects-everyone-except-the-business.html",
+    "date": "Aug 13, 2026",
+    "img": "/assets/blog/2026-08-13-approval-process-risk.png",
+    "title": "The approval process protects everyone except the business.",
+    "excerpt": "An approval process often begins with a legitimate risk. Then the process accumulates names, and the business accepts a different exposure",
+    "tag": "Leadership & Decisions"
+  },
+  {
     "topic": "cx",
     "href": "/blog/self-service-option-became-another-line-to-wait-in.html",
     "date": "Aug 12, 2026",
