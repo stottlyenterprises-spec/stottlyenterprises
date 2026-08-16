@@ -3,20 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tech &amp; Tools Tuesday: Spotlight on AI’s Next Wave (Oct 21, 2025) | Stottly Enterprises</title>
-<meta name="description" content="Artificial intelligence continues to evolve from experimental projects into essential infrastructure. This week’s tools and frameworks highlight how companies are bringing AI closer to users: on devi...">
-<link rel="canonical" href="https://www.stottlyenterprises.com/blog/tech-tools-tuesday-spotlight-on-ais-next-wave">
-<meta property="og:title" content="Tech &amp; Tools Tuesday: Spotlight on AI’s Next Wave (Oct 21, 2025) | Stottly Enterprises">
-<meta property="og:description" content="Artificial intelligence continues to evolve from experimental projects into essential infrastructure. This week’s tools and frameworks highlight how companies are bringing AI closer to users: on devi...">
-<meta property="og:url" content="https://www.stottlyenterprises.com/blog/tech-tools-tuesday-spotlight-on-ais-next-wave">
+<title>AI Agents May Hold Too Much Business Authority | Stottly Enterprises</title>
+<meta name="description" content="AI agents can inherit broad access across business systems before leaders define the limits, approvals, and accountability attached to that authority.">
+<link rel="canonical" href="https://www.stottlyenterprises.com/blog/ai-agent-may-have-more-authority-than-your-new-manager">
+<meta property="og:title" content="AI Agents May Hold Too Much Business Authority | Stottly Enterprises">
+<meta property="og:description" content="AI agents can inherit broad access across business systems before leaders define the limits, approvals, and accountability attached to that authority.">
+<meta property="og:url" content="https://www.stottlyenterprises.com/blog/ai-agent-may-have-more-authority-than-your-new-manager">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://www.stottlyenterprises.com/assets/blog/10:21.png">
+<meta property="og:image" content="https://www.stottlyenterprises.com/assets/blog/2026-08-15-ai-agent-authority.png">
 <style>
-:root{--ink:#1D1D1F;--slate:#6E6E73;--muted:#6E6E73;--sky1:#FBFBFA;--sky2:#F3F2EF;--sky3:#F3F2EF;--accent-deep:#B83A15;--line:rgba(0,0,0,0.08);--white:#FFFFFF;}
+:root{--ink:#1D1D1F;--slate:#6E6E73;--muted:#6E6E73;--sky1:#FBFBFA;--sky2:#F3F2EF;--sky3:#F3F2EF;--silver:#E5E5E0;--accent:#B83A15;--accent-deep:#B83A15;--line:rgba(0,0,0,0.08);--white:#FFFFFF;}
 *{box-sizing:border-box;margin:0;padding:0;}
 body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'SF Pro Text',sans-serif;background:var(--sky1);color:var(--ink);line-height:1.65;font-weight:400;}
 a{text-decoration:none;color:inherit;}
+img{max-width:100%;display:block;}
 .wrap{max-width:1140px;margin:0 auto;padding:0 32px;}
+.site-header{background:var(--white);border-bottom:1px solid var(--line);}
 footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top:1px solid var(--line);}
 .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:32px;margin-bottom:44px;}
 .footer-grid h4{color:var(--ink);font-size:12px;letter-spacing:2px;text-transform:uppercase;margin-bottom:18px;font-weight:500;}
@@ -26,16 +28,26 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
 .btn-primary{background:var(--ink);color:#fff;padding:15px 30px;border-radius:30px;font-weight:400;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;display:inline-block;}
 .cta-band{background:linear-gradient(135deg,var(--sky2),var(--sky3));padding:70px 0;text-align:center;}
 .cta-band h2{font-size:28px;color:var(--ink);font-weight:800;margin-bottom:26px;}
-.article-hero svg{width:100%;height:220px;display:block;}
+
+/* Article */
+.article-hero{position:relative;overflow:hidden;}
+.article-hero svg,.article-hero img{width:100%;height:340px;display:block;object-fit:cover;}
 .article-wrap{max-width:760px;margin:0 auto;padding:56px 32px 80px;}
 .article-tag{font-size:11.5px;letter-spacing:2px;text-transform:uppercase;color:var(--accent-deep);font-weight:600;margin-bottom:16px;}
-.article-wrap h1{font-size:34px;font-weight:800;color:var(--ink);line-height:1.28;margin-bottom:18px;letter-spacing:-0.5px;}
+.article-wrap h1{font-size:38px;font-weight:800;color:var(--ink);line-height:1.28;margin-bottom:18px;letter-spacing:-0.5px;}
 .article-meta{font-size:13px;color:var(--muted);margin-bottom:40px;letter-spacing:0.3px;border-bottom:1px solid var(--line);padding-bottom:28px;}
 .article-body p{font-size:17px;color:#3c4a5c;margin-bottom:24px;line-height:1.9;}
+.article-sources{margin-top:48px;padding-top:28px;border-top:1px solid var(--line);}
+.article-sources h3{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--accent-deep);margin-bottom:16px;font-weight:600;}
+.article-sources ul{list-style:none;font-size:13px;color:var(--muted);}
+.article-sources li{margin-bottom:10px;line-height:1.6;word-break:break-word;}
+.article-sources a{color:var(--slate);text-decoration:underline;}
+.post-nav{display:flex;justify-content:space-between;gap:20px;margin-top:56px;padding-top:28px;border-top:1px solid var(--line);font-size:13.5px;}
+.post-nav a{color:var(--accent-deep);font-weight:600;}
 .back-blog{display:inline-block;margin-top:40px;font-size:13px;letter-spacing:1px;text-transform:uppercase;color:var(--accent-deep);font-weight:600;}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Tech &amp; Tools Tuesday: Spotlight on AI\u2019s Next\u202fWave (Oct 21, 2025)", "description": "Artificial intelligence continues to evolve from experimental projects into essential infrastructure. This week\u2019s tools and frameworks highlight how companies are bringing AI closer to users \u2014 on devi...", "image": "https://www.stottlyenterprises.com/assets/blog/10:21.png", "datePublished": "2025-10-21T09:26:00-04:00", "author": {"@type": "Organization", "name": "Stottly Enterprises"}, "publisher": {"@type": "Organization", "name": "Stottly Enterprises", "logo": {"@type": "ImageObject", "url": "https://www.stottlyenterprises.com/assets/se-logo-nav.png"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://www.stottlyenterprises.com/blog/tech-tools-tuesday-spotlight-on-ais-next-wave"}}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.stottlyenterprises.com/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.stottlyenterprises.com/blog"}, {"@type": "ListItem", "position": 3, "name": "Tech & Tools Tuesday: Spotlight on AI\u2019s Next\u202fWave (Oct 21, 2025)", "item": "https://www.stottlyenterprises.com/blog/tech-tools-tuesday-spotlight-on-ais-next-wave"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Your AI agent may have more authority than your new manager.", "description": "AI agents can inherit broad access across business systems before leaders define the limits, approvals, and accountability attached to that authority.", "image": "https://www.stottlyenterprises.com/assets/blog/2026-08-15-ai-agent-authority.png", "datePublished": "2026-08-15T08:05:00-04:00", "author": {"@type": "Organization", "name": "Stottly Enterprises"}, "publisher": {"@type": "Organization", "name": "Stottly Enterprises", "logo": {"@type": "ImageObject", "url": "https://www.stottlyenterprises.com/assets/se-logo-nav.png"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://www.stottlyenterprises.com/blog/ai-agent-may-have-more-authority-than-your-new-manager"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.stottlyenterprises.com/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.stottlyenterprises.com/blog"}, {"@type": "ListItem", "position": 3, "name": "Your AI agent may have more authority than your new manager.", "item": "https://www.stottlyenterprises.com/blog/ai-agent-may-have-more-authority-than-your-new-manager"}]}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Inter+Tight:wght@500;600;700;800&display=swap" rel="stylesheet">
@@ -60,6 +72,18 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
 .index-toggle:hover{border-color:#1D1D1F;}
 .index-toggle .plus{font-size:14px;line-height:1;}
 @media (max-width:760px){.cmd-links{display:none;}}
+@media (max-width:600px){
+  .cmd-bar-inner{padding:0 14px;gap:8px;}
+  .cmd-brand{font-size:12px;gap:6px;}
+  .cmd-brand .mark{width:19px;height:19px;}
+  .cmd-right{gap:6px;}
+  .cmd-cta{padding:7px 10px;font-size:11px;}
+  .index-toggle{padding:7px 9px;font-size:11px;}
+  .index-toggle span:first-child{display:none;}
+}
+@media (max-width:360px){
+  .cmd-cta{display:none;}
+}
 
 /* ============ EDITORIAL INDEX OVERLAY ============ */
 .editorial-index{position:fixed;inset:0;z-index:300;background:#FBFBFA;opacity:0;visibility:hidden;transform:translateY(-12px);transition:opacity .3s cubic-bezier(.2,.7,.3,1),transform .3s cubic-bezier(.2,.7,.3,1),visibility .3s;overflow-y:auto;font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;}
@@ -107,6 +131,7 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
 <a href="#main-content" class="skip-link">Skip to content</a>
 <style>.skip-link{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;z-index:9999;background:#fff;color:#111;padding:12px 20px;border-radius:0 0 8px 0;font:600 14px/1.4 system-ui,sans-serif;text-decoration:none;}.skip-link:focus{left:0;top:0;width:auto;height:auto;overflow:visible;}</style>
 <style>.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}</style>
+
 <a href="#main-content" class="skip-link">Skip to content</a>
 <header class="cmd-bar" id="cmdBar">
   <div class="cmd-bar-inner">
@@ -187,51 +212,55 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
   </div>
   <div class="ei-signal">
     <div class="lbl">Today's Signal</div>
-    <a href="/blog/weekly-recap-aug-10-16-2026.html">Weekly Recap: The business kept moving. The room to move disappeared. &#8600;</a>
+    <a href="/blog/ai-agent-may-have-more-authority-than-your-new-manager.html">Your AI agent may have more authority than your new manager. &#8600;</a>
   </div>
 </div>
 
-<div id="main-content" class="article-hero"><img src="/assets/blog/10:21.png" alt="Tech &amp; Tools Tuesday: Spotlight on AI’s Next Wave (Oct 21, 2025)" style="width:100%;height:100%;object-fit:cover;"></div>
+
+<div id="main-content" class="article-hero">
+<img src="/assets/blog/2026-08-15-ai-agent-authority.png" alt="Your AI agent may have more authority than your new manager.">
+</div>
+
 <div class="article-wrap">
-  <div class="article-tag">Archive</div>
-  <h1>Tech &amp; Tools Tuesday: Spotlight on AI’s Next Wave (Oct 21, 2025)</h1>
-  <div class="article-meta">October 21, 2025 at 9:26 AM &middot; Stottly Enterprises</div>
+  <div class="article-tag">AI Adoption</div>
+  <h1>Your AI agent may have more authority than your new manager.</h1>
+  <div class="article-meta">Published August 15, 2026 at 8:05 AM &middot; Stottly Enterprises</div>
   <p class="article-byline" style="font-size:12.5px;color:var(--muted);margin-bottom:20px;">Written by <a href="/founders-portfolio" style="color:var(--accent-deep);text-decoration:underline;">Daniel J. Stott</a>, Founder of Stottly Enterprises &mdash; 20+ years across enterprise technology, retail, live production, and consulting.</p>
   <div class="article-body">
-    <p>Artificial intelligence continues to evolve from experimental projects into essential infrastructure. This week’s tools and frameworks highlight how companies are bringing AI closer to users: on devices, inside workflows, and across open ecosystems. From enterprise platforms to new open-source frameworks, these breakthroughs reveal how AI is becoming more practical, accessible, and strategic for every business.</p>
-    <p>Key Developments</p>
-    <p>On-device AI licensing ramps up: Arm Holdings expanded its Flexible Access program to include the Armv9 edge AI platform, giving startups and device makers greater freedom to accelerate intelligent computing at the edge.</p>
-    <p>Enterprise agent platform evolves: Following last week’s debut, Salesforce introduced new updates to Agentforce 360 at Dreamforce 2025. The platform now enables businesses to create conversational AI agents that streamline workflows across customer service, IT, and sales.</p>
-    <p>New frameworks for agentic AI workflows: Two open-source research frameworks, Simpliflow and LightAgent, have emerged to simplify the design, orchestration, and deployment of generative agent-based systems, making it easier for developers to move from concept to production.</p>
-    <p>On-device AI licensing ramps up: Arm Holdings expanded its Flexible Access program to include the Armv9 edge AI platform, giving startups and device makers greater freedom to accelerate intelligent computing at the edge.</p>
-    <p>Enterprise agent platform evolves: Following last week’s debut, Salesforce introduced new updates to Agentforce 360 at Dreamforce 2025. The platform now enables businesses to create conversational AI agents that streamline workflows across customer service, IT, and sales.</p>
-    <p>New frameworks for agentic AI workflows: Two open-source research frameworks, Simpliflow and LightAgent, have emerged to simplify the design, orchestration, and deployment of generative agent-based systems, making it easier for developers to move from concept to production.</p>
-    <p>Strategic Implications for Business</p>
-    <p>The AI tools landscape is shifting from standalone models toward agentic systems, unified frameworks, and edge deployment. For business leaders this means:</p>
-    <p>Less reliance on centralized cloud‑only AI.  on‑device intelligence (via Arm’s licensing) opens new opportunities for privacy, latency, and cost control.</p>
-    <p>A move from predictive to autonomous AI agents: Platforms like Agentforce 360 turn AI from a helper tool into an operational actor across teams.</p>
-    <p>A growing emphasis on interoperability and developer productivity: With frameworks such as Simpliflow and LightAgent, companies can more rapidly prototype, iterate and deploy agentic workflows rather than rebuild from scratch.</p>
-    <p>Less reliance on centralized cloud‑only AI.  on‑device intelligence (via Arm’s licensing) opens new opportunities for privacy, latency, and cost control.</p>
-    <p>A move from predictive to autonomous AI agents: Platforms like Agentforce 360 turn AI from a helper tool into an operational actor across teams.</p>
-    <p>A growing emphasis on interoperability and developer productivity: With frameworks such as Simpliflow and LightAgent, companies can more rapidly prototype, iterate and deploy agentic workflows rather than rebuild from scratch.</p>
-    <p>In practical terms: if your strategy still treats AI as a feature, it’s time to treat it as a service architecture. Build your roadmap around agents, edge‑deployments, and unified frameworks. That’s how businesses stay ahead, not just through innovation, but through execution.</p>
-    <p>1 . Google AI. “Computer Use.” Gemini API Documentation, Google, 2025, https://ai.google.dev/gemini-api/docs/computer-use.</p>
-    <p>2. Vincent, James. “Google’s Latest AI Model Uses a Web Browser like You Do.” The Verge, 7 Oct. 2025, https://www.theverge.com/news/795463/google-computer-use-gemini-ai-model-agents.</p>
+    <p>A new manager may wait weeks for access. Finance approves one system. Technology approves another. Purchasing limits the amount the manager can commit. Customer credits require a second signature. The controls are slow, but the organization understands that authority should be granted deliberately.</p>
+    <p>An AI agent can arrive through a product trial and connect to email, calendars, customer records, documents, payments, or code in an afternoon. Each permission appears narrow on its own. Together they may allow the system to gather information, make a plan, communicate externally, and take actions across boundaries no employee could cross without review.</p>
+    <p>NIST's AI Agent Standards Initiative focuses on secure identity, authorization, interoperability, and confidence in systems that can act autonomously. A separate NIST analysis of industry responses found broad agreement that agents create novel security threats and that familiar cybersecurity practices need adaptation. The concern is rooted in action, not conversation. An agent can change the environment it observes.</p>
+    <p>The business risk begins with borrowed authority. The agent uses credentials, service accounts, integrations, and delegated permissions that belong to people or systems. When the task fails, leaders need to know whose authority was exercised, which limits applied, what evidence was retained, and who can reverse the action.</p>
+    <p>Human approval does not solve every case. A person clicking approve may see a polished summary without the records, assumptions, or intermediate steps that produced it. Oversight becomes ceremonial when the reviewer lacks enough context or time to challenge the proposed action.</p>
+    <p>Authority should match consequence. Drafting a message is different from sending it. Preparing a purchase is different from committing funds. Recommending a schedule is different from changing customer promises. The system needs technical limits that reflect those operating differences, along with logs and a reliable path to stop or reverse action.</p>
+    <p>The attraction of an agent is that it can move work without waiting for a person at every step. That benefit makes its authority easy to underestimate. A business would rarely hand a new manager keys to every room on the first afternoon. A software connection deserves the same seriousness.</p>
   </div>
-  <p style="font-size:12.5px;color:var(--muted);margin-top:20px;">Originally published on the Stottly Enterprises blog. <a href="https://www.stottlyenterprises.com/blog/2771959_tech-tools-tuesday-spotlight-on-ai-s-next-wave" style="text-decoration:underline;color:var(--slate);" target="_blank" rel="noopener">View original &rarr;<span class="sr-only"> (opens in new tab)</span></a></p>
-  
+  <div class="article-sources">
+    <h3>Sources</h3>
+    <ul>
+      <li>NIST, "Announcing the AI Agent Standards Initiative for Interoperable and Secure Innovation," February 17, 2026: <a href="https://www.nist.gov/news-events/news/2026/02/announcing-ai-agent-standards-initiative-interoperable-and-secure">nist.gov</a></li>
+      <li>NIST, "Summary Analysis of Responses to the Request for Information Regarding Security Considerations for AI Agents," May 18, 2026: <a href="https://www.nist.gov/publications/summary-analysis-responses-request-information-regarding-security-considerations-ai">nist.gov</a></li>
+      <li>NIST National Cybersecurity Center of Excellence, "Accelerating the Adoption of Software and AI Agent Identity and Authorization," February 2026: <a href="https://www.nccoe.nist.gov/sites/default/files/2026-02/accelerating-the-adoption-of-software-and-ai-agent-identity-and-authorization-concept-paper.pdf">nccoe.nist.gov</a></li>
+    </ul>
+  </div>
+  <div class="post-nav">
+    <a href="/blog/growth-turned-exception-into-permanent-infrastructure.html">&laquo; Growth Turned Every Small Exception Into Permanent Infrastructure</a>
+  </div>
+
 <div class="related-posts" style="margin-top:32px;padding-top:24px;border-top:1px solid var(--line);">
   <div style="font-size:11px;text-transform:uppercase;letter-spacing:2px;color:var(--accent-deep);font-weight:600;margin-bottom:10px;">More on AI Adoption</div>
     <a href="/blog/cheapest-ai-tool-most-expensive-one-you-buy" style="display:block;padding:10px 0;border-bottom:1px solid var(--line);color:var(--ink);">The Cheapest AI Tool May Be the Most Expensive One You Buy</a>
     <a href="/blog/ai-disclosure-rules-arrived-before-companies-knew" style="display:block;padding:10px 0;border-bottom:1px solid var(--line);color:var(--ink);">AI Disclosure Rules Arrived Before Most Companies Knew They Applied</a>
-    <a href="/blog/free-ai-training-wont-fix-a-bad-workflow" style="display:block;padding:10px 0;border-bottom:1px solid var(--line);color:var(--ink);">Free AI Training Won&#x27;t Fix a Bad Workflow</a>
+    <a href="/blog/cryptoifai-v2-live-decisions" style="display:block;padding:10px 0;border-bottom:1px solid var(--line);color:var(--ink);">StottifAI Ships CryptoifAI v2, Making the Bot's Decisions Visible in Real Time</a>
 </div>
 <a class="back-blog" href="/blog.html">&larr; Back to all posts</a>
 </div>
+
 <section class="cta-band">
   <h2>Have a problem worth writing about?</h2>
   <a class="btn-primary" href="/contact">Tell Us About It</a>
 </section>
+
 <footer class="v3-footer">
   <div class="wrap">
     <div class="footer-top">
@@ -273,6 +302,7 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
     </div>
   </div>
 </footer>
+
 <script>
 (function(){
   var cmdBar = document.getElementById('cmdBar');

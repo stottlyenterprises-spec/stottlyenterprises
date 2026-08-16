@@ -3,6 +3,33 @@
    not just the front page's latest cards. */
 window.STOTTLY_POSTS = [
   {
+    "topic": "operations",
+    "href": "/blog/weekly-recap-aug-10-16-2026.html",
+    "date": "Aug 16, 2026",
+    "img": "/assets/blog/weekly-recap-banner.png",
+    "title": "Weekly Recap: The business kept moving. The room to move disappeared.",
+    "excerpt": "This week did not produce one dramatic failure. It produced six versions of narrowing room, from hiring and productivity to approvals and AI",
+    "tag": "Weekly Recap"
+  },
+  {
+    "topic": "ai",
+    "href": "/blog/ai-agent-may-have-more-authority-than-your-new-manager.html",
+    "date": "Aug 15, 2026",
+    "img": "/assets/blog/2026-08-15-ai-agent-authority.png",
+    "title": "Your AI agent may have more authority than your new manager.",
+    "excerpt": "A new manager waits weeks for access. An AI agent can inherit email, records, calendars, and payment permissions in an afternoon",
+    "tag": "AI Adoption"
+  },
+  {
+    "topic": "operations",
+    "href": "/blog/growth-turned-exception-into-permanent-infrastructure.html",
+    "date": "Aug 14, 2026",
+    "img": "/assets/blog/2026-08-14-growth-exception-infrastructure.png",
+    "title": "Growth turned every small exception into permanent infrastructure.",
+    "excerpt": "A small business can survive on exceptions because everyone remembers them. Growth changes the arithmetic before it changes the habit",
+    "tag": "Operations & Transformation"
+  },
+  {
     "topic": "leadership",
     "href": "/blog/approval-process-protects-everyone-except-the-business.html",
     "date": "Aug 13, 2026",
