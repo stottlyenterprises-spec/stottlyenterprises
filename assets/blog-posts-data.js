@@ -3,6 +3,33 @@
    not just the front page's latest cards. */
 window.STOTTLY_POSTS = [
   {
+    "topic": "ai",
+    "href": "/blog/ai-is-saving-time-nobody-can-explain-where-it-went.html",
+    "date": "Aug 19, 2026",
+    "img": null,
+    "title": "AI Is Saving Time. Nobody Can Explain Where It Went.",
+    "excerpt": "An employee uses AI to finish a task in twenty minutes instead of an hour. The time was real. The business value was not automatic",
+    "tag": "AI Adoption"
+  },
+  {
+    "topic": "leadership",
+    "href": "/blog/manager-everyone-depends-on-most-likely-to-break.html",
+    "date": "Aug 18, 2026",
+    "img": null,
+    "title": "The Manager Everyone Depends On Is the One Most Likely to Break",
+    "excerpt": "Every business has a manager who makes the week work. Dependability looks like strength. It can also conceal structural debt",
+    "tag": "Leadership & Organizational Design"
+  },
+  {
+    "topic": "operations",
+    "href": "/blog/business-looks-busier-numbers-say-slower.html",
+    "date": "Aug 17, 2026",
+    "img": null,
+    "title": "The Business Looks Busier. The Numbers Say It Is Getting Slower.",
+    "excerpt": "Busy is easy to see. The numbers can tell a different story: cycle time stretches while activity rises",
+    "tag": "Operations & Transformation"
+  },
+  {
     "topic": "operations",
     "href": "/blog/weekly-recap-aug-10-16-2026.html",
     "date": "Aug 16, 2026",
