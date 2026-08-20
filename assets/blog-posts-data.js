@@ -3,6 +3,15 @@
    not just the front page's latest cards. */
 window.STOTTLY_POSTS = [
   {
+    "topic": "operations",
+    "href": "/blog/new-system-went-live-old-company-came-with-it.html",
+    "date": "Aug 20, 2026",
+    "img": "/assets/blog/2026-08-20-new-system-old-company.png",
+    "title": "The New System Went Live. The Old Company Came With It.",
+    "excerpt": "A software launch cannot repair unclear ownership, conflicting definitions, and obsolete exceptions carried into its configuration.",
+    "tag": "Business Transformation"
+  },
+  {
     "topic": "ai",
     "href": "/blog/ai-is-saving-time-nobody-can-explain-where-it-went.html",
     "date": "Aug 19, 2026",
