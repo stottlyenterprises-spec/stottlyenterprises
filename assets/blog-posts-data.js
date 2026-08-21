@@ -3,6 +3,15 @@
    not just the front page's latest cards. */
 window.STOTTLY_POSTS = [
   {
+    "topic": "workforce",
+    "href": "/blog/job-is-open-hiring-process-is-closed.html",
+    "date": "Aug 21, 2026",
+    "img": "/assets/blog/2026-08-21-hiring-process-closed.png",
+    "title": "The Job Is Open. The Hiring Process Is Closed.",
+    "excerpt": "Companies can advertise urgent openings while screening out experienced candidates through rigid filters, slow decisions, and contradictory requirements.",
+    "tag": "Workforce & Employment"
+  },
+  {
     "topic": "operations",
     "href": "/blog/new-system-went-live-old-company-came-with-it.html",
     "date": "Aug 20, 2026",
