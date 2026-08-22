@@ -3,6 +3,15 @@
    not just the front page's latest cards. */
 window.STOTTLY_POSTS = [
   {
+    "topic": "operations",
+    "href": "/blog/weekly-recap-aug-17-23-2026.html",
+    "date": "Aug 23, 2026",
+    "img": "/assets/blog/weekly-recap-banner.png",
+    "title": "Weekly Recap: The Business Was Working. The System Was Not.",
+    "excerpt": "This week examined busy operations, manager dependency, missing AI value, failed transformation, closed hiring paths, and fragmented customer journeys.",
+    "tag": "Weekly Recap"
+  },
+  {
     "topic": "cx",
     "href": "/blog/customer-should-not-need-a-map-of-your-company.html",
     "date": "Aug 22, 2026",
