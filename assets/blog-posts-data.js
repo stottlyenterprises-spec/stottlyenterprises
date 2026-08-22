@@ -3,6 +3,15 @@
    not just the front page's latest cards. */
 window.STOTTLY_POSTS = [
   {
+    "topic": "cx",
+    "href": "/blog/customer-should-not-need-a-map-of-your-company.html",
+    "date": "Aug 22, 2026",
+    "img": "/assets/blog/2026-08-22-customer-company-maze.png",
+    "title": "Your Customer Should Not Need a Map of Your Company",
+    "excerpt": "Transfers, repeated explanations, and conflicting promises force customers to reconnect departments the business chose to separate.",
+    "tag": "Customer Experience"
+  },
+  {
     "topic": "workforce",
     "href": "/blog/job-is-open-hiring-process-is-closed.html",
     "date": "Aug 21, 2026",
