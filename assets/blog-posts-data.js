@@ -12,6 +12,33 @@ window.STOTTLY_POSTS = [
     "tag": "Operations & Transformation"
   },
   {
+    "topic": "leadership",
+    "href": "/blog/flat-employment-report-local-staffing-pressure.html",
+    "date": "Aug 26, 2026",
+    "img": "/assets/blog/2026-08-26-flat-employment-staffing-pressure.png",
+    "title": "The Employment Report Was Flat. The Staffing Pressure Was Not.",
+    "excerpt": "State employment changed little across most of the country, but stable totals can conceal the vacancy, coverage, and workload problems individual operators still carry.",
+    "tag": "Leadership & Organizational Design"
+  },
+  {
+    "topic": "ai",
+    "href": "/blog/ai-can-draft-cybersecurity-plan-cannot-own-risk.html",
+    "date": "Aug 25, 2026",
+    "img": "/assets/blog/2026-08-25-ai-cybersecurity-risk.png",
+    "title": "AI Can Draft the Cybersecurity Plan. It Cannot Own the Risk.",
+    "excerpt": "NIST’s new draft guide shows how AI can accelerate cybersecurity planning, while leaving evidence, decisions, and accountability with the organization.",
+    "tag": "AI & Technology"
+  },
+  {
+    "topic": "workforce",
+    "href": "/blog/young-workers-found-jobs-first-step-fragile.html",
+    "date": "Aug 24, 2026",
+    "img": "/assets/blog/2026-08-24-young-workers-first-step.png",
+    "title": "Young Workers Found Jobs. The First Career Step Is Still Fragile.",
+    "excerpt": "Summer youth employment improved, but a first job creates lasting value only when the business provides supervision, progression, and a path beyond seasonal labor.",
+    "tag": "Workforce & Employment"
+  },
+  {
     "topic": "operations",
     "href": "/blog/weekly-recap-aug-17-23-2026.html",
     "date": "Aug 23, 2026",
