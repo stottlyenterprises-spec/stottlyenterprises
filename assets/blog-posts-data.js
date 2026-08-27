@@ -4,6 +4,15 @@
 window.STOTTLY_POSTS = [
   {
     "topic": "operations",
+    "href": "/blog/productivity-rose-costs-kept-climbing.html",
+    "date": "Aug 27, 2026",
+    "img": "/assets/blog/2026-08-27-productivity-costs-service-industries.png",
+    "title": "Productivity Rose in Half the Service Economy. Costs Rose Almost Everywhere.",
+    "excerpt": "New BLS industry data shows why higher productivity does not guarantee lower labor cost or healthier operations across service businesses.",
+    "tag": "Operations & Transformation"
+  },
+  {
+    "topic": "operations",
     "href": "/blog/weekly-recap-aug-17-23-2026.html",
     "date": "Aug 23, 2026",
     "img": "/assets/blog/weekly-recap-banner.png",
