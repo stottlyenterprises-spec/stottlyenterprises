@@ -1,4 +1,4 @@
-/* Stottly Enterprises — v3 shared interactions
+/* Stottly Enterprises - v3 shared interactions
    Nav scroll shadow, word-by-word hero reveal, cursor spotlight, magnetic buttons,
    scroll reveal, proof-metric count-up, process-step cycling.
    Every block is guarded to no-op on pages missing the relevant elements. */

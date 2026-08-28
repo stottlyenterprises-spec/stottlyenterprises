@@ -1,7 +1,16 @@
-/* Stottly Enterprises — full post index, generated from blog/archive.html.
+/* Stottly Enterprises - full post index, generated from blog/archive.html.
    Used by blog.html's topic sorter to pull matching posts from the entire archive,
    not just the front page's latest cards. */
 window.STOTTLY_POSTS = [
+  {
+    "topic": "operations",
+    "href": "/blog/small-business-definition-growth.html",
+    "date": "Aug 28, 2026",
+    "img": "/assets/blog/2026-08-28-small-business-definition-growth.png",
+    "title": "The Business Did Not Get Smaller. The Definition Finally Got Larger.",
+    "excerpt": "The SBA’s proposed size-standard overhaul could restore small-business eligibility to growing firms, while increasing competition for contracts and programs.",
+    "tag": "Operations & Transformation"
+  },
   {
     "topic": "operations",
     "href": "/blog/productivity-rose-costs-kept-climbing.html",
