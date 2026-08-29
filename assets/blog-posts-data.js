@@ -3,6 +3,15 @@
    not just the front page's latest cards. */
 window.STOTTLY_POSTS = [
   {
+    "topic": "ai",
+    "href": "/blog/approved-ai-uncontrolled-workflow.html",
+    "date": "Aug 29, 2026",
+    "img": "/assets/blog/2026-08-29-approved-ai-uncontrolled-workflow.png",
+    "title": "The AI Tool Is Approved. The Workflow Around It Is Not.",
+    "excerpt": "Approving an AI product does not control the data, reviews, decisions, and handoffs employees build around it.",
+    "tag": "AI & Technology"
+  },
+  {
     "topic": "operations",
     "href": "/blog/small-business-definition-growth.html",
     "date": "Aug 28, 2026",
