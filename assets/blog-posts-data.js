@@ -3,6 +3,15 @@
    not just the front page's latest cards. */
 window.STOTTLY_POSTS = [
   {
+    "topic": "operations",
+    "href": "/blog/weekly-recap-aug-24-30-2026.html",
+    "date": "Aug 30, 2026",
+    "img": "/assets/blog/weekly-recap-banner.png",
+    "title": "Weekly Recap: The Number Improved. The Operating Question Remained.",
+    "excerpt": "This week connected early-career development, AI-assisted cybersecurity, local staffing pressure, service productivity, changing small-business thresholds, and the unmanaged workflows surrounding approved AI tools.",
+    "tag": "Weekly Recap"
+  },
+  {
     "topic": "ai",
     "href": "/blog/approved-ai-uncontrolled-workflow.html",
     "date": "Aug 29, 2026",
