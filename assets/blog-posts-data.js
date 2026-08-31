@@ -3,6 +3,15 @@
    not just the front page's latest cards. */
 window.STOTTLY_POSTS = [
   {
+    "topic": "leadership",
+    "href": "/blog/decision-delegated-consequence.html",
+    "date": "Aug 31, 2026",
+    "img": "/assets/blog/2026-08-31-decision-delegated-consequence.png",
+    "title": "The Decision Was Delegated. The Consequence Was Not.",
+    "excerpt": "Delegation fails when leaders transfer the task but keep the authority needed to resolve exceptions, creating delay without changing accountability.",
+    "tag": "Leadership & Organizational Design"
+  },
+  {
     "topic": "operations",
     "href": "/blog/weekly-recap-aug-24-30-2026.html",
     "date": "Aug 30, 2026",
