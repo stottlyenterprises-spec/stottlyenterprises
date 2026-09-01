@@ -3,6 +3,15 @@
    not just the front page's latest cards. */
 window.STOTTLY_POSTS = [
   {
+    "topic": "operations",
+    "href": "/blog/invisible-work-queue.html",
+    "date": "Sep 1, 2026",
+    "img": "/assets/blog/2026-09-01-invisible-work-queue.png",
+    "title": "The Queue Is Full of Work Nobody Officially Requested",
+    "excerpt": "Informal requests consume real capacity. A simple intake and triage system makes hidden demand visible before it distorts priorities and service levels.",
+    "tag": "Operations & Process Improvement"
+  },
+  {
     "topic": "leadership",
     "href": "/blog/decision-delegated-consequence.html",
     "date": "Aug 31, 2026",

@@ -3,25 +3,34 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Weekly Recap: Stop Buying Around the Business Problem | Stottly Enterprises</title>
-<meta name="description" content="This week's operating lesson: define the constraint, assign ownership, and measure the whole system before adding technology, funding, or structure.">
-<link rel="canonical" href="https://www.stottlyenterprises.com/blog/weekly-recap-july-27-aug-1-2026">
+<title>The Queue Is Full of Work Nobody Officially Requested | Stottly Enterprises</title>
+<meta name="description" content="Informal requests consume real capacity. A simple intake and triage system makes hidden demand visible before it distorts priorities and service levels.">
+<link rel="canonical" href="https://www.stottlyenterprises.com/blog/invisible-work-queue">
+<meta property="og:title" content="The Queue Is Full of Work Nobody Officially Requested | Stottly Enterprises">
+<meta property="og:description" content="Informal requests consume real capacity. A simple intake and triage system makes hidden demand visible before it distorts priorities and service levels.">
+<meta property="og:url" content="https://www.stottlyenterprises.com/blog/invisible-work-queue">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://www.stottlyenterprises.com/assets/blog/weekly-recap-banner.png">
+<meta property="og:image" content="https://www.stottlyenterprises.com/assets/blog/2026-09-01-invisible-work-queue.png">
 <style>
-:root{--ink:#1D1D1F;--slate:#6E6E73;--muted:#6E6E73;--sky1:#FBFBFA;--sky2:#F3F2EF;--sky3:#F3F2EF;--accent-deep:#B83A15;--line:rgba(0,0,0,0.08);--white:#FFFFFF;}
+:root{--ink:#1D1D1F;--slate:#6E6E73;--muted:#6E6E73;--sky1:#FBFBFA;--sky2:#F3F2EF;--sky3:#F3F2EF;--silver:#E5E5E0;--accent:#B83A15;--accent-deep:#B83A15;--line:rgba(0,0,0,0.08);--white:#FFFFFF;}
 *{box-sizing:border-box;margin:0;padding:0;}
 body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'SF Pro Text',sans-serif;background:var(--sky1);color:var(--ink);line-height:1.65;font-weight:400;}
-a{text-decoration:none;color:inherit;} img{max-width:100%;display:block;}
+a{text-decoration:none;color:inherit;}
+img{max-width:100%;display:block;}
 .wrap{max-width:1140px;margin:0 auto;padding:0 32px;}
 .site-header{background:var(--white);border-bottom:1px solid var(--line);}
 footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top:1px solid var(--line);}
 .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:32px;margin-bottom:44px;}
 .footer-grid h4{color:var(--ink);font-size:12px;letter-spacing:2px;text-transform:uppercase;margin-bottom:18px;font-weight:500;}
-.footer-grid ul{list-style:none;font-size:13.5px;} .footer-grid li{margin-bottom:11px;}
+.footer-grid ul{list-style:none;font-size:13.5px;}
+.footer-grid li{margin-bottom:11px;}
+.footer-grid a:hover{color:var(--ink);}
 .btn-primary{background:var(--ink);color:#fff;padding:15px 30px;border-radius:30px;font-weight:400;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;display:inline-block;}
 .cta-band{background:linear-gradient(135deg,var(--sky2),var(--sky3));padding:70px 0;text-align:center;}
 .cta-band h2{font-size:28px;color:var(--ink);font-weight:800;margin-bottom:26px;}
+
+/* Article */
+.article-hero{position:relative;overflow:hidden;}
 .article-hero svg,.article-hero img{width:100%;height:340px;display:block;object-fit:cover;}
 .article-wrap{max-width:760px;margin:0 auto;padding:56px 32px 80px;}
 .article-tag{font-size:11.5px;letter-spacing:2px;text-transform:uppercase;color:var(--accent-deep);font-weight:600;margin-bottom:16px;}
@@ -30,13 +39,15 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
 .article-body p{font-size:17px;color:#3c4a5c;margin-bottom:24px;line-height:1.9;}
 .article-sources{margin-top:48px;padding-top:28px;border-top:1px solid var(--line);}
 .article-sources h3{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--accent-deep);margin-bottom:16px;font-weight:600;}
-.article-sources ul{list-style:none;font-size:13px;color:var(--muted);} .article-sources li{margin-bottom:10px;line-height:1.6;word-break:break-word;} .article-sources a{color:var(--slate);text-decoration:underline;}
-.post-nav{display:flex;justify-content:space-between;gap:20px;margin-top:56px;padding-top:28px;border-top:1px solid var(--line);font-size:13.5px;flex-wrap:wrap;}
+.article-sources ul{list-style:none;font-size:13px;color:var(--muted);}
+.article-sources li{margin-bottom:10px;line-height:1.6;word-break:break-word;}
+.article-sources a{color:var(--slate);text-decoration:underline;}
+.post-nav{display:flex;justify-content:space-between;gap:20px;margin-top:56px;padding-top:28px;border-top:1px solid var(--line);font-size:13.5px;}
 .post-nav a{color:var(--accent-deep);font-weight:600;}
 .back-blog{display:inline-block;margin-top:40px;font-size:13px;letter-spacing:1px;text-transform:uppercase;color:var(--accent-deep);font-weight:600;}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Weekly Recap: Stop Buying Around the Business Problem", "description": "This week's operating lesson: define the constraint, assign ownership, and measure the whole system before adding technology, funding, or structure.", "image": "https://www.stottlyenterprises.com/assets/blog/weekly-recap-banner.png", "datePublished": "2026-08-02T10:43:00-04:00", "author": {"@type": "Organization", "name": "Stottly Enterprises"}, "publisher": {"@type": "Organization", "name": "Stottly Enterprises", "logo": {"@type": "ImageObject", "url": "https://www.stottlyenterprises.com/assets/se-logo-nav.png"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://www.stottlyenterprises.com/blog/weekly-recap-july-27-aug-1-2026"}}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.stottlyenterprises.com/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.stottlyenterprises.com/blog"}, {"@type": "ListItem", "position": 3, "name": "Weekly Recap: Stop Buying Around the Business Problem", "item": "https://www.stottlyenterprises.com/blog/weekly-recap-july-27-aug-1-2026"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "The Queue Is Full of Work Nobody Officially Requested", "description": "Informal requests consume real capacity. A simple intake and triage system makes hidden demand visible before it distorts priorities and service levels.", "image": "https://www.stottlyenterprises.com/assets/blog/2026-09-01-invisible-work-queue.png", "datePublished": "2026-09-01T06:30:00-04:00", "dateModified": "2026-09-01T06:30:00-04:00", "author": {"@type": "Organization", "name": "Stottly Enterprises"}, "publisher": {"@type": "Organization", "name": "Stottly Enterprises", "logo": {"@type": "ImageObject", "url": "https://www.stottlyenterprises.com/assets/se-logo-nav.png"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://www.stottlyenterprises.com/blog/invisible-work-queue"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.stottlyenterprises.com/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.stottlyenterprises.com/blog"}, {"@type": "ListItem", "position": 3, "name": "The Queue Is Full of Work Nobody Officially Requested", "item": "https://www.stottlyenterprises.com/blog/invisible-work-queue"}]}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Inter+Tight:wght@500;600;700;800&display=swap" rel="stylesheet">
@@ -61,6 +72,18 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
 .index-toggle:hover{border-color:#1D1D1F;}
 .index-toggle .plus{font-size:14px;line-height:1;}
 @media (max-width:760px){.cmd-links{display:none;}}
+@media (max-width:600px){
+  .cmd-bar-inner{padding:0 14px;gap:8px;}
+  .cmd-brand{font-size:12px;gap:6px;}
+  .cmd-brand .mark{width:19px;height:19px;}
+  .cmd-right{gap:6px;}
+  .cmd-cta{padding:7px 10px;font-size:11px;}
+  .index-toggle{padding:7px 9px;font-size:11px;}
+  .index-toggle span:first-child{display:none;}
+}
+@media (max-width:360px){
+  .cmd-cta{display:none;}
+}
 
 /* ============ EDITORIAL INDEX OVERLAY ============ */
 .editorial-index{position:fixed;inset:0;z-index:300;background:#FBFBFA;opacity:0;visibility:hidden;transform:translateY(-12px);transition:opacity .3s cubic-bezier(.2,.7,.3,1),transform .3s cubic-bezier(.2,.7,.3,1),visibility .3s;overflow-y:auto;font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;}
@@ -108,6 +131,7 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
 <a href="#main-content" class="skip-link">Skip to content</a>
 <style>.skip-link{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;z-index:9999;background:#fff;color:#111;padding:12px 20px;border-radius:0 0 8px 0;font:600 14px/1.4 system-ui,sans-serif;text-decoration:none;}.skip-link:focus{left:0;top:0;width:auto;height:auto;overflow:visible;}</style>
 <style>.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}</style>
+
 <a href="#main-content" class="skip-link">Skip to content</a>
 <header class="cmd-bar" id="cmdBar">
   <div class="cmd-bar-inner">
@@ -193,41 +217,51 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
 </div>
 
 
-<div id="main-content" class="article-hero">
-<img src="/assets/blog/weekly-recap-banner.png" alt="Weekly Recap: Stottly Enterprises">
-</div>
+<div id="main-content" class="article-hero"><img src="/assets/blog/2026-09-01-invisible-work-queue.png" alt="An official work queue overshadowed by hidden requests entering from multiple channels"></div>
 
 <div class="article-wrap">
-  <div class="article-tag">Weekly Recap</div>
-  <h1>Weekly Recap: The Week Business Leaders Learned to Stop Buying Around the Problem</h1>
-  <div class="article-meta">Published August 2, 2026 at 10:43 AM &middot; Stottly Enterprises</div>
-  <p class="article-byline" style="font-size:12.5px;color:var(--muted);margin-bottom:20px;">Written by <a href="/founders-portfolio" style="color:var(--accent-deep);text-decoration:underline;">Daniel J. Stott</a>, Founder of Stottly Enterprises &mdash; 20+ years across enterprise technology, retail, live production, and consulting.</p>
+  <div class="article-tag">Operations &amp; Process Improvement</div>
+  <h1>The Queue Is Full of Work Nobody Officially Requested</h1>
+  <div class="article-meta">Published September 1, 2026 at 6:30 AM &middot; Stottly Enterprises</div>
+  <p class="article-byline" style="font-size:12.5px;color:var(--muted);margin-bottom:20px;">Written by <a href="/founders-portfolio" style="color:var(--accent-deep);text-decoration:underline;">Daniel J. Stott</a>, Founder of Stottly Enterprises, with 20+ years across enterprise technology, retail, live production, and consulting.</p>
   <div class="article-body">
-    <p>This week's stories appeared to cover different problems: AI productivity, supply-chain constraints, manager capacity, experienced workers, technology training, and customer handoffs. The common thread was more uncomfortable. Businesses often invest around a problem before defining the operating condition that created it.</p>
-    <p>Monday's AI story showed how that happens with productivity. Employees complete tasks faster, but approvals, queues, and handoffs absorb the gain. The technology works and the business remains slow. Friday's training story reached the same conclusion from another direction. Tool capability matters, but a workshop cannot choose the right process, assign ownership, or decide what recovered capacity should accomplish.</p>
-    <p>Tuesday applied the principle to supply chains. New federal support can strengthen suppliers and production capacity, but "supply chain" is too broad to guide an investment. Leaders need to identify whether the constraint is a vendor, forecast, approval, cash, specification, or receiving problem. Funding becomes valuable after the bottleneck has a name.</p>
-    <p>Wednesday and Thursday showed how organizational systems hide capacity that already exists. A flattened structure can bury a manager under work that no layer now owns. A narrow hiring system can reject experienced candidates because their capability arrives in an unfamiliar career pattern. In both cases, the business reports scarcity after designing a system that prevents available capacity from being used.</p>
-    <p>Saturday brought the argument to the customer. Departments can meet their individual targets while the experience fails between them. The customer does not care that every internal team completed its assigned step. The customer judges the company by whether the outcome arrived accurately, coherently, and without requiring them to manage the handoff.</p>
-    <p>The Stottly Enterprises perspective across the week is straightforward: diagnose before purchasing, define before training, and assign ownership before measuring. Technology, funding, restructuring, and hiring can all create value. None of them replaces the leadership work of seeing how the business actually operates.</p>
-    <p>The strongest organizations are not the ones that add solutions fastest. They are the ones that can state the constraint precisely, choose an intervention proportional to it, and verify that the whole system improved. That discipline is less exciting than a new tool or program. It is also where durable performance comes from.</p>
+    <p>The official queue says the team has 18 requests. The team feels as if it has 40. Both numbers may be accurate.</p>
+    <p>Work enters through more doors than the process map admits. A message asks for a quick review. A meeting produces a favor. A senior colleague forwards a problem with no due date but obvious urgency. A customer issue is handled quietly because opening a ticket seems slower than fixing it.</p>
+    <p>Each request may be reasonable. Together, they create invisible demand.</p>
+    <p>Invisible work is not free simply because it avoided intake. It uses attention, creates switching costs, competes with committed work, and changes delivery dates. Yet it leaves little evidence for staffing, planning, or process improvement. Leaders see missed targets without seeing the demand that displaced them.</p>
+    <p>APQC’s Process Classification Framework is built around a basic operating idea: work becomes easier to define, compare, and improve when the organization has a common language for its processes. That principle applies at the front door. If requests cannot be classified and counted, capacity decisions become anecdotes.</p>
+    <p>The answer is not a heavy form for every two-minute question. Friction can drive even more work underground. Use the lightest capture method that preserves four facts: who asked, what outcome they need, when it matters, and who accepted the work.</p>
+    <p>Then review the queue by disposition, not just completion. Track work that was accepted, deferred, redirected, rejected, or absorbed without formal approval. The rejected and redirected items reveal unclear service boundaries. The absorbed items reveal where hierarchy or habit is bypassing priorities.</p>
+    <p>Managers should also look for repeat request types. Ten small favors may point to a missing self-service tool, unclear policy, unreliable upstream process, or role that exists informally but not in the organization chart. Treating each request as an isolated interruption prevents the pattern from becoming visible.</p>
+    <p>A useful weekly conversation is short: What entered outside the front door? What committed work did it displace? Which recurring request should become a defined service, and which should stop?</p>
+    <p>The purpose is not to punish helpfulness. It is to protect it. Teams can only make honest commitments when the full demand is visible.</p>
+    <p>A queue is a decision system, not a list. When unofficial requests skip the decision, priorities still change. They just change without a record.</p>
   </div>
   <div class="article-sources">
     <h3>Sources</h3>
     <ul>
-      <li>Gallup, "AI and Workplace Productivity: What Leaders Need to Know in 2026," July 27, 2026: <a href="https://www.gallup.com/workplace/713063/ai-workplace-productivity.aspx">gallup.com</a></li>
-      <li>U.S. Small Business Administration, "SBA Announces $9 Million in Grant Funding for the SCALE Program," July 23, 2026: <a href="https://www.sba.gov/article/2026/07/23/sba-announces-9-million-grant-funding-supply-chain-acceleration-logistics-enablement-scale-program">sba.gov</a></li>
-      <li>Gallup, "Span of Control: What's the Optimal Team Size for Managers?" January 13, 2026: <a href="https://www.gallup.com/workplace/700718/span-control-optimal-team-size-managers.aspx">gallup.com</a></li>
-      <li>OpenAI, "Introducing the ChatGPT for Small Business Program," July 21, 2026: <a href="https://openai.com/index/introducing-chatgpt-small-business-program/">openai.com</a></li>
+      <li>APQC, "Process Classification Framework: Play by the Rules": <a href="https://www.apqc.org/blog/process-classification-framework-play-rules">APQC</a></li>
+      <li>APQC, "Process Frameworks": <a href="https://www.apqc.org/process-frameworks">APQC Process Frameworks</a></li>
     </ul>
   </div>
   <div class="post-nav">
-    <a href="/blog/customers-do-not-care-which-department-owns-the-problem.html">&laquo; Customers Do Not Care Which Department Owns the Problem</a>
-    <a href="/blog/the-process-looks-efficient-because-the-rework.html">The Process Looks Efficient &raquo;</a>
+    <a href="/blog/decision-delegated-consequence.html">&laquo; The Decision Was Delegated. The Consequence Was Not.</a>
   </div>
-  <a class="back-blog" href="/blog.html">&larr; Back to all posts</a>
+
+<div class="related-posts" style="margin-top:32px;padding-top:24px;border-top:1px solid var(--line);">
+  <div style="font-size:11px;text-transform:uppercase;letter-spacing:2px;color:var(--accent-deep);font-weight:600;margin-bottom:10px;">More on Operations &amp; Transformation</div>
+    <a href="/blog/the-process-looks-efficient-because-the-rework" style="display:block;padding:10px 0;border-bottom:1px solid var(--line);color:var(--ink);">The Process Looks Efficient Because the Rework Is Invisible</a>
+    <a href="/blog/new-system-went-live-old-company-came-with-it" style="display:block;padding:10px 0;border-bottom:1px solid var(--line);color:var(--ink);">The New System Went Live. The Old Company Came With It.</a>
+    <a href="/blog/the-meeting-is-not-the-work" style="display:block;padding:10px 0;border-bottom:1px solid var(--line);color:var(--ink);">The Meeting Is Not the Work</a>
+</div>
+<a class="back-blog" href="/blog.html">&larr; Back to all posts</a>
 </div>
 
-<section class="cta-band"><h2>Have a problem worth writing about?</h2><a class="btn-primary" href="/contact">Tell Us About It</a></section>
+<section class="cta-band">
+  <h2>Have a problem worth writing about?</h2>
+  <a class="btn-primary" href="/contact">Tell Us About It</a>
+</section>
+
 <footer class="v3-footer">
   <div class="wrap">
     <div class="footer-top">
@@ -269,6 +303,7 @@ footer{background:var(--white);color:var(--muted);padding:64px 0 32px;border-top
     </div>
   </div>
 </footer>
+
 <script>
 (function(){
   var cmdBar = document.getElementById('cmdBar');
