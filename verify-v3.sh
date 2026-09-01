@@ -42,12 +42,8 @@ check "raw em-dash character (not &mdash; entity)" $'\xe2\x80\x94'
 
 echo
 echo "=== Stale D.E.E.D.S. wording ==="
-# press/pr-deeds.html and blog/press-release-deeds-app-launch.html are dated historical
-# press-release bodies (July 30, 2026) and are intentionally left unedited after publication.
-# Only evergreen ticker/status copy gets updated elsewhere.
-check "'launches in August' / 'Launching August 2026' (should be 'this month')" \
-  '(launches|[Ll]aunching) [Ii]n? ?August 2026' \
-  '(pr-deeds\.html|press-release-deeds-app-launch\.html)'
+check "August or 'this month' launch wording (should be September)" \
+  '(D\.E\.E\.D\.S\.[^<]{0,100}(launches this month|launch[^<]{0,40}August)|launch[^<]{0,40}August[^<]{0,80}D\.E\.E\.D\.S\.)'
 
 if [ "$FAIL" -eq 0 ]; then
   echo

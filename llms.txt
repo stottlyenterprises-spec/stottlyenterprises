@@ -16,7 +16,7 @@
 - Gurilla Studios (https://gurilla-studios.com/): full-service media production studio based in Davenport, Florida, covering brand, editorial, social, video, sound, graphic design, advertising, web, and AI-assisted production.
 - CartCurios (https://cartcurios.com/): product curation venture publishing research-backed roundups of top-rated products, under the brand TopRated Picks.
 - Agentic Forge: a business operating system in development, meant to replace the patchwork of separate project management, communication, document, and AI tools most companies run on. Version 1.0 is targeted for Q4 2026.
-- D.E.E.D.S.: Stottly Enterprises' first App Store app, a private personal operating system for tasks, goals, health, relationships, business, calendar, and reflection. Currently in alpha; public launch targeted for August 2026.
+- D.E.E.D.S.: Stottly Enterprises' first App Store app, a private personal operating system for tasks, goals, health, relationships, business, calendar, and reflection. Currently in alpha; public launch targeted for September 2026.
 
 ## Flagship client work
 

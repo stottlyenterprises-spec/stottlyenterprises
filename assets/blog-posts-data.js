@@ -313,8 +313,8 @@ window.STOTTLY_POSTS = [
     "href": "/blog/press-release-deeds-app-launch.html",
     "date": "Jul 30, 2026",
     "img": "/assets/blog/deeds-app-launch.jpg",
-    "title": "Press Release: Stottly Enterprises Announces D.E.E.D.S., Its First App Store App, Launching in August",
-    "excerpt": "Stottly Enterprises Announces D.E.E.D.S., Its First App Store App, Launching in August...",
+    "title": "Press Release: Stottly Enterprises Announces D.E.E.D.S., Its First App Store App, Launching in September",
+    "excerpt": "Stottly Enterprises Announces D.E.E.D.S., Its First App Store App, Launching in September...",
     "tag": "Press Release"
   },
   {
