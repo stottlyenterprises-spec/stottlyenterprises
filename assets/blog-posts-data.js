@@ -2,6 +2,11 @@
    Used by blog.html's topic sorter to pull matching posts from the entire archive,
    not just the front page's latest cards. */
 window.STOTTLY_POSTS = [
+  {"topic":"operations","href":"/blog/weekly-recap-metric-closed-work-did-not.html","date":"Sep 6, 2026","img":"/assets/blog/weekly-recap-banner.png","title":"Weekly Recap: The Metric Closed. The Work Did Not.","excerpt":"This week’s management signals show how local completion can look successful while responsibility, demand, cost, and exceptions remain open.","tag":"Weekly Recap"},
+  {"topic":"operations","href":"/blog/pilot-manual-exceptions.html","date":"Sep 5, 2026","img":"/assets/blog/2026-09-05-pilot-manual-exceptions.png","title":"The Pilot Worked Because the Exceptions Were Still Manual","excerpt":"A pilot can appear scalable while skilled people quietly absorb every exception. Measure workarounds, edge cases, and support load before rollout.","tag":"Business Transformation"},
+  {"topic":"cx","href":"/blog/answer-problem-open.html","date":"Sep 4, 2026","img":"/assets/blog/2026-09-04-answer-problem-open.png","title":"The Customer Received an Answer. The Problem Stayed Open.","excerpt":"Fast response is not the same as resolution. Track whether the customer’s need was addressed, who owns the next action, and when the issue truly closes.","tag":"Customer Experience"},
+  {"topic":"ai","href":"/blog/ai-model-measurement.html","date":"Sep 3, 2026","img":"/assets/blog/2026-09-03-ai-model-measurement.png","title":"The Model Got Better. The Measurement Stayed Vague.","excerpt":"A more capable AI model does not prove business value. Define the baseline, outcome, review standard, and failure limits before claiming improvement.","tag":"AI & Technology"},
+  {"topic":"workforce","href":"/blog/vacancy-hiring-delay.html","date":"Sep 2, 2026","img":"/assets/blog/2026-09-02-vacancy-hiring-delay.png","title":"The Vacancy Is Expensive. The Hiring Delay Looks Free.","excerpt":"Recruiting costs appear in budgets, but vacancy costs hide in overtime, delayed work, manager load, customer friction, and accumulated operating risk.","tag":"Workforce & Employment"},
   {
     "topic": "operations",
     "href": "/blog/invisible-work-queue.html",
