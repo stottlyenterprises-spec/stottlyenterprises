@@ -2,32 +2,267 @@
    Used by blog.html's topic sorter to pull matching posts from the entire archive,
    not just the front page's latest cards. */
 window.STOTTLY_POSTS = [
-  {"topic":"operations","href":"/blog/weekly-recap-read-beyond-headline.html","date":"Sep 27, 2026","img":"/assets/blog/weekly-recap-banner.png","title":"Weekly Recap: Read Beyond the Headline Before You Commit.","excerpt":"This week connected mixed economic signals, regional labor markets, cash timing, housing inventory, durable-goods composition, and operating promises.","tag":"Weekly Recap"},
-  {"topic":"leadership","href":"/blog/saturday-commitment-audit.html","date":"Sep 26, 2026","img":"/assets/blog/2026-09-26-commitment-audit.png","title":"Before Monday, Audit the Promises the Business Cannot Keep.","excerpt":"A short commitment audit can expose overdue promises, unrealistic dates, and missing owners before they become next week’s customer and employee friction.","tag":"Leadership & Organizational Design"},
-  {"topic":"operations","href":"/blog/durable-orders-composition.html","date":"Sep 25, 2026","img":"/assets/blog/2026-09-25-durable-orders-composition.png","title":"Durable-Goods Orders Were Flat. The Mix Was Not.","excerpt":"August durable-goods orders were virtually unchanged overall, but orders excluding transportation increased, illustrating why composition matters more than one aggregate.","tag":"Operations & Process Improvement"},
-  {"topic":"operations","href":"/blog/new-home-sales-inventory-commitment.html","date":"Sep 24, 2026","img":"/assets/blog/2026-09-24-new-home-sales-inventory.png","title":"New-Home Sales Rose. Inventory Still Demands Patience.","excerpt":"August new-home sales increased while available inventory held steady, showing why builders and suppliers should examine pace, supply, and uncertainty together.","tag":"Operations & Process Improvement"},
-  {"topic":"operations","href":"/blog/booked-work-cash-gap.html","date":"Sep 23, 2026","img":"/assets/blog/2026-09-23-booked-work-cash-gap.png","title":"The Work Is Booked. The Cash Is Not Here Yet.","excerpt":"A full pipeline can still create a cash shortage when payroll, materials, and delivery costs arrive before customer payments.","tag":"Operations & Process Improvement"},
-  {"topic":"workforce","href":"/blog/regional-labor-market-local-hiring.html","date":"Sep 22, 2026","img":"/assets/blog/2026-09-22-regional-labor-market.png","title":"The National Labor Market Is One Number. Your Hiring Market Is a Place.","excerpt":"State employment data shows why national labor averages cannot replace regional evidence about candidate supply, wages, schedules, and competition.","tag":"Workforce & Employment"},
-  {"topic":"leadership","href":"/blog/signals-need-operating-plan.html","date":"Sep 21, 2026","img":"/assets/blog/2026-09-21-signals-operating-plan.png","title":"The Signals Are Mixed. The Operating Plan Still Needs One Direction.","excerpt":"Leaders do not need every economic indicator to agree. They need a clear operating choice tied to the company’s demand, cost, capacity, and cash.","tag":"Leadership & Organizational Design"},
-  {"topic":"operations","href":"/blog/weekly-recap-signal-commitment-judgment.html","date":"Sep 20, 2026","img":"/assets/blog/weekly-recap-banner.png","title":"Weekly Recap: The Signal Arrived. The Commitment Still Needed Judgment.","excerpt":"This week connected dashboards, demand, economic data, construction pipelines, capacity, and unresolved exceptions through one discipline: translate signals into owned decisions.","tag":"Weekly Recap"},
-  {"topic":"leadership","href":"/blog/saturday-exception-reset.html","date":"Sep 19, 2026","img":"/assets/blog/2026-09-19-saturday-exception-reset.png","title":"Before Monday, Close the Exception Nobody Owns.","excerpt":"A short Saturday operating reset can prevent unresolved exceptions from returning as Monday emergencies. Name the owner, next action, and closure condition.","tag":"Leadership & Organizational Design"},
-  {"topic":"operations","href":"/blog/capacity-utilization-operating-room.html","date":"Sep 18, 2026","img":"/assets/blog/2026-09-18-capacity-utilization-operating-room.png","title":"The Factory Has Capacity. The Business May Not Have Room.","excerpt":"Capacity utilization measures physical production potential, but usable business capacity also depends on labor, maintenance, quality, suppliers, and demand.","tag":"Operations & Process Improvement"},
-  {"topic":"operations","href":"/blog/housing-pipeline-operating-commitment.html","date":"Sep 17, 2026","img":"/assets/blog/2026-09-17-housing-pipeline-operating-commitment.png","title":"The Housing Pipeline Moved. Your Commitment Should Not Move Automatically.","excerpt":"Housing starts and permits describe a national pipeline. Contractors and suppliers still need local evidence before committing labor, materials, and cash.","tag":"Operations & Process Improvement"},
-  {"topic":"operations","href":"/blog/headline-company-signal.html","date":"Sep 16, 2026","img":"/assets/blog/2026-09-16-headline-company-signal.png","title":"The Economic Headline Is Not Your Company Signal.","excerpt":"National data provides context, but operators need a small internal signal set that reflects their own customers, costs, capacity, and cash.","tag":"Business Transformation"},
-  {"topic":"operations","href":"/blog/demand-plan-operating-plan.html","date":"Sep 15, 2026","img":"/assets/blog/2026-09-15-demand-plan-operating-plan.png","title":"Demand Changed. The Operating Plan Stayed Still.","excerpt":"Sales signals only become useful when staffing, inventory, scheduling, and service plans adjust before the variance becomes a customer problem.","tag":"Operations & Process Improvement"},
-  {"topic":"leadership","href":"/blog/weekly-dashboard-needs-decision.html","date":"Sep 14, 2026","img":"/assets/blog/2026-09-14-weekly-dashboard-decisions.png","title":"The Weekly Dashboard Is Complete. The Decision Is Missing.","excerpt":"Reporting creates visibility, but a dashboard only changes the business when every important signal has an owner, threshold, and next decision.","tag":"Leadership & Organizational Design"},
-  {"topic":"operations","href":"/blog/weekly-recap-price-pressure-operating-response.html","date":"Sep 13, 2026","img":"/assets/blog/weekly-recap-banner.png","title":"Weekly Recap: The Headline Moved. The Operating Response Still Belongs to You.","excerpt":"This week connected hiring, productivity, input costs, customer pricing, and purchasing power through one management question: what will the business do next?","tag":"Weekly Recap"},
-  {"topic":"workforce","href":"/blog/real-pay-purchasing-power.html","date":"Sep 12, 2026","img":"/assets/blog/2026-09-12-real-pay-purchasing-power.png","title":"Pay Increased. Purchasing Power Still Slipped.","excerpt":"Nominal wages can rise while inflation reduces real hourly earnings, changing how employees experience compensation and workload.","tag":"Workforce & Employment"},
-  {"topic":"cx","href":"/blog/customer-price-pressure.html","date":"Sep 11, 2026","img":"/assets/blog/2026-09-11-customer-price-pressure.png","title":"Prices Rose Again. Customers Will Judge the Explanation.","excerpt":"August consumer prices increased, led partly by energy, making disciplined pricing and clear customer communication more important.","tag":"Customer Experience"},
-  {"topic":"operations","href":"/blog/producer-costs-supply-chain.html","date":"Sep 10, 2026","img":"/assets/blog/2026-09-10-producer-costs-supply-chain.png","title":"Producer Costs Rose. The Supply Chain Will Decide Where They Land.","excerpt":"August producer prices rose as energy and transportation costs accelerated, but each business must trace how those increases reach its own margins.","tag":"Operations & Process Improvement"},
-  {"topic":"operations","href":"/blog/flat-price-mixed-costs.html","date":"Sep 9, 2026","img":"/assets/blog/2026-09-09-flat-price-mixed-costs.png","title":"The Headline Price Was Flat. Your Input Costs Were Not.","excerpt":"A flat aggregate price index can conceal opposing movements in goods, services, construction, freight, energy, and supplier-specific costs.","tag":"Operations & Process Improvement"},
-  {"topic":"operations","href":"/blog/productivity-capacity-plan.html","date":"Sep 8, 2026","img":"/assets/blog/2026-09-08-productivity-capacity-plan.png","title":"Productivity Rose. The Capacity Plan Did Not.","excerpt":"Higher productivity creates potential capacity, but businesses must decide where saved effort goes before faster work improves service, growth, or margin.","tag":"Operations & Process Improvement"},
-  {"topic":"workforce","href":"/blog/jobs-report-local-hiring.html","date":"Sep 7, 2026","img":"/assets/blog/2026-09-07-jobs-report-local-hiring.png","title":"The Jobs Report Improved. The Staffing Decision Is Still Local.","excerpt":"National payroll growth can improve while a business still faces role-specific shortages, slow hiring decisions, and local capacity constraints.","tag":"Workforce & Employment"},
-  {"topic":"operations","href":"/blog/weekly-recap-metric-closed-work-did-not.html","date":"Sep 6, 2026","img":"/assets/blog/weekly-recap-banner.png","title":"Weekly Recap: The Metric Closed. The Work Did Not.","excerpt":"This week’s management signals show how local completion can look successful while responsibility, demand, cost, and exceptions remain open.","tag":"Weekly Recap"},
-  {"topic":"operations","href":"/blog/pilot-manual-exceptions.html","date":"Sep 5, 2026","img":"/assets/blog/2026-09-05-pilot-manual-exceptions.png","title":"The Pilot Worked Because the Exceptions Were Still Manual","excerpt":"A pilot can appear scalable while skilled people quietly absorb every exception. Measure workarounds, edge cases, and support load before rollout.","tag":"Business Transformation"},
-  {"topic":"cx","href":"/blog/answer-problem-open.html","date":"Sep 4, 2026","img":"/assets/blog/2026-09-04-answer-problem-open.png","title":"The Customer Received an Answer. The Problem Stayed Open.","excerpt":"Fast response is not the same as resolution. Track whether the customer’s need was addressed, who owns the next action, and when the issue truly closes.","tag":"Customer Experience"},
-  {"topic":"ai","href":"/blog/ai-model-measurement.html","date":"Sep 3, 2026","img":"/assets/blog/2026-09-03-ai-model-measurement.png","title":"The Model Got Better. The Measurement Stayed Vague.","excerpt":"A more capable AI model does not prove business value. Define the baseline, outcome, review standard, and failure limits before claiming improvement.","tag":"AI & Technology"},
-  {"topic":"workforce","href":"/blog/vacancy-hiring-delay.html","date":"Sep 2, 2026","img":"/assets/blog/2026-09-02-vacancy-hiring-delay.png","title":"The Vacancy Is Expensive. The Hiring Delay Looks Free.","excerpt":"Recruiting costs appear in budgets, but vacancy costs hide in overtime, delayed work, manager load, customer friction, and accumulated operating risk.","tag":"Workforce & Employment"},
+  {
+    "topic": "operations",
+    "href": "/blog/inventory-rose-cash-commitment.html",
+    "date": "Sep 30, 2026",
+    "img": "/assets/blog/2026-09-30-inventory-supply-chain.png",
+    "title": "Inventory Rose. The Cash Commitment Arrived First.",
+    "excerpt": "August wholesale and retail inventories increased while goods imports rose sharply, reminding operators that stock becomes a cash and capacity commitment before it becomes revenue.",
+    "tag": "Operations & Process Improvement"
+  },
+  {
+    "topic": "workforce",
+    "href": "/blog/job-openings-hiring-friction.html",
+    "date": "Sep 29, 2026",
+    "img": "/assets/blog/2026-09-29-job-openings-hiring-friction.png",
+    "title": "Job Openings Held Steady. Hiring Friction Did Not Disappear.",
+    "excerpt": "The national totals for openings, hires, and separations changed little, but employers still have to locate the role-level delays inside their own hiring process.",
+    "tag": "Workforce & Employment"
+  },
+  {
+    "topic": "operations",
+    "href": "/blog/revised-baseline-business-decisions.html",
+    "date": "Sep 28, 2026",
+    "img": "/assets/blog/2026-09-28-revised-baseline.png",
+    "title": "The Baseline Changed. The Business Did Not Go Back in Time.",
+    "excerpt": "Revised historical retail estimates improve the record, but operators still need to preserve which decisions were made with the information available at the time.",
+    "tag": "Operations & Process Improvement"
+  },
+  {
+    "topic": "operations",
+    "href": "/blog/weekly-recap-read-beyond-headline.html",
+    "date": "Sep 27, 2026",
+    "img": "/assets/blog/weekly-recap-banner.png",
+    "title": "Weekly Recap: Read Beyond the Headline Before You Commit.",
+    "excerpt": "This week connected mixed economic signals, regional labor markets, cash timing, housing inventory, durable-goods composition, and operating promises.",
+    "tag": "Weekly Recap"
+  },
+  {
+    "topic": "leadership",
+    "href": "/blog/saturday-commitment-audit.html",
+    "date": "Sep 26, 2026",
+    "img": "/assets/blog/2026-09-26-commitment-audit.png",
+    "title": "Before Monday, Audit the Promises the Business Cannot Keep.",
+    "excerpt": "A short commitment audit can expose overdue promises, unrealistic dates, and missing owners before they become next week’s customer and employee friction.",
+    "tag": "Leadership & Organizational Design"
+  },
+  {
+    "topic": "operations",
+    "href": "/blog/durable-orders-composition.html",
+    "date": "Sep 25, 2026",
+    "img": "/assets/blog/2026-09-25-durable-orders-composition.png",
+    "title": "Durable-Goods Orders Were Flat. The Mix Was Not.",
+    "excerpt": "August durable-goods orders were virtually unchanged overall, but orders excluding transportation increased, illustrating why composition matters more than one aggregate.",
+    "tag": "Operations & Process Improvement"
+  },
+  {
+    "topic": "operations",
+    "href": "/blog/new-home-sales-inventory-commitment.html",
+    "date": "Sep 24, 2026",
+    "img": "/assets/blog/2026-09-24-new-home-sales-inventory.png",
+    "title": "New-Home Sales Rose. Inventory Still Demands Patience.",
+    "excerpt": "August new-home sales increased while available inventory held steady, showing why builders and suppliers should examine pace, supply, and uncertainty together.",
+    "tag": "Operations & Process Improvement"
+  },
+  {
+    "topic": "operations",
+    "href": "/blog/booked-work-cash-gap.html",
+    "date": "Sep 23, 2026",
+    "img": "/assets/blog/2026-09-23-booked-work-cash-gap.png",
+    "title": "The Work Is Booked. The Cash Is Not Here Yet.",
+    "excerpt": "A full pipeline can still create a cash shortage when payroll, materials, and delivery costs arrive before customer payments.",
+    "tag": "Operations & Process Improvement"
+  },
+  {
+    "topic": "workforce",
+    "href": "/blog/regional-labor-market-local-hiring.html",
+    "date": "Sep 22, 2026",
+    "img": "/assets/blog/2026-09-22-regional-labor-market.png",
+    "title": "The National Labor Market Is One Number. Your Hiring Market Is a Place.",
+    "excerpt": "State employment data shows why national labor averages cannot replace regional evidence about candidate supply, wages, schedules, and competition.",
+    "tag": "Workforce & Employment"
+  },
+  {
+    "topic": "leadership",
+    "href": "/blog/signals-need-operating-plan.html",
+    "date": "Sep 21, 2026",
+    "img": "/assets/blog/2026-09-21-signals-operating-plan.png",
+    "title": "The Signals Are Mixed. The Operating Plan Still Needs One Direction.",
+    "excerpt": "Leaders do not need every economic indicator to agree. They need a clear operating choice tied to the company’s demand, cost, capacity, and cash.",
+    "tag": "Leadership & Organizational Design"
+  },
+  {
+    "topic": "operations",
+    "href": "/blog/weekly-recap-signal-commitment-judgment.html",
+    "date": "Sep 20, 2026",
+    "img": "/assets/blog/weekly-recap-banner.png",
+    "title": "Weekly Recap: The Signal Arrived. The Commitment Still Needed Judgment.",
+    "excerpt": "This week connected dashboards, demand, economic data, construction pipelines, capacity, and unresolved exceptions through one discipline: translate signals into owned decisions.",
+    "tag": "Weekly Recap"
+  },
+  {
+    "topic": "leadership",
+    "href": "/blog/saturday-exception-reset.html",
+    "date": "Sep 19, 2026",
+    "img": "/assets/blog/2026-09-19-saturday-exception-reset.png",
+    "title": "Before Monday, Close the Exception Nobody Owns.",
+    "excerpt": "A short Saturday operating reset can prevent unresolved exceptions from returning as Monday emergencies. Name the owner, next action, and closure condition.",
+    "tag": "Leadership & Organizational Design"
+  },
+  {
+    "topic": "operations",
+    "href": "/blog/capacity-utilization-operating-room.html",
+    "date": "Sep 18, 2026",
+    "img": "/assets/blog/2026-09-18-capacity-utilization-operating-room.png",
+    "title": "The Factory Has Capacity. The Business May Not Have Room.",
+    "excerpt": "Capacity utilization measures physical production potential, but usable business capacity also depends on labor, maintenance, quality, suppliers, and demand.",
+    "tag": "Operations & Process Improvement"
+  },
+  {
+    "topic": "operations",
+    "href": "/blog/housing-pipeline-operating-commitment.html",
+    "date": "Sep 17, 2026",
+    "img": "/assets/blog/2026-09-17-housing-pipeline-operating-commitment.png",
+    "title": "The Housing Pipeline Moved. Your Commitment Should Not Move Automatically.",
+    "excerpt": "Housing starts and permits describe a national pipeline. Contractors and suppliers still need local evidence before committing labor, materials, and cash.",
+    "tag": "Operations & Process Improvement"
+  },
+  {
+    "topic": "operations",
+    "href": "/blog/headline-company-signal.html",
+    "date": "Sep 16, 2026",
+    "img": "/assets/blog/2026-09-16-headline-company-signal.png",
+    "title": "The Economic Headline Is Not Your Company Signal.",
+    "excerpt": "National data provides context, but operators need a small internal signal set that reflects their own customers, costs, capacity, and cash.",
+    "tag": "Business Transformation"
+  },
+  {
+    "topic": "operations",
+    "href": "/blog/demand-plan-operating-plan.html",
+    "date": "Sep 15, 2026",
+    "img": "/assets/blog/2026-09-15-demand-plan-operating-plan.png",
+    "title": "Demand Changed. The Operating Plan Stayed Still.",
+    "excerpt": "Sales signals only become useful when staffing, inventory, scheduling, and service plans adjust before the variance becomes a customer problem.",
+    "tag": "Operations & Process Improvement"
+  },
+  {
+    "topic": "leadership",
+    "href": "/blog/weekly-dashboard-needs-decision.html",
+    "date": "Sep 14, 2026",
+    "img": "/assets/blog/2026-09-14-weekly-dashboard-decisions.png",
+    "title": "The Weekly Dashboard Is Complete. The Decision Is Missing.",
+    "excerpt": "Reporting creates visibility, but a dashboard only changes the business when every important signal has an owner, threshold, and next decision.",
+    "tag": "Leadership & Organizational Design"
+  },
+  {
+    "topic": "operations",
+    "href": "/blog/weekly-recap-price-pressure-operating-response.html",
+    "date": "Sep 13, 2026",
+    "img": "/assets/blog/weekly-recap-banner.png",
+    "title": "Weekly Recap: The Headline Moved. The Operating Response Still Belongs to You.",
+    "excerpt": "This week connected hiring, productivity, input costs, customer pricing, and purchasing power through one management question: what will the business do next?",
+    "tag": "Weekly Recap"
+  },
+  {
+    "topic": "workforce",
+    "href": "/blog/real-pay-purchasing-power.html",
+    "date": "Sep 12, 2026",
+    "img": "/assets/blog/2026-09-12-real-pay-purchasing-power.png",
+    "title": "Pay Increased. Purchasing Power Still Slipped.",
+    "excerpt": "Nominal wages can rise while inflation reduces real hourly earnings, changing how employees experience compensation and workload.",
+    "tag": "Workforce & Employment"
+  },
+  {
+    "topic": "cx",
+    "href": "/blog/customer-price-pressure.html",
+    "date": "Sep 11, 2026",
+    "img": "/assets/blog/2026-09-11-customer-price-pressure.png",
+    "title": "Prices Rose Again. Customers Will Judge the Explanation.",
+    "excerpt": "August consumer prices increased, led partly by energy, making disciplined pricing and clear customer communication more important.",
+    "tag": "Customer Experience"
+  },
+  {
+    "topic": "operations",
+    "href": "/blog/producer-costs-supply-chain.html",
+    "date": "Sep 10, 2026",
+    "img": "/assets/blog/2026-09-10-producer-costs-supply-chain.png",
+    "title": "Producer Costs Rose. The Supply Chain Will Decide Where They Land.",
+    "excerpt": "August producer prices rose as energy and transportation costs accelerated, but each business must trace how those increases reach its own margins.",
+    "tag": "Operations & Process Improvement"
+  },
+  {
+    "topic": "operations",
+    "href": "/blog/flat-price-mixed-costs.html",
+    "date": "Sep 9, 2026",
+    "img": "/assets/blog/2026-09-09-flat-price-mixed-costs.png",
+    "title": "The Headline Price Was Flat. Your Input Costs Were Not.",
+    "excerpt": "A flat aggregate price index can conceal opposing movements in goods, services, construction, freight, energy, and supplier-specific costs.",
+    "tag": "Operations & Process Improvement"
+  },
+  {
+    "topic": "operations",
+    "href": "/blog/productivity-capacity-plan.html",
+    "date": "Sep 8, 2026",
+    "img": "/assets/blog/2026-09-08-productivity-capacity-plan.png",
+    "title": "Productivity Rose. The Capacity Plan Did Not.",
+    "excerpt": "Higher productivity creates potential capacity, but businesses must decide where saved effort goes before faster work improves service, growth, or margin.",
+    "tag": "Operations & Process Improvement"
+  },
+  {
+    "topic": "workforce",
+    "href": "/blog/jobs-report-local-hiring.html",
+    "date": "Sep 7, 2026",
+    "img": "/assets/blog/2026-09-07-jobs-report-local-hiring.png",
+    "title": "The Jobs Report Improved. The Staffing Decision Is Still Local.",
+    "excerpt": "National payroll growth can improve while a business still faces role-specific shortages, slow hiring decisions, and local capacity constraints.",
+    "tag": "Workforce & Employment"
+  },
+  {
+    "topic": "operations",
+    "href": "/blog/weekly-recap-metric-closed-work-did-not.html",
+    "date": "Sep 6, 2026",
+    "img": "/assets/blog/weekly-recap-banner.png",
+    "title": "Weekly Recap: The Metric Closed. The Work Did Not.",
+    "excerpt": "This week’s management signals show how local completion can look successful while responsibility, demand, cost, and exceptions remain open.",
+    "tag": "Weekly Recap"
+  },
+  {
+    "topic": "operations",
+    "href": "/blog/pilot-manual-exceptions.html",
+    "date": "Sep 5, 2026",
+    "img": "/assets/blog/2026-09-05-pilot-manual-exceptions.png",
+    "title": "The Pilot Worked Because the Exceptions Were Still Manual",
+    "excerpt": "A pilot can appear scalable while skilled people quietly absorb every exception. Measure workarounds, edge cases, and support load before rollout.",
+    "tag": "Business Transformation"
+  },
+  {
+    "topic": "cx",
+    "href": "/blog/answer-problem-open.html",
+    "date": "Sep 4, 2026",
+    "img": "/assets/blog/2026-09-04-answer-problem-open.png",
+    "title": "The Customer Received an Answer. The Problem Stayed Open.",
+    "excerpt": "Fast response is not the same as resolution. Track whether the customer’s need was addressed, who owns the next action, and when the issue truly closes.",
+    "tag": "Customer Experience"
+  },
+  {
+    "topic": "ai",
+    "href": "/blog/ai-model-measurement.html",
+    "date": "Sep 3, 2026",
+    "img": "/assets/blog/2026-09-03-ai-model-measurement.png",
+    "title": "The Model Got Better. The Measurement Stayed Vague.",
+    "excerpt": "A more capable AI model does not prove business value. Define the baseline, outcome, review standard, and failure limits before claiming improvement.",
+    "tag": "AI & Technology"
+  },
+  {
+    "topic": "workforce",
+    "href": "/blog/vacancy-hiring-delay.html",
+    "date": "Sep 2, 2026",
+    "img": "/assets/blog/2026-09-02-vacancy-hiring-delay.png",
+    "title": "The Vacancy Is Expensive. The Hiring Delay Looks Free.",
+    "excerpt": "Recruiting costs appear in budgets, but vacancy costs hide in overtime, delayed work, manager load, customer friction, and accumulated operating risk.",
+    "tag": "Workforce & Employment"
+  },
   {
     "topic": "operations",
     "href": "/blog/invisible-work-queue.html",
@@ -241,7 +476,7 @@ window.STOTTLY_POSTS = [
     "date": "Aug 9, 2026",
     "img": "/assets/blog/weekly-recap-banner.png",
     "title": "Weekly Recap: The Problems Started Before Anyone Made a Mistake (Aug 9, 2026)",
-    "excerpt": "This week\u2019s stories appeared to cover different problems: AI productivity, supply-chain constraints, manager capacity, experienced workers,",
+    "excerpt": "This week’s stories appeared to cover different problems: AI productivity, supply-chain constraints, manager capacity, experienced workers,",
     "tag": "Weekly Recap"
   },
   {
@@ -258,7 +493,7 @@ window.STOTTLY_POSTS = [
     "href": "/blog/every-transfer-you-is-a-leadership-failure.html",
     "date": "Aug 7, 2026",
     "img": "/assets/blog/transfer-leadership-failure.jpg",
-    "title": "Every \u201cLet Me Transfer You\u201d Is a Leadership Failure",
+    "title": "Every “Let Me Transfer You” Is a Leadership Failure",
     "excerpt": "A transfer can be useful. The customer reaches someone with specialized knowledge, the first employee provides the context, and ownership mo",
     "tag": "Customer Experience"
   },
@@ -304,7 +539,7 @@ window.STOTTLY_POSTS = [
     "date": "Aug 2, 2026",
     "img": "/assets/blog/weekly-recap-banner.png",
     "title": "Weekly Recap: The Week Business Leaders Learned to Stop Buying Around the Problem (Aug 2, 2026)",
-    "excerpt": "This week\u2019s stories appeared to cover different problems: AI productivity, supply-chain constraints, manager capacity, experienced workers,",
+    "excerpt": "This week’s stories appeared to cover different problems: AI productivity, supply-chain constraints, manager capacity, experienced workers,",
     "tag": "Weekly Recap"
   },
   {
@@ -322,7 +557,7 @@ window.STOTTLY_POSTS = [
     "date": "Jul 31, 2026",
     "img": "/assets/blog/ai-workflow-training.jpg",
     "title": "Free AI Training Won't Fix a Bad Workflow",
-    "excerpt": "OpenAI\u2019s new ChatGPT for small business program includes virtual training, in-person academies, and practical support intended to help owner",
+    "excerpt": "OpenAI’s new ChatGPT for small business program includes virtual training, in-person academies, and practical support intended to help owner",
     "tag": "AI Adoption"
   },
   {
@@ -510,7 +745,7 @@ window.STOTTLY_POSTS = [
     "href": "/blog/technology-not-competitive-advantage-execution-is.html",
     "date": "Jul 14, 2026",
     "img": "/assets/blog/technology-competitive-advantage-hero.jpg",
-    "title": "Technology Isn\u2019t Your Competitive Advantage. Execution Is.",
+    "title": "Technology Isn’t Your Competitive Advantage. Execution Is.",
     "excerpt": "Over the past two years, businesses have adopted AI at a remarkable pace. New tools appear almost weekly, employees are experimenting on the",
     "tag": "Operations & Leadership"
   },
@@ -691,7 +926,7 @@ window.STOTTLY_POSTS = [
     "date": "Feb 13, 2026",
     "img": "/assets/blog/2:13.png",
     "title": "Focus Friday: Markets Are Punishing AI Hype and Rewarding Proof (Feb 13, 2026)",
-    "excerpt": "It\u2019s Friday the 13th....",
+    "excerpt": "It’s Friday the 13th....",
     "tag": "AI Adoption"
   },
   {
@@ -708,7 +943,7 @@ window.STOTTLY_POSTS = [
     "href": "/blog/whats-next-in-ai-the-shift-from-output-to-architecture.html",
     "date": "Feb 11, 2026",
     "img": "/assets/blog/2:11.png",
-    "title": "What\u2019s Next in AI: The Shift From Output to Architecture",
+    "title": "What’s Next in AI: The Shift From Output to Architecture",
     "excerpt": "AI output is no longer impressive....",
     "tag": "Operations & Leadership"
   },
@@ -771,8 +1006,8 @@ window.STOTTLY_POSTS = [
     "href": "/blog/whats-next-wednesday-markets-are-signaling-a-shift-from-hype.html",
     "date": "Feb 4, 2026",
     "img": "/assets/blog/2:4.png",
-    "title": "What\u2019s Next Wednesday: Markets Are Signaling a Shift From Hype to Value (Feb 4, 2026)",
-    "excerpt": "This week\u2019s AI headlines are doing something interesting....",
+    "title": "What’s Next Wednesday: Markets Are Signaling a Shift From Hype to Value (Feb 4, 2026)",
+    "excerpt": "This week’s AI headlines are doing something interesting....",
     "tag": "Operations & Leadership"
   },
   {
@@ -808,7 +1043,7 @@ window.STOTTLY_POSTS = [
     "date": "Jan 31, 2026",
     "img": "/assets/blog/1:31.png",
     "title": "Quick Tip Saturday: Decide Where AI Is Not Allowed (Jan 31, 2026)",
-    "excerpt": "Here\u2019s a quick AI win most teams overlook:...",
+    "excerpt": "Here’s a quick AI win most teams overlook:...",
     "tag": "AI Adoption"
   },
   {
@@ -817,7 +1052,7 @@ window.STOTTLY_POSTS = [
     "date": "Jan 30, 2026",
     "img": "/assets/blog/1:30.png",
     "title": "Focus Friday: One Clear Signal Amid AI Noise (Jan 30, 2026)",
-    "excerpt": "It\u2019s Friday, and the headlines are a mess of earnings, investments, and hype. But beneath all that noise, there\u2019s one practical signal that",
+    "excerpt": "It’s Friday, and the headlines are a mess of earnings, investments, and hype. But beneath all that noise, there’s one practical signal that",
     "tag": "AI Adoption"
   },
   {
@@ -834,7 +1069,7 @@ window.STOTTLY_POSTS = [
     "href": "/blog/whats-next-wednesday-in-ai-work-is-becoming-design-not-execu.html",
     "date": "Jan 28, 2026",
     "img": "/assets/blog/1:28.png",
-    "title": "What\u2019s Next Wednesday: in AI, Work Is Becoming Design, Not Execution (Jan 28, 2026)",
+    "title": "What’s Next Wednesday: in AI, Work Is Becoming Design, Not Execution (Jan 28, 2026)",
     "excerpt": "Most conversations about the future of AI focus on output....",
     "tag": "Operations & Leadership"
   },
@@ -844,7 +1079,7 @@ window.STOTTLY_POSTS = [
     "date": "Jan 27, 2026",
     "img": "/assets/blog/1:27.png",
     "title": "Tuesday Tech and Tools: Capability Is Getting Cheaper. Judgment Is Not. (Jan 27, 2026)",
-    "excerpt": "This week\u2019s AI tool updates all point in the same direction....",
+    "excerpt": "This week’s AI tool updates all point in the same direction....",
     "tag": "Operations & Leadership"
   },
   {
@@ -853,7 +1088,7 @@ window.STOTTLY_POSTS = [
     "date": "Jan 26, 2026",
     "img": "/assets/blog/1:26.png",
     "title": "Monday Mindset: The Signal Beneath the AI Headlines (Jan 26, 2026)",
-    "excerpt": "This morning\u2019s AI headlines followed a familiar pattern....",
+    "excerpt": "This morning’s AI headlines followed a familiar pattern....",
     "tag": "AI Adoption"
   },
   {
@@ -897,8 +1132,8 @@ window.STOTTLY_POSTS = [
     "href": "/blog/whats-next-wednesday-whats-next-in-ai-fewer-layers-faster-de.html",
     "date": "Jan 21, 2026",
     "img": "/assets/blog/1:21.png",
-    "title": "What\u2019s Next Wednesday: What\u2019s Next in AI: Fewer Layers, Faster Decisions | StottifAI (Jan 21, 2026)",
-    "excerpt": "When people talk about what\u2019s next in AI, they usually point to models....",
+    "title": "What’s Next Wednesday: What’s Next in AI: Fewer Layers, Faster Decisions | StottifAI (Jan 21, 2026)",
+    "excerpt": "When people talk about what’s next in AI, they usually point to models....",
     "tag": "AI Adoption"
   },
   {
@@ -907,7 +1142,7 @@ window.STOTTLY_POSTS = [
     "date": "Jan 20, 2026",
     "img": "/assets/blog/1:20.png",
     "title": "Tech & Tools Tuesday: Creation Requires Ownership, Not Tools (Jan 20, 2026)",
-    "excerpt": "Creation doesn\u2019t happen because tools exist....",
+    "excerpt": "Creation doesn’t happen because tools exist....",
     "tag": "Operations & Leadership"
   },
   {
@@ -924,8 +1159,8 @@ window.STOTTLY_POSTS = [
     "href": "/blog/tech-tools-tuesday-spotlight-on-ais-next-wave.html",
     "date": "Oct 21, 2025",
     "img": "/assets/blog/10:21.png",
-    "title": "Tech & Tools Tuesday: Spotlight on AI\u2019s Next\u202fWave (Oct 21, 2025)",
-    "excerpt": "Artificial intelligence continues to evolve from experimental projects into essential infrastructure. This week\u2019s tools and frameworks highl",
+    "title": "Tech & Tools Tuesday: Spotlight on AI’s Next Wave (Oct 21, 2025)",
+    "excerpt": "Artificial intelligence continues to evolve from experimental projects into essential infrastructure. This week’s tools and frameworks highl",
     "tag": "Operations & Leadership"
   },
   {
@@ -934,7 +1169,7 @@ window.STOTTLY_POSTS = [
     "date": "Oct 20, 2025",
     "img": "/assets/blog/10:20.webp",
     "title": "Monday Mindset: Empowering Businesses Through Intelligent Innovation (Oct 20, 2025)",
-    "excerpt": "AI continues to accelerate across every industry, from enterprise systems to entertainment, healthcare, and marketing. This week\u2019s stories s",
+    "excerpt": "AI continues to accelerate across every industry, from enterprise systems to entertainment, healthcare, and marketing. This week’s stories s",
     "tag": "Operations & Leadership"
   },
   {
@@ -942,7 +1177,7 @@ window.STOTTLY_POSTS = [
     "href": "/blog/in-case-you-missed-it-the-weekly-wrap-shifting-infrastructur.html",
     "date": "Oct 19, 2025",
     "img": "/assets/blog/weekly-recap-banner.png",
-    "title": "In Case You Missed It, The Weekly Wrap: Shifting Infrastructure, Regulation & Real\u2011World Risk (Oct 19, 2025)",
+    "title": "In Case You Missed It, The Weekly Wrap: Shifting Infrastructure, Regulation & Real‑World Risk (Oct 19, 2025)",
     "excerpt": "This week in AI, the landscape shifted from experimentation to execution. Major players like Microsoft, Salesforce, and OpenAI doubled down",
     "tag": "Weekly Recap"
   },
@@ -978,7 +1213,7 @@ window.STOTTLY_POSTS = [
     "href": "/blog/whats-next-wednesday-rethinking-business-strategy-through-ai.html",
     "date": "Oct 15, 2025",
     "img": "/assets/blog/10:15.png",
-    "title": "What\u2019s Next Wednesday: Rethinking Business Strategy Through AI (Oct 15, 2025)",
+    "title": "What’s Next Wednesday: Rethinking Business Strategy Through AI (Oct 15, 2025)",
     "excerpt": "BlackRock and Nvidia Lead $40B AI Data Center Deal...",
     "tag": "AI Adoption"
   },
@@ -996,8 +1231,8 @@ window.STOTTLY_POSTS = [
     "href": "/blog/monday-mindset-whats-shaping-the-week-ahead.html",
     "date": "Oct 13, 2025",
     "img": "/assets/blog/10:13.png",
-    "title": "Monday Mindset: What\u2019s Shaping the Week Ahead (Oct 13, 2025)",
-    "excerpt": "\ud83d\ude80 AI Infrastructure Gets Bigger: OpenAI and Broadcom Partner for Custom Accelerators...",
+    "title": "Monday Mindset: What’s Shaping the Week Ahead (Oct 13, 2025)",
+    "excerpt": "🚀 AI Infrastructure Gets Bigger: OpenAI and Broadcom Partner for Custom Accelerators...",
     "tag": "Operations & Leadership"
   },
   {
@@ -1006,7 +1241,7 @@ window.STOTTLY_POSTS = [
     "date": "Oct 12, 2025",
     "img": "/assets/blog/weekly-recap-banner.png",
     "title": "In Case You Missed It. In Case You Missed It, The Weekly Wrap (Oct 12, 2025)",
-    "excerpt": "We\u2019re excited to announce a change. From now on, StottifAI will publish a fresh blog post each day. We\u2019re shifting from a few posts per week",
+    "excerpt": "We’re excited to announce a change. From now on, StottifAI will publish a fresh blog post each day. We’re shifting from a few posts per week",
     "tag": "Weekly Recap"
   },
   {
@@ -1014,7 +1249,7 @@ window.STOTTLY_POSTS = [
     "href": "/blog/googles-gemini-25-learns-to-use-a-web-browser-a-new-era-of-a.html",
     "date": "Oct 11, 2025",
     "img": "/assets/blog/10:11.webp",
-    "title": "Google\u2019s Gemini 2.5 Learns to Use a Web Browser: A New Era of Agentic AI",
+    "title": "Google’s Gemini 2.5 Learns to Use a Web Browser: A New Era of Agentic AI",
     "excerpt": "Google just made a major leap in artificial intelligence with Gemini 2.5, a model that can actually use a web browser like a human. Instead",
     "tag": "Operations & Leadership"
   },
@@ -1024,7 +1259,7 @@ window.STOTTLY_POSTS = [
     "date": "Oct 10, 2025",
     "img": "/assets/blog/10:10.webp",
     "title": "Campus Levels Up: Sam Altman and Shaq-Backed College Startup Taps Former Meta AI Chief as CTO",
-    "excerpt": "In a bold move that blends education with cutting-edge AI, Campus, the online college startup backed by Sam Altman, Shaquille O\u2019Neal, and Pe",
+    "excerpt": "In a bold move that blends education with cutting-edge AI, Campus, the online college startup backed by Sam Altman, Shaquille O’Neal, and Pe",
     "tag": "AI Adoption"
   },
   {
@@ -1041,7 +1276,7 @@ window.STOTTLY_POSTS = [
     "href": "/blog/small-but-mighty-samsungs-tiny-ai-model-redefines-what-smart.html",
     "date": "Oct 8, 2025",
     "img": "/assets/blog/10:8.webp",
-    "title": "Small but Mighty: Samsung\u2019s Tiny AI Model Redefines What Smart Really Means",
+    "title": "Small but Mighty: Samsung’s Tiny AI Model Redefines What Smart Really Means",
     "excerpt": "In a striking development for the future of AI, Samsung researchers have shown that smaller models can sometimes beat the giants in reasonin",
     "tag": "AI Adoption"
   }
