@@ -3,6 +3,24 @@
    not just the front page's latest cards. */
 window.STOTTLY_POSTS = [
   {
+    "topic": "workforce",
+    "href": "/blog/jobs-report-local-staffing-decision.html",
+    "date": "Oct 2, 2026",
+    "img": "/assets/blog/2026-10-02-jobs-report-local-evidence.png",
+    "title": "The Jobs Report Arrives at 8:30. Your Staffing Decision Still Needs Local Evidence.",
+    "excerpt": "Before reacting to today’s employment headline, define which national signals matter and which local hiring facts should govern the staffing plan.",
+    "tag": "Workforce & Employment"
+  },
+  {
+    "topic": "operations",
+    "href": "/blog/construction-spending-month-annual-gap.html",
+    "date": "Oct 1, 2026",
+    "img": "/assets/blog/2026-10-01-construction-spending.png",
+    "title": "Construction Spending Rose for the Month. The Annual Gap Remained.",
+    "excerpt": "August construction spending increased from July but remained below last year, showing why contractors should read momentum, uncertainty, and backlog together.",
+    "tag": "Operations & Process Improvement"
+  },
+  {
     "topic": "operations",
     "href": "/blog/inventory-rose-cash-commitment.html",
     "date": "Sep 30, 2026",
