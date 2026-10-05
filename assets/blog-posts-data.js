@@ -4,6 +4,33 @@
 window.STOTTLY_POSTS = [
   {
     "topic": "workforce",
+    "href": "/blog/payroll-growth-workload-staffing-plan.html",
+    "date": "Oct 5, 2026",
+    "img": "/assets/blog/2026-10-05-payroll-growth-workload.png",
+    "title": "Payroll Growth Slowed. The Workload Did Not Wait.",
+    "excerpt": "September payroll employment changed little and prior gains were revised lower, but businesses still need a staffing plan tied to their own workload, capacity, and cash.",
+    "tag": "Workforce & Employment"
+  },
+  {
+    "topic": "operations",
+    "href": "/blog/weekly-recap-baseline-commitment-proof.html",
+    "date": "Oct 4, 2026",
+    "img": "/assets/blog/weekly-recap-banner.png",
+    "title": "Weekly Recap: The Baseline Moved. The Commitment Still Needed Proof.",
+    "excerpt": "This week connected revised baselines, hiring friction, inventory exposure, construction signals, and staffing decisions through one discipline: verify before committing.",
+    "tag": "Weekly Recap"
+  },
+  {
+    "topic": "workforce",
+    "href": "/blog/close-one-hiring-delay.html",
+    "date": "Oct 3, 2026",
+    "img": "/assets/blog/2026-10-03-close-hiring-delay.png",
+    "title": "Before Monday, Close One Hiring Delay You Control.",
+    "excerpt": "A short hiring-process audit can remove one approval, scheduling, or communication delay before another qualified candidate is lost.",
+    "tag": "Workforce & Employment"
+  },
+  {
+    "topic": "workforce",
     "href": "/blog/jobs-report-local-staffing-decision.html",
     "date": "Oct 2, 2026",
     "img": "/assets/blog/2026-10-02-jobs-report-local-evidence.png",
