@@ -3,6 +3,24 @@
    not just the front page's latest cards. */
 window.STOTTLY_POSTS = [
   {
+    "topic": "cx",
+    "href": "/blog/spending-expectations-financial-confidence.html",
+    "date": "Oct 7, 2026",
+    "img": "/assets/blog/2026-10-07-spending-financial-confidence.png",
+    "title": "Spending Expectations Rose. Financial Confidence Fell.",
+    "excerpt": "Consumers reported stronger expected spending growth while feeling worse about their finances, creating a demand signal businesses should treat with care.",
+    "tag": "Customer Experience"
+  },
+  {
+    "topic": "operations",
+    "href": "/blog/imports-exports-supply-chain-balance.html",
+    "date": "Oct 6, 2026",
+    "img": "/assets/blog/2026-10-06-trade-supply-chain-balance.png",
+    "title": "Imports Rose Faster Than Exports. Your Supply Chain Needs Its Own Balance.",
+    "excerpt": "August imports increased much faster than exports, but operators need to trace their own inbound commitments, demand, and cash timing before changing the plan.",
+    "tag": "Operations & Process Improvement"
+  },
+  {
     "topic": "workforce",
     "href": "/blog/payroll-growth-workload-staffing-plan.html",
     "date": "Oct 5, 2026",
