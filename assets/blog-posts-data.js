@@ -4,6 +4,15 @@
 window.STOTTLY_POSTS = [
   {
     "topic": "cx",
+    "href": "/blog/revolving-credit-payment-friction.html",
+    "date": "Oct 8, 2026",
+    "img": "/assets/blog/2026-10-08-revolving-credit-payment-friction.png",
+    "title": "Revolving Credit Fell. Payment Friction Still Needs Attention.",
+    "excerpt": "Revolving consumer credit declined in August while card rates remained high, giving businesses another reason to make price, payment timing, and total cost unmistakably clear.",
+    "tag": "Customer Experience"
+  },
+  {
+    "topic": "cx",
     "href": "/blog/spending-expectations-financial-confidence.html",
     "date": "Oct 7, 2026",
     "img": "/assets/blog/2026-10-07-spending-financial-confidence.png",
