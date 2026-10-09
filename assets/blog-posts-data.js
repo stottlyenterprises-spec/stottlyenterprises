@@ -3,6 +3,15 @@
    not just the front page's latest cards. */
 window.STOTTLY_POSTS = [
   {
+    "topic": "operations",
+    "href": "/blog/wholesale-sales-inventory-discipline.html",
+    "date": "Oct 9, 2026",
+    "img": "/assets/blog/2026-10-09-wholesale-sales-inventory-discipline.png",
+    "title": "Wholesale Sales Outran Inventory. Replenishment Still Needs Discipline.",
+    "excerpt": "Wholesale sales rose faster than inventories in August, but businesses should validate product-level demand, lead times, and cash exposure before replenishing aggressively.",
+    "tag": "Operations & Process Improvement"
+  },
+  {
     "topic": "cx",
     "href": "/blog/revolving-credit-payment-friction.html",
     "date": "Oct 8, 2026",
