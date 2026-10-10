@@ -4,6 +4,15 @@
 window.STOTTLY_POSTS = [
   {
     "topic": "operations",
+    "href": "/blog/cash-trapped-sale-reorder-audit.html",
+    "date": "Oct 10, 2026",
+    "img": "/assets/blog/2026-10-10-cash-cycle-audit.png",
+    "title": "Before Monday, Find the Cash Trapped Between Sale and Reorder.",
+    "excerpt": "A short weekend cash-cycle audit can expose where inventory, supplier timing, customer terms, and premature reorders are absorbing operating cash.",
+    "tag": "Operations & Process Improvement"
+  },
+  {
+    "topic": "operations",
     "href": "/blog/wholesale-sales-inventory-discipline.html",
     "date": "Oct 9, 2026",
     "img": "/assets/blog/2026-10-09-wholesale-sales-inventory-discipline.png",
