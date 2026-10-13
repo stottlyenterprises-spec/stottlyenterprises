@@ -3,6 +3,33 @@
    not just the front page's latest cards. */
 window.STOTTLY_POSTS = [
   {
+    "topic": "leadership",
+    "href": "/blog/optimism-slipped-uncertainty-expensive.html",
+    "date": "Oct 13, 2026",
+    "img": "/assets/blog/2026-10-13-optimism-uncertainty.png",
+    "title": "Optimism Slipped. Uncertainty Stayed Expensive.",
+    "excerpt": "Small-business optimism eased in September while uncertainty remained elevated, making clear decision thresholds more useful than waiting for perfect confidence.",
+    "tag": "Leadership & Organizational Design"
+  },
+  {
+    "topic": "leadership",
+    "href": "/blog/calendar-paused-commitments-did-not.html",
+    "date": "Oct 12, 2026",
+    "img": "/assets/blog/2026-10-12-calendar-pause-commitments.png",
+    "title": "The Calendar Paused. The Commitments Did Not.",
+    "excerpt": "A holiday pause changes staffing and response times, but customer, supplier, and internal commitments still need clear coverage, ownership, and reset dates.",
+    "tag": "Leadership & Organizational Design"
+  },
+  {
+    "topic": "operations",
+    "href": "/blog/weekly-recap-demand-moved-cash-set-pace.html",
+    "date": "Oct 11, 2026",
+    "img": "/assets/blog/weekly-recap-banner.png",
+    "title": "Weekly Recap: Demand Moved. Cash Still Set the Pace.",
+    "excerpt": "This week connected payroll, trade, consumer confidence, credit, wholesale movement, replenishment, and cash through one operating discipline: follow the timing.",
+    "tag": "Weekly Recap"
+  },
+  {
     "topic": "operations",
     "href": "/blog/cash-trapped-sale-reorder-audit.html",
     "date": "Oct 10, 2026",
